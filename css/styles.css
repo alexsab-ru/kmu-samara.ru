@@ -8922,6 +8922,9 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   padding-bottom: 5vmax;
   color: #fff;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
 }
 
 .hero:before {
@@ -8933,17 +8936,6 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
-}
-
-.hero.cover {
-  background-image: url(../img/hero-2.jpg);
-  z-index: 1;
-  background-size: cover;
-  background-position: center;
-}
-
-.hero.cover:before {
   z-index: -1;
 }
 
@@ -8962,6 +8954,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 6%;
+  z-index: 1;
 }
 
 .hero-form {
