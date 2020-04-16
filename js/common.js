@@ -15,9 +15,15 @@ jQuery(function($) {
 		top = $(this).scrollTop();
 
 		if (top+h_mrg < h_hght) {
-			elem.css('top', (h_hght-top));
+			elem.css({
+				'top': h_hght - top,
+				'box-shadow': 'none'
+			});
 		} else {
-			elem.css('top', h_mrg);
+			elem.css({
+				'top': h_mrg,
+				'box-shadow': '0 15px 30px rgba(0,0,0, .4)'
+			});
 		}
 	});
 
