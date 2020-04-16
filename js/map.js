@@ -4,28 +4,15 @@ $(function() {
             {
                 parent: '#dealer-map1',
                 id: "map1",
-                position: [53.193542, 50.292163],
-                zoom: 17,
-                balloonContentHeader: 'Сервисный центр<br>БУМЕРАНГ-АВТО',
-                balloonContentBody: '<a href="tel:88469228872" class="dealer-phone">☎️ 8 (846) 922-88-72</a><br>\
-                    <a href="mailto:service@avtobum63.ru" class="dealer-email">📩 service@avtobum63.ru</a><br><br> \
-                    пр. Кирова, 10<br>\
-                    <a href="https://yandex.ru/maps/?z=17&ll=50.292163,53.19354199999777&l=map&rtext=~53.193542,50.292163&origin=jsapi_2_1_76&from=api-maps"  target="_blank" class="dealer-phone">📍 Проложить маршрут</a><br>',
+                position: [53.199875, 50.261091],
+                zoom: 15,
+                balloonContentHeader: 'Бумеранг-АвтоТранс',
+                balloonContentBody: '<a href="tel:88469722555" class="dealer-phone">☎️ 8 (846) 972-25-55</a><br>\
+                    <a href="mailto:bat.smr63@yandex.ru" class="dealer-email">📩 bat.smr63@yandex.ru</a><br><br> \
+                    Заводское шоссе, 11Б<br>\
+                    <a href="https://yandex.ru/maps/?z=15&ll=50.26109099999999,53.19987499999774&l=map&rtext=~53.199875,50.261091&origin=jsapi_2_1_76&from=api-maps"  target="_blank" class="dealer-phone">📍 Проложить маршрут</a><br>',
                 balloonContentFooter: 'ежедневно: 8:00 — 20:00',
-                hintContent: 'Сервисный центр<br>БУМЕРАНГ-АВТО'
-            },
-            {
-                parent: '#dealer-map2',
-                id: "map2",
-                position: [53.249726, 50.355324],
-                zoom: 17,
-                balloonContentHeader: 'Сервисный центр<br>БУМЕРАНГ-АВТО',
-                balloonContentBody: '<a href="tel:88469228872" class="dealer-phone">☎️ 8 (846) 922-88-72</a><br>\
-                    <a href="mailto:service@avtobum63.ru" class="dealer-email">📩 service@avtobum63.ru</a><br><br> \
-                    Аэропортовское шоссе, 1<br>\
-                    <a href="https://yandex.ru/maps/?z=17&ll=50.35532399999995,53.24972599999765&l=map&rtext=~53.249726,50.355324&origin=jsapi_2_1_76&from=api-maps"  target="_blank" class="dealer-phone">📍 Проложить маршрут</a><br>',
-                balloonContentFooter: 'ежедневно: 9:00 — 18:00',
-                hintContent: 'Сервисный центр<br>БУМЕРАНГ-АВТО'
+                hintContent: 'Бумеранг-АвтоТранс'
             },
         ],
         start_load_script = false, // Переменная для определения была ли хоть раз загружена Яндекс.Карта (чтобы избежать повторной загрузки при наведении)
@@ -47,7 +34,7 @@ $(function() {
                 balloonContentFooter: this.balloonContentFooter,
                 hintContent: this.hintContent
             }, {
-                preset: 'islands#blueAutoIcon',
+                preset: 'islands#blueDeliveryIcon',
                 iconColor: '#208fce'
             });
         myMapTemp.geoObjects.add(myPlacemarkTemp); // помещаем флажок на карту

@@ -9760,8 +9760,8 @@ form small a:hover {
 
 .footer img.logo {
   max-width: 240px;
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  -webkit-filter: brightness(10) opacity(0.7);
+          filter: brightness(10) opacity(0.7);
 }
 
 .top {
