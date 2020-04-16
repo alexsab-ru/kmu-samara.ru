@@ -22,7 +22,7 @@ jQuery(function($) {
 		} else {
 			elem.css({
 				'top': h_mrg,
-				'box-shadow': '0 15px 30px rgba(0,0,0, .4)'
+				'box-shadow': '0 15px 50px rgba(49,97,140, .3)'
 			});
 		}
 	});
