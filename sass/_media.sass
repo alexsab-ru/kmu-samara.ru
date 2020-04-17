@@ -41,7 +41,7 @@
 		flex-direction: column
 		padding: 15px 0
 	.hero
-		padding-top: 0
+		padding-top: 20px
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -59,6 +59,35 @@
 		align-items: center
 	.hero-text
 		margin-bottom: 40px
+	.mobile-btn
+		display: block
+	.top-menu
+		min-height: 50px
+		padding-top: 50px
+		.container
+			max-width: 100%
+			padding: 0
+		&__list
+			flex-direction: column
+			display: none
+			height: calc(100vh - 50px)
+			overflow-y: scroll
+			li.active
+				a
+					background-color: $accent
+					color: $white
+			a
+				&:after
+					display: none
+			li
+				width: 100%
+				a
+					width: 100%
+					text-align: center
+					&:hover
+						background-color: $accent
+						color: $white
+
 	h1
 		font-size: 42px
 	.subtitle

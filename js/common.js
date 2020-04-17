@@ -1,30 +1,48 @@
 jQuery(function($) {
 
-	var h_hght = 100; // высота шапки
-	var h_mrg = 0;    // отступ когда шапка уже не видна
+	$('.mobile-btn').on('click', function() {
+		$(this).toggleClass('active');
+		$('.top-menu__list').slideToggle();
+		//$('body').toggleClass('no-scroll');
+	});
 
+	function myResize(){
 
-	var elem = $('#top-menu');
-	var top = $(this).scrollTop();
+		var headerH = $('.header').height();
 
-	if(top > h_hght){
-		elem.css('top', h_mrg);
-	}           
+		var h_hght = headerH; // высота шапки
+		var h_mrg = 0;    // отступ когда шапка уже не видна
 
-	$(window).scroll(function(){
-		top = $(this).scrollTop();
+		var elem = $('#top-menu');
+		var top = $(this).scrollTop();
 
-		if (top+h_mrg < h_hght) {
-			elem.css({
-				'top': h_hght - top,
-				'box-shadow': 'none'
-			});
-		} else {
-			elem.css({
-				'top': h_mrg,
-				'box-shadow': '0 15px 50px rgba(49,97,140, .3)'
-			});
-		}
+		elem.css('top', headerH);
+
+		if(top > h_hght){
+			elem.css('top', h_mrg);
+		}           
+
+		$(window).scroll(function(){
+			top = $(this).scrollTop();
+
+			if (top+h_mrg < h_hght) {
+				elem.css({
+					'top': h_hght - top,
+					'box-shadow': 'none'
+				});
+			} else {
+				elem.css({
+					'top': h_mrg,
+					'box-shadow': '0 15px 50px rgba(49,97,140, .3)'
+				});
+			}
+		});
+	}
+
+	myResize();
+
+	$(window).resize(function(){
+		myResize();
 	});
 
 	//E-mail Ajax Send

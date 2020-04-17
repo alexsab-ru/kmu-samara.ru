@@ -2,7 +2,6 @@
 .header
 	background-color: #fff
 	position: relative
-	height: 100px
 	&-logo
 		img
 			width: 200px
@@ -13,7 +12,7 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
-		height: 100px
+		padding: 10px 0
 	&-right
 		display: inline-block
 		vertical-align: middle
@@ -28,7 +27,7 @@
 		&:last-child()
 			margin-right: 0
 		a:hover
-			color: $text	
+			color: $text    
 		img
 			width: 35px
 			height: 100%
@@ -76,9 +75,8 @@
 .top-menu
 	// box-shadow: 0 15px 30px rgba(#000, .4)
 	background-color: $white
-	padding: 15px 0
 	position: fixed
-	top: 100px
+	top: 93px
 	z-index: 1000
 	width: 100%
 	border-top: 1px solid rgba($accent, .2)
@@ -89,3 +87,55 @@
 		list-style-type: none
 		padding: 0
 		margin: 0
+		li.active
+			a:after
+				width: 100%
+		a
+			color: $text
+			font-weight: 300
+			padding: 15px 0
+			display: block
+			position: relative
+			&:after
+				content: ''
+				width: 0
+				height: 4px
+				position: absolute
+				left: 0
+				top: 0
+				background-color: $accent
+				transition: all .25s ease-in-out
+			&:hover
+				&:after
+					width: 100%
+
+.mobile-btn
+	width: 50px
+	height: 50px
+	background-color: transparent
+	border: none
+	cursor: pointer
+	position: absolute
+	right: 15px
+	top: 0
+	display: none			
+	span
+		width: 25px
+		height: 1px
+		background-color: $accent
+		display: block
+		margin: 3px auto
+		transform: rotate(0)
+		opacity: 1
+		transition: all .2s ease-in-out
+	&.active span
+		&:first-child
+			transform: rotate(45deg)
+			position: relative
+			top: 4px
+		&:nth-child(2)
+			opacity: 0
+		&:last-child
+			transform: rotate(-45deg)
+			position: relative
+			top: -4px
