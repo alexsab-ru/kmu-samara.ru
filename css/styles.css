@@ -9076,7 +9076,7 @@ strong {
   font-family: "Cunia", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .big-title {
   font-family: "Cunia", sans-serif;
 }
 
@@ -9412,7 +9412,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: -1;
 }
 
@@ -9438,10 +9438,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.55;
 }
 
-h1 {
+.big-title {
   font-size: 52px;
   margin-top: 0.5rem;
-  line-height: 1;
+  line-height: 1.2;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 .subtitle {
@@ -10419,7 +10421,7 @@ p.oferta {
   .container {
     max-width: 97%;
   }
-  h1 {
+  .big-title {
     font-size: 3vmax;
   }
   .subtitle {
@@ -10451,7 +10453,7 @@ p.oferta {
   .hero-form {
     top: 11%;
   }
-  h1 {
+  .big-title {
     font-size: 48px;
   }
 }
@@ -10521,7 +10523,7 @@ p.oferta {
     background-color: #31618C;
     color: #fff;
   }
-  h1 {
+  .big-title {
     font-size: 42px;
   }
   .subtitle {
@@ -10582,7 +10584,7 @@ p.oferta {
   .header .phone {
     margin-bottom: 15px;
   }
-  h1 {
+  .big-title {
     font-size: 30px;
     line-height: 1.4;
   }
