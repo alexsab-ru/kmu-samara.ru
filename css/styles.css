@@ -9350,8 +9350,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #fff;
   left: 20px;
@@ -9362,16 +9362,16 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: all .25s ease;
   transition: all .25s ease;
   z-index: 10;
-  opacity: .3;
+  opacity: .2;
   outline: none;
 }
 
 .hero-slider .arrow:hover {
-  opacity: .8;
+  opacity: .6;
 }
 
 .hero-slider .arrow svg {
-  width: 15px;
+  width: 10px;
   padding: 0;
   margin: 0;
   height: 100%;
