@@ -9299,6 +9299,10 @@ h1, h2, h3, h4, h5, h6, .big-title {
   right: 15px;
   top: 0;
   display: none;
+  outline: none;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .mobile-btn span {
@@ -9306,14 +9310,30 @@ h1, h2, h3, h4, h5, h6, .big-title {
   height: 1px;
   background-color: #31618C;
   display: block;
-  margin: 3px auto;
+  margin: 5px auto;
   -webkit-transform: rotate(0);
       -ms-transform: rotate(0);
           transform: rotate(0);
   opacity: 1;
-  -webkit-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.mobile-btn span:nth-child(2) {
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+.mobile-btn:focus {
+  outline: none;
+}
+
+.mobile-btn.active {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .mobile-btn.active span:first-child {
@@ -9321,7 +9341,7 @@ h1, h2, h3, h4, h5, h6, .big-title {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   position: relative;
-  top: 4px;
+  top: 6px;
 }
 
 .mobile-btn.active span:nth-child(2) {
@@ -9333,7 +9353,7 @@ h1, h2, h3, h4, h5, h6, .big-title {
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
   position: relative;
-  top: -4px;
+  top: -6px;
 }
 
 .hero {

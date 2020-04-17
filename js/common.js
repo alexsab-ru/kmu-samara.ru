@@ -17,34 +17,18 @@ jQuery(function($) {
 		var TopMenuH = $('#top-menu').height();
 		var winH = $(window).height();
 		var heroSlideH = winH - (headerH+TopMenuH);
-		var heroFormH = $('.hero-form').height();
 		// ШИИРИНА
 		var winW = $(window).width();
 		var contW = $('.container').width();
 		var padding = (winW - contW) / 2;
-
-		if ( $(window).width() > 768 ) {
-			$('.hero-form').css('right', padding);
-
-			$('.hero-slide').css({
-				'height': heroSlideH,
-				'margin-top': TopMenuH,
-				'padding-left': padding
-			});
-
-		}else{
-			$('.hero-form').css({
-				'left': 20,
-				'top': heroTextH + 100
-			});
-
-			$('.hero-slide').css({
-				'height': heroTextH + heroFormH + 200,
-				'margin-top': TopMenuH,
-				'padding-left': padding
-			});
-		}
 		
+		$('.hero-slide').css({
+			'height': heroSlideH,
+			'margin-top': TopMenuH,
+			'padding-left': padding
+		});
+
+		$('.hero-form').css('right', padding);
 
 		var h_hght = headerH; // высота шапки
 		var h_mrg = 0;    // отступ когда шапка уже не видна

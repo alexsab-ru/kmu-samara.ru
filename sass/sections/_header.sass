@@ -73,7 +73,6 @@
 							width: 0%
 
 .top-menu
-	// box-shadow: 0 15px 30px rgba(#000, .4)
 	background-color: $white
 	position: fixed
 	top: 93px
@@ -118,24 +117,32 @@
 	position: absolute
 	right: 15px
 	top: 0
-	display: none			
+	display: none
+	outline: none
+	transition: all .3s	
 	span
 		width: 25px
 		height: 1px
 		background-color: $accent
 		display: block
-		margin: 3px auto
+		margin: 5px auto
 		transform: rotate(0)
 		opacity: 1
-		transition: all .2s ease-in-out
-	&.active span
-		&:first-child
-			transform: rotate(45deg)
-			position: relative
-			top: 4px
+		transition: all .4s
 		&:nth-child(2)
-			opacity: 0
-		&:last-child
-			transform: rotate(-45deg)
-			position: relative
-			top: -4px
+			transition: all .2s
+	&:focus
+		outline: none
+	&.active
+		transform: rotate(360deg)	
+		span
+			&:first-child
+				transform: rotate(45deg)
+				position: relative
+				top: 6px
+			&:nth-child(2)
+				opacity: 0
+			&:last-child
+				transform: rotate(-45deg)
+				position: relative
+				top: -6px
