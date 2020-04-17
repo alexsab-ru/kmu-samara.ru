@@ -8,7 +8,23 @@ jQuery(function($) {
 
 	function myResize(){
 
+		// ВЫСОТА
 		var headerH = $('.header').height();
+		var TopMenuH = $('#top-menu').height();
+		var winH = $(window).height();
+		var heroSlideH = winH - (headerH+TopMenuH);
+		// ШИИРИНА
+		var winW = $(window).width();
+		var contW = $('.container').width();
+		var padding = (winW - contW) / 2;
+		
+		$('.hero-slide').css({
+			'height': heroSlideH,
+			'margin-top': TopMenuH,
+			'padding-left': padding
+		});
+
+		$('.hero-form').css('right', padding);
 
 		var h_hght = headerH; // высота шапки
 		var h_mrg = 0;    // отступ когда шапка уже не видна
@@ -43,6 +59,10 @@ jQuery(function($) {
 
 	$(window).resize(function(){
 		myResize();
+	});
+
+	$('.hero-slider').slick({
+		autoplay: true
 	});
 
 	//E-mail Ajax Send
