@@ -8,23 +8,43 @@ jQuery(function($) {
 
 	function myResize(){
 
+		$('.hero-slide').each(function(){
+			heroTextH = $(this).find('.hero-text').height();
+		});
+
 		// ВЫСОТА
 		var headerH = $('.header').height();
 		var TopMenuH = $('#top-menu').height();
 		var winH = $(window).height();
 		var heroSlideH = winH - (headerH+TopMenuH);
+		var heroFormH = $('.hero-form').height();
 		// ШИИРИНА
 		var winW = $(window).width();
 		var contW = $('.container').width();
 		var padding = (winW - contW) / 2;
-		
-		$('.hero-slide').css({
-			'height': heroSlideH,
-			'margin-top': TopMenuH,
-			'padding-left': padding
-		});
 
-		$('.hero-form').css('right', padding);
+		if ( $(window).width() > 768 ) {
+			$('.hero-form').css('right', padding);
+
+			$('.hero-slide').css({
+				'height': heroSlideH,
+				'margin-top': TopMenuH,
+				'padding-left': padding
+			});
+
+		}else{
+			$('.hero-form').css({
+				'left': 20,
+				'top': heroTextH + 100
+			});
+
+			$('.hero-slide').css({
+				'height': heroTextH + heroFormH + 200,
+				'margin-top': TopMenuH,
+				'padding-left': padding
+			});
+		}
+		
 
 		var h_hght = headerH; // высота шапки
 		var h_mrg = 0;    // отступ когда шапка уже не видна

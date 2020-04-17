@@ -9336,6 +9336,10 @@ h1, h2, h3, h4, h5, h6, .big-title {
   top: -4px;
 }
 
+.hero {
+  position: relative;
+}
+
 .hero-text {
   max-width: 50%;
 }
@@ -9412,7 +9416,7 @@ h1, h2, h3, h4, h5, h6, .big-title {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
 }
 
@@ -10417,21 +10421,6 @@ p.oferta {
   }
 }
 
-@media (max-width: 991.98px) {
-  .container {
-    max-width: 97%;
-  }
-  .big-title {
-    font-size: 3vmax;
-  }
-  .subtitle {
-    font-size: 2.1vmax;
-  }
-  .maps .dealer-info {
-    padding-left: 50px;
-  }
-}
-
 @media (max-width: 1084px) {
   .header {
     position: relative;
@@ -10454,14 +10443,31 @@ p.oferta {
     top: 11%;
   }
   .big-title {
-    font-size: 48px;
+    font-size: 35px;
+  }
+  .hero-text {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 97%;
+  }
+  .big-title {
+    font-size: 3vmax;
+  }
+  .subtitle {
+    font-size: 2.1vmax;
+  }
+  .maps .dealer-info {
+    padding-left: 50px;
   }
 }
 
 @media (max-width: 767.98px) {
   .hero {
     padding-top: 0;
-    background-image: url(../img/hero-mob.jpg) !important;
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -10482,7 +10488,7 @@ p.oferta {
             align-items: center;
   }
   .hero-text {
-    margin-bottom: 40px;
+    max-width: 100%;
   }
   .mobile-btn {
     display: block;
@@ -10525,6 +10531,7 @@ p.oferta {
   }
   .big-title {
     font-size: 42px;
+    margin-top: 30px;
   }
   .subtitle {
     font-size: 24px;
