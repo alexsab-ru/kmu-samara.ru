@@ -26,75 +26,16 @@
 	.header-wrap
 		flex-direction: column
 		padding: 15px 0
-	.banner-form
-		top: 10%
-	.big-title
-		font-size: 35px
-	.banner-text
-		max-width: 45%
 
 // ≥992px
 +media-breakpoint-down(md)
 	.container
 		max-width: 97%
-	.big-title
-		font-size: 3vmax
-	.subtitle
-		font-size: 2.1vmax
-	.header-logo img
-		// width: 80px
 	.maps .dealer-info
 		padding-left: 50px
-	.banner-slide
-		padding-top: 20px
-	.banner-form
-		top: 20px
 
 // ≥768px
-+media-breakpoint-down(sm)
-	.banner
-		&-text
-			max-width: 100%
-			padding: 30px 15px 50px
-		&-slide
-			min-height: 400px
-	.mobile-btn
-		display: block
-	.top-menu
-		padding-top: 50px
-		.container
-			max-width: 100%
-			padding: 0
-		&__list
-			flex-direction: column
-			display: none
-			height: calc(100vh - 50px)
-			overflow-y: scroll
-			li.active
-				a
-					background-color: $accent
-					color: $white
-			a
-				&:after
-					display: none
-			li
-				width: 100%
-				a
-					width: 100%
-					text-align: center
-					&:hover
-						background-color: $accent
-						color: $white
-
-	.big-title
-		font-size: 42px
-		margin-top: 30px
-	.subtitle
-		font-size: 24px
-	.banner-form 
-		position: relative
-		margin: 0 auto 30px
-		box-shadow: 0 0 30px rgba($text, .3)
++media-breakpoint-down(sm)						
 	.maps .dealer, .maps .dealer:nth-child(even)
 		flex-direction: column
 	.maps .dealer-info, .maps .dealer-map
@@ -121,21 +62,7 @@
 		flex-direction: column
 		margin-bottom: 5px
 	.header .phone
-		margin-bottom: 15px
-	.big-title
-		font-size: 30px
-		line-height: 1.4
-	.subtitle
-		font-size: 22px
-	.banner, .banner.cover
-		background-position: top -270px center
-		background-repeat: no-repeat
-		background-color: #f7f7f9
-		min-height: 0
-		height: auto
-	.banner-form
-		padding: 25px 20px
-		width: 90%
+		margin-bottom: 15px	
 	.t-radio__control, form small
 		font-size: 14px
 	.offer-head .descr
@@ -186,9 +113,6 @@
 
 // ≤768px
 +media-breakpoint-up(md)
-	.banner-text
-		padding-right: 10px
-
 
 // ≤992px
 +media-breakpoint-up(lg)

@@ -10,6 +10,10 @@
 	+media-breakpoint-down(sm)
 		position: fixed
 		top: 0
+		padding-top: 50px
+		.container
+			max-width: 100%
+			padding: 0
 	&__right
 		display: flex
 		align-items: center
@@ -41,6 +45,26 @@
 		list-style-type: none
 		padding: 0
 		margin: 0
+		+media-breakpoint-down(sm)
+			flex-direction: column
+			display: none
+			height: calc(100vh - 50px)
+			overflow-y: scroll
+			li.active
+				a
+					background-color: $accent
+					color: $white
+			a
+				&:after
+					display: none
+			li
+				width: 100%
+				a
+					width: 100%
+					text-align: center
+					&:hover
+						background-color: $accent
+						color: $white
 		li.active
 			a:after
 				width: 100%

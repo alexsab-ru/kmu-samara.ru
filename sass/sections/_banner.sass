@@ -1,8 +1,19 @@
 .banner
 	position: relative
+	+media-breakpoint-down(xs)
+		background-position: top -270px center
+		background-repeat: no-repeat
+		background-color: #f7f7f9
+		min-height: 0
+		height: auto
 	&-wrap
 	&-text
 		max-width: 50%
+		@media (max-width: 1084px)
+			max-width: 45%
+		+media-breakpoint-down(sm)
+			max-width: 100%
+			padding: 30px 15px 50px
 	&-slider
 		position: relative
 		.arrow
@@ -46,6 +57,10 @@
 		background-size: cover
 		background-position: center
 		padding-top: 50px
+		+media-breakpoint-down(md)
+			padding-top: 20px
+		+media-breakpoint-down(sm)
+			min-height: 400px
 		&:before
 			content: ''
 			display: block
@@ -66,7 +81,17 @@
 		position: absolute
 		top: 50px
 		z-index: 1
-				
+		@media (max-width: 1084px)
+			top: 10%
+		+media-breakpoint-down(md)
+			top: 20px	
+		+media-breakpoint-down(sm)
+			position: relative
+			margin: 0 auto 30px
+			box-shadow: 0 0 30px rgba($text, .3)
+		+media-breakpoint-down(xs)
+			padding: 25px 20px
+			width: 90%
 		h2
 			font-size: 18px
 			color: #000
@@ -75,16 +100,31 @@
 			line-height: 1.55
 .big-title
 	font-size: 52px
-	// margin-top: 0.5rem
 	line-height: 1.2
 	display: block
 	margin-bottom: 1rem
+	@media (max-width: 1084px)
+		font-size: 35px
+	+media-breakpoint-down(md)
+		font-size: 3vmax
+	+media-breakpoint-down(sm)
+		font-size: 42px
+		margin-top: 30px
+	+media-breakpoint-down(xs)
+		font-size: 30px
+		line-height: 1.4
 .subtitle
 	font-size: 26px
 	display: block
 	padding-left: 25px
 	line-height: 1.4
 	margin-bottom: 15px
+	+media-breakpoint-down(md)
+		font-size: 2.1vmax
+	+media-breakpoint-down(sm)
+		font-size: 24px
+	+media-breakpoint-down(xs)
+		font-size: 22px
 	&:before
 		content: '✓'
 		display: inline-block
