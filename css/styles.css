@@ -10313,16 +10313,6 @@ h1, h2, h3, h4, h5, h6, .big-title {
   position: relative;
 }
 
-@media (max-width: 575.98px) {
-  .banner {
-    background-position: top -270px center;
-    background-repeat: no-repeat;
-    background-color: #f7f7f9;
-    min-height: 0;
-    height: auto;
-  }
-}
-
 .banner-text {
   max-width: 50%;
 }
