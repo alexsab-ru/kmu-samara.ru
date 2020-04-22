@@ -7,57 +7,24 @@ jQuery(function($) {
 
 	function myResize(){
 
-		$('.hero-slide').each(function(){
-			heroTextH = $(this).find('.hero-text').height();
-		});
-
 		// ВЫСОТА
 		var headerH = $('.header').height();
 		var TopMenuH = $('#top-menu').height();
 		var winH = $(window).height();
-		var heroSlideH = winH - (headerH+TopMenuH);
+		var bannerSlideH = winH - (headerH+TopMenuH);
 		// ШИИРИНА
 		var winW = $(window).width();
 		var contW = $('.container').width();
 		var padding = (winW - contW) / 2;
 		
 		if ($(window).width() > 768) {
-			$('.hero-slide').css({
-				'height': heroSlideH,
-				'margin-top': TopMenuH,
+			$('.banner-slide').css({
+				'height': bannerSlideH,
 				'padding-left': padding
 			});
 
-			$('.hero-form').css('right', padding);
+			$('.banner-form').css('right', padding);
 		}
-
-		var h_hght = headerH; // высота шапки
-		var h_mrg = 0;    // отступ когда шапка уже не видна
-
-		var elem = $('#top-menu');
-		var top = $(this).scrollTop();
-
-		elem.css('top', headerH);
-
-		if(top > h_hght){
-			elem.css('top', h_mrg);
-		}           
-
-		$(window).scroll(function(){
-			top = $(this).scrollTop();
-
-			if (top+h_mrg < h_hght) {
-				elem.css({
-					'top': h_hght - top,
-					'box-shadow': 'none'
-				});
-			} else {
-				elem.css({
-					'top': h_mrg,
-					'box-shadow': '0 15px 50px rgba(49,97,140, .3)'
-				});
-			}
-		});
 	}
 
 	myResize();
@@ -69,7 +36,7 @@ jQuery(function($) {
 	var arrow = '<svg version="1.1" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"	y="0px" viewBox="0 0 51.2 100" xml:space="preserve"><path fill-rule="evenodd" fill="#0887FC" d="M51.2,90c-0.6-1.3-1.4-2.8-2.4-4.3C23,44.5,23,55.5,48.8,14.3c1-1.5,1.8-3,2.4-4.3 c-0.8,1.6-1.9,3.4-3.2,5.2C42.7,22.5,25.9,42,25.9,50c0,8,16.8,27.5,22.1,34.8C49.3,86.6,50.4,88.4,51.2,90L51.2,90z"/><path fill-rule="evenodd" fill="#31618C" d="M36.1,6.9c-9.2,9-35.5,30-36.1,42.1c-0.7,13.7,26,34.1,36.1,44	c13.3,13,19.2,6.1,9.4-7.4c-5.9-8.2-23-27.1-22.5-36.6c0.4-7.7,17.3-27.5,22.5-34.7C55.3,0.8,49.4-6.1,36.1,6.9L36.1,6.9z"/><path fill-rule="evenodd" fill="#39739E" d="M50.2,98.2c0.8-2.3-0.5-6.9-4.7-12.6c-5.9-8.2-23-27.1-22.5-36.6 c0.4-7.7,17.3-27.5,22.5-34.7C49.6,8.6,51,4.1,50.2,1.8C36.7,14.1,11.4,35.7,10.7,48.8C9.9,63.7,35.9,85.3,50.2,98.2L50.2,98.2z"/></svg>';
 	var arrow2 = '<svg version="1.1" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41.2 100" xml:space="preserve"><path fill-rule="evenodd" fill="#39739E" d="M41,100c0.9-2.4-0.5-7.1-4.8-13C30,78.5,12.2,58.9,12.7,49c0.4-8,18-28.6,23.4-36 C40.4,7.1,41.8,2.4,41,0C26.9,12.8,0.7,35.2,0,48.8C-0.8,64.2,26.1,86.5,41,100L41,100z"/></svg>';
 
-	$('.hero-slider').slick({
+	$('.banner-slider').slick({
 		autoplay: true,
 		adaptiveHeight: true,
 		arrows: true,
@@ -111,7 +78,7 @@ jQuery(function($) {
 
 	$("section h2, h2+.descr, .offer-form, .benefit, .replacement-form").animated("fadeInUp", "fadeInUp");
 	$("h1, .subtitle, .maps .dealer:nth-child(odd) .dealer-info").animated("fadeInLeft", "fadeInLeft");
-	$(".hero-form, .maps .dealer:nth-child(even) .dealer-info").animated("fadeInRight", "fadeInRight");
+	$(".banner-form, .maps .dealer:nth-child(even) .dealer-info").animated("fadeInRight", "fadeInRight");
 
 	$('.top').click(function() {
 		$('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');

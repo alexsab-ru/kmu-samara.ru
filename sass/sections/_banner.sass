@@ -1,4 +1,4 @@
-.hero
+.banner
 	position: relative
 	&-wrap
 	&-text
@@ -38,7 +38,7 @@
 				transform: rotate(180deg)
 				margin-right: -5px
 	&-slide
-		min-height: 650px
+		min-height: 600px
 		height: auto
 		z-index: 1
 		position: relative
@@ -64,7 +64,7 @@
 		height: auto
 		padding: 34px
 		position: absolute
-		top: 120px
+		top: 50px
 		z-index: 1
 				
 		h2
@@ -75,7 +75,7 @@
 			line-height: 1.55
 .big-title
 	font-size: 52px
-	margin-top: 0.5rem
+	// margin-top: 0.5rem
 	line-height: 1.2
 	display: block
 	margin-bottom: 1rem
@@ -83,6 +83,8 @@
 	font-size: 26px
 	display: block
 	padding-left: 25px
+	line-height: 1.4
+	margin-bottom: 15px
 	&:before
 		content: '✓'
 		display: inline-block
@@ -177,3 +179,8 @@ form
 			cursor: pointer
 			width: 14px
 			height: 14px
+			color: transparent
+			&:before
+				display: none
+.slick-dotted.slick-slider
+	margin-bottom: 0

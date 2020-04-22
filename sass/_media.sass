@@ -26,11 +26,11 @@
 	.header-wrap
 		flex-direction: column
 		padding: 15px 0
-	.hero-form
-		top: 16%
+	.banner-form
+		top: 10%
 	.big-title
 		font-size: 35px
-	.hero-text
+	.banner-text
 		max-width: 45%
 
 // ≥992px
@@ -45,13 +45,17 @@
 		// width: 80px
 	.maps .dealer-info
 		padding-left: 50px
+	.banner-slide
+		padding-top: 20px
+	.banner-form
+		top: 20px
 
 // ≥768px
 +media-breakpoint-down(sm)
-	.hero
+	.banner
 		&-text
 			max-width: 100%
-			padding: 0 15px 50px
+			padding: 30px 15px 50px
 		&-slide
 			min-height: 400px
 	.mobile-btn
@@ -88,7 +92,7 @@
 		margin-top: 30px
 	.subtitle
 		font-size: 24px
-	.hero-form 
+	.banner-form 
 		position: relative
 		margin: 5% auto 0
 		box-shadow: 0 0 30px rgba($text, .3)
@@ -124,13 +128,13 @@
 		line-height: 1.4
 	.subtitle
 		font-size: 22px
-	.hero, .hero.cover
+	.banner, .banner.cover
 		background-position: top -270px center
 		background-repeat: no-repeat
 		background-color: #f7f7f9
 		min-height: 0
 		height: auto
-	.hero-form
+	.banner-form
 		padding: 25px 20px
 		width: 90%
 	.t-radio__control, form small
@@ -183,7 +187,7 @@
 
 // ≤768px
 +media-breakpoint-up(md)
-	.hero-text
+	.banner-text
 		padding-right: 10px
 
 

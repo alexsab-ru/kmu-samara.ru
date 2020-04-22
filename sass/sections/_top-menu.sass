@@ -1,0 +1,99 @@
+.top-menu
+	background-color: $white
+	position: sticky
+	top: 0
+	z-index: 1000
+	width: 100%
+	border-top: 1px solid rgba($accent, .2)
+	box-shadow: 0 40px 50px rgba(49,97,140, .2)
+	+media-breakpoint-down(sm)
+		position: fixed
+		top: 0
+	&__right
+		display: flex
+		align-items: center
+		a
+			display: block
+			margin-right: 20px
+			img
+				width: 30px
+				height: 100%
+	&__logo
+		img
+			width: 125px
+			height: 100%
+	&__wrap
+		width: 94%
+		position: fixed
+		top: 0
+		left: 3%
+		display: none
+		z-index: 10
+		+media-breakpoint-down(sm)
+			display: flex
+			align-items: center
+			justify-content: space-between
+	&__list
+		display: flex
+		justify-content: space-between
+		align-items: center
+		list-style-type: none
+		padding: 0
+		margin: 0
+		li.active
+			a:after
+				width: 100%
+		a
+			color: $text
+			font-weight: 300
+			padding: 15px 0
+			display: block
+			position: relative
+			&:after
+				content: ''
+				width: 0
+				height: 4px
+				position: absolute
+				left: 0
+				top: 0
+				background-color: $accent
+				transition: all .25s ease-in-out
+			&:hover
+				&:after
+					width: 100%
+
+.mobile-btn
+	width: 50px
+	height: 50px
+	background-color: transparent
+	border: none
+	cursor: pointer
+	outline: none
+	transition: all .3s	
+	margin-right: -10px
+	span
+		width: 25px
+		height: 1px
+		background-color: $accent
+		display: block
+		margin: 5px auto
+		transform: rotate(0)
+		opacity: 1
+		transition: all .4s
+		&:nth-child(2)
+			transition: all .2s
+	&:focus
+		outline: none
+	&.active
+		transform: rotate(360deg)	
+		span
+			&:first-child
+				transform: rotate(45deg)
+				position: relative
+				top: 6px
+			&:nth-child(2)
+				opacity: 0
+			&:last-child
+				transform: rotate(-45deg)
+				position: relative
+				top: -6px

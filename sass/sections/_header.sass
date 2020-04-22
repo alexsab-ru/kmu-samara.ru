@@ -2,6 +2,8 @@
 .header
 	background-color: #fff
 	position: relative
+	+media-breakpoint-down(sm)
+		display: none
 	&-logo
 		img
 			width: 200px
@@ -71,78 +73,3 @@
 							width: 100%
 						&:before
 							width: 0%
-
-.top-menu
-	background-color: $white
-	position: fixed
-	top: 93px
-	z-index: 1000
-	width: 100%
-	border-top: 1px solid rgba($accent, .2)
-	&__list
-		display: flex
-		justify-content: space-between
-		align-items: center
-		list-style-type: none
-		padding: 0
-		margin: 0
-		li.active
-			a:after
-				width: 100%
-		a
-			color: $text
-			font-weight: 300
-			padding: 15px 0
-			display: block
-			position: relative
-			&:after
-				content: ''
-				width: 0
-				height: 4px
-				position: absolute
-				left: 0
-				top: 0
-				background-color: $accent
-				transition: all .25s ease-in-out
-			&:hover
-				&:after
-					width: 100%
-
-.mobile-btn
-	width: 50px
-	height: 50px
-	background-color: transparent
-	border: none
-	cursor: pointer
-	position: absolute
-	right: 15px
-	top: 0
-	display: none
-	outline: none
-	transition: all .3s	
-	span
-		width: 25px
-		height: 1px
-		background-color: $accent
-		display: block
-		margin: 5px auto
-		transform: rotate(0)
-		opacity: 1
-		transition: all .4s
-		&:nth-child(2)
-			transition: all .2s
-	&:focus
-		outline: none
-	&.active
-		transform: rotate(360deg)	
-		span
-			&:first-child
-				transform: rotate(45deg)
-				position: relative
-				top: 6px
-			&:nth-child(2)
-				opacity: 0
-			&:last-child
-				transform: rotate(-45deg)
-				position: relative
-				top: -6px
