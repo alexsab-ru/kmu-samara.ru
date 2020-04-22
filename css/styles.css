@@ -9448,7 +9448,7 @@ h1, h2, h3, h4, h5, h6, .big-title {
   height: auto;
   padding: 34px;
   position: absolute;
-  top: 8%;
+  top: 120px;
   z-index: 1;
 }
 
@@ -9578,6 +9578,30 @@ form small a {
 
 form small a:hover {
   color: #000;
+}
+
+.slick-dots {
+  bottom: 15px;
+  z-index: 1;
+}
+
+.slick-dots li {
+  padding: 2px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.slick-dots li:hover button, .slick-dots li.slick-active button {
+  background-color: #31618C;
+}
+
+.slick-dots li button {
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
 }
 
 .services {
@@ -10324,98 +10348,6 @@ p.oferta {
   font-size: 10px;
 }
 
-.replacement {
-  position: relative;
-  margin-top: 20px;
-  padding-bottom: 50px;
-  height: 520px;
-}
-
-.replacement .container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.replacement:after {
-  content: '';
-  display: block;
-  background: top right no-repeat url(../img/mitsubishi-lancerX-sideview.png);
-  background-size: initial;
-  top: 20%;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  opacity: 1;
-  background-position-x: calc(50% - 283px);
-}
-
-.replacement-head {
-  text-align: center;
-}
-
-.replacement-head h2 {
-  font-size: 52px;
-  line-height: 1.2;
-}
-
-@media (max-width: 575.98px) {
-  .replacement-head h2 {
-    font-size: 33px;
-  }
-}
-
-.replacement-head .descr {
-  font-size: 24px;
-  margin: 20px 0;
-  display: block;
-}
-
-.replacement-head .descr sup {
-  color: #666;
-}
-
-.replacement-form {
-  position: absolute;
-  bottom: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.replacement-form button, .replacement-form .btn {
-  display: inline-block;
-  position: relative;
-  padding: 15px 50px;
-  margin-bottom: 20px;
-}
-
-.replacement-form small {
-  color: #666;
-  display: inline-block;
-  position: relative;
-}
-
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
   .car {
@@ -10460,7 +10392,7 @@ p.oferta {
     padding: 15px 0;
   }
   .hero-form {
-    top: 11%;
+    top: 16%;
   }
   .big-title {
     font-size: 35px;
@@ -10486,29 +10418,12 @@ p.oferta {
 }
 
 @media (max-width: 767.98px) {
-  .hero {
-    padding-top: 0;
-    background-size: cover;
-    background-position: center;
-    z-index: 1;
-  }
-  .hero:before {
-    z-index: -1;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  .hero-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .hero-text {
     max-width: 100%;
+    padding: 0 15px 50px;
+  }
+  .hero-slide {
+    min-height: 400px;
   }
   .mobile-btn {
     display: block;
@@ -10556,9 +10471,11 @@ p.oferta {
   .subtitle {
     font-size: 24px;
   }
-  .hero-form button {
-    -webkit-animation-iteration-count: inherit;
-            animation-iteration-count: inherit;
+  .hero-form {
+    position: relative;
+    margin: 5% auto 0;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   }
   .maps .dealer, .maps .dealer:nth-child(even) {
     -webkit-box-orient: vertical;
@@ -10627,6 +10544,7 @@ p.oferta {
   }
   .hero-form {
     padding: 25px 20px;
+    width: 90%;
   }
   .t-radio__control, form small {
     font-size: 14px;

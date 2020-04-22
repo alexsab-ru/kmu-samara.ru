@@ -27,7 +27,7 @@
 		flex-direction: column
 		padding: 15px 0
 	.hero-form
-		top: 11%
+		top: 16%
 	.big-title
 		font-size: 35px
 	.hero-text
@@ -49,18 +49,11 @@
 // ≥768px
 +media-breakpoint-down(sm)
 	.hero
-		padding-top: 0
-		background-size: cover
-		background-position: center
-		z-index: 1
-		&:before
-			z-index: -1
-			background-color: rgba(#000, .6)
-	.hero-wrap
-		flex-direction: column
-		align-items: center
-	.hero-text
-		max-width: 100%
+		&-text
+			max-width: 100%
+			padding: 0 15px 50px
+		&-slide
+			min-height: 400px
 	.mobile-btn
 		display: block
 	.top-menu
@@ -95,8 +88,10 @@
 		margin-top: 30px
 	.subtitle
 		font-size: 24px
-	.hero-form button
-		animation-iteration-count: inherit
+	.hero-form 
+		position: relative
+		margin: 5% auto 0
+		box-shadow: 0 0 30px rgba($text, .3)
 	.maps .dealer, .maps .dealer:nth-child(even)
 		flex-direction: column
 	.maps .dealer-info, .maps .dealer-map
@@ -137,6 +132,7 @@
 		height: auto
 	.hero-form
 		padding: 25px 20px
+		width: 90%
 	.t-radio__control, form small
 		font-size: 14px
 	.offer-head .descr

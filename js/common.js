@@ -3,7 +3,6 @@ jQuery(function($) {
 	$('.mobile-btn').on('click', function() {
 		$(this).toggleClass('active');
 		$('.top-menu__list').slideToggle();
-		//$('body').toggleClass('no-scroll');
 	});
 
 	function myResize(){
@@ -22,13 +21,15 @@ jQuery(function($) {
 		var contW = $('.container').width();
 		var padding = (winW - contW) / 2;
 		
-		$('.hero-slide').css({
-			'height': heroSlideH,
-			'margin-top': TopMenuH,
-			'padding-left': padding
-		});
+		if ($(window).width() > 768) {
+			$('.hero-slide').css({
+				'height': heroSlideH,
+				'margin-top': TopMenuH,
+				'padding-left': padding
+			});
 
-		$('.hero-form').css('right', padding);
+			$('.hero-form').css('right', padding);
+		}
 
 		var h_hght = headerH; // высота шапки
 		var h_mrg = 0;    // отступ когда шапка уже не видна
@@ -70,8 +71,20 @@ jQuery(function($) {
 
 	$('.hero-slider').slick({
 		autoplay: true,
+		adaptiveHeight: true,
+		arrows: true,
+		dots: false,
 		prevArrow: '<button class="arrow prev-arrow">'+arrow2+'</button>',
 		nextArrow: '<button class="arrow next-arrow">'+arrow2+'</button>',
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				arrows: false,
+				dots: true
+			}
+		}
+		]
 	});
 
 	//E-mail Ajax Send
