@@ -9240,6 +9240,7 @@ h1, h2, h3, h4, h5, h6, .big-title {
 }
 
 .top-menu {
+  min-height: 50px;
   background-color: #fff;
   position: -webkit-sticky;
   position: sticky;
@@ -10071,6 +10072,10 @@ form small a:hover {
   padding: 50px 0 0;
 }
 
+.maps small {
+  display: block;
+}
+
 .maps .dealer {
   background-color: #F6F7F8;
   display: -webkit-box;
@@ -10510,7 +10515,6 @@ p.oferta {
     display: block;
   }
   .top-menu {
-    min-height: 50px;
     padding-top: 50px;
   }
   .top-menu .container {

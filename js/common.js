@@ -1,5 +1,12 @@
 jQuery(function($) {
 
+	$('a[href*=#].scroll').bind("click", function(e){
+		var anchor = $(this);
+		$('html, body').stop().animate({
+			scrollTop: $(anchor.attr('href')).offset().top}, 700);
+		e.preventDefault();
+	});
+
 	$('.mobile-btn').on('click', function() {
 		$(this).toggleClass('active');
 		$('.top-menu__list').slideToggle();
