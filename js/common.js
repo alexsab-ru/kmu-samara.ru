@@ -1,5 +1,10 @@
 jQuery(function($) {
 
+	$("section h2").each(function(){
+		var th = $(this);
+		th.html(th.html().replace(/^\s*([^\s]+)(\s|$)/, '<span>$1</span> '));
+	});
+
 	$('a[href*=#].scroll').bind("click", function(e){
 		var anchor = $(this);
 		$('html, body').stop().animate({
@@ -83,9 +88,9 @@ jQuery(function($) {
 		return false;
 	});
 
-	$("section h2, h2+.descr, .offer-form, .benefit, .replacement-form").animated("fadeInUp", "fadeInUp");
+	$("section h2, h2+.descr, .offer-form, .benefit, .replacement-form, section h2 span").animated("fadeInUp", "fadeInUp");
 	$("h1, .subtitle, .maps .dealer:nth-child(odd) .dealer-info").animated("fadeInLeft", "fadeInLeft");
-	$(".banner-form, .maps .dealer:nth-child(even) .dealer-info").animated("fadeInRight", "fadeInRight");
+	$(".banner-form, .maps .dealer:nth-child(even) .dealer-info, .advantages__item").animated("fadeInRight", "fadeInRight");
 
 	$('.top').click(function() {
 		$('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');

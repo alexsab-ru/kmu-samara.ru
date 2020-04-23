@@ -1,0 +1,30 @@
+.advantages
+	&__item
+		width: 25%
+		text-align: center
+		animation-duration: .7s
+		&:nth-child(2)
+			animation-delay: .3s
+		&:nth-child(3)
+			animation-delay: .6s
+		&:nth-child(4)
+			animation-delay: .9s
+		+media-breakpoint-down(sm)
+			width: 50%
+			margin-bottom: 30px
+		&--icon
+			img
+				width: 80px
+				height: 100%
+				margin: 0 auto 20px
+				+media-breakpoint-down(md)
+					width: 70px
+					margin-bottom: 18px
+		h3
+			font-size: 22px
+			line-height: 1.2
+			text-align: center
+			+media-breakpoint-down(md)
+				font-size: 18px
+			+media-breakpoint-down(xs)
+				font-size: 16px
