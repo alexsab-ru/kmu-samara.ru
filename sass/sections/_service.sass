@@ -1,7 +1,7 @@
 .service
 	&__item
-		width: 23vmax
-		height: 23vmax
+		width: 22vmax
+		height: 22vmax
 		background-size: 10%
 		background-position: center
 		background-repeat: no-repeat
@@ -10,6 +10,28 @@
 		color: $white
 		margin: 1vmax
 		text-align: center
+		animation-duration: .5s
+		z-index: 1
+		+media-breakpoint-down(md)
+			width: 40vmax
+			height: 40vmax
+		+media-breakpoint-down(sm)
+			max-width: 400px
+			width: 100%
+			height: 400px
+		+media-breakpoint-down(xs)
+			max-width: 300px
+			max-height: 300px
+		&:after
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			position: absolute
+			left: 0
+			top: 0
+			background-color: rgba($text, .3)
+			z-index: 1
 		&:before
 			content: ''
 			display: block
@@ -20,33 +42,59 @@
 			left: 0
 			background-size: cover
 			background-position: center
+			z-index: 1
 		&:hover, &.active
 			.service__item--over
 				top: 0
 				padding-top: 5.3vmax
+				+media-breakpoint-down(md)
+					padding-top: 8vmax
+				+media-breakpoint-down(sm)
+					padding-top: 150px
+				+media-breakpoint-down(xs)
+					padding-top: 100px
 		&--over
 			background-color: rgba($accent, .9)
 			position: absolute
 			width: 100%
 			height: 100%
 			left: 0
-			top: 83%
+			top: 18vmax
 			padding: 20px 10px
 			transition: all .6s ease-in-out
+			z-index: 3
+			@media  (max-width: 1084px)
+				top: 79%
+			+media-breakpoint-down(md)
+				top: 34.5vmax
+			+media-breakpoint-down(sm)
+				top: 350px
+			+media-breakpoint-down(xs)
+				top: 83%
 			h3
 				font-size: 1.1vmax
 				text-align: center
 				line-height: 1
 				margin-bottom: 20px
+				+media-breakpoint-down(md)
+					font-size: 14px
+				+media-breakpoint-down(sm)
+					font-size: 16px
+				+media-breakpoint-down(xs)
+					font-size: 14px
 			.excerpt
-				font-size: 1vmax
+				font-size: 1.1vmax
 				margin-bottom: 30px
 				display: block
+				+media-breakpoint-down(md)
+					font-size: 14px
 		.btn
 			font-family: $default-font
 			text-transform: uppercase
 			background-color: $white
 			color: $accent
+			font-size: 12px
+			padding: 10px 20px
 			&:hover
 				box-shadow: none
 

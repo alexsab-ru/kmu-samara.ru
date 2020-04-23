@@ -89,8 +89,8 @@ jQuery(function($) {
 	});
 
 	$("section h2, h2+.descr, .offer-form, .benefit, .replacement-form, section h2 span").animated("fadeInUp", "fadeInUp");
-	$("h1, .subtitle, .maps .dealer:nth-child(odd) .dealer-info").animated("fadeInLeft", "fadeInLeft");
-	$(".banner-form, .maps .dealer:nth-child(even) .dealer-info, .advantages__item").animated("fadeInRight", "fadeInRight");
+	$("h1, .subtitle, .maps .dealer:nth-child(odd) .dealer-info, .service__item:nth-child(odd)").animated("fadeInLeft", "fadeInLeft");
+	$(".banner-form, .maps .dealer:nth-child(even) .dealer-info, .advantages__item, .service__item:nth-child(even)").animated("fadeInRight", "fadeInRight");
 
 	$('.top').click(function() {
 		$('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');

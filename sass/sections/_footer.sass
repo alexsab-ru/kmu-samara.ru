@@ -67,8 +67,12 @@
 	display: none
 
 .info-modal
-	top: 20
+	top: 50%
+	transform: translate(-50%, -50%)
 	max-width: 100%
+	+media-breakpoint-down(md)
+		top: 20px
+		transform: translate(-50%, 0)
 	+media-breakpoint-down(xs)
 		padding: 50px 20px 30px
 	.df
@@ -77,6 +81,7 @@
 	img
 		width: 50%
 		height: 100%
+		border: 3px solid $accent
 		+media-breakpoint-down(md)
 			max-width: 600px
 			width: 100%
