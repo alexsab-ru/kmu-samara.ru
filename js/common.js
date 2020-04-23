@@ -1,12 +1,5 @@
 jQuery(function($) {
 
-	// $('.service__item').each(function(){
-	// 	var th = $(this);
-	// 	th.hover(function(){
-	// 		th.toggleClass('active');
-	// 	});
-	// });
-
 	$("section h2").each(function(){
 		var th = $(this);
 		th.html(th.html().replace(/^\s*([^\s]+)(\s|$)/, '<span>$1</span> '));
@@ -126,47 +119,40 @@ jQuery(function($) {
 				'margin-right': '17px',
 				'overflow': 'hidden'
 			});
+
 			if ( atr === '#popup' ) {
 				$('.privacy').show();
 			}else{
-				$('.info-modal').show();
-				$(this).closest('.service__item').addClass('active');
+				var parent = $(this).closest('.service__item'),
+					title = parent.find('h3').text(),
+					price = parent.find('.price').text(),
+					descr = parent.find('.descr').text(),
+					image = parent.data('srcbefore'),
+					modal = $('.info-modal');
+
+				modal.find('img').attr({'src': image, 'alt': title.replace(/"/g, '')});
+				modal.find('h2').text(title);
+				modal.find('.price').text(price);
+				modal.find('p').text(descr);
+				modal.find('.modal-link').attr('data-title', title);
+
+				modal.show();
+
 			}
+
 			return false;
 		});
 
 	});
-	$('.overlay, .privacy-close').on('click', function(){
+	$('.overlay, .privacy-close, .info-modal .modal-link').on('click', function(){
 		$('.overlay').hide();
 		$('.privacy-wrap').hide();
 		$('.privacy').hide();
 		$('.info-modal').hide();
-		$('.service__item').removeClass('active');
 		$('html').removeAttr('style');
 	});
 
 	$('.lazyload').lazyload();
-
-	//при клике на заголовок ТО
-	/* */
-	$('.services-item__title').on('click', function(){
-		var th = $(this);
-		var id = th.attr('id');
-		var parent = th.parent();
-		// th.closest('.services-item').find('.services-item__car').removeClass('active');
-		th.closest('.services-item').find('.serv-table').slideUp(100);
-
-		if (parent.hasClass('active')) {
-			parent.removeClass('active');
-			th.closest('.services-item').find('.serv-table').removeClass('active');
-			th.next().slideUp(100);
-		}else{
-			th.closest('.services-item').find('.services-item').removeClass('active');
-			// th.closest('.services-item').find('.services-item__car--list').slideUp(100);
-			parent.addClass('active');
-			th.next().slideDown(300);
-		}
-	});
 
 	$('a[href="#cheaper"]').on('click', function(){
 		var servName = $(this).data('title');
@@ -185,5 +171,12 @@ jQuery(function($) {
 			$('#callbackForm').find('h2').text($(this).text());
 
 	});
+
+	$('a[href="#orderForm"]').on('click', function(){
+		var title = $(this).data('title');
+		$('#orderForm').find('h2').text(title);
+		$('#orderForm').find('input[name="form_subject"]').val('Заказ услуги. ' + title.replace(/"/g,''));
+	});
+
 
 });

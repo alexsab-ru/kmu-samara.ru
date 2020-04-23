@@ -66,6 +66,54 @@
 	transform: translate(-50%, 0)
 	display: none
 
+.info-modal
+	top: 20
+	max-width: 100%
+	+media-breakpoint-down(xs)
+		padding: 50px 20px 30px
+	.df
+		+media-breakpoint-down(md)
+			flex-direction: column
+	img
+		width: 50%
+		height: 100%
+		+media-breakpoint-down(md)
+			max-width: 600px
+			width: 100%
+			margin: 0 auto 30px
+	&-text
+		flex: 1
+		padding-left: 40px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		width: 50%
+		+media-breakpoint-down(md)
+			width: 100%
+			padding-left: 0
+		h2
+			margin-top: 0
+			+media-breakpoint-down(xs)
+				font-size: 18px
+		.price
+			font-size: 30px
+			font-family: $title-font
+			color: $accent
+			+media-breakpoint-down(xs)
+				font-size: 20px
+				margin-bottom: 25px
+		p
+			font-size: 17px
+			line-height: 1.6
+			margin-bottom: 30px
+			+media-breakpoint-down(xs)
+				font-size: 16px
+		.btn
+			width: 200px
+			text-align: center
+			+media-breakpoint-down(xs)
+				width: 100%
+
 .overlay
 	display: none
 	position: fixed

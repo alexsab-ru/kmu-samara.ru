@@ -10875,6 +10875,11 @@ form small a:hover {
           box-shadow: none;
 }
 
+#orderForm h2 {
+  font-size: 22px;
+  line-height: 1.2;
+}
+
 .offer h2 {
   margin-bottom: 0;
 }
@@ -11233,6 +11238,115 @@ form small a:hover {
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   display: none;
+}
+
+.info-modal {
+  top: 20;
+  max-width: 100%;
+}
+
+@media (max-width: 575.98px) {
+  .info-modal {
+    padding: 50px 20px 30px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .info-modal .df {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.info-modal img {
+  width: 50%;
+  height: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .info-modal img {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+}
+
+.info-modal-text {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+
+@media (max-width: 991.98px) {
+  .info-modal-text {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+.info-modal-text h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 575.98px) {
+  .info-modal-text h2 {
+    font-size: 18px;
+  }
+}
+
+.info-modal-text .price {
+  font-size: 30px;
+  font-family: "Cunia", sans-serif;
+  color: #31618C;
+}
+
+@media (max-width: 575.98px) {
+  .info-modal-text .price {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+}
+
+.info-modal-text p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 575.98px) {
+  .info-modal-text p {
+    font-size: 16px;
+  }
+}
+
+.info-modal-text .btn {
+  width: 200px;
+  text-align: center;
+}
+
+@media (max-width: 575.98px) {
+  .info-modal-text .btn {
+    width: 100%;
+  }
 }
 
 .overlay {
