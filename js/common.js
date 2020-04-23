@@ -137,13 +137,19 @@ jQuery(function($) {
 
 				modal.show();
 
+				modal.find('.modal-link').click(function(){
+					$('.overlay').hide();
+					$('.privacy-wrap').hide();
+					$('.info-modal').hide();
+				});
+
 			}
 
 			return false;
 		});
 
 	});
-	$('.overlay, .privacy-close, .info-modal .modal-link').on('click', function(){
+	$('.overlay, .privacy-close').on('click', function(){
 		$('.overlay').hide();
 		$('.privacy-wrap').hide();
 		$('.privacy').hide();
