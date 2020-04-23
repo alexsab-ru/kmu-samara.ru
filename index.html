@@ -143,7 +143,7 @@
 					<input type="tel" name="Телефон" placeholder="8 (999) 999-99-99*" required>
 					<input type="email" name="Email" placeholder="mail@example.com">
 					<button class="btn">Хочу узнать</button>
-					<small>Нажимая на кнопку действия, я даю согласие на <a href="#popup">обработку персональных данных</a></small>
+					<small>Нажимая на кнопку действия, я даю согласие на <a href="#popup" class="popup">обработку персональных данных</a></small>
 				</form>
 			</div>
 			<!-- /.banner-form -->
@@ -188,6 +188,27 @@
 		</section>
 		<!-- /#advantages.advantages -->
 
+		<section class="sesrvice" id="service">
+			<div class="service__list df jcc">
+				
+				<div class="service__item lazyload" style="background-image: url(img/loading-1.gif);" data-srcbefore="img/avto/Gazel.jpg">
+					<div class="service__item--over">
+						<div class="service__item--info">
+							<h3>ГАЗель с креплением "Катюша"</h3>
+							<span class="excerpt">кузов 4,2 м;<br>грузоподъёмность 1,5 т</span>
+							<a href="#info-popup" class="btn info-popup popup">Подробнее</a>
+						</div>
+					</div>
+					<div class="price hidden">500 ₽</div>
+					<div class="descr hidden">Бортовая Газель, грузоподъемностью 1,5 тонн с так называемым креплением "Катюша" позволяет перевозить грузы длинной до 6 метров. Надежная конструкция не позволит грузу скатиться и упасть даже на плохой дороге. А правильное расположение подставки делает минимальным угол наклона длинного груза, тем самым не нарушая правила перевозки негабаритных предметов. Газель "Катюша" сдается в аренду минимум на 2 часа, 500-600 р\ч. Для междугородних перевозок - 18-20 р\км</div>
+				</div>
+				<!-- /.service__item -->
+
+			</div>
+			<!-- /.service__list -->
+		</section>
+		<!-- /#service.sesrvice -->
+
 		<section id="offer" class="offer">
 			<div class="container">
 				<div class="offer-head">
@@ -209,7 +230,7 @@
 						<textarea name="Комментарий" placeholder="Комментарии"></textarea>
 						<button class="btn bounce">Отправить</button>
 						<small>Вам перезвонит менеджер и уточнит детали и удобное для Вас время, чтобы подготовить документы</small>
-						<small>Нажимая на кнопку "Подписаться", я даю согласие на <a href="#popup">обработку персональных данных</a></small>
+						<small>Нажимая на кнопку "Подписаться", я даю согласие на <a href="#popup" class="popup">обработку персональных данных</a></small>
 					</form>
 				</div>
 				<!-- /.offer-form -->
@@ -264,8 +285,14 @@
 	</div>
 
 	<!-- MODALS -->
+
 	<div class="privacy-wrap">
 	<div class="overlay"></div>
+
+	<div class="info-modal" id="info-popup">
+		<button class="privacy-close">×</button>
+	</div>
+
 	<!-- Политика -->
 	<div class="privacy" id="popup">
 		<button class="privacy-close">×</button>
@@ -289,7 +316,7 @@
 			<input type="tel" placeholder="8 (999) 999-99-99*" name="Телефон" required>
 			<input type="email" name="Email" placeholder="mail@example.com">
 			<button class="btn">Перезвоните</button>
-			<small>Нажимая на кнопку "Перезвоните", я даю согласие на <a href="#popup">обработку персональных данных</a></small>
+			<small>Нажимая на кнопку "Перезвоните", я даю согласие на <a href="#popup" class="popup">обработку персональных данных</a></small>
 		</form>
 	</div>
 
@@ -309,7 +336,7 @@
 			<input type="tel" placeholder="8 (999) 999-99-99*" name="Телефон" required>
 			<input type="email" name="Email" placeholder="mail@example.com">
 			<button class="btn">Узнать цену</button>
-			<small>Нажимая на кнопку "Узнать цену", я даю согласие на <a href="#popup">обработку персональных данных</a></small>
+			<small>Нажимая на кнопку "Узнать цену", я даю согласие на <a href="#popup" class="popup">обработку персональных данных</a></small>
 		</form>
 	</div>
 

@@ -1,5 +1,12 @@
 jQuery(function($) {
 
+	// $('.service__item').each(function(){
+	// 	var th = $(this);
+	// 	th.hover(function(){
+	// 		th.toggleClass('active');
+	// 	});
+	// });
+
 	$("section h2").each(function(){
 		var th = $(this);
 		th.html(th.html().replace(/^\s*([^\s]+)(\s|$)/, '<span>$1</span> '));
@@ -109,18 +116,32 @@ jQuery(function($) {
 		preloader: false,
 	});
 
-	$('a[href="#popup"]').on('click', function(){
-		$('.overlay').show();
-		$('.privacy-wrap').show();
-		$('html').css({
-			'margin-right': '17px',
-			'overflow': 'hidden'
+	$('a.popup').each(function(){
+
+		$(this).click(function(){
+			var atr = $(this).attr('href');
+			$('.overlay').show();
+			$('.privacy-wrap').show();
+			$('html').css({
+				'margin-right': '17px',
+				'overflow': 'hidden'
+			});
+			if ( atr === '#popup' ) {
+				$('.privacy').show();
+			}else{
+				$('.info-modal').show();
+				$(this).closest('.service__item').addClass('active');
+			}
+			return false;
 		});
-		return false;
+
 	});
 	$('.overlay, .privacy-close').on('click', function(){
 		$('.overlay').hide();
 		$('.privacy-wrap').hide();
+		$('.privacy').hide();
+		$('.info-modal').hide();
+		$('.service__item').removeClass('active');
 		$('html').removeAttr('style');
 	});
 
