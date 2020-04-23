@@ -12,11 +12,15 @@
 		+media-breakpoint-down(sm)
 			width: 50%
 			margin-bottom: 30px
+		&:hover 
+			img
+				transform: rotate3d(0, 1, 0, 360deg)
 		&--icon
 			img
 				width: 80px
 				height: 100%
 				margin: 0 auto 20px
+				transition: all .8s linear
 				+media-breakpoint-down(md)
 					width: 70px
 					margin-bottom: 18px

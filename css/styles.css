@@ -9944,7 +9944,7 @@ section {
 section h2 {
   font-size: 42px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 @media (max-width: 575.98px) {
@@ -9979,6 +9979,13 @@ section h2 span {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
+}
+
+.jcc {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .aic {
@@ -10757,10 +10764,18 @@ form small a:hover {
   }
 }
 
+.advantages__item:hover img {
+  -webkit-transform: rotate3d(0, 1, 0, 360deg);
+          transform: rotate3d(0, 1, 0, 360deg);
+}
+
 .advantages__item--icon img {
   width: 80px;
   height: 100%;
   margin: 0 auto 20px;
+  -webkit-transition: all .8s linear;
+  -o-transition: all .8s linear;
+  transition: all .8s linear;
 }
 
 @media (max-width: 991.98px) {
@@ -11105,8 +11120,8 @@ form small a:hover {
   margin-bottom: 25px;
 }
 
-.offer {
-  padding: 80px 0;
+.offer h2 {
+  margin-bottom: 0;
 }
 
 .offer-head {
@@ -11115,7 +11130,7 @@ form small a:hover {
 
 .offer-head .descr {
   font-size: 24px;
-  margin: 30px 0;
+  margin: 20px 0 30px;
   display: block;
 }
 
