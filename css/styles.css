@@ -10476,7 +10476,7 @@ section h2 span {
 
 @media (max-width: 767.98px) {
   .banner-slide {
-    min-height: 400px;
+    min-height: 530px;
   }
 }
 
@@ -10809,24 +10809,25 @@ form small a:hover {
 
 .service__item {
   width: 22vmax;
-  height: 22vmax;
-  background-size: 10%;
-  background-position: center;
-  background-repeat: no-repeat;
   position: relative;
-  overflow: hidden;
-  color: #fff;
   margin: 1vmax;
-  text-align: center;
   -webkit-animation-duration: .5s;
           animation-duration: .5s;
-  z-index: 1;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+}
+
+.service__item:hover {
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 991.98px) {
   .service__item {
     width: 40vmax;
-    height: 40vmax;
   }
 }
 
@@ -10834,136 +10835,81 @@ form small a:hover {
   .service__item {
     max-width: 400px;
     width: 100%;
-    height: 400px;
   }
 }
 
 @media (max-width: 575.98px) {
   .service__item {
     max-width: 300px;
-    max-height: 300px;
   }
 }
 
-.service__item:after {
-  content: '';
+.service__item--img {
+  height: 234px;
   display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 1;
+  overflow: hidden;
 }
 
-.service__item:before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
+.service__item--img:hover img {
+  -webkit-transform: translate(-50%, -50%) scale(1.2);
+      -ms-transform: translate(-50%, -50%) scale(1.2);
+          transform: translate(-50%, -50%) scale(1.2);
 }
 
-.service__item:hover .service__item--over, .service__item.active .service__item--over {
-  top: 0;
-  padding-top: 5.3vmax;
+.service__item--img img {
+  position: relative;
+  top: 117px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+      -ms-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
-@media (max-width: 991.98px) {
-  .service__item:hover .service__item--over, .service__item.active .service__item--over {
-    padding-top: 8vmax;
-  }
+.service__item--info {
+  padding: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 175px;
 }
 
-@media (max-width: 767.98px) {
-  .service__item:hover .service__item--over, .service__item.active .service__item--over {
-    padding-top: 150px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .service__item:hover .service__item--over, .service__item.active .service__item--over {
-    padding-top: 100px;
-  }
-}
-
-.service__item--over {
-  background-color: rgba(49, 97, 140, 0.9);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 18vmax;
-  padding: 20px 10px;
-  -webkit-transition: all .6s ease-in-out;
-  -o-transition: all .6s ease-in-out;
-  transition: all .6s ease-in-out;
-  z-index: 3;
-}
-
-@media (max-width: 1084px) {
-  .service__item--over {
-    top: 79%;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .service__item--over {
-    top: 34.5vmax;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .service__item--over {
-    top: 350px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .service__item--over {
-    top: 83%;
-  }
-}
-
-.service__item--over h3 {
+.service__item--info h3 {
   font-size: 1.1vmax;
   text-align: center;
   line-height: 1;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 991.98px) {
-  .service__item--over h3 {
+  .service__item--info h3 {
     font-size: 14px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .service__item--over h3 {
+  .service__item--info h3 {
     font-size: 16px;
   }
 }
 
 @media (max-width: 575.98px) {
-  .service__item--over h3 {
+  .service__item--info h3 {
     font-size: 14px;
   }
 }
 
-.service__item--over .excerpt {
+.service__item--info .excerpt {
   font-size: 1.1vmax;
-  margin-bottom: 30px;
   display: block;
 }
 
 @media (max-width: 991.98px) {
-  .service__item--over .excerpt {
+  .service__item--info .excerpt {
     font-size: 14px;
   }
 }
@@ -10971,15 +10917,11 @@ form small a:hover {
 .service__item .btn {
   font-family: "Geometria", sans-serif;
   text-transform: uppercase;
-  background-color: #fff;
-  color: #31618C;
   font-size: 12px;
   padding: 10px 20px;
-}
-
-.service__item .btn:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
+  text-align: center;
 }
 
 #orderForm h2 {

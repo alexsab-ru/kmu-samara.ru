@@ -4,7 +4,6 @@ jQuery(function($) {
 
 	$('.banner-slider').slick({
 		autoplay: true,
-		adaptiveHeight: true,
 		arrows: true,
 		dots: false,
 		prevArrow: '<button class="arrow prev-arrow">'+arrow+'</button>',
@@ -126,7 +125,7 @@ jQuery(function($) {
 					title = parent.find('h3').text(),
 					price = parent.find('.price').text(),
 					descr = parent.find('.descr').text(),
-					image = parent.data('srcbefore'),
+					image = parent.find('img').data('src'),
 					modal = $('.info-modal');
 
 				modal.find('img').attr({'src': image, 'alt': title.replace(/"/g, '')});
