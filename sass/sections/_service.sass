@@ -1,8 +1,8 @@
 .service
 	&__item
-		width: 22vmax
+		width: 22%
 		position: relative
-		margin: 1vmax
+		margin: 1%
 		animation-duration: .5s
 		transition: all .3s linear
 		box-shadow: 0 0 50px rgba($text, .4)
@@ -13,32 +13,46 @@
 		+media-breakpoint-down(sm)
 			max-width: 400px
 			width: 100%
+			margin-bottom: 15px
 		+media-breakpoint-down(xs)
 			max-width: 300px
 		&--img
-			height: 234px
+			height: 14.6vmax
 			display: block
 			overflow: hidden
+			position: relative
+			+media-breakpoint-down(md)
+				height: 26.6vmax
+			+media-breakpoint-down(sm)
+				height: 266px
+			+media-breakpoint-down(xs)
+				height: 200px
 			&:hover
 				img
 					transform: translate(-50%, -50%) scale(1.2)
 			img
-				position: relative
-				top: 117px
+				position: absolute
+				top: 50%
 				left: 50%
+				object-fit: cover
+				object-position: center
 				transform: translate(-50%, -50%) scale(1)
 				transition: all .3s linear
 		&--info
 			padding: 15px
 			flex-direction: column
-			min-height: 175px
+			min-height: 200px
+			+media-breakpoint-down(md)
+				min-height: 180px
 			h3
 				font-size: 1.1vmax
 				text-align: center
 				line-height: 1
 				margin-bottom: 0
+				min-height: 30px
 				+media-breakpoint-down(md)
 					font-size: 14px
+					min-height: 0
 				+media-breakpoint-down(sm)
 					font-size: 16px
 				+media-breakpoint-down(xs)

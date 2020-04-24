@@ -10808,9 +10808,9 @@ form small a:hover {
 }
 
 .service__item {
-  width: 22vmax;
+  width: 22%;
   position: relative;
-  margin: 1vmax;
+  margin: 1%;
   -webkit-animation-duration: .5s;
           animation-duration: .5s;
   -webkit-transition: all .3s linear;
@@ -10835,6 +10835,7 @@ form small a:hover {
   .service__item {
     max-width: 400px;
     width: 100%;
+    margin-bottom: 15px;
   }
 }
 
@@ -10845,9 +10846,28 @@ form small a:hover {
 }
 
 .service__item--img {
-  height: 234px;
+  height: 14.6vmax;
   display: block;
   overflow: hidden;
+  position: relative;
+}
+
+@media (max-width: 991.98px) {
+  .service__item--img {
+    height: 26.6vmax;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .service__item--img {
+    height: 266px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .service__item--img {
+    height: 200px;
+  }
 }
 
 .service__item--img:hover img {
@@ -10857,9 +10877,13 @@ form small a:hover {
 }
 
 .service__item--img img {
-  position: relative;
-  top: 117px;
+  position: absolute;
+  top: 50%;
   left: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   -webkit-transform: translate(-50%, -50%) scale(1);
       -ms-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -10875,7 +10899,13 @@ form small a:hover {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 175px;
+  min-height: 200px;
+}
+
+@media (max-width: 991.98px) {
+  .service__item--info {
+    min-height: 180px;
+  }
 }
 
 .service__item--info h3 {
@@ -10883,11 +10913,13 @@ form small a:hover {
   text-align: center;
   line-height: 1;
   margin-bottom: 0;
+  min-height: 30px;
 }
 
 @media (max-width: 991.98px) {
   .service__item--info h3 {
     font-size: 14px;
+    min-height: 0;
   }
 }
 
