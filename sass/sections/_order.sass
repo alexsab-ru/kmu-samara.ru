@@ -1,0 +1,83 @@
+.order
+	.container
+		max-width: 1300px
+	&__list
+		position: relative
+		.dot
+			position: absolute
+			top: 42px
+			width: 8px
+			height: 8px
+			animation-duration: .8s
+	&__item
+		width: 25%
+		text-align: center
+		animation-duration: .8s		
+		h4
+			font-size: 16px
+		p
+			font-size: 16px
+			padding: 0 15px
+			a
+				font-weight: 300
+				text-decoration: underline
+				text-decoration-color: rgba($accent, .5)
+				&:hover
+					text-decoration: none
+	&__icon
+		width: 120px
+		height: 120px
+		border-radius: 50%
+		//background-color: $accent
+		border: 4px $text solid
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 0 auto 20px
+		img
+			width: 80px
+			height: 100%
+
+.order__item
+	~ .dot
+		left: 20%
+		animation-delay: .2s
+		~ .dot
+			left: 23%
+			animation-delay: .4s
+			~.dot
+				left: 26%
+				animation-delay: .6s
+				~.dot
+					left: 29%
+					animation-delay: .8s
+					~.order__item
+						animation-delay: .9s
+						~ .dot
+							left: 45%
+							animation-delay: 1.2s
+							~ .dot
+								left: 48%
+								animation-delay: 1.4s
+								~.dot
+									left: 51%
+									animation-delay: 1.6s
+									~.dot
+										left: 54%
+										animation-delay: 1.8s
+										~.order__item
+											animation-delay: 1.9s
+											~ .dot
+												left: 70%
+												animation-delay: 2.2s
+												~ .dot
+													left: 73%
+													animation-delay: 2.4s
+													~.dot
+														left: 76%
+														animation-delay: 2.6s
+														~.dot
+															left: 79%
+															animation-delay: 2.8s
+															~.order__item
+																animation-delay: 2.9s

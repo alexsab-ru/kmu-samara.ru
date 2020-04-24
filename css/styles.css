@@ -9944,7 +9944,7 @@ section {
 section h2 {
   font-size: 42px;
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 575.98px) {
@@ -10958,6 +10958,162 @@ form small a:hover {
 #orderForm h2 {
   font-size: 22px;
   line-height: 1.2;
+}
+
+.order .container {
+  max-width: 1300px;
+}
+
+.order__list {
+  position: relative;
+}
+
+.order__list .dot {
+  position: absolute;
+  top: 42px;
+  width: 8px;
+  height: 8px;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+}
+
+.order__item {
+  width: 25%;
+  text-align: center;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+}
+
+.order__item h4 {
+  font-size: 16px;
+}
+
+.order__item p {
+  font-size: 16px;
+  padding: 0 15px;
+}
+
+.order__item p a {
+  font-weight: 300;
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(49, 97, 140, 0.5);
+          text-decoration-color: rgba(49, 97, 140, 0.5);
+}
+
+.order__item p a:hover {
+  text-decoration: none;
+}
+
+.order__icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px #000 solid;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 20px;
+}
+
+.order__icon img {
+  width: 80px;
+  height: 100%;
+}
+
+.order__item ~ .dot {
+  left: 20%;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.order__item ~ .dot ~ .dot {
+  left: 23%;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+.order__item ~ .dot ~ .dot ~ .dot {
+  left: 26%;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.order__item ~ .dot ~ .dot ~ .dot ~ .dot {
+  left: 29%;
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+}
+
+.order__item ~ .dot ~ .dot ~ .dot ~ .dot ~ .order__item {
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
+}
+
+.order__item ~ .dot ~ .dot ~ .dot ~ .dot ~ .order__item ~ .dot {
+  left: 45%;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.order__item ~ .dot ~ .dot ~ .dot ~ .dot ~ .order__item ~ .dot ~ .dot {
+  left: 48%;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.order__item ~ .dot ~ .dot ~ .dot ~ .dot ~ .order__item ~ .dot ~ .dot ~ .dot {
+  left: 51%;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.order__item ~ .dot ~ .dot ~ .dot ~ .dot ~ .order__item ~ .dot ~ .dot ~ .dot ~ .dot {
+  left: 54%;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.order__item ~ .dot ~ .dot ~ .dot ~ .dot ~ .order__item ~ .dot ~ .dot ~ .dot ~ .dot ~ .order__item {
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+}
+
+.order__item ~ .dot ~ .dot ~ .dot ~ .dot ~ .order__item ~ .dot ~ .dot ~ .dot ~ .dot ~ .order__item ~ .dot {
+  left: 70%;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.order__item ~ .dot ~ .dot ~ .dot ~ .dot ~ .order__item ~ .dot ~ .dot ~ .dot ~ .dot ~ .order__item ~ .dot ~ .dot {
+  left: 73%;
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.order__item ~ .dot ~ .dot ~ .dot ~ .dot ~ .order__item ~ .dot ~ .dot ~ .dot ~ .dot ~ .order__item ~ .dot ~ .dot ~ .dot {
+  left: 76%;
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
+
+.order__item ~ .dot ~ .dot ~ .dot ~ .dot ~ .order__item ~ .dot ~ .dot ~ .dot ~ .dot ~ .order__item ~ .dot ~ .dot ~ .dot ~ .dot {
+  left: 79%;
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+
+.order__item ~ .dot ~ .dot ~ .dot ~ .dot ~ .order__item ~ .dot ~ .dot ~ .dot ~ .dot ~ .order__item ~ .dot ~ .dot ~ .dot ~ .dot ~ .order__item {
+  -webkit-animation-delay: 2.9s;
+          animation-delay: 2.9s;
 }
 
 .offer h2 {

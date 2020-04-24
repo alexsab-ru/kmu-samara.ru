@@ -26,7 +26,11 @@ jQuery(function($) {
 
 	$("section h2").each(function(){
 		var th = $(this);
-		th.html(th.html().replace(/^\s*([^\s]+)(\s|$)/, '<span>$1</span> '));
+		var lengthWords = th.text().split(' ').length - 1;
+		if(lengthWords == 1)
+			th.html(th.html().replace(/^\s*([^\s]+)(\s|$)/, '<span>$1</span> '));
+		else
+			th.html(th.html().replace(/\s([\S]+)$/, ' <span>$1</span>'));
 	});
 
 	$('a[href*=#].scroll').bind("click", function(e){
@@ -88,7 +92,7 @@ jQuery(function($) {
 
 	$("section h2, h2+.descr, .offer-form, .benefit, .replacement-form, section h2 span").animated("fadeInUp", "fadeInUp");
 	$("h1, .subtitle, .maps .dealer:nth-child(odd) .dealer-info, .service__item:nth-child(odd)").animated("fadeInLeft", "fadeInLeft");
-	$(".banner-form, .maps .dealer:nth-child(even) .dealer-info, .advantages__item, .service__item:nth-child(even)").animated("fadeInRight", "fadeInRight");
+	$(".banner-form, .maps .dealer:nth-child(even) .dealer-info, .advantages__item, .service__item:nth-child(even), .order__item, .order__list .dot").animated("fadeInRight", "fadeInRight");
 
 	$('.top').click(function() {
 		$('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
