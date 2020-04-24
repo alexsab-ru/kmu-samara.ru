@@ -10968,6 +10968,15 @@ form small a:hover {
   position: relative;
 }
 
+@media (max-width: 991.98px) {
+  .order__list {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .order__list .dot {
   position: absolute;
   top: 42px;
@@ -10977,6 +10986,18 @@ form small a:hover {
           animation-duration: .8s;
 }
 
+@media (max-width: 1083.98px) {
+  .order__list .dot {
+    top: 36px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .order__list .dot {
+    display: none;
+  }
+}
+
 .order__item {
   width: 25%;
   text-align: center;
@@ -10984,13 +11005,79 @@ form small a:hover {
           animation-duration: .8s;
 }
 
+@media (max-width: 991.98px) {
+  .order__item {
+    width: 40%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .order__item {
+    width: 80%;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  .order__item:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 30px;
+    border-right: 2px dashed #404040;
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+    bottom: -20px;
+    z-index: -2;
+  }
+}
+
+.order__item:last-child {
+  margin-bottom: 0;
+}
+
+.order__item:last-child:before {
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+  .order__item {
+    width: 100%;
+  }
+}
+
 .order__item h4 {
   font-size: 16px;
+}
+
+@media (max-width: 1083.98px) {
+  .order__item h4 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .order__item h4 {
+    font-size: 16px;
+  }
 }
 
 .order__item p {
   font-size: 16px;
   padding: 0 15px;
+}
+
+@media (max-width: 1083.98px) {
+  .order__item p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .order__item p {
+    font-size: 16px;
+  }
 }
 
 .order__item p a {
@@ -11022,11 +11109,32 @@ form small a:hover {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto 20px;
+  position: relative;
+  z-index: 6;
+}
+
+@media (max-width: 1083.98px) {
+  .order__icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .order__icon {
+    margin-bottom: 10px;
+  }
 }
 
 .order__icon img {
   width: 80px;
   height: 100%;
+}
+
+@media (max-width: 1083.98px) {
+  .order__icon img {
+    width: 60px;
+  }
 }
 
 .order__item ~ .dot {
