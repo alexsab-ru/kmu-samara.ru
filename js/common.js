@@ -24,14 +24,14 @@ jQuery(function($) {
 		$('.top-menu__list').slideToggle();
 	});
 
-	$("section h2").each(function(){
-		var th = $(this);
-		var lengthWords = th.text().split(' ').length - 1;
-		if(lengthWords == 1)
-			th.html(th.html().replace(/^\s*([^\s]+)(\s|$)/, '<span>$1</span> '));
-		else
-			th.html(th.html().replace(/\s([\S]+)$/, ' <span>$1</span>'));
-	});
+	// $("section h2").each(function(){
+	// 	var th = $(this);
+	// 	var lengthWords = th.text().split(' ').length - 1;
+	// 	if(lengthWords == 1)
+	// 		th.html(th.html().replace(/^\s*([^\s]+)(\s|$)/, '<span>$1</span> '));
+	// 	else
+	// 		th.html(th.html().replace(/\s([\S]+)$/, ' <span>$1</span>'));
+	// });
 
 	$('a[href*=#].scroll').bind("click", function(e){
 		var anchor = $(this);
