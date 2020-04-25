@@ -9965,6 +9965,15 @@ section h2 span {
   display: none;
 }
 
+/* Спрятать контент */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .df {
   display: -webkit-box;
   display: -webkit-flex;
