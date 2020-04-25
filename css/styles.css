@@ -11027,6 +11027,8 @@ form small a:hover {
     margin-bottom: 30px;
     position: relative;
     z-index: 1;
+    -webkit-animation-delay: 0s !important;
+            animation-delay: 0s !important;
   }
   .order__item:before {
     content: '';
