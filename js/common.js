@@ -73,7 +73,7 @@ jQuery(function($) {
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "/kia/inc/mail.php", //Change
+			url: "/mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
 			setTimeout(function() {
