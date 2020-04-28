@@ -10502,7 +10502,7 @@ section h2 span {
 }
 
 .banner-form {
-  background-color: #fff;
+  background-color: #ffffffcc;
   color: #000;
   max-width: 400px;
   width: 100%;
@@ -10512,6 +10512,12 @@ section h2 span {
   top: 50px;
   z-index: 1;
   opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .banner-form input {
+    background-color: #ffffff99;
+  }
 }
 
 @media (max-width: 1084px) {
