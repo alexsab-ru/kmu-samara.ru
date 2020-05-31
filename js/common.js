@@ -71,21 +71,46 @@ jQuery(function($) {
 	//E-mail Ajax Send
 	$("form").submit(function() { //Change
 		var th = $(this);
+		var btnSubmit = th.find('button[type="submit"]');
+		btnSubmit.attr("disabled", true);
+		var url = window.location.href;
+		var replUrl = url.replace('?', '&');
 		$.ajax({
 			type: "POST",
 			url: "/mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
+			data: th.serialize() +'&referer=' + replUrl
+		}).done(function( data ) {
+			var res = JSON.parse(data);
+			// console.log( ["success data:", data, res, res.error] );
+			if(res.error) 
+				$('.error-message').html(res.error);
+			else
+				$('.error-message').html("");
 			setTimeout(function() {
 				$.magnificPopup.close();
 				$.magnificPopup.open({
 					items: {
-						src: '.thanks',
+						src: (res.answer == 'OK') ? '.thanks' : '.error',
 						type: 'inline'
 					}
 				});
-				th.trigger("reset");
-			}, 1000);
+				if(res.answer == 'OK') {
+					th.trigger("reset");
+				}
+				btnSubmit.removeAttr("disabled");
+			}, 100);
+		}).fail(function( jqXHR, textStatus ) {
+			$('.error-message').html("Request failed: " + textStatus);
+			setTimeout(function() {
+				$.magnificPopup.close();
+				$.magnificPopup.open({
+					items: {
+						src: '.error',
+						type: 'inline'
+					}
+				});
+				btnSubmit.removeAttr("disabled");
+			}, 100);
 		});
 		return false;
 	});
@@ -183,7 +208,7 @@ jQuery(function($) {
 	$('a[href="#orderForm"]').on('click', function(){
 		var title = $(this).data('title');
 		$('#orderForm').find('h2').text(title);
-		$('#orderForm').find('input[name="form_subject"]').val('Заказ услуги. ' + title.replace(/"/g,''));
+		$('#orderForm').find('.service').val(title.replace(/"/g,''));
 	});
 
 
