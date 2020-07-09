@@ -27,6 +27,11 @@ body
 			border-color: red
 		&:required:valid
 			border-color: green
+
+main
+	+media-breakpoint-down(xs)
+		padding-top: 40px
+
 a
 	color: $accent
 	font-weight: bold
@@ -114,6 +119,8 @@ section
 @import sections/header
 @import sections/top-menu
 @import sections/banner
+@import sections/about
+@import sections/areas
 @import sections/advantages
 @import sections/service
 @import sections/order

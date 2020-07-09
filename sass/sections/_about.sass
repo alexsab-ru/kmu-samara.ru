@@ -1,0 +1,15 @@
+.about
+	background-repeat: no-repeat
+	background-position: right bottom
+	background-size: 45%
+	@media (max-width: 1600px)
+		background-position: right center
+	+media-breakpoint-down(md)
+		background-position: center bottom
+		background-size: 80%
+		padding-bottom: 50vw
+	&__item
+		&--text
+			width: 55%
+			+media-breakpoint-down(md)
+				width: 100%
