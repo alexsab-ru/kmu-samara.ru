@@ -11168,7 +11168,43 @@ form small a:hover {
 
 .model__slider {
   width: 60%;
-  background-color: #ccc;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.model__slider--wrap {
+  max-height: 510px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.model__slider--nav span {
+  outline: none !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid transparent;
+}
+
+.model__slider--nav span img {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.model__slider--nav span.slick-current {
+  border: 2px solid #31618C;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .areas {

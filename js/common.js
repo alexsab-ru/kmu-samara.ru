@@ -19,6 +19,22 @@ jQuery(function($) {
 		]
 	});
 
+	$('.model__slider--wrap').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		// fade: true,
+		asNavFor: '.model__slider--nav'
+	});
+	$('.model__slider--nav').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.model__slider--wrap',
+		// dots: true,
+		centerMode: true,
+		focusOnSelect: true
+	});
+
 	$('.mobile-btn').on('click', function() {
 		$(this).toggleClass('active');
 		$('.top-menu__list').slideToggle();
