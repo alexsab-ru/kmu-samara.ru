@@ -11103,6 +11103,74 @@ form small a:hover {
   }
 }
 
+.model {
+  padding-bottom: 80px;
+}
+
+.model__block {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.model__info {
+  width: 35%;
+}
+
+.model__info h3 {
+  font-size: 40px;
+  color: #31618C;
+  font-weight: bold;
+  font-family: "Geometria", sans-serif;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-bottom: 37px;
+}
+
+.model__info p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.model__info .parameters {
+  width: 100%;
+}
+
+.model__info .parameters .parameter {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.model__info .parameters .parameter__icon {
+  width: 170px;
+}
+
+.model__info .parameters .parameter__icon img {
+  max-width: 60px;
+}
+
+.model__info .parameters .parameter__icon span {
+  font-size: 16px;
+}
+
+.model__info .btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Geometria", sans-serif;
+  margin-top: 50px;
+}
+
+.model__slider {
+  width: 60%;
+  background-color: #ccc;
+}
+
 .areas {
   margin: 80px 0 40px;
 }
