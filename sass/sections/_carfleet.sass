@@ -2,9 +2,10 @@
 	&__block
 	&__item
 		justify-content: space-between
-		margin-bottom: 30px
+		margin-bottom: 60px
 		+media-breakpoint-down(sm)
 			flex-direction: column
+			margin-bottom: 40px
 		&--price, &--link
 			width: 50%
 			text-align: center
@@ -27,6 +28,17 @@
 				flex-direction: column
 		&--img
 			width: 40%
+			position: relative
+			min-height: 300px
+			overflow: hidden
+			+media-breakpoint-down(xs)
+				min-height: 0
+				height: 65vw
+			img
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
 			@media (max-width: 1440px)
 				width: 35%
 			+media-breakpoint-down(sm)
@@ -58,10 +70,11 @@
 				+media-breakpoint-down(xs)
 					font-size: 18px
 			p
-				font-size: 14px
+				font-size: 15px
 				font-weight: 300
 				width: 50%
 				@media (max-width: 1440px)
+					font-size: 14px
 					width: 55%
 				@media (max-width: 1200px)
 					width: 60%

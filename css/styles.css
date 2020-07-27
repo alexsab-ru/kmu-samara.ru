@@ -10787,7 +10787,7 @@ form small a:hover {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 @media (max-width: 767.98px) {
@@ -10797,6 +10797,7 @@ form small a:hover {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 40px;
   }
 }
 
@@ -10850,6 +10851,25 @@ form small a:hover {
 
 .carfleet__item--img {
   width: 40%;
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+@media (max-width: 575.98px) {
+  .carfleet__item--img {
+    min-height: 0;
+    height: 65vw;
+  }
+}
+
+.carfleet__item--img img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @media (max-width: 1440px) {
@@ -10926,13 +10946,14 @@ form small a:hover {
 }
 
 .carfleet__item--info p {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 300;
   width: 50%;
 }
 
 @media (max-width: 1440px) {
   .carfleet__item--info p {
+    font-size: 14px;
     width: 55%;
   }
 }
