@@ -11059,19 +11059,8 @@ form small a:hover {
 }
 
 .parameter__icon img {
-  margin: 0 auto 10px;
-}
-
-@media (max-width: 1200px) {
-  .parameter__icon img {
-    max-width: 50px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .parameter__icon img {
-    margin: 0 0 8px;
-  }
+  max-width: 50px;
+  margin: 0 auto 8px;
 }
 
 .parameter__icon span {
@@ -11101,7 +11090,7 @@ form small a:hover {
   line-height: 1;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   .parameter__text {
     font-size: 50px;
   }
