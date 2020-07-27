@@ -10810,9 +10810,10 @@ form small a:hover {
   font-family: "Geometria", sans-serif;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   .carfleet__item--price, .carfleet__item--link {
     font-size: 20px;
+    padding: 10px;
   }
 }
 
@@ -10928,7 +10929,7 @@ form small a:hover {
 
 @media (max-width: 1440px) {
   .carfleet__item--info h3 {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 
@@ -10953,7 +10954,7 @@ form small a:hover {
 
 @media (max-width: 1440px) {
   .carfleet__item--info p {
-    font-size: 14px;
+    font-size: 13px;
     width: 55%;
   }
 }
