@@ -11104,7 +11104,13 @@ form small a:hover {
 }
 
 .model-nav {
-  margin: 80px 0 30px;
+  margin: 100px 0 30px;
+}
+
+@media (max-width: 1440px) {
+  .model-nav {
+    margin: 80px 0 30px;
+  }
 }
 
 @media (max-width: 575.98px) {
