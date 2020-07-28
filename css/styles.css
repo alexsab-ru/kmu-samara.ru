@@ -9894,6 +9894,10 @@ body input:required:valid, body textarea:required:valid {
   border-color: green;
 }
 
+main {
+  position: relative;
+}
+
 @media (max-width: 575.98px) {
   main {
     padding-top: 40px;
@@ -11581,6 +11585,30 @@ form small a:hover {
 .dealer-map.lazyload {
   background-size: auto;
   background-color: #ffffff;
+}
+
+a.btn.ya-btn {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 5%;
+  z-index: 100;
+}
+
+@media (max-width: 575.98px) {
+  a.btn.ya-btn {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    display: block;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .areas {
