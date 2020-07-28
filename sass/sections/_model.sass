@@ -1,5 +1,49 @@
 .model
-	padding-bottom: 80px
+	&-nav
+		margin: 80px 0 30px
+		+media-breakpoint-down(xs)
+			margin-top: 50px
+		ul
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-wrap: wrap
+			padding: 0
+			li
+				list-style-type: none
+				position: relative
+				z-index: 1
+				margin: 0 5px 50px
+				@media (max-width: 1440px)
+					max-width: 125px
+					width: 100%
+				&:after
+					content: ''
+					display: block
+					width: 170px
+					height: 170px
+					border-radius: 50%
+					background-color: rgba($accent, .3)
+					position: absolute
+					left: 50%
+					top: 50%
+					transform: translate(-50%, -50%)
+					z-index: -1
+					opacity: 0
+					transition: all .2s ease
+					@media (max-width: 1440px)
+						width: 105px
+						height: 105px
+				&:hover, &.active
+					img
+						filter: none
+					&:after
+						opacity: 1
+				a
+					display: block
+				img
+					filter: grayscale(100%)
+					transition: all .2s ease
 	&__block
 		justify-content: space-between
 		@media (max-width: 1440px)
