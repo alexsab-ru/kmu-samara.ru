@@ -2,8 +2,18 @@
 	padding-bottom: 80px
 	&__block
 		justify-content: space-between
+		@media (max-width: 1440px)
+			flex-direction: row-reverse
+		+media-breakpoint-down(sm)
+			flex-direction: column-reverse
+			align-items: center
 	&__info
 		width: 35%
+		@media (max-width: 1440px)
+			width: 45%
+		+media-breakpoint-down(sm)
+			width: 100%
+			margin-top: 30px
 		h3
 			font-size: 40px
 			color: $accent
@@ -12,19 +22,44 @@
 			line-height: 50px
 			text-transform: uppercase
 			margin-bottom: 37px
+			@media (max-width: 1440px)
+				margin-bottom: 20px
+			@media (max-width: 1200px)
+				font-size: 30px
+				line-height: 1.4
+				br
+					display: none
+			+media-breakpoint-down(xs)
+				font-size: 22px
 		p
 			font-size: 20px
 			margin-bottom: 30px
+			@media (max-width: 1440px)
+				font-size: 16px
 		.parameters
 			width: 100%
+			+media-breakpoint-down(md)
+				display: block
+			+media-breakpoint-down(sm)
+				max-width: 500px
+				margin: 0 auto
 			.parameter
 				justify-content: space-between
+				+media-breakpoint-down(md)
+					width: 100%
 				&__icon
 					width: 170px
 					img
 						max-width: 60px
 					span
 						font-size: 16px
+						@media (max-width: 1200px)
+							font-size: 14px
+						+media-breakpoint-down(xs)
+							text-align: center
+				&__text
+					@media (max-width: 1440px)
+						font-size: 40px
 		.btn
 			display: block
 			width: 100%
@@ -33,16 +68,27 @@
 			font-size: 20px
 			font-family: $default-font
 			margin-top: 50px
+			+media-breakpoint-down(md)
+				font-size: 16px
 	&__slider
 		width: 60%
 		display: flex
 		flex-direction: column
 		justify-content: space-between
+		@media (max-width: 1440px)
+			justify-content: flex-start
+			width: 50%
+		+media-breakpoint-down(sm)
+			width: 100%
 		&--wrap
 			max-height: 510px
 			height: 100%
 			overflow: hidden
-			img
+			margin-bottom: 30px
+			@media (max-width: 1440px)
+				max-height: 320px
+			+media-breakpoint-down(sm)
+				max-height: 100%
 		&--nav
 			span
 				outline: none !important
