@@ -10313,6 +10313,10 @@ section h2 span {
   position: relative;
 }
 
+.top-menu__list a[href="#nothing"] {
+  color: #ccc;
+}
+
 .top-menu__list a:after {
   content: '';
   width: 0;
