@@ -222,6 +222,7 @@ jQuery(function($) {
 			var text = $(this).find('.discounts__item--text').text();
 
 			$('#callbackForm').find('input[name="Форма"]').val('Акция. ' + text);
+			$('#callbackForm').find('p').text('Чтобы воспользоваться акцией, оставьте свои данные и мы свяжемся с Вами в ближайшее время!');
 
 		}
 

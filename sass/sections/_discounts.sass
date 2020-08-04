@@ -5,17 +5,27 @@
 	&__item
 		width: 31%
 		margin: 1%
+		+media-breakpoint-down(sm)
+			width: 48%
 		&-img
 			position: relative
 			display: block
 			overflow: hidden
 			&.lazyparent
-				min-height: 540px
+				height: 540px
 				max-width: 100%
 				width: auto
 				display: flex
 				align-items: center
 				justify-content: center
+				@media (max-width: 1200px)
+					height: 330px
+				+media-breakpoint-down(md)
+					height: 320px
+				+media-breakpoint-down(sm)
+					height: 260px
+				+media-breakpoint-down(xs)
+					height: 200px
 		&--text
 			background-color: $accent
 			color: $white
@@ -23,4 +33,7 @@
 			padding: 20px 30px
 			line-height: 1.4
 			min-height: 102px
-			font-weight: normal
+			font-weight: 300
+			+media-breakpoint-down(xs)
+				padding: 5px 10px
+				font-size: 14px

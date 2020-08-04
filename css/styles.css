@@ -12106,6 +12106,12 @@ a.btn.ya-btn {
   margin: 1%;
 }
 
+@media (max-width: 767.98px) {
+  .discounts__item {
+    width: 48%;
+  }
+}
+
 .discounts__item-img {
   position: relative;
   display: block;
@@ -12113,7 +12119,7 @@ a.btn.ya-btn {
 }
 
 .discounts__item-img.lazyparent {
-  min-height: 540px;
+  height: 540px;
   max-width: 100%;
   width: auto;
   display: -webkit-box;
@@ -12130,6 +12136,30 @@ a.btn.ya-btn {
           justify-content: center;
 }
 
+@media (max-width: 1200px) {
+  .discounts__item-img.lazyparent {
+    height: 330px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .discounts__item-img.lazyparent {
+    height: 320px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .discounts__item-img.lazyparent {
+    height: 260px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .discounts__item-img.lazyparent {
+    height: 200px;
+  }
+}
+
 .discounts__item--text {
   background-color: #31618C;
   color: #fff;
@@ -12137,7 +12167,14 @@ a.btn.ya-btn {
   padding: 20px 30px;
   line-height: 1.4;
   min-height: 102px;
-  font-weight: normal;
+  font-weight: 300;
+}
+
+@media (max-width: 575.98px) {
+  .discounts__item--text {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
 }
 
 .order .container {
