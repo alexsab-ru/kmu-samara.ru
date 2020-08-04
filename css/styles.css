@@ -12047,6 +12047,7 @@ a.btn.ya-btn {
 @media (max-width: 1200px) {
   .model-nav.model-nav-two ul li {
     margin-bottom: 0;
+    margin-top: 10px;
   }
 }
 
