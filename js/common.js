@@ -218,6 +218,12 @@ jQuery(function($) {
 			$('#callbackForm').find('h2').text(title);
 		else
 			$('#callbackForm').find('h2').text($(this).text());
+		if ($(this).hasClass('discounts__item')) {
+			var text = $(this).find('.discounts__item--text').text();
+
+			$('#callbackForm').find('input[name="Форма"]').val('Акция. ' + text);
+
+		}
 
 	});
 

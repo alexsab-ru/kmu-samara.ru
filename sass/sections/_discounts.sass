@@ -1,0 +1,26 @@
+.discounts
+	padding-bottom: 80px
+	&__block
+		flex-wrap: wrap
+	&__item
+		width: 31%
+		margin: 1%
+		&-img
+			position: relative
+			display: block
+			overflow: hidden
+			&.lazyparent
+				min-height: 540px
+				max-width: 100%
+				width: auto
+				display: flex
+				align-items: center
+				justify-content: center
+		&--text
+			background-color: $accent
+			color: $white
+			display: block
+			padding: 20px 30px
+			line-height: 1.4
+			min-height: 102px
+			font-weight: normal
