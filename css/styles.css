@@ -10257,10 +10257,10 @@ section h2 span {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -10268,6 +10268,15 @@ section h2 span {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .top-menu__list {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
 }
 
 @media (max-width: 767.98px) {
