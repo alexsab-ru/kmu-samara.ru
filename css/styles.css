@@ -11895,6 +11895,7 @@ a.btn.ya-btn {
   border: 1px solid #35628A;
   font-size: 30px;
   font-weight: 500;
+  opacity: 0;
 }
 
 @media (max-width: 1200px) {
@@ -11914,14 +11915,13 @@ a.btn.ya-btn {
     font-size: 14px;
     min-width: 600px;
     display: inline-block;
+    margin: 0 15px;
   }
 }
 
 @media (max-width: 575.98px) {
   .f-table__wrap {
     overflow: auto;
-    min-width: 100%;
-    padding: 0 15px;
   }
 }
 

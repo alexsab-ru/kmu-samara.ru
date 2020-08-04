@@ -131,7 +131,7 @@ jQuery(function($) {
 		return false;
 	});
 
-	$("section h2, h2+.descr, .offer-form, .benefit, .replacement-form, section h2 span").animated("fadeInUp", "fadeInUp");
+	$("section h2, h2+.descr, .offer-form, .benefit, .replacement-form, section h2 span, .f-table, .model-nav").animated("fadeInUp", "fadeInUp");
 	$("h1, .subtitle, .maps .dealer:nth-child(odd) .dealer-info, .service__item:nth-child(odd)").animated("fadeInLeft", "fadeInLeft");
 	$(".banner-form, .maps .dealer:nth-child(even) .dealer-info, .advantages__item, .service__item:nth-child(even), .order__item, .order__list .dot").animated("fadeInRight", "fadeInRight");
 

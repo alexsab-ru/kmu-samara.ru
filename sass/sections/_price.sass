@@ -7,6 +7,7 @@
 	border: 1px solid #35628A
 	font-size: 30px
 	font-weight: 500
+	opacity: 0
 	@media (max-width: 1200px)
 		font-size: 20px
 	+media-breakpoint-down(sm)
@@ -15,11 +16,10 @@
 		font-size: 14px
 		min-width: 600px
 		display: inline-block
+		margin: 0 15px
 	&__wrap
 		+media-breakpoint-down(xs)
 			overflow: auto
-			min-width: 100%
-			padding: 0 15px
 	&__head
 		background-color: $accent !important
 		color: $white
