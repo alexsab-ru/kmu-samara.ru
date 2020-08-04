@@ -1,6 +1,25 @@
+.price
+	.container
+		+media-breakpoint-down(xs)
+			max-width: 100%
+			padding: 0
 .f-table
 	border: 1px solid $accent
 	font-size: 30px
+	font-weight: 500
+	@media (max-width: 1200px)
+		font-size: 20px
+	+media-breakpoint-down(sm)
+		font-size: 16px
+	+media-breakpoint-down(xs)
+		font-size: 14px
+		min-width: 600px
+		display: inline-block
+	&__wrap
+		+media-breakpoint-down(xs)
+			overflow: auto
+			min-width: 100%
+			padding: 0 15px
 	&__head
 		background-color: $accent
 		color: $white
@@ -15,10 +34,24 @@
 		text-align: center
 		padding: 10px 20px
 		border-right: 1px solid $accent
+		+media-breakpoint-down(sm)
+			padding: 8px 12px
 		&:last-child()
 			border: none
 		&:nth-child(3), &:nth-child(4)
 			min-width: 155px
+			@media (max-width: 1200px)
+				min-width: 120px
+			+media-breakpoint-down(sm)
+				min-width: 100px
+			+media-breakpoint-down(xs)
+				min-width: 80px
+		&:nth-child(1)
+			min-width: 80px
+			@media (max-width: 1200px)
+				min-width: 50px
+			+media-breakpoint-down(sm)
+				min-width: 40px
 		&.f-table__col--name
 			flex: 1 0 auto
 			text-align: left
