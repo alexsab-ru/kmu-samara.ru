@@ -9947,6 +9947,7 @@ section h2 {
   font-size: 42px;
   text-align: center;
   margin-bottom: 50px;
+  opacity: 0;
 }
 
 @media (max-width: 575.98px) {
