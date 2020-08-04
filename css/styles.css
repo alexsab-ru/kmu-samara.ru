@@ -11883,7 +11883,7 @@ a.btn.ya-btn {
 }
 
 .f-table {
-  border: 1px solid #31618C;
+  border: 1px solid #35628A;
   font-size: 30px;
   font-weight: 500;
 }
@@ -11948,7 +11948,7 @@ a.btn.ya-btn {
 .f-table__col {
   text-align: center;
   padding: 10px 20px;
-  border-right: 1px solid #31618C;
+  border-right: 1px solid #35628A;
 }
 
 @media (max-width: 767.98px) {
@@ -11989,13 +11989,15 @@ a.btn.ya-btn {
 
 @media (max-width: 1200px) {
   .f-table__col:nth-child(1) {
-    min-width: 50px;
+    min-width: 0;
+    width: 50px;
   }
 }
 
 @media (max-width: 767.98px) {
   .f-table__col:nth-child(1) {
-    min-width: 40px;
+    min-width: 0;
+    width: 40px;
   }
 }
 
@@ -12005,6 +12007,77 @@ a.btn.ya-btn {
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
   text-align: left;
+}
+
+.model-nav.model-nav-two {
+  margin-top: 150px;
+}
+
+@media (max-width: 1200px) {
+  .model-nav.model-nav-two {
+    margin-top: 40px;
+  }
+}
+
+.model-nav.model-nav-two ul li {
+  height: 150px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .model-nav.model-nav-two ul li {
+    margin-bottom: 0;
+  }
+}
+
+.model-nav.model-nav-two ul li:hover .number {
+  -webkit-transform: translate(-50%, -30px);
+      -ms-transform: translate(-50%, -30px);
+          transform: translate(-50%, -30px);
+}
+
+.model-nav.model-nav-two ul li:after {
+  display: none;
+}
+
+.model-nav.model-nav-two ul li img {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.model-nav.model-nav-two ul li .number {
+  position: absolute;
+  left: 50%;
+  top: -130px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 150px;
+  font-style: italic;
+  color: #31618C;
+  opacity: .16;
+  z-index: -1;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+  .model-nav.model-nav-two ul li .number {
+    font-size: 100px;
+    top: -60px;
+  }
 }
 
 .order .container {

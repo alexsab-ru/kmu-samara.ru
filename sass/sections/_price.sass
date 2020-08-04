@@ -4,7 +4,7 @@
 			max-width: 100%
 			padding: 0
 .f-table
-	border: 1px solid $accent
+	border: 1px solid #35628A
 	font-size: 30px
 	font-weight: 500
 	@media (max-width: 1200px)
@@ -35,7 +35,7 @@
 	&__col
 		text-align: center
 		padding: 10px 20px
-		border-right: 1px solid $accent
+		border-right: 1px solid #35628A
 		+media-breakpoint-down(sm)
 			padding: 8px 12px
 		&:last-child()
@@ -51,9 +51,46 @@
 		&:nth-child(1)
 			min-width: 80px
 			@media (max-width: 1200px)
-				min-width: 50px
+				min-width: 0
+				width: 50px
 			+media-breakpoint-down(sm)
-				min-width: 40px
+				min-width: 0
+				width: 40px
 		&.f-table__col--name
 			flex: 1 0 auto
 			text-align: left
+
+.model-nav
+	&.model-nav-two
+		margin-top: 150px
+		@media (max-width: 1200px)
+			margin-top: 40px
+		ul
+			li
+				height: 150px
+				display: flex
+				align-items: center
+				justify-content: center
+				@media (max-width: 1200px)
+					margin-bottom: 0
+				&:hover
+					.number
+						transform: translate(-50%, -30px)
+				&:after
+					display: none
+				img
+					filter: none
+				.number
+					position: absolute
+					left: 50%
+					top: -130px
+					transform: translateX(-50%)
+					font-size: 150px
+					font-style: italic
+					color: $accent
+					opacity: .16
+					z-index: -1
+					transition: all .4s ease-in-out
+					@media (max-width: 1200px)
+						font-size: 100px
+						top: -60px
