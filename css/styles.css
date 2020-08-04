@@ -11917,7 +11917,7 @@ a.btn.ya-btn {
 }
 
 .f-table__head {
-  background-color: #31618C;
+  background-color: #31618C !important;
   color: #fff;
   font-weight: bold;
 }
@@ -11939,6 +11939,10 @@ a.btn.ya-btn {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.f-table__row:nth-child(odd) {
+  background-color: #DFE6EC;
 }
 
 .f-table__col {

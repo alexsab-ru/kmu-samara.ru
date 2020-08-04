@@ -21,7 +21,7 @@
 			min-width: 100%
 			padding: 0 15px
 	&__head
-		background-color: $accent
+		background-color: $accent !important
 		color: $white
 		font-weight: bold
 		.f-table__col.f-table__col--name
@@ -30,6 +30,8 @@
 		display: flex
 		align-items: center
 		justify-content: space-between
+		&:nth-child(odd)
+			background-color: #DFE6EC
 	&__col
 		text-align: center
 		padding: 10px 20px
