@@ -65,7 +65,7 @@
 				margin-top: -15px
 				@media (max-width: 1440px)
 					font-size: 28px
-				@media (max-width: 1200px)
+				+media-breakpoint-down(xl)
 					font-size: 26px
 					margin-top: 0
 				+media-breakpoint-down(xs)
@@ -77,14 +77,14 @@
 				@media (max-width: 1440px)
 					font-size: 13px
 					width: 55%
-				@media (max-width: 1200px)
+				+media-breakpoint-down(xl)
 					width: 60%
 				+media-breakpoint-down(md)
 					width: 100%
 
 .parameters
 	width: 45%
-	@media (max-width: 1200px)
+	+media-breakpoint-down(xl)
 		width: 40%
 	+media-breakpoint-down(md)
 		display: flex
@@ -105,7 +105,7 @@
 		margin-bottom: 10px
 	&__icon
 		width: 250px
-		@media (max-width: 1200px)
+		+media-breakpoint-down(xl)
 			width: 200px
 		+media-breakpoint-down(md)
 			width: auto
@@ -119,7 +119,7 @@
 			text-align: center
 			font-size: 14px
 			font-weight: bold
-			@media (max-width: 1200px)
+			+media-breakpoint-down(xl)
 				font-size: 12px
 			+media-breakpoint-down(xs)
 				text-align: left

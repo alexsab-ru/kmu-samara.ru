@@ -16,9 +16,10 @@
 				position: relative
 				z-index: 1
 				margin: 0 5px 50px
+				max-width: 155px
+				width: 100%
 				@media (max-width: 1440px)
 					max-width: 125px
-					width: 100%
 				&:after
 					content: ''
 					display: block
@@ -70,7 +71,7 @@
 			margin-bottom: 37px
 			@media (max-width: 1440px)
 				margin-bottom: 20px
-			@media (max-width: 1200px)
+			+media-breakpoint-down(xl)
 				font-size: 30px
 				line-height: 1.4
 				br
@@ -99,7 +100,7 @@
 						max-width: 60px
 					span
 						font-size: 16px
-						@media (max-width: 1200px)
+						+media-breakpoint-down(xl)
 							font-size: 14px
 						+media-breakpoint-down(xs)
 							text-align: center

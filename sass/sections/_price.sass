@@ -8,7 +8,7 @@
 	font-size: 30px
 	font-weight: 500
 	opacity: 0
-	@media (max-width: 1200px)
+	+media-breakpoint-down(xl)
 		font-size: 20px
 	+media-breakpoint-down(sm)
 		font-size: 16px
@@ -42,7 +42,7 @@
 			border: none
 		&:nth-child(3), &:nth-child(4)
 			min-width: 155px
-			@media (max-width: 1200px)
+			+media-breakpoint-down(xl)
 				min-width: 120px
 			+media-breakpoint-down(sm)
 				min-width: 100px
@@ -50,7 +50,7 @@
 				min-width: 80px
 		&:nth-child(1)
 			min-width: 80px
-			@media (max-width: 1200px)
+			+media-breakpoint-down(xl)
 				min-width: 0
 				width: 50px
 			+media-breakpoint-down(sm)
@@ -63,7 +63,7 @@
 .model-nav
 	&.model-nav-two
 		margin-top: 150px
-		@media (max-width: 1200px)
+		+media-breakpoint-down(xl)
 			margin-top: 40px
 		ul
 			li
@@ -71,8 +71,8 @@
 				display: flex
 				align-items: center
 				justify-content: center
-				@media (max-width: 1200px)
-					margin-bottom: 0
+				+media-breakpoint-down(xl)
+					margin-bottom: 50px
 					margin-top: 10px
 				&:hover
 					.number
@@ -92,6 +92,6 @@
 					opacity: .16
 					z-index: -1
 					transition: all .4s ease-in-out
-					@media (max-width: 1200px)
+					+media-breakpoint-down(xl)
 						font-size: 100px
 						top: -60px
