@@ -11933,6 +11933,7 @@ a.btn.ya-btn {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
+  padding: 10px 0;
   -webkit-flex-basis: 120px;
       -ms-flex-preferred-size: 120px;
           flex-basis: 120px;
@@ -11961,6 +11962,7 @@ a.btn.ya-btn {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
+  padding: 10px 0;
   -webkit-flex-basis: 50px;
       -ms-flex-preferred-size: 50px;
           flex-basis: 50px;
@@ -11983,8 +11985,7 @@ a.btn.ya-btn {
 }
 
 .model-nav.model-nav-two {
-  margin-top: 150px;
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 .model-nav.model-nav-two ul li {
