@@ -65,3 +65,19 @@
 			&:hover, &.slick-current
 				&:before
 					height: 100%
+	&__progress
+		height: 12px
+		width: 100%
+		position: relative
+		border-radius: 10px
+		background-color: #DFE6EC
+		margin: 50px 0
+		&--bar
+			position: absolute
+			border-radius: inherit
+			background-color: $accent
+			height: 100%
+			left: 0
+			top: 0
+			transition: all .3s linear
+			width: 5%

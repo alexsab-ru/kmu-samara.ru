@@ -12279,6 +12279,28 @@ a.btn.ya-btn {
   height: 100%;
 }
 
+.gallery__progress {
+  height: 12px;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  background-color: #DFE6EC;
+  margin: 50px 0;
+}
+
+.gallery__progress--bar {
+  position: absolute;
+  border-radius: inherit;
+  background-color: #31618C;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+  width: 5%;
+}
+
 .discounts {
   padding-bottom: 80px;
 }

@@ -39,6 +39,7 @@ jQuery(function($) {
 
 	// Gallery Slider
 	$('.gallery__slider').slick({
+		infinite: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: true,
@@ -48,7 +49,18 @@ jQuery(function($) {
 		fade: true,
 		asNavFor: '.gallery__nav'
 	});
+
+	let procent = 100 / $('.gallery__nav--item').length;
+
+	$('.gallery__progress--bar').css('width', procent + '%');
+
+	$('.gallery__slider').on('beforeChange', function(event, slick, nextSlide, currentSlide){
+		current = currentSlide + 1;
+		$('.gallery__progress--bar').css('width', procent * current + '%');
+	});
+
 	$('.gallery__nav').slick({
+		infinite: false,
 		slidesToShow: 8,
 		slidesToScroll: 1,
 		asNavFor: '.gallery__slider',
