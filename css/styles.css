@@ -11935,6 +11935,14 @@ a.btn.ya-btn {
   background-color: #DFE6EC;
 }
 
+.f-table__row:last-child {
+  border-bottom: 1px solid #35628A;
+}
+
+.f-table__row:last-child:hover {
+  border-bottom: 1px solid transparent;
+}
+
 .f-table__col {
   text-align: center;
   padding: 10px 20px;

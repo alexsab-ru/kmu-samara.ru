@@ -38,13 +38,16 @@
 				background-color: rgba($orange, .9)
 				.f-table__col
 					border-right: 1px solid $text
-					// color: $white
 					&:first-child()
 						border-left: 1px solid $orange-brand
 					&:last-child()
 						border-right: 1px solid $orange-brand
 		&:nth-child(odd)
 			background-color: #DFE6EC
+		&:last-child()
+			border-bottom: 1px solid #35628A
+			&:hover
+				border-bottom: 1px solid transparent
 	&__col
 		text-align: center
 		padding: 10px 20px
