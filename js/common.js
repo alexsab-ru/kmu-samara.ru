@@ -118,6 +118,16 @@ jQuery(function($) {
 		]
 	});
 
+
+	$('.reviews-video-link').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+		fixedContentPos: true
+	});
+
 	$('.mobile-btn').on('click', function() {
 		$(this).toggleClass('active');
 		$('.top-menu__list').slideToggle();
@@ -284,8 +294,6 @@ jQuery(function($) {
 		$('html').removeAttr('style');
 	});
 
-	$('.lazyload').lazyload();
-
 	$('a[href="#cheaper"]').on('click', function(){
 		var servName = $(this).data('title');
 		if(servName) 
@@ -317,5 +325,6 @@ jQuery(function($) {
 		$('#orderForm').find('.service').val(title.replace(/"/g,''));
 	});
 
+	$('.lazyload').lazyload();
 
 });
