@@ -2,6 +2,7 @@ jQuery(function($) {
 
 	var arrow = '<svg version="1.1" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41.2 100" xml:space="preserve"><path fill-rule="evenodd" fill="#39739E" d="M41,100c0.9-2.4-0.5-7.1-4.8-13C30,78.5,12.2,58.9,12.7,49c0.4-8,18-28.6,23.4-36 C40.4,7.1,41.8,2.4,41,0C26.9,12.8,0.7,35.2,0,48.8C-0.8,64.2,26.1,86.5,41,100L41,100z"/></svg>';
 
+	//Banner Slider
 	$('.banner-slider').slick({
 		autoplay: true,
 		arrows: true,
@@ -19,6 +20,7 @@ jQuery(function($) {
 		]
 	});
 
+	// Model Slider
 	$('.model__slider--wrap').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -35,6 +37,36 @@ jQuery(function($) {
 		focusOnSelect: true
 	});
 
+	// Gallery Slider
+	$('.gallery__slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		prevArrow: '<button class="arrow prev-arrow">'+arrow+'</button>',
+		nextArrow: '<button class="arrow next-arrow">'+arrow+'</button>',
+		dots: false,
+		fade: true,
+		asNavFor: '.gallery__nav'
+	});
+	$('.gallery__nav').slick({
+		slidesToShow: 8,
+		slidesToScroll: 1,
+		asNavFor: '.gallery__slider',
+		// dots: true,
+		// centerMode: true,
+		focusOnSelect: true,
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1,
+			}
+		}
+		]
+	});
+
+	//Price Slider
 	$('.model-nav.model-nav-two ul').slick({
 		slidesToShow: 8,
 		slidesToScroll: 4,
