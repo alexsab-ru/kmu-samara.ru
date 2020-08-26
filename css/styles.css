@@ -11853,7 +11853,6 @@ a.btn.ya-btn {
 }
 
 .f-table {
-  border: 1px solid #35628A;
   font-size: 30px;
   font-weight: 500;
   opacity: 0;
@@ -11883,8 +11882,11 @@ a.btn.ya-btn {
 
 .f-table__head {
   background-color: #31618C !important;
-  color: #fff;
   font-weight: bold;
+}
+
+.f-table__head .f-table__col {
+  color: #fff;
 }
 
 .f-table__head .f-table__col.f-table__col--name {
@@ -11906,6 +11908,30 @@ a.btn.ya-btn {
           justify-content: space-between;
 }
 
+.f-table__row.table-link {
+  font-weight: normal;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.f-table__row.table-link:hover {
+  background-color: #dc5c13;
+}
+
+.f-table__row.table-link:hover .f-table__col {
+  border-right: 1px solid #fff;
+  color: #fff;
+}
+
+.f-table__row.table-link:hover .f-table__col:first-child {
+  border-left: 1px solid #dc5c13;
+}
+
+.f-table__row.table-link:hover .f-table__col:last-child {
+  border-right: 1px solid #dc5c13;
+}
+
 .f-table__row:nth-child(odd) {
   background-color: #DFE6EC;
 }
@@ -11913,7 +11939,11 @@ a.btn.ya-btn {
 .f-table__col {
   text-align: center;
   padding: 10px 20px;
+  color: #000;
   border-right: 1px solid #35628A;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 @media (max-width: 767.98px) {
@@ -11922,8 +11952,8 @@ a.btn.ya-btn {
   }
 }
 
-.f-table__col:last-child {
-  border: none;
+.f-table__col:first-child {
+  border-left: 1px solid #35628A;
 }
 
 .f-table__col:nth-child(3), .f-table__col:nth-child(4) {
