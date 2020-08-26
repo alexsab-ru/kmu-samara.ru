@@ -85,22 +85,73 @@
 	&.model-nav-two
 		+media-breakpoint-down(xl)
 			margin-top: 70px
-		ul
+		+media-breakpoint-down(sm)
+			margin-top: 50px
+		+media-breakpoint-down(xs)
+			margin-top: 40px
+		.model-nav-slider
+			display: block
+			position: relative
+			.slick-list
+				padding-top: 35px
+			.slick-dots
+				li
+					height: auto
+					margin: 0 2px
+					border: none
+					button
+						background-color: rgba($accent, .6)
+						transition: all .25s
+					&.slick-active, &:hover
+						button
+							background-color: $accent
+			.slick-arrow
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				background-color: transparent
+				width: 50px
+				height: 50px
+				outline: none
+				border: none
+				padding: 0
+				&:hover
+					svg
+						opacity: 0.8
+				svg
+					width: 15px
+					height: auto
+					opacity: 0.3
+					transition: all .25s
+				&.next-arrow
+					right: -60px
+					svg
+						transform: rotate(180deg)
+				&.prev-arrow
+					left: -60px
 			li
 				height: 150px
+				max-width: none
+				width: auto
 				display: flex
 				align-items: center
 				justify-content: center
+				outline: none
 				+media-breakpoint-down(xl)
 					margin-bottom: 50px
 					margin-top: 10px
 				&:hover
 					.number
 						transform: translate(-50%, -30px)
+						+media-breakpoint-down(sm)
+							transform: translate(-50%, -10px)
 				&:after
 					display: none
+				a
+					outline: none
 				img
 					filter: none
+					outline: none
 				.number
 					position: absolute
 					left: 50%
@@ -115,3 +166,5 @@
 					+media-breakpoint-down(xl)
 						font-size: 100px
 						top: -60px
+					+media-breakpoint-down(xs)
+						top: -80px

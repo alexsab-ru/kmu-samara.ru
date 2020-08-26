@@ -35,6 +35,45 @@ jQuery(function($) {
 		focusOnSelect: true
 	});
 
+	$('.model-nav.model-nav-two ul').slick({
+		slidesToShow: 8,
+		slidesToScroll: 4,
+		arrows: false,
+		dots: true,
+		prevArrow: '<button class="arrow prev-arrow">'+arrow+'</button>',
+		nextArrow: '<button class="arrow next-arrow">'+arrow+'</button>',
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 6,
+				slidesToScroll: 3,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 2,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+			}
+		}
+		]
+	});
+
 	$('.mobile-btn').on('click', function() {
 		$(this).toggleClass('active');
 		$('.top-menu__list').slideToggle();
