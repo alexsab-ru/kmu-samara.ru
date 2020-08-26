@@ -11916,20 +11916,19 @@ a.btn.ya-btn {
 }
 
 .f-table__row.table-link:hover {
-  background-color: #dc5c13;
+  background-color: rgba(220, 92, 19, 0.9);
 }
 
 .f-table__row.table-link:hover .f-table__col {
-  border-right: 1px solid #fff;
-  color: #fff;
+  border-right: 1px solid #000;
 }
 
 .f-table__row.table-link:hover .f-table__col:first-child {
-  border-left: 1px solid #dc5c13;
+  border-left: 1px solid #d55d00;
 }
 
 .f-table__row.table-link:hover .f-table__col:last-child {
-  border-right: 1px solid #dc5c13;
+  border-right: 1px solid #d55d00;
 }
 
 .f-table__row:nth-child(odd) {
