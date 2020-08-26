@@ -37,10 +37,14 @@
 					fill: #fff !important
 			&.next-arrow
 				right: 50px
+				+media-breakpoint-down(sm)
+					right: 0px
 				svg
 					transform: rotate(180deg)
 			&.prev-arrow
 				left: 50px
+				+media-breakpoint-down(sm)
+					left: 0px
 	&__nav
 		&--item
 			position: relative

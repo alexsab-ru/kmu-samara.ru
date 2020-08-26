@@ -12238,6 +12238,12 @@ a.btn.ya-btn {
   right: 50px;
 }
 
+@media (max-width: 767.98px) {
+  .gallery__slider .slick-arrow.next-arrow {
+    right: 0px;
+  }
+}
+
 .gallery__slider .slick-arrow.next-arrow svg {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -12246,6 +12252,12 @@ a.btn.ya-btn {
 
 .gallery__slider .slick-arrow.prev-arrow {
   left: 50px;
+}
+
+@media (max-width: 767.98px) {
+  .gallery__slider .slick-arrow.prev-arrow {
+    left: 0px;
+  }
 }
 
 .gallery__nav--item {
