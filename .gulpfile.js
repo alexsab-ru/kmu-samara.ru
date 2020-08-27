@@ -2,7 +2,7 @@
 			src: [
 				base.kmu + '/libs/jquery/dist/jquery.min.js',
 				base.kmu + '/libs/Magnific-Popup-master/jquery.magnific-popup.js',
-				'node_modules/slick-1.8.1/slick/slick.min.js',
+				'node_modules/slick-carousel/slick/slick.min.js',
 				base.kmu + '/libs/animate/animate-css.js',
 				base.kmu + '/libs/lazyload.min.js',
 				base.kmu + '/libs/waypoint.js',
