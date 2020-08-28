@@ -12178,6 +12178,7 @@ a.btn.ya-btn {
   -webkit-transition: all .25s;
   -o-transition: all .25s;
   transition: all .25s;
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .gallery__slider .slick-arrow:hover {
@@ -12202,7 +12203,7 @@ a.btn.ya-btn {
 }
 
 .gallery__slider .slick-arrow.next-arrow {
-  right: 50px;
+  right: 20px;
 }
 
 @media (max-width: 767.98px) {
@@ -12218,7 +12219,7 @@ a.btn.ya-btn {
 }
 
 .gallery__slider .slick-arrow.prev-arrow {
-  left: 50px;
+  left: 20px;
 }
 
 @media (max-width: 767.98px) {

@@ -24,6 +24,7 @@
 			padding: 0
 			z-index: 1
 			transition: all .25s
+			background-color: rgba(0,0,0,.15)
 			&:hover
 				background-color: rgba(0,0,0,.5)
 				svg
@@ -36,13 +37,13 @@
 				path
 					fill: #fff !important
 			&.next-arrow
-				right: 50px
+				right: 20px
 				+media-breakpoint-down(sm)
 					right: 0px
 				svg
 					transform: rotate(180deg)
 			&.prev-arrow
-				left: 50px
+				left: 20px
 				+media-breakpoint-down(sm)
 					left: 0px
 	&__nav
