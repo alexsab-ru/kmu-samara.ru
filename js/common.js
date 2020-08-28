@@ -70,16 +70,25 @@ jQuery(function($) {
 		]
 	});
 
-	//Reviews Video & Text Slider
-	$('.reviews__slider').slick({
+	//Reviews Text Slider
+	$('.reviews-text-slider').slick({
 		slidesToShow: 2,
 		slidesToScroll: 1,
 		arrows: true,
 		dots: false,
 		prevArrow: '<button class="arrow prev-arrow">'+arrow2+'</button>',
 		nextArrow: '<button class="arrow next-arrow">'+arrow2+'</button>',
-		vertical: true,
-		adaptiveHeight: true
+		adaptiveHeight: true,
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				adaptiveHeight: false,
+			}
+		}
+		]
 	});
 
 	$('span.rating').each(function(){
@@ -87,6 +96,32 @@ jQuery(function($) {
 		for (var i = 0; i < star; i++) {
 			$(this).children('.star:eq('+ i +')').addClass('active');
 		}
+	});
+
+	//Reviews Video Slider
+	$('.reviews-video-slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: false,
+		prevArrow: '<button class="arrow prev-arrow">'+arrow2+'</button>',
+		nextArrow: '<button class="arrow next-arrow">'+arrow2+'</button>',
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			}
+		}
+		]
 	});
 
 	//Price Slider
