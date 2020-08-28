@@ -12409,7 +12409,7 @@ a.btn.ya-btn {
 }
 
 .reviews__slider .item {
-  padding: 40px 0 35px;
+  padding: 2.08vmax 0 2vmax;
   height: 22.4vmax;
   border: 1px solid #000;
   position: relative;
@@ -12442,8 +12442,8 @@ a.btn.ya-btn {
 }
 
 .reviews__slider .item a:hover:before {
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
 }
 
 .reviews__slider .item a:hover .play-btn {
@@ -12461,8 +12461,8 @@ a.btn.ya-btn {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
   z-index: -1;
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
@@ -12487,6 +12487,82 @@ a.btn.ya-btn {
 
 .reviews__slider .item a.lazyload .play-btn {
   opacity: 0;
+}
+
+.reviews__slider.reviews-text-slider .item {
+  padding-left: 20px;
+  min-height: 22.4vmax;
+  height: auto;
+}
+
+.reviews__text {
+  padding: 60px 40px 40px;
+  position: relative;
+  background-color: #cedfee;
+  font-size: 15px;
+}
+
+.reviews__text .rating {
+  padding: 8px 30px;
+  background-color: #31618C;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  right: 40px;
+  bottom: -20px;
+}
+
+.reviews__text .rating .star {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icons/star-o.svg);
+  margin: 0 3px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.reviews__text .rating .star.active {
+  background-image: url(../img/icons/star.svg);
+}
+
+.reviews__text h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.56vmax;
+  line-height: 1;
+  margin-bottom: 40px;
+  font-family: "Geometria", sans-serif;
+  color: #31618C;
+}
+
+.reviews__text h5 {
+  font-family: "Geometria", sans-serif;
+  font-size: 1.04vmax;
+}
+
+.reviews__user {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  left: -20px;
+  top: -40px;
+}
+
+.reviews-date {
+  font-weight: bold;
+  text-align: right;
 }
 
 .reviews__link:nth-child(3n+1) a {

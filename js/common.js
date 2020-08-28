@@ -70,7 +70,7 @@ jQuery(function($) {
 		]
 	});
 
-	//Reviews Video Slider
+	//Reviews Video & Text Slider
 	$('.reviews__slider').slick({
 		slidesToShow: 2,
 		slidesToScroll: 1,
@@ -78,7 +78,15 @@ jQuery(function($) {
 		dots: false,
 		prevArrow: '<button class="arrow prev-arrow">'+arrow2+'</button>',
 		nextArrow: '<button class="arrow next-arrow">'+arrow2+'</button>',
-		vertical: true
+		vertical: true,
+		adaptiveHeight: true
+	});
+
+	$('span.rating').each(function(){
+		let star = +$(this).data('star');
+		for (var i = 0; i < star; i++) {
+			$(this).children('.star:eq('+ i +')').addClass('active');
+		}
 	});
 
 	//Price Slider

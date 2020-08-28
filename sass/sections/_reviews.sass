@@ -73,7 +73,7 @@
 			svg
 				transform: rotate(180deg)
 		.item
-			padding: 40px 0 35px
+			padding: 2.08vmax 0 2vmax
 			height: 22.4vmax
 			border: 1px solid #000
 			position: relative
@@ -101,7 +101,7 @@
 				overflow: hidden
 				&:hover
 					&:before
-						filter: blur(3px)
+						filter: blur(1px)
 					.play-btn
 						opacity: 1
 				&:before
@@ -115,7 +115,7 @@
 					background-size: cover
 					background-position: center
 					background-repeat: no-repeat
-					filter: blur(5px)
+					filter: blur(3px)
 					z-index: -1
 					transition: all .3s ease-in-out
 				.play-btn
@@ -131,6 +131,57 @@
 				&.lazyload
 					.play-btn
 						opacity: 0
+		&.reviews-text-slider
+			.item
+				padding-left: 20px
+				min-height: 22.4vmax
+				height: auto
+	&__text
+		padding: 60px 40px 40px
+		position: relative
+		background-color: lighten($accent, 50%)
+		font-size: 15px
+		.rating
+			padding: 8px 30px
+			background-color: $accent
+			display: flex
+			align-items: center
+			width: fit-content
+			position: absolute
+			right: 40px
+			bottom: -20px
+			.star
+				width: 30px
+				height: 30px
+				background-image: url(../img/icons/star-o.svg)
+				margin: 0 3px
+				background-size: cover
+				background-position: center
+				background-repeat: no-repeat
+				&.active
+					background-image: url(../img/icons/star.svg)
+		h4
+			text-align: center
+			text-transform: uppercase
+			font-size: 1.56vmax
+			line-height: 1
+			margin-bottom: 40px
+			font-family: $default-font
+			color: $accent
+		h5
+			font-family: $default-font
+			font-size: 1.04vmax
+	&__user
+		position: absolute
+		width: 160px
+		height: 160px
+		border-radius: 50%
+		overflow: hidden
+		left: -20px
+		top: -40px
+	&-date
+		font-weight: bold
+		text-align: right
 
 
 $colors: $red2, $green, $blue-light
