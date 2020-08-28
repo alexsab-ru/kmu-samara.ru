@@ -12360,6 +12360,52 @@ a.btn.ya-btn {
 
 .reviews__slider {
   padding: 50px 0;
+  position: relative;
+}
+
+.reviews__slider .slick-arrow {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+  z-index: 1;
+  outline: none;
+}
+
+.reviews__slider .slick-arrow svg {
+  width: 25px;
+  height: auto;
+}
+
+.reviews__slider .slick-arrow svg path {
+  stroke: #31618C;
+}
+
+.reviews__slider .slick-arrow:hover {
+  opacity: 1;
+}
+
+.reviews__slider .prev-arrow {
+  top: -30px;
+}
+
+.reviews__slider .next-arrow {
+  bottom: -30px;
+}
+
+.reviews__slider .next-arrow svg {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .reviews__slider .item {
@@ -12370,7 +12416,7 @@ a.btn.ya-btn {
 }
 
 .reviews__slider .item .video-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   margin: 0;
   padding: 0;
