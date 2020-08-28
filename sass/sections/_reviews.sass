@@ -50,6 +50,33 @@
 				top: 20px
 	&__slider
 		position: relative
+		&.reviews-text-slider
+			margin-bottom: 30px
+			+media-breakpoint-down(xs)
+				padding-bottom: 0
+			.item
+				padding-left: 20px
+				height: auto
+				+media-breakpoint-down(md)
+					margin-bottom: 20px
+				+media-breakpoint-down(xs)
+					padding-left: 0
+		&.reviews-video-slider
+			.item
+				height: 17vmax
+				@media (max-width: 1200px) 
+					padding: 0 0 40px
+					height: 200px
+			.prev-arrow
+				+media-breakpoint-down(md)
+					left: -30px
+				+media-breakpoint-down(sm)
+					left: -10px
+			.next-arrow
+				+media-breakpoint-down(md)
+					right: -30px
+				+media-breakpoint-down(sm)
+					right: -10px
 		.slick-arrow
 			position: absolute
 			top: 50%
@@ -61,7 +88,6 @@
 			opacity: 0.8
 			transition: all .25s ease
 			z-index: 1
-
 			outline: none
 			svg
 				width: 25px
@@ -90,18 +116,10 @@
 				transform: rotate(90deg)
 		.item
 			padding: 2.08vmax 0 1.6vmax
-			height: 16.4vmax
 			position: relative
 			margin: 0 15px
-			+media-breakpoint-down(xl)
-				padding: 0 0 40px
-				height: 200px
-			+media-breakpoint-down(xl)
-				height: 300px
-				padding-bottom: 30px
-			+media-breakpoint-down(sm)
+			+media-breakpoint-down(xs)
 				margin: 0 30px
-				height: 50vw
 			.video-title
 				font-size: 14px
 				font-weight: bold
@@ -126,7 +144,7 @@
 				overflow: hidden
 				&:hover
 					&:before
-						filter: blur(1px)
+						filter: none
 					.play-btn
 						opacity: 1
 				&:before
@@ -140,7 +158,7 @@
 					background-size: cover
 					background-position: center
 					background-repeat: no-repeat
-					filter: blur(3px)
+					filter: blur(2px)
 					z-index: -1
 					transition: all .3s ease-in-out
 				.play-btn
@@ -155,17 +173,6 @@
 				&.lazyload
 					.play-btn
 						opacity: 0
-		&.reviews-text-slider
-			+media-breakpoint-down(xs)
-				padding-bottom: 0
-			.item
-				padding-left: 20px
-				min-height: 22.4vmax
-				height: auto
-				+media-breakpoint-down(md)
-					margin-bottom: 20px
-				+media-breakpoint-down(xs)
-					padding-left: 0
 	&__text
 		padding: 60px 40px 40px
 		position: relative

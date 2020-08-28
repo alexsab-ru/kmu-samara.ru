@@ -12370,6 +12370,68 @@ a.btn.ya-btn {
   position: relative;
 }
 
+.reviews__slider.reviews-text-slider {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 575.98px) {
+  .reviews__slider.reviews-text-slider {
+    padding-bottom: 0;
+  }
+}
+
+.reviews__slider.reviews-text-slider .item {
+  padding-left: 20px;
+  height: auto;
+}
+
+@media (max-width: 991.98px) {
+  .reviews__slider.reviews-text-slider .item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .reviews__slider.reviews-text-slider .item {
+    padding-left: 0;
+  }
+}
+
+.reviews__slider.reviews-video-slider .item {
+  height: 17vmax;
+}
+
+@media (max-width: 1200px) {
+  .reviews__slider.reviews-video-slider .item {
+    padding: 0 0 40px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .reviews__slider.reviews-video-slider .prev-arrow {
+    left: -30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .reviews__slider.reviews-video-slider .prev-arrow {
+    left: -10px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .reviews__slider.reviews-video-slider .next-arrow {
+    right: -30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .reviews__slider.reviews-video-slider .next-arrow {
+    right: -10px;
+  }
+}
+
 .reviews__slider .slick-arrow {
   position: absolute;
   top: 50%;
@@ -12453,19 +12515,13 @@ a.btn.ya-btn {
 
 .reviews__slider .item {
   padding: 2.08vmax 0 1.6vmax;
-  height: 16.4vmax;
   position: relative;
   margin: 0 15px;
-  padding: 0 0 40px;
-  height: 200px;
-  height: 300px;
-  padding-bottom: 30px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   .reviews__slider .item {
     margin: 0 30px;
-    height: 50vw;
   }
 }
 
@@ -12496,8 +12552,8 @@ a.btn.ya-btn {
 }
 
 .reviews__slider .item a:hover:before {
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
+  -webkit-filter: none;
+          filter: none;
 }
 
 .reviews__slider .item a:hover .play-btn {
@@ -12515,8 +12571,8 @@ a.btn.ya-btn {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
   z-index: -1;
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
@@ -12540,30 +12596,6 @@ a.btn.ya-btn {
 
 .reviews__slider .item a.lazyload .play-btn {
   opacity: 0;
-}
-
-@media (max-width: 575.98px) {
-  .reviews__slider.reviews-text-slider {
-    padding-bottom: 0;
-  }
-}
-
-.reviews__slider.reviews-text-slider .item {
-  padding-left: 20px;
-  min-height: 22.4vmax;
-  height: auto;
-}
-
-@media (max-width: 991.98px) {
-  .reviews__slider.reviews-text-slider .item {
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .reviews__slider.reviews-text-slider .item {
-    padding-left: 0;
-  }
 }
 
 .reviews__text {
@@ -13708,6 +13740,10 @@ p.oferta {
   .maps .dealer-info {
     padding-left: 50px;
   }
+  .reviews__slider.reviews-video-slider .item {
+    height: 250px;
+    padding-bottom: 30px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -13741,6 +13777,10 @@ p.oferta {
         -ms-transform: translate(-50%, 0%);
             transform: translate(-50%, 0%);
     padding: 25px 15px;
+  }
+  .reviews__slider.reviews-video-slider .item {
+    margin: 0 30px;
+    height: 50vw;
   }
 }
 
