@@ -12835,6 +12835,7 @@ a.btn.ya-btn {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
+  outline: none;
 }
 
 .reviews__letter--img {
