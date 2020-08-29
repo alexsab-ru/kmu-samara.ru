@@ -257,47 +257,26 @@
 		padding: 40px 20px
 		background-color: $accent
 		margin: 50px 0 0
+		+media-breakpoint-down(xs)
+			padding: 20px 15px
 	&__letter
 		max-width: 1600px
 		width: 100%
 		margin: 0 auto
-		.slick-arrow
-			position: absolute
-			top: 50%
-			transform: translateY(-50%)
-			background-color: transparent
-			border: none
-			width: 50px
-			height: 50px
-			opacity: 0.8
-			transition: all .25s ease
-			z-index: 1
-			outline: none
-			svg
-				width: 25px
-				height: auto
-				+media-breakpoint-down(xs)
-					width: 15px
-				path
-					stroke: $white
-			&:hover
-				opacity: 1
-		.prev-arrow
-			left: -50px
-			+media-breakpoint-down(md)
-				left: -10px
-			svg
-				transform: rotate(-90deg)
-		.next-arrow
-			right: -50px
-			+media-breakpoint-down(md)
-				right: -10px
-			svg
-				transform: rotate(90deg)
+		.slick-dots
+			li
+				&.slick-active, &:hover
+					button
+						background-color: #fff
+				button
+					transition: all .3s ease
 		&--slide
-			margin: 0 20px
+			margin: 0 20px 70px
 			align-items: flex-start
 			outline: none
+			+media-breakpoint-down(xs)
+				flex-direction: column
+				margin: 0 10px 40px
 		&--img
 			position: relative
 			flex: 1 0 auto
@@ -307,6 +286,14 @@
 			justify-content: center
 			align-items: center
 			margin-right: 30px
+			+media-breakpoint-down(md)
+				width: 30%
+			+media-breakpoint-down(sm)
+				width: 250px
+			+media-breakpoint-down(xs)
+				margin: 0 auto 30px
+				max-width: 350px
+				width: 95%
 		&--text
 			color: $white
 			font-size: 15px
@@ -316,6 +303,8 @@
 				font-size: 20px
 				text-transform: uppercase
 				margin-bottom: 25px
+				+media-breakpoint-down(xs)
+					margin-bottom: 15px
 
 
 

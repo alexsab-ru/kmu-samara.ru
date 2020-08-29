@@ -128,18 +128,25 @@ jQuery(function($) {
 	$('.reviews__letter').slick({
 		slidesToShow: 2,
 		slidesToScroll: 1,
-		arrows: true,
-		dots: false,
+		arrows: false,
+		dots: true,
 		prevArrow: '<button class="arrow prev-arrow">'+arrow2+'</button>',
 		nextArrow: '<button class="arrow next-arrow">'+arrow2+'</button>',
 		adaptiveHeight: true,
 		responsive: [
 		{
-			breakpoint: 768,
+			breakpoint: 992,
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				adaptiveHeight: false,
+			},
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				adaptiveHeight: false,
+				autoplay: true
 			}
 		}
 		]
