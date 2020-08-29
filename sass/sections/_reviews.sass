@@ -253,6 +253,69 @@
 	&-date
 		font-weight: bold
 		text-align: right
+	&__letter__block
+		padding: 40px 20px
+		background-color: $accent
+		margin: 50px 0 0
+	&__letter
+		max-width: 1600px
+		width: 100%
+		margin: 0 auto
+		.slick-arrow
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			background-color: transparent
+			border: none
+			width: 50px
+			height: 50px
+			opacity: 0.8
+			transition: all .25s ease
+			z-index: 1
+			outline: none
+			svg
+				width: 25px
+				height: auto
+				+media-breakpoint-down(xs)
+					width: 15px
+				path
+					stroke: $white
+			&:hover
+				opacity: 1
+		.prev-arrow
+			left: -50px
+			+media-breakpoint-down(md)
+				left: -10px
+			svg
+				transform: rotate(-90deg)
+		.next-arrow
+			right: -50px
+			+media-breakpoint-down(md)
+				right: -10px
+			svg
+				transform: rotate(90deg)
+		&--slide
+			margin: 0 20px
+			align-items: flex-start
+		&--img
+			position: relative
+			flex: 1 0 auto
+			width: 13.54vmax
+			height: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-right: 30px
+		&--text
+			color: $white
+			font-size: 15px
+			h3
+				font-family: $default-font
+				line-height: 1.2
+				font-size: 20px
+				text-transform: uppercase
+				margin-bottom: 25px
+
 
 
 $colors: $red2, $green, $blue-light

@@ -124,6 +124,32 @@ jQuery(function($) {
 		]
 	});
 
+	// Letter Slider
+	$('.reviews__letter').slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: false,
+		prevArrow: '<button class="arrow prev-arrow">'+arrow2+'</button>',
+		nextArrow: '<button class="arrow next-arrow">'+arrow2+'</button>',
+		adaptiveHeight: true,
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				adaptiveHeight: false,
+			}
+		}
+		]
+	});
+
+	$('.reviews__letter--img a').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true		
+	});
+
 	//Price Slider
 	$('.model-nav.model-nav-two ul').slick({
 		slidesToShow: 8,

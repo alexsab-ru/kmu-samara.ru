@@ -12748,6 +12748,131 @@ a.btn.ya-btn {
   text-align: right;
 }
 
+.reviews__letter__block {
+  padding: 40px 20px;
+  background-color: #31618C;
+  margin: 50px 0 0;
+}
+
+.reviews__letter {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.reviews__letter .slick-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+  z-index: 1;
+  outline: none;
+}
+
+.reviews__letter .slick-arrow svg {
+  width: 25px;
+  height: auto;
+}
+
+@media (max-width: 575.98px) {
+  .reviews__letter .slick-arrow svg {
+    width: 15px;
+  }
+}
+
+.reviews__letter .slick-arrow svg path {
+  stroke: #fff;
+}
+
+.reviews__letter .slick-arrow:hover {
+  opacity: 1;
+}
+
+.reviews__letter .prev-arrow {
+  left: -50px;
+}
+
+@media (max-width: 991.98px) {
+  .reviews__letter .prev-arrow {
+    left: -10px;
+  }
+}
+
+.reviews__letter .prev-arrow svg {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.reviews__letter .next-arrow {
+  right: -50px;
+}
+
+@media (max-width: 991.98px) {
+  .reviews__letter .next-arrow {
+    right: -10px;
+  }
+}
+
+.reviews__letter .next-arrow svg {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.reviews__letter--slide {
+  margin: 0 20px;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.reviews__letter--img {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  width: 13.54vmax;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+
+.reviews__letter--text {
+  color: #fff;
+  font-size: 15px;
+}
+
+.reviews__letter--text h3 {
+  font-family: "Geometria", sans-serif;
+  line-height: 1.2;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
 .reviews__link:nth-child(3n+1) a {
   background-color: #FB4839;
   -webkit-box-shadow: 0px 15px 30px rgba(251, 72, 57, 0.35);
