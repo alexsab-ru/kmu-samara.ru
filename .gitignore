@@ -2,3 +2,12 @@
 *.php
 phpmailer
 sftp-config.json
+img/avto/**/
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+*.json
+robots.txt
+sitemap.xml
