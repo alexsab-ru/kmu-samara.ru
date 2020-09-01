@@ -1,0 +1,129 @@
+.blog
+	&__wrap
+		+media-breakpoint-down(sm)
+			flex-direction: column-reverse
+	&__grid
+		flex-grow: 1
+		margin: 0 -1.3vmax
+aside
+	min-width: 300px
+	flex-basis: 300px
+	margin-left: 2.6vmax
+	background-color: #f1f1f1
+	opacity: 0
+	+media-breakpoint-down(xl)
+		min-width: 250px
+		flex-basis: 250px
+	+media-breakpoint-down(sm)
+		flex-basis: auto
+		margin-left: 0
+		width: 100%
+		margin-bottom: 30px
+
+.article
+	flex-basis: 33.333%
+	padding: 0 1.3vmax
+	margin-bottom: 2.6vmax
+	opacity: 0
+	+media-breakpoint-down(md)
+		flex-basis: 50%
+	+media-breakpoint-down(xs)
+		flex-basis: 100%
+		margin-bottom: 30px
+	&:nth-child(4),
+	&:nth-child(8),
+	&:nth-child(12),
+	&:nth-child(16)
+		flex-basis: 100%
+		+media-breakpoint-down(md)
+			flex-basis: 50%
+		+media-breakpoint-down(xs)
+			flex-basis: 100%
+			.article__thumb img
+				min-height: 290px
+				object-fit: cover
+				object-position: center
+				+media-breakpoint-down(sm)
+					min-height: 45vw
+				+media-breakpoint-down(xs)
+					min-height: 85vw
+					width: auto
+		.article__title
+			a
+				font-size: 1.5625vmax
+				+media-breakpoint-down(md)
+					font-size: 16px
+	&:hover
+		.article__thumb img
+			transform: scale(1.1) rotateZ(-1.5deg)
+		.article__title
+			opacity: 0.9
+	&__thumb
+		display: block
+		position: relative
+		margin-bottom: 10px
+		overflow: hidden
+		img
+			width: 100%
+			height: auto
+			transition: transform .2s ease-in-out
+			+media-breakpoint-down(md)
+		&.lazyparent
+			min-height: 15vw
+			display: flex
+			justify-content: center
+			align-items: center
+			+media-breakpoint-down(xs)
+				min-height: 80vw
+			img
+				width: auto
+	&__title
+		a
+			display: block
+			color: $text
+			font-size: 1.04vmax
+			line-height: 1.3
+			+media-breakpoint-down(md)
+				font-size: 16px
+
+.pagination
+	width: 100%
+	display: block
+	margin-bottom: 50px
+	+media-breakpoint-down(xs)
+		margin-bottom: 30px
+	&__link
+		height: 100%
+		font-size: 20px
+		font-weight: 300
+		color: $text
+		width: 35px
+		height: 35px
+		background-color: transparent
+		border-radius: 50%
+		margin: 0 5px
+		text-align: center
+		line-height: 35px
+		+media-breakpoint-down(xs)
+			font-size: 16px
+			width: 30px
+			height: 30px
+			line-height: 30px
+			margin: 0 3px
+		&:not(.pagination__link--arrow)
+			&:hover, &.active
+				background-color: $accent
+				color: $white
+				font-weight: 500
+		&--arrow
+			display: flex
+			justify-content: center
+			align-items: center
+			opacity: 0.7
+			img
+				width: 18px
+				height: auto
+				+media-breakpoint-down(xs)
+					width: 15px
+			&:hover
+				opacity: 1
