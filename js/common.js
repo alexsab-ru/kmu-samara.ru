@@ -244,6 +244,11 @@ jQuery(function($) {
 		$('.top-menu__list').slideToggle();
 	});
 
+	$('.sidebar-btn').on('click', function() {
+		$(this).toggleClass('active');
+		$('.widgets').slideToggle();
+	});
+	
 	// $("section h2").each(function(){
 	// 	var th = $(this);
 	// 	var lengthWords = th.text().split(' ').length - 1;
