@@ -12931,6 +12931,42 @@ a.btn.ya-btn {
   height: fit-content;
 }
 
+.blog__content {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: auto;
+}
+
+.blog__content .blog__grid {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blog__content h1 {
+  color: #31618C;
+  font-family: "Geometria", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.9vmax;
+}
+
+@media (max-width: 767.98px) {
+  .blog__content h1 {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+}
+
+.blog__content em, .blog__content i {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.4;
+  display: block;
+}
+
 .article {
   -webkit-flex-basis: 33.333%;
       -ms-flex-preferred-size: 33.333%;
@@ -13343,6 +13379,26 @@ a.btn.ya-btn {
 
 .pagination__link--arrow:hover {
   opacity: 1;
+}
+
+.post-pagination {
+  margin: 4.17vmax 0;
+}
+
+@media (max-width: 575.98px) {
+  .post-pagination {
+    margin: 25px 0;
+  }
+}
+
+.post-pagination a {
+  font-size: 16px;
+}
+
+@media (max-width: 575.98px) {
+  .post-pagination a {
+    font-size: 12px;
+  }
 }
 
 .discounts {

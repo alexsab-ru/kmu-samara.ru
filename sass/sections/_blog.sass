@@ -6,6 +6,25 @@
 		flex-grow: 1
 		margin: 0 -1.3vmax
 		height: fit-content
+	&__content
+		flex-grow: 1
+		height: auto
+		.blog__grid
+			justify-content: center
+		h1
+			color: $accent
+			font-family: $default-font
+			text-transform: uppercase
+			font-size: 3.9vmax
+			+media-breakpoint-down(sm)
+				font-size: 20px
+				margin-top: 30px
+		em, i
+			font-weight: bold
+			font-size: 16px
+			line-height: 1.4
+			display: block
+			
 
 .article
 	flex-basis: 33.333%
@@ -222,3 +241,12 @@
 					width: 15px
 			&:hover
 				opacity: 1
+
+.post-pagination
+	margin: 4.17vmax 0
+	+media-breakpoint-down(xs)
+		margin: 25px 0
+	a
+		font-size: 16px
+		+media-breakpoint-down(xs)
+			font-size: 12px
