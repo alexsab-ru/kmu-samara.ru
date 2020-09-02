@@ -256,38 +256,80 @@
 	&__grid
 		flex-grow: 1
 		height: fit-content
+		margin-bottom: 50px
 	&__article
 		position: relative
 		padding-left: 12vmax
+		margin-bottom: 50px
+		+media-breakpoint-down(md)
+			padding-left: 70px
+		+media-breakpoint-down(sm)
+			margin-top: 30px
+			margin-bottom: 0
+		+media-breakpoint-down(xs)
+			flex-direction: column-reverse
+			padding-left: 0
 	&__date
 		position: absolute
 		left: 0
 		top: 0
 		text-align: center
+		+media-breakpoint-down(xs)
+			padding: 10px 20px
+			color: $white
+			background-color: $accent
+			box-shadow: 15px 15px 20px rgba($text, .6)
 		span
 			display: block
 			font-weight: 500
+			font-size: 1.4vmax
+			+media-breakpoint-down(md)
+				font-size: 16px
 			&.day
 				font-size: 7.8125vmax
 				font-weight: bold
 				color: $accent
 				line-height: 1
+				+media-breakpoint-down(md)
+					font-size: 45px
+				+media-breakpoint-down(xs)
+					color: $white
 	&__info
 		padding-right: 2.6vmax
+		+media-breakpoint-down(xs)
+			padding-right: 0
+		p
+			font-size: 1vmax
+			+media-breakpoint-down(md)
+				font-size: 12px
 	&__title
 		a
 			color: $text
 			font-size: 1.5625vmax
+			+media-breakpoint-down(md)
+				font-size: 20px
 			&:hover
 				text-decoration: underline
 	&__thumb
-		min-width: 22vmax
-		flex-basis: 22vmax
+		min-width: 20vmax
+		flex-basis: 20vmax
 		height: auto
+		+media-breakpoint-down(md)
+			min-width: 200px
+			flex-basis: 200px
+		+media-breakpoint-down(xs)
+			min-width: 100%
+			flex-basis: 100%
+			margin-bottom: 20px
 		&.lazyparent
 			display: flex
 			justify-content: center
 			align-items: center
+			+media-breakpoint-down(xs)
+				min-height: 300px
+				position: relative
+				z-index: 10
+				background-color: $white
 			img
 				width: auto
 		img
