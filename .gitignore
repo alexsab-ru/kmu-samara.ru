@@ -2,3 +2,9 @@
 *.php
 phpmailer
 sftp-config.json
+/_site/
+/img/avto/**/*
+/node_modules/
+/.git/
+/**/Thumbs.db
+/**/*.DS_Store
