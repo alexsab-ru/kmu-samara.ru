@@ -14142,8 +14142,7 @@ a.btn.ya-btn {
   z-index: 7;
   width: 100%;
   display: block;
-  min-height: 500px;
-  height: 75vh;
+  height: 100%;
   cursor: pointer;
   background-color: transparent;
 }
