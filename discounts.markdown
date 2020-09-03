@@ -6,5 +6,3 @@ layout: discounts
 title: Акции
 permalink: /discounts/
 ---
-
-discounts

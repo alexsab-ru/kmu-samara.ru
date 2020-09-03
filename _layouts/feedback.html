@@ -12,6 +12,20 @@ layout: default
 
 <main>
 
-  {{ content }}
+  <!-- { { content } } -->
+
+{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+
+{%- for path in page_paths -%}
+	{%- assign my_page = site.pages | where: "path", path | first -%}
+	{%- unless my_page.url contains 'cars/' -%}
+		{%- if my_page.title -%}
+			{{ path }}<br>
+			{{ my_page }}<br><br><br>
+		{%- endif -%}
+	{%- endunless -%}
+{%- endfor -%}
+
 
 </main>

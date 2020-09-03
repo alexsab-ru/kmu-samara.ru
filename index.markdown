@@ -6,5 +6,3 @@ layout: home
 title: Главная
 exclude: true
 ---
-
-home

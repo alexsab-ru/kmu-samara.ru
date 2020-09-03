@@ -6,5 +6,3 @@ layout: contacts
 title: Контакты
 permalink: /contacts/
 ---
-
-contacts

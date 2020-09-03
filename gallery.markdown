@@ -6,5 +6,3 @@ layout: gallery
 title: Фотографии
 permalink: /gallery/
 ---
-
-gallery

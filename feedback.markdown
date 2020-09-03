@@ -6,5 +6,3 @@ layout: feedback
 title: Отзывы
 permalink: /feedback/
 ---
-
-feedback

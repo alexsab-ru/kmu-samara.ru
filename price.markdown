@@ -6,5 +6,3 @@ layout: price
 title: Цены
 permalink: /price/
 ---
-
-price

@@ -6,5 +6,3 @@ layout: service
 title: Услуги
 permalink: /service/
 ---
-
-arenda

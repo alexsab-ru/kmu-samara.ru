@@ -12,15 +12,93 @@ layout: default
 
 <main>
 
-  {{ content }}
 
-	{%- include pages/service.html -%}
 
-	{%- include main/order.html -%}
 
-	{%- include main/offer.html -%}
+<section class="carfleet" id="carfleet">
+	<div class="container">
+		<h2>Наш <span>автопарк</span></h2>
 
-	{%- include main/maps.html -%}
+		{{ content }}
+
+		<div class="carfleet__block">
+			
+
+			{%- assign default_paths = site.pages | sort: "index" | map: "path" -%}
+			{%- assign page_paths = default_paths -%}
+
+			{%- for path in page_paths -%}
+				{%- assign car = site.pages | where: "path", path | first -%}
+				{%- if car.path contains '/cars/' -%}
+					{%- if car.title and car.index -%}
+
+			<div class="carfleet__item d-flex">
+				<div class="carfleet__item--img">
+					{%- assign img_path = "/img/avto/,.jpg" | split: "," -%}
+					{%- assign img_url = img_path | join: car.uid -%}
+					<a href="#orderForm" class="modal-link" data-title="{{ car.car_name }}"><img src="{{ '/img/loading.gif' | relative_url }}" data-src="{{ img_url | relative_url }}" class="lazyload" alt="{{ car.car_name }}"></a>				
+				</div>
+				<!-- /.carfleet__item--img -->
+
+				<div class="carfleet__item--info">
+					
+					<h3><a href="#orderForm" class="modal-link" data-title="{{ car.car_name }}">{{ car.car_name }}</a></h3>
+					
+					<div class="carfleet__item--row d-flex">
+						<p>{{ car.desc }}</p>
+						
+						<div class="parameters">
+							<div class="parameter {% if car.kuzov_l %} d-flex {% else %} d-none {% endif %}">
+								<div class="parameter__icon">
+									<img src="{{ '/img/icons/arrows.svg' | relative_url }}" alt="ALT">
+									<span>Кузов, м.</span>
+								</div>
+								<div class="parameter__text">{{ car.kuzov_l }}</div>
+							</div>
+							<!-- /.parametr -->
+							<div class="parameter {% if car.tonnage %} d-flex {% else %} d-none {% endif %}">
+								<div class="parameter__icon">
+									<img src="{{ '/img/icons/kg.svg' | relative_url }}" alt="ALT">
+									<span>Грузоподъёмность, т.</span>
+								</div>
+								<div class="parameter__text">{{ car.tonnage }}</div>
+							</div>
+							<!-- /.parametr -->	
+						</div>
+
+					</div>
+					<!-- /.carfleet__item--info_row d-flex -->
+					
+					<div class="carfleet__item--bottom d-flex">
+						<div class="carfleet__item--price">{%- if car.price -%}{{ car.price }} ₽{%- else -%}{%- endif -%}</div>
+						<!-- /.carfleet__item--price -->
+						<a href="#orderForm" class="btn carfleet__item--link modal-link" data-title="{{ car.car_name }}">Заказать</a>
+					</div>
+					<!-- /.carfleet__item--bottom -->
+
+				</div>
+				<!-- /.carfleet__item--info -->
+			</div>
+			<!-- /.carfleet__item d-flex -->
+
+					{%- endif -%}
+				{%- endif -%}
+			{%- endfor -%}
+
+		</div>
+		<!-- /.carfleet__block -->
+
+	</div>
+	<!-- /.container -->
+</section>
+<!-- /#carfleet.carfleet -->
+
+
+{%- include main/order.html -%}
+
+{%- include main/offer.html -%}
+
+{%- include main/maps.html -%}
 
 
 </main>

@@ -12,17 +12,85 @@ layout: default
 
 <main>
 
-  {{ content }}
 
-  {%- include pages/about.html -%}
+<section class="about" id="about" style="background-image: url(../../../img/about.png);">
+	<div class="container">
+		<h2>О <span>нас</span></h2>
 
-  {%- include main/service.html -%}
+		<div class="about__block df jcsb">
 
-  {%- include main/order.html -%}
+			<div class="about__item about__item--text">
+				<p>Компания Бумеранг Автотранс предоставляет услуги компаниям и жителям Самары и области по аренде спецтехники. Уже более трех лет мы работаем по следующим направлениям:</p>
 
-  {%- include main/offer.html -%}
+				<div class="areas df jcsb fww">
 
-  {%- include main/maps.html -%}
+					<div class="areas__item">
+						<div class="areas__item--number">1</div>
+						<!-- /.areas__item--number -->
+						<div class="areas__item--text">
+							Перевозка изделий из железобетона, кирпич, кабель, арматура, доски, колодезные кольца, трубы и др.; 
+						</div>
+						<!-- /.areas__item--text -->
+					</div>
+					<!-- /.areas__item -->
+
+					<div class="areas__item">
+						<div class="areas__item--number">2</div>
+						<!-- /.areas__item--number -->
+						<div class="areas__item--text">
+							Перевозка габаритных бытовок, ракушек, гаражей, хозблоков, ларьков, контейнеров и торговых палаток; 
+						</div>
+						<!-- /.areas__item--text -->
+					</div>
+					<!-- /.areas__item -->
+
+					<div class="areas__item">
+						<div class="areas__item--number">3</div>
+						<!-- /.areas__item--number -->
+						<div class="areas__item--text">
+							Проведение работ, как на строительной площадке, так и на территории склада или дачного участка; 
+						</div>
+						<!-- /.areas__item--text -->
+					</div>
+					<!-- /.areas__item -->
+
+					<div class="areas__item">
+						<div class="areas__item--number">4</div>
+						<!-- /.areas__item--number -->
+						<div class="areas__item--text">
+							Аренда кранов манипуляторов и грузовых автомобилей на нужное вам время. 
+						</div>
+						<!-- /.areas__item--text -->
+					</div>
+					<!-- /.areas__item -->
+
+				</div>
+				<!-- /.areas -->
+
+				
+				{{ content }}
+				
+
+			</div>
+			<!-- /.about__item about__item--text -->
+
+		</div>
+		<!-- /.about__block -->
+
+	</div>
+	<!-- /.container -->
+</section>
+<!-- /#about.about -->
+
+
+
+{%- include main/service.html -%}
+
+{%- include main/order.html -%}
+
+{%- include main/offer.html -%}
+
+{%- include main/maps.html -%}
 
 
 </main>
