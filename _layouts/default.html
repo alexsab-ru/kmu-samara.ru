@@ -6,14 +6,32 @@
   <body>
 
     {%- include header.html -%}
+    
+    {%- include top_menu.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+    {{ content }}
 
     {%- include footer.html -%}
+    
+    {%- include top_btn.html -%}
+
+    <!-- MODALS -->
+
+    {%- include modals/privacy.html -%}
+    
+    {%- include modals/orderForm.html -%}
+    
+    {%- include modals/callbackForm.html -%}
+    
+    {%- include modals/cheaper.html -%}
+    
+    {%- include modals/nothing.html -%}
+    
+    {%- include modals/thanks_error.html -%}
+
+    <script src="{{ "/js/scripts.min.js" | relative_url }}"></script>
+
+    <!-- edit: alexsab.ru -->
 
   </body>
 

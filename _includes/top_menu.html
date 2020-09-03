@@ -1,24 +1,25 @@
+{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign page_paths = site.header_pages | default: default_paths -%}
 <div class="top-menu" id="top-menu">
 	<div class="container">
+	    {%- if page_paths -%}
 		<ul class="top-menu__list">
-			<li><a href="about.html" class="">О компании</a></li>
-			<li><a href="arenda.html" class="">Аренда</a></li>
-			<li><a href="arenda-model.html" class="">Модель</a></li>
-			<li><a href="price.html" class="">Цены</a></li>
-			<li><a href="gallery.html" class="">Фотогалерея</a></li>
-			<li><a href="discounts.html" class="">Акции</a></li>
-			<li><a href="articles.html" class="">Статьи</a></li>
-			<li><a href="reviews.html" class="">Отзывы</a></li>
-			<li><a href="contacts.html" class="">Контакты</a></li>
+			{%- for path in page_paths -%}
+				{%- assign my_page = site.pages | where: "path", path | first -%}
+				{%- if my_page.title -%}
+				<li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+				{%- endif -%}
+			{%- endfor -%}
 		</ul>
+	    {%- endif -%}
 	</div>
 	<div class="top-menu__wrap">
-		<a href="/" class="top-menu__logo">
-			<img src="/img/logo-only-text.svg" alt="Бумеранг-АвтоТранс">
+		<a href="{{ "/" | relative_url }}" class="top-menu__logo">
+			<img src="{{ '/img/logo-only-text.svg' | relative_url }}" alt="{{ site.title | escape }}">
 		</a>
 		<div class="top-menu__right">
-			<a href="#maps" class="scroll"><img src="/img/icons/map.svg" alt="Телефон"></a>			
-			<a href="tel:88469722555" style="margin-right: 5px"><img src="/img/icons/phone.svg" alt="Телефон"></a>						
+			<a href="#maps" class="scroll"><img src="{{ '/img/icons/map.svg' | relative_url }}" alt="Как проехать"></a>
+			{%- if site.phone -%}<a href="tel:{{ site.phone| cgi_escape | escape }}" style="margin-right: 5px"><img src="{{ '/img/icons/phone.svg' | relative_url }}" alt="Телефон"></a>{%- endif -%}			
 
 			<button class="mobile-btn"><span></span><span></span><span></span></button>
 		</div>

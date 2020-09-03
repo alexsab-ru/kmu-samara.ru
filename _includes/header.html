@@ -9,28 +9,30 @@
 	<div class="container">
 		<div class="header-wrap">
 			<span class="header-logo">
-				<a href="/">
-					<img src="img/logo-512x188.svg" alt="Бумеранг-АвтоТранс">
+				<a href="{{ "/" | relative_url }}">
+					<img src="{{ '/img/logo-512x188.svg' | relative_url }}" alt="{{ site.title | escape }}">
 				</a>					
 			</span>
 			<!-- /.header-logo -->
 			<div class="header-phones rand1">
 				<div class="phone phone-one">
-					<img src="img/icons/map.svg" alt="Телефон">
+					<img src="{{ '/img/icons/map.svg' | relative_url }}" alt="Как проехать">
 					<span class="phone-info">
 						<a href="#maps" class="scroll">Как проехать</a>
 						<small>Заводское шоссе, 11Б</small>
 					</span>							
 				</div>
+				{%- if site.phone -%}
 				<div class="phone phone-two">
-					<img src="img/icons/phone.svg" alt="Телефон">
+					<img src="{{ '/img/icons/phone.svg' | relative_url }}" alt="Телефон">
 					<span class="phone-info">
-						<a href="tel:88469722555">8 (846) 972-25-55</a>
+						<a href="tel:{{ site.phone| cgi_escape | escape }}">{{ site.phone| escape }}</a>
 						<small><a href="#callbackForm" class="modal-link nowrap" data-title="Перезвоните мне">Заказать&nbsp;звонок</a></small>
 					</span>							
 				</div>
+				{%- endif -%}
 				<div class="phone phone-three">
-					<img src="img/icons/time.svg" alt="Телефон">
+					<img src="i{{ '/mg/icons/time.svg' | relative_url }}" alt="Время работы">
 					<span class="phone-info">
 						<a href="#callbackForm" class="modal-link" data-title="Хотите в другое время?">8:00-20:00</a>
 						<small>Ежедневно</small>
