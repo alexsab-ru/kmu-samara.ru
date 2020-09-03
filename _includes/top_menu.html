@@ -1,23 +1,15 @@
 <div class="top-menu" id="top-menu">
 	<div class="container">
 		<ul class="top-menu__list">
-			<?php 
-			$menu = [
-				'about' => 'О компании',
-				'service' => 'Аренда',
-				'price' => 'Цены',
-				'discounts' => 'Акции',
-				// 'photos' => 'Фотогалерея',
-				// 'news' => 'Новости',
-				// 'paper' => 'Статьи',
-				// 'feedback' => 'Отзывы',
-				'contacts' => 'Контакты',
-			];
-			$active = ' class="active"';
-			foreach ($menu as $key => $value) {
-			?>
-				<li<?=(preg_match('/\/'.$key.'[\/\?\#]|\/'.$key.'$/', $_SERVER['REQUEST_URI'])) ? $active : ''?>><a <?=(!in_array($key,['about','service','contacts','price','discounts']))?'href="#nothing" class="modal-link"':'href="/'.$key.'/"'?>><?=$value?></a></li>
-			<?php } ?>
+			<li><a href="about.html" class="">О компании</a></li>
+			<li><a href="arenda.html" class="">Аренда</a></li>
+			<li><a href="arenda-model.html" class="">Модель</a></li>
+			<li><a href="price.html" class="">Цены</a></li>
+			<li><a href="gallery.html" class="">Фотогалерея</a></li>
+			<li><a href="discounts.html" class="">Акции</a></li>
+			<li><a href="articles.html" class="">Статьи</a></li>
+			<li><a href="reviews.html" class="">Отзывы</a></li>
+			<li><a href="contacts.html" class="">Контакты</a></li>
 		</ul>
 	</div>
 	<div class="top-menu__wrap">
