@@ -8,7 +8,6 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
-*.json
 robots.txt
 sitemap.xml
 /node_modules/

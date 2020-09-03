@@ -1,0 +1,22 @@
+{
+  "name": "kmu",
+  "version": "1.0.0",
+  "description": "kmu-samara.ru",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newstreetpunk/kmu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newstreetpunk/kmu/issues"
+  },
+  "homepage": "https://github.com/newstreetpunk/kmu#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12"
+  }
+}
