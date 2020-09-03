@@ -1,0 +1,17 @@
+<!-- Закакзать услугу -->
+<div class="modal mfp-hide white-popup-block" id="orderForm">
+	<h2>Перезвоните мне</h2>
+	<p>Оставьте свой номер телефона и наш менеджер свяжется с вами</p>
+	<form method="POST">
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="Форма" value='Заказ услуги'>
+		<input type="hidden" name="Машина" class="service">
+		<!-- END Hidden Required Fields -->
+
+		<input type="text" placeholder="Ваше имя" name="Имя">
+		<input type="tel" placeholder="8 (999) 999-99-99*" name="Телефон" required>
+		<input type="email" name="Email" placeholder="mail@example.com">
+		<button type="submit" class="btn">Заказать</button>
+		<small>Нажимая на кнопку "Заказать", я даю согласие на <a href="#popup" class="popup">обработку персональных данных</a></small>
+	</form>
+</div>

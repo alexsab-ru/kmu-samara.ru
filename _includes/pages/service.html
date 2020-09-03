@@ -1,0 +1,66 @@
+<section class="carfleet" id="carfleet">
+	<div class="container">
+		<h2>Наш <span>автопарк</span></h2>
+
+		<div class="carfleet__block">
+			
+			<?php foreach ($cars as $car) { ?>
+				
+				<?php if($car['index'] == '') continue; ?>
+				
+			<div class="carfleet__item d-flex">
+				<div class="carfleet__item--img">
+					<a href="#orderForm" class="modal-link" data-title="<?=$car["name"]?>"><img src="/img/loading.gif" data-src="/img/avto/<?=$car["uid"]?>.jpg" class="lazyload" alt="<?=$car["name"]?>"></a>				
+				</div>
+				<!-- /.carfleet__item--img -->
+
+				<div class="carfleet__item--info">
+					
+					<h3><a href="#orderForm" class="modal-link" data-title="<?=$car["name"]?>"><?=$car["name"]?></a></h3>
+					
+					<div class="carfleet__item--row d-flex">
+						<p><?=$car["desc"]?></p>
+						
+						<div class="parameters">
+							<div class="parameter <?=$car["kuzov_l"]?'d-flex':'d-none'?>">
+								<div class="parameter__icon">
+									<img src="/img/icons/arrows.svg" alt="ALT">
+									<span>Кузов, м.</span>
+								</div>
+								<div class="parameter__text"><?=$car["kuzov_l"]?></div>
+							</div>
+							<!-- /.parametr -->
+							<div class="parameter <?=$car["tonnage"]?'d-flex':'d-none'?>">
+								<div class="parameter__icon">
+									<img src="/img/icons/kg.svg" alt="ALT">
+									<span>Грузоподъёмность, т.</span>
+								</div>
+								<div class="parameter__text"><?=$car["tonnage"]?></div>
+							</div>
+							<!-- /.parametr -->	
+						</div>
+
+					</div>
+					<!-- /.carfleet__item--info_row d-flex -->
+					
+					<div class="carfleet__item--bottom d-flex">
+						<div class="carfleet__item--price"><?=$car["price"]?$car["price"].' ₽':''?></div>
+						<!-- /.carfleet__item--price -->
+						<a href="#orderForm" class="btn carfleet__item--link modal-link" data-title="<?=$car["name"]?>">Заказать</a>
+					</div>
+					<!-- /.carfleet__item--bottom -->
+
+				</div>
+				<!-- /.carfleet__item--info -->
+			</div>
+			<!-- /.carfleet__item d-flex -->
+
+			<?php } ?>
+
+		</div>
+		<!-- /.carfleet__block -->
+
+	</div>
+	<!-- /.container -->
+</section>
+<!-- /#carfleet.carfleet -->

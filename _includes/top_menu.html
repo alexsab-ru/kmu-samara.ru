@@ -1,0 +1,36 @@
+<div class="top-menu" id="top-menu">
+	<div class="container">
+		<ul class="top-menu__list">
+			<?php 
+			$menu = [
+				'about' => 'О компании',
+				'service' => 'Аренда',
+				'price' => 'Цены',
+				'discounts' => 'Акции',
+				// 'photos' => 'Фотогалерея',
+				// 'news' => 'Новости',
+				// 'paper' => 'Статьи',
+				// 'feedback' => 'Отзывы',
+				'contacts' => 'Контакты',
+			];
+			$active = ' class="active"';
+			foreach ($menu as $key => $value) {
+			?>
+				<li<?=(preg_match('/\/'.$key.'[\/\?\#]|\/'.$key.'$/', $_SERVER['REQUEST_URI'])) ? $active : ''?>><a <?=(!in_array($key,['about','service','contacts','price','discounts']))?'href="#nothing" class="modal-link"':'href="/'.$key.'/"'?>><?=$value?></a></li>
+			<?php } ?>
+		</ul>
+	</div>
+	<div class="top-menu__wrap">
+		<a href="/" class="top-menu__logo">
+			<img src="/img/logo-only-text.svg" alt="Бумеранг-АвтоТранс">
+		</a>
+		<div class="top-menu__right">
+			<a href="#maps" class="scroll"><img src="/img/icons/map.svg" alt="Телефон"></a>			
+			<a href="tel:88469722555" style="margin-right: 5px"><img src="/img/icons/phone.svg" alt="Телефон"></a>						
+
+			<button class="mobile-btn"><span></span><span></span><span></span></button>
+		</div>
+	</div>
+	<!-- /.top-menu__wrap -->
+</div>
+<!-- /#top-menu.top-menu -->

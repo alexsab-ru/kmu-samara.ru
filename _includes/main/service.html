@@ -1,0 +1,31 @@
+<section class="service" id="service">
+	
+	<h2>Наш <span>автопарк</span></h2>
+
+	<div class="service__list df jcc fww">
+		
+		<?php foreach ($cars as $car) { ?>
+			
+			<?php if($car['index'] == '') continue; ?>
+			
+		<div class="service__item">
+			<a href="#info-popup" class="service__item--img popup">
+				<img src="/img/loading.gif" data-src="/img/avto/<?=$car["uid"]?>.jpg" alt="<?=$car["name"]?>" class="lazyload">
+			</a>
+			<div class="service__item--info df jcsb">
+				<h3><?=$car["name"]?></h3>
+				<span class="excerpt"><?=$car["kuzov_l"]?'кузов '.$car["kuzov_l"].($car["kuzov_w"]?'x'.$car["kuzov_w"]:'').' м.':''?><br><?=$car["tonnage"]?'грузоподъёмность '.$car["tonnage"].' т.':''?></span>
+				<a href="#info-popup" class="btn info-popup popup">Подробнее</a>
+			</div>
+			<div class="price hidden"><?=$car["price"]?$car["price"].' ₽':''?></div>
+			<div class="descr hidden"><?=$car["desc"]?></div>
+		</div>
+		<!-- /.service__item -->
+
+
+		<?php } ?>
+
+	</div>
+	<!-- /.service__list -->
+</section>
+<!-- /#service.service -->

@@ -11,3 +11,7 @@ vendor
 *.json
 robots.txt
 sitemap.xml
+/node_modules/
+/.git/
+/**/Thumbs.db
+/**/*.DS_Store

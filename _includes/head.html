@@ -1,11 +1,46 @@
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- seo -%}
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  {%- feed_meta -%}
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
-  {%- endif -%}
-</head>
+<meta charset="utf-8">
+<!-- <base href="/"> -->
+<?php /* <meta name="robots" content="noindex"> */ ?>
+
+	<?php if(preg_match('/\/about[\/\?\#]|\/about$/', $_SERVER['REQUEST_URI'])) { 
+			$title = 'О компании Бумеранг-АвтоТранс';
+			$description = 'Компания «Бумеранг-АвтоТранс» предоставляет услуги компаниям и жителям Самары и области по аренде манипуляторов и перевозки грузов.';
+		} else if(preg_match('/\/service[\/\?\#]|\/service$/', $_SERVER['REQUEST_URI'])) {
+			$title = 'Наша техника - Бумеранг-АвтоТранс';
+			$description = 'Каталог техники компании Бумеранг-АвтоТранс. У нас вы найдете надежную технику для погрузки, разгрузки и перевозки грузов.';
+		} else if(preg_match('/\/price[\/\?\#]|\/price$/', $_SERVER['REQUEST_URI'])) {
+			$title = 'Цены на аренду спецтехники, прайс-лист аренды спецтехники и манипуляторов - Бумеранг-АвтоТранс';
+			$description = 'Прайс-лист на услуги с ценами аренды спецтехники: погрузчиков, манипуляторов, кранов.';
+		} else if(preg_match('/\/discounts[\/\?\#]|\/discounts$/', $_SERVER['REQUEST_URI'])) {
+			$title = 'Акции, скидки и спецпредложения от Бумеранг-АвтоТранс';
+			$description = 'Специальный предложения на аренду техники компании «Бумеранг-АвтоТранс».';
+		} else if(preg_match('/\/contacts[\/\?\#]|\/contacts$/', $_SERVER['REQUEST_URI'])) {
+			$title = 'Контакты компании Бумеранг-АвтоТранс';
+			$description = 'Здесь вы можете задать вопрос специалистам компании Бумеранг-АвтоТранс. За дополнительной информацией можно обратиться по телефону 8 (846) 972-25-55.';
+		} else { 
+			// $title = 'Аренда крана-манипулятора, воровайки, кран-борта, КМУ в Самаре';
+			// $description = 'Аренда крана-манипулятора, заказ воровайки, кран-борта, грузоперевозки с КМУ в Самаре - по реальным ценам, быстро и качественно';
+			$title = 'Аренда манипулятора в Самаре и Самарской области недорого - Бумеранг-АвтоТранс';
+			$description = 'В нашей компании вы можете недорого заказать манипулятор, воровайку, кран-борт в Самаре и Самарской области. Каталог техники, цены на аренду манипуляторов.';
+		 } ?>
+<title><?=$title?></title>
+<meta name="description" content="<?=$description?>" />	
+<!-- <link rel="canonical" href="https://kmu-samara.ru/"> -->
+
+<!-- <meta property="og:url" content="https://kmu-samara.ru/" /> -->
+<meta property="og:title" content="<?=$title?>" />
+<meta property="og:description" content="<?=$description?>" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/img/slide-bg-1.jpg" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Custom Browsers Color Start -->
+<meta name="theme-color" content="#fff">
+<!-- Custom Browsers Color End -->
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+<!-- Style -->
+<link rel="stylesheet" href="/css/styles.css?<?php echo filemtime( __DIR__ . '/../../css/styles.css'); ?>">

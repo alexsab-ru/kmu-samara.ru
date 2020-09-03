@@ -1,0 +1,16 @@
+<!-- Обратная связь -->
+<div class="modal mfp-hide white-popup-block" id="callbackForm">
+	<h2>Перезвоните мне</h2>
+	<p>Можем предложить специальные условия именно для вас!</p>
+	<form method="POST">
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="Форма" value="Заказ обратного звонка">
+		<!-- END Hidden Required Fields -->
+
+		<input type="text" placeholder="Ваше имя" name="Имя">
+		<input type="tel" placeholder="8 (999) 999-99-99*" name="Телефон" required>
+		<input type="email" name="Email" placeholder="mail@example.com">
+		<button type="submit" class="btn">Перезвоните</button>
+		<small>Нажимая на кнопку "Перезвоните", я даю согласие на <a href="#popup" class="popup">обработку персональных данных</a></small>
+	</form>
+</div>

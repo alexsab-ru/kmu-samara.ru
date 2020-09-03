@@ -1,35 +1,7 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-
-  </div>
-
+<footer class="footer">
+	<p>Транспортная компания ООО "Бумеранг-АвтоТранс" в&nbsp;Самаре</p>
+	<img class="logo" src="/img/logo-512x188.svg" alt="Бумеранг-АвтоТранс">
+	<div class="container">
+		<p class="oferta">Обращаем Ваше внимание на&nbsp;то, что данный интернет сайт носит исключительно информационный характер и&nbsp;ни&nbsp;при каких условиях не&nbsp;является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации. Для получения подробной иформации о&nbsp;наличии и&nbsp;стоимости указанных товаров&nbsp;и (или) услуг, пожалуйста обращайтесь к&nbsp;менеджерам отдела клиентского обслуживания с&nbsp;помощью специальной формы связи или по&nbsp;телефону: <a href="tel:88469722555" class="nowrap">8 (846) 972-25-55</a></p>
+	</div>
 </footer>
