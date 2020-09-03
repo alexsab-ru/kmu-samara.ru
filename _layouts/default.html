@@ -3,7 +3,16 @@
 
   {%- include head.html -%}
 
+  {%- if jekyll.environment == 'production' -%}
+    {%- include scripts_in_head.html -%}
+  {%- endif -%}
+
   <body>
+
+    {%- if jekyll.environment == 'production' -%}
+      {%- include scripts_after_boby.html -%}
+    {%- endif -%}
+
 
     {%- include header.html -%}
     
