@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: page
+layout: model
 title: Манипулятор Mitsubishi Fuso
 desc: Манипулятор Mitsubishi Fuso
 car_name: Манипулятор Mitsubishi Fuso

@@ -59,6 +59,7 @@ jQuery(function($) {
 		slidesToScroll: 1,
 		arrows: false,
 		// fade: true,
+		adaptiveHeight: true,
 		asNavFor: '.model__slider--nav'
 	});
 	$('.model__slider--nav').slick({
@@ -80,6 +81,7 @@ jQuery(function($) {
 		nextArrow: '<button class="arrow next-arrow">'+arrow+'</button>',
 		dots: false,
 		fade: true,
+		adaptiveHeight: true,
 		asNavFor: '.gallery__nav'
 	});
 

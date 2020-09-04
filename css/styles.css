@@ -11353,22 +11353,8 @@ form small a:hover {
 }
 
 .model__slider--wrap {
-  max-height: 510px;
-  height: 100%;
   overflow: hidden;
   margin-bottom: 30px;
-}
-
-@media (max-width: 1440px) {
-  .model__slider--wrap {
-    max-height: 320px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .model__slider--wrap {
-    max-height: 100%;
-  }
 }
 
 .model__slider--nav span {
@@ -12010,7 +11996,7 @@ a.btn.ya-btn {
 }
 
 .model-nav.model-nav-two .model-nav-slider .slick-list {
-  padding-top: 35px;
+  padding-top: 45px;
 }
 
 .model-nav.model-nav-two .model-nav-slider .slick-dots li {

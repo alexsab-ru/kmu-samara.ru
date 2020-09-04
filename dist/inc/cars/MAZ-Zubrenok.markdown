@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: page
+layout: model
 title: МАЗ 437041-261 Зубренок в аренду для грузоперевозок
 desc: МАЗ 437041-261 Зубренок в аренду для грузоперевозок
 car_name: МАЗ 437041-261 Зубренок в аренду для грузоперевозок

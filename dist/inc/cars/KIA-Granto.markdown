@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: page
+layout: model
 title: Манипулятор KIA Granto в аренду
 desc: Манипулятор KIA Granto в аренду
 car_name: Манипулятор KIA Granto в аренду

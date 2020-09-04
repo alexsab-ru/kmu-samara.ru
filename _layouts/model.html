@@ -1,0 +1,148 @@
+---
+layout: default
+---
+
+<!-- *********************************************************** -->
+<!-- ЗАГОЛОВОК H1. ЕГО НЕ ВИДНО НА СТРАНИЦЕ, НО ОН ВИДЕН РОБОТАМ -->
+<!-- *********************************************************** -->
+
+<h1 class="visually-hidden">Аренда крана-манипулятора, воровайки, кран-борта, КМУ в Самаре</h1>
+<!-- /.visually-hidden -->
+
+
+<main>
+
+<section class="model" id="model">
+	<div class="container">
+		<h2>Наш <span>автопарк</span></h2>
+
+		<div class="model__block d-flex">
+
+			<div class="model__info">
+				<h3>{{ page.title }}</h3>
+				
+				{{ content }}
+				
+				<div class="parameters">
+					{% if page.kuzov_l %}
+					<div class="parameter d-flex">
+						<div class="parameter__icon">
+							<img src="{{ '/img/icons/arrows.svg' | relative_url }}" alt="ALT">
+							<span>Кузов, м</span>
+						</div>
+						<div class="parameter__text">{{ page.kuzov_l }}{% if page.kuzov_w %}x{{ page.kuzov_w }}{% endif %}</div>
+					</div>
+					<!-- /.parameter -->
+					{% endif %}
+					{% if page.tonnage %}
+					<div class="parameter d-flex">
+						<div class="parameter__icon">
+							<img src="{{ '/img/icons/kg.svg' | relative_url }}" alt="ALT">
+							<span>Грузоподъёмность, т</span>
+						</div>
+						<div class="parameter__text">{{ page.tonnage }}</div>
+					</div>
+					<!-- /.parameter -->
+					{% endif %}
+					{%- if page.price -%}
+					<div class="parameter d-flex">
+						<div class="parameter__icon">
+							<img src="{{ '/img/icons/price.svg' | relative_url }}" alt="ALT">
+							<span>Цена, ₽/час</span>
+						</div>
+						<div class="parameter__text">{{ page.price }}</div>
+					</div>
+					<!-- /.parameter -->
+					{%- endif -%}
+				</div>
+				<!-- /.parameters -->
+				
+				<a href="#orderForm" class="btn modal-link" data-title="{{ page.title }}">Заказать</a>
+
+			</div>
+			<!-- /.model__info -->
+
+			<div class="model__slider">
+				<div class="model__slider--wrap">
+
+					{%- if page.images -%}
+						
+						{%- assign imgs = page.images | split: "|" -%}
+
+						{%- for img in imgs -%}
+			
+					<img src="{{ img | relative_url }}" alt="{{ car.car_name }}">
+			
+						{%- endfor -%}
+
+					{%- else -%}
+
+					{%- assign img_path = "/img/avto/,.jpg" | split: "," -%}
+					{%- assign img_url = img_path | join: page.uid -%}
+
+					<img src="{{ img_url | relative_url }}" alt="{{ page.car_name }}">
+
+					{%- endif -%}
+
+				</div>
+				<!-- /.model__slider--wrap -->
+				<div class="model__slider--nav">
+
+
+					{%- if page.images -%}
+						
+						{%- assign imgs = page.images | split: "|" -%}
+
+						{%- for img in imgs -%}
+			
+					<span><img src="{{ img | relative_url }}" alt="{{ car.car_name }}"></span>
+			
+						{%- endfor -%}
+					{%- else -%}
+
+					<!-- <span><img src="{{ img_url | relative_url }}" alt="{{ page.car_name }}"></span> -->
+					
+					{%- endif -%}
+
+				</div>
+				<!-- /.model__slider--nav -->
+			</div>
+			<!-- /.model__slider -->
+		</div>
+		<!-- /.model__block -->
+
+		<nav class="model-nav">
+			<ul>
+
+				{%- assign default_paths = site.pages | sort: "index" | map: "path" -%}
+				{%- assign page_paths = default_paths -%}
+
+				{% assign amount = 0 %}
+				
+				{%- for path in page_paths -%}
+					{%- assign car = site.pages | where: "path", path | first -%}
+					{%- if car.path contains '/cars/' -%}
+						{%- if car.title and car.index -%}
+
+						{% capture amount %}{{ amount | plus:1 }}{% endcapture %}
+
+						{%- assign img_path = "/img/model-nav/,.png" | split: "," -%}
+						{%- assign img_url = img_path | join: car.uid -%}
+							
+				<li {% if page.url == car.url %} class="active"{% endif %}><a href="{{ car.url }}" title="{{ car.car_name }}"><img src="{{ img_url | relative_url }}" alt="{{ car.car_name }}"></a></li>
+
+						{%- endif -%}
+					{%- endif -%}
+				{%- endfor -%}
+
+			</ul>
+		</nav>
+		<!-- /.model-nav -->
+
+	</div>
+	<!-- /.container -->
+</section>
+<!-- /#model.model -->
+
+
+</main>

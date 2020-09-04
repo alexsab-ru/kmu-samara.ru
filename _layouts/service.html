@@ -36,13 +36,13 @@ layout: default
 				<div class="carfleet__item--img">
 					{%- assign img_path = "/img/avto/,.jpg" | split: "," -%}
 					{%- assign img_url = img_path | join: car.uid -%}
-					<a href="#orderForm" class="modal-link" data-title="{{ car.car_name }}"><img src="{{ '/img/loading.gif' | relative_url }}" data-src="{{ img_url | relative_url }}" class="lazyload" alt="{{ car.car_name }}"></a>				
+					<a href="{{ car.url }}" class="" data-title="{{ car.car_name }}"><img src="{{ '/img/loading.gif' | relative_url }}" data-src="{{ img_url | relative_url }}" class="lazyload" alt="{{ car.car_name }}"></a>				
 				</div>
 				<!-- /.carfleet__item--img -->
 
 				<div class="carfleet__item--info">
 					
-					<h3><a href="#orderForm" class="modal-link" data-title="{{ car.car_name }}">{{ car.car_name }}</a></h3>
+					<h3><a href="{{ car.url }}" class="" data-title="{{ car.car_name }}">{{ car.car_name }}</a></h3>
 					
 					<div class="carfleet__item--row d-flex">
 						<p>{{ car.desc }}</p>

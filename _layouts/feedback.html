@@ -12,20 +12,195 @@ layout: default
 
 <main>
 
-  <!-- { { content } } -->
+<section class="reviews">
+	<div class="container">
+		<h2>Отзывы</h2>
 
-{%- assign default_paths = site.pages | map: "path" -%}
-{%- assign page_paths = site.header_pages | default: default_paths -%}
+		<div class="d-flex reviews__links">
+			<div class="reviews__link ">
+				<img src="{{ '/img/reviews/yandex.svg' | relative_url }}" alt="Яндекс">
+				<a href="javascript:void(0)">Оставить отзыв на Яндекс.Картах</a>
+			</div>
+			<!-- /.reviews__link -->
+			<div class="reviews__link">
+				<img src="{{ '/img/reviews/google.svg' | relative_url }}" alt="Google">
+				<a href="javascript:void(0)">Оставить отзыв на Google.Картах</a>
+			</div>
+			<!-- /.reviews__link -->
+			<div class="reviews__link">
+				<img src="{{ '/img/reviews/2gis.svg' | relative_url }}" alt="2GIS">
+				<a href="javascript:void(0)">Оставить отзыв в 2Gis</a>
+			</div>
+			<!-- /.reviews__link -->
+		</div>
+		<!-- /.reviews__links -->
 
-{%- for path in page_paths -%}
-	{%- assign my_page = site.pages | where: "path", path | first -%}
-	{%- unless my_page.url contains 'cars/' -%}
-		{%- if my_page.title -%}
-			{{ path }}<br>
-			{{ my_page }}<br><br><br>
-		{%- endif -%}
-	{%- endunless -%}
-{%- endfor -%}
+		<div class="reviews__block">
+			
+			<div class="reviews__slider reviews-text-slider">
 
+				<div class="item">
+					<div class="reviews__text">
+						<!-- <img src="{{ '/img/reviews/user.jpg' | relative_url }}" alt="Константин Иванович" class="reviews__user"> -->
+						<h4>Константин Иванович</h4>
+						<h5>«Техника в полном порядке»</h5>
+						<p>Сдается в аренду бортовой автомобиль ГАЗ 3307, валит на 3 стороны. Длина кузова - 3,5 метра. Общая грузоподъемность - 4,5 тонны. В кузове установлено крепление "Катюша", которое позволяет перевозить негабаритный груз длинной до 6 метров. При ее использовании груз должен не превышать 3 тонн. Минимальное время аренды - 3 часа. Междугородние перевозки - 35-40 р\км.</p>
+						<div class="reviews-date"><i>2020-05-30</i></div>
+						<!-- /.reviews-date -->
+						<span class="rating" data-star="4">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</span>
+						<!-- /.rating -->
+					</div>
+					<!-- /.reviews__text -->
+				</div>
+				<!-- /.item -->
+
+				<div class="item">
+					<div class="reviews__text">
+						<img src="{{ '/img/reviews/user2.jpg' | relative_url }}" alt="Федор Федорович" class="reviews__user">
+						<h4>Федор Федорович</h4>
+						<h5>«Техника в полном порядке»</h5>
+						<p>Сдается в аренду бортовой автомобиль ГАЗ 3307, валит на 3 стороны. Длина кузова - 3,5 метра. Общая грузоподъемность - 4,5 тонны. В кузове установлено крепление "Катюша", которое позволяет перевозить негабаритный груз длинной до 6 метров. При ее использовании груз должен не превышать 3 тонн. Минимальное время аренды - 3 часа. Междугородние перевозки - 35-40 р\км.</p>
+						<div class="reviews-date"><i>2020-05-30</i></div>
+						<!-- /.reviews-date -->
+						<span class="rating" data-star="5">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</span>
+						<!-- /.rating -->
+					</div>
+					<!-- /.reviews__text -->
+				</div>
+				<!-- /.item -->
+
+				<div class="item">
+					<div class="reviews__text">
+						<img src="{{ '/img/reviews/user.jpg' | relative_url }}" alt="Константин Иванович" class="reviews__user">
+						<h4>Константин Иванович</h4>
+						<h5>«Техника в полном порядке»</h5>
+						<p>Сдается в аренду бортовой автомобиль ГАЗ 3307, валит на 3 стороны. Длина кузова - 3,5 метра. Общая грузоподъемность - 4,5 тонны. В кузове установлено крепление "Катюша", которое позволяет перевозить негабаритный груз длинной до 6 метров. При ее использовании груз должен не превышать 3 тонн. Минимальное время аренды - 3 часа. Междугородние перевозки - 35-40 р\км.</p>
+						<div class="reviews-date"><i>2020-05-30</i></div>
+						<!-- /.reviews-date -->
+						<span class="rating" data-star="5">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</span>
+						<!-- /.rating -->
+					</div>
+					<!-- /.reviews__text -->
+				</div>
+				<!-- /.item -->
+
+			</div>
+			<!-- /.reviews-text-slider -->
+
+			<div class="reviews__slider reviews-video-slider">
+
+				<div class="item">
+					<a href="https://www.youtube.com/watch?v=OkNcXWbSmVY" class="embed-responsive embed-responsive-16by9 reviews-video-link lazyload" style="background-image: url({{ '/img/loading.gif' | relative_url }});" data-src-before="https://img.youtube.com/vi/OkNcXWbSmVY/maxresdefault.jpg">
+						<img src="{{ '/img/icons/play-btn.svg' | relative_url }}" alt="Play" class="play-btn">
+					</a>
+					<span class="video-title">Отзыв Антона Алексеевича, 2020-05-30</span>
+					<!-- /.video-title -->
+				</div>
+				<!-- /.item -->
+
+				<div class="item">
+					<a href="https://www.youtube.com/watch?v=uNIW6wGoaxA" class="embed-responsive embed-responsive-16by9 reviews-video-link lazyload" style="background-image: url({{ '/img/loading.gif' | relative_url }});" data-src-before="https://img.youtube.com/vi/uNIW6wGoaxA/maxresdefault.jpg">
+						<img src="{{ '/img/icons/play-btn.svg' | relative_url }}" alt="Play" class="play-btn">
+					</a>
+					<span class="video-title">Отзыв Александра Сергеевича, 2020-04-20</span>
+					<!-- /.video-title -->
+				</div>
+				<!-- /.item -->
+
+				<div class="item">
+					<a href="https://www.youtube.com/watch?v=6dA56jMBAI0" class="embed-responsive embed-responsive-16by9 reviews-video-link lazyload" style="background-image: url({{ '/img/loading.gif' | relative_url }});" data-src-before="https://img.youtube.com/vi/6dA56jMBAI0/maxresdefault.jpg">
+						<img src="{{ '/img/icons/play-btn.svg' | relative_url }}" alt="Play" class="play-btn">
+					</a>
+					<span class="video-title">Отзыв Александра Сергеевича, 2020-04-20</span>
+					<!-- /.video-title -->
+				</div>
+				<!-- /.item -->
+
+				<div class="item">
+					<a href="https://www.youtube.com/watch?v=gn7ozDp0IqY" class="embed-responsive embed-responsive-16by9 reviews-video-link lazyload" style="background-image: url({{ '/img/loading.gif' | relative_url }});" data-src-before="https://img.youtube.com/vi/gn7ozDp0IqY/maxresdefault.jpg">
+						<img src="{{ '/img/icons/play-btn.svg' | relative_url }}" alt="Play" class="play-btn">
+					</a>
+					<span class="video-title">Отзыв Александра Сергеевича, 2020-04-20</span>
+					<!-- /.video-title -->
+				</div>
+				<!-- /.item -->
+
+			</div>
+			<!-- /.reviews-video-slider -->
+
+		</div>
+		<!-- /.reviews__block -->
+	</div>
+	<!-- /.container -->
+	<div class="reviews__letter__block">
+		<div class="reviews__letter">
+			<div class="reviews__letter--slide d-flex">
+				<div class="reviews__letter--img">
+					<a href="{{ '/img/reviews/letter.jpg' | relative_url }}" class="lazyparent">
+						<img src="{{ '/img/loading.gif' | relative_url }}" alt="Благодарственное письмо" data-src="{{ '/img/reviews/letter.jpg' | relative_url }}" class="lazyload">
+					</a>							
+				</div>
+				<!-- /.reviews__letter--img lazyparent -->
+				<div class="reviews__letter--text">
+					<h3>Благодарственное <br>письмо</h3>
+					<p>Сдается в аренду бортовой автомобиль ГАЗ 3307, валит на 3 стороны. Длина кузова - 3,5 метра. Общая грузоподъемность - 4,5 тонны. В кузове установлено крепление "Катюша", которое позволяет перевозить негабаритный груз длинной до 6 метров. При ее использовании груз должен не превышать 3 тонн. Минимальное время аренды - 3 часа. Междугородние перевозки - 35-40 р\км.</p>
+				</div>
+				<!-- /.reviews__letter--text -->
+			</div>
+			<!-- /.reviews__letter--slide -->
+
+			<div class="reviews__letter--slide d-flex">
+				<div class="reviews__letter--img">
+					<a href="{{ '/img/reviews/letter.jpg' | relative_url }}" class="lazyparent">
+						<img src="{{ '/img/loading.gif' | relative_url }}" alt="Благодарственное письмо" data-src="{{ '/img/reviews/letter.jpg' | relative_url }}" class="lazyload">
+					</a>							
+				</div>
+				<!-- /.reviews__letter--img lazyparent -->
+				<div class="reviews__letter--text">
+					<h3>Благодарственное <br>письмо</h3>
+					<p>Сдается в аренду бортовой автомобиль ГАЗ 3307, валит на 3 стороны. Длина кузова - 3,5 метра. Общая грузоподъемность - 4,5 тонны. В кузове установлено крепление "Катюша", которое позволяет перевозить негабаритный груз длинной до 6 метров. При ее использовании груз должен не превышать 3 тонн. Минимальное время аренды - 3 часа. Междугородние перевозки - 35-40 р\км.</p>
+				</div>
+				<!-- /.reviews__letter--text -->
+			</div>
+			<!-- /.reviews__letter--slide -->
+
+			<div class="reviews__letter--slide d-flex">
+				<div class="reviews__letter--img">
+					<a href="{{ '/img/reviews/letter.jpg' | relative_url }}" class="lazyparent">
+						<img src="{{ '/img/loading.gif' | relative_url }}" alt="Благодарственное письмо" data-src="{{ '/img/reviews/letter.jpg' | relative_url }}" class="lazyload">
+					</a>							
+				</div>
+				<!-- /.reviews__letter--img lazyparent -->
+				<div class="reviews__letter--text">
+					<h3>Благодарственное <br>письмо</h3>
+					<p>Сдается в аренду бортовой автомобиль ГАЗ 3307, валит на 3 стороны. Длина кузова - 3,5 метра. Общая грузоподъемность - 4,5 тонны. В кузове установлено крепление "Катюша", которое позволяет перевозить негабаритный груз длинной до 6 метров. При ее использовании груз должен не превышать 3 тонн. Минимальное время аренды - 3 часа. Междугородние перевозки - 35-40 р\км.</p>
+				</div>
+				<!-- /.reviews__letter--text -->
+			</div>
+			<!-- /.reviews__letter--slide -->
+		</div>
+		<!-- /.reviews__letter -->
+	</div>
+	<!-- /.reviews__letter__block -->
+</section>
+<!-- /.reviews -->
 
 </main>

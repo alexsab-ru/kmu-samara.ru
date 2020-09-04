@@ -12,6 +12,58 @@ layout: default
 
 <main>
 
-  {{ content }}
+{%- assign default_paths = site.pages | sort: "index" | map: "path" -%}
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+
+<section class="gallery">
+	<div class="container">
+		<h2>Фотогалерея</h2>
+
+		<div class="gallery__slider">
+
+				{%- for path in page_paths -%}
+					{%- assign car = site.pages | where: "path", path | first -%}
+					{%- if car.path contains '/cars/' -%}
+						{%- if car.title and car.index and car.images -%}
+
+						{%- assign imgs = car.images | split: "|" -%}
+						{%- for img in imgs -%}
+			
+			<img src="{{ img | relative_url }}" alt="{{ car.car_name }}">
+			
+						{%- endfor -%}
+						{%- endif -%}
+					{%- endif -%}
+				{%- endfor -%}
+
+		</div>
+		<!-- /.gallery__slider -->
+
+		<div class="gallery__nav mb-5">
+
+				{%- for path in page_paths -%}
+					{%- assign car = site.pages | where: "path", path | first -%}
+					{%- if car.path contains '/cars/' -%}
+						{%- if car.title and car.index and car.images -%}
+
+						{%- assign imgs = car.images | split: "|" -%}
+						{%- for img in imgs -%}
+			
+			<div class="gallery__nav--item"><img src="{{ img | relative_url }}" alt="{{ car.car_name }}"></div>
+			
+						{%- endfor -%}
+						{%- endif -%}
+					{%- endif -%}
+				{%- endfor -%}
+
+		</div>
+		<!-- /.gallery__nav -->
+
+	</div>
+	<!-- /.container -->
+</section>
+<!-- /.gallery -->
+
+
 
 </main>

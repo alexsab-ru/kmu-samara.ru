@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: page
+layout: model
 title: Услуги МАЗ 6303-021 с манипулятором 
 desc: Услуги МАЗ 6303-021 с манипулятором 
 car_name: Услуги МАЗ 6303-021 с манипулятором 
