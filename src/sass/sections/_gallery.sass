@@ -2,7 +2,8 @@
 	&__slider
 		position: relative
 		z-index: 1
-		&:before
+		margin-bottom: 5px
+		&.disable:before
 			content: ''
 			display: block
 			position: absolute
@@ -18,15 +19,15 @@
 			transform: translateY(-50%)
 			background-color: transparent
 			width: 50px
-			height: 50px
+			height: 100%
 			outline: none
 			border: none
 			padding: 0
 			z-index: 1
 			transition: all .25s
-			background-color: rgba(0,0,0,.15)
+			background-color: rgba(0,0,0,.3)
 			&:hover
-				background-color: rgba(0,0,0,.5)
+				background-color: rgba(0,0,0,.15)
 				svg
 					opacity: 1
 			svg
@@ -37,13 +38,13 @@
 				path
 					fill: #fff !important
 			&.next-arrow
-				right: 20px
+				right: 0
 				+media-breakpoint-down(sm)
 					right: 0px
 				svg
 					transform: rotate(180deg)
 			&.prev-arrow
-				left: 20px
+				left: 0
 				+media-breakpoint-down(sm)
 					left: 0px
 	&__nav

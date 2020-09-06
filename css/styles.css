@@ -12134,9 +12134,10 @@ a.btn.ya-btn {
 .gallery__slider {
   position: relative;
   z-index: 1;
+  margin-bottom: 5px;
 }
 
-.gallery__slider:before {
+.gallery__slider.disable:before {
   content: '';
   display: block;
   position: absolute;
@@ -12156,7 +12157,7 @@ a.btn.ya-btn {
           transform: translateY(-50%);
   background-color: transparent;
   width: 50px;
-  height: 50px;
+  height: 100%;
   outline: none;
   border: none;
   padding: 0;
@@ -12164,11 +12165,11 @@ a.btn.ya-btn {
   -webkit-transition: all .25s;
   -o-transition: all .25s;
   transition: all .25s;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .gallery__slider .slick-arrow:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .gallery__slider .slick-arrow:hover svg {
@@ -12189,7 +12190,7 @@ a.btn.ya-btn {
 }
 
 .gallery__slider .slick-arrow.next-arrow {
-  right: 20px;
+  right: 0;
 }
 
 @media (max-width: 767.98px) {
@@ -12205,7 +12206,7 @@ a.btn.ya-btn {
 }
 
 .gallery__slider .slick-arrow.prev-arrow {
-  left: 20px;
+  left: 0;
 }
 
 @media (max-width: 767.98px) {

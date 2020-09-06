@@ -67,7 +67,7 @@ jQuery(function($) {
 		slidesToScroll: 1,
 		asNavFor: '.model__slider--wrap',
 		// dots: true,
-		centerMode: true,
+		// centerMode: true,
 		focusOnSelect: true
 	});
 

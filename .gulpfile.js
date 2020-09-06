@@ -20,7 +20,7 @@ let projects = {
 			src: [
 				base.newstreetpunk_kmu + '/libs/jquery/dist/jquery.min.js',
 				base.newstreetpunk_kmu + '/libs/Magnific-Popup-master/jquery.magnific-popup.js',
-				'node_modules/slick-carousel/slick/slick.min.js',
+				'node_modules/slick-carousel/slick/slick.js',
 				base.newstreetpunk_kmu + '/libs/animate/animate-css.js',
 				base.newstreetpunk_kmu + '/libs/lazyload.min.js',
 				base.newstreetpunk_kmu + '/libs/waypoint.js',
@@ -42,7 +42,7 @@ let projects = {
 			src: [
 				base.newstreetpunk_kmu + '/src/libs/jquery/dist/jquery.min.js',
 				base.newstreetpunk_kmu + '/src/libs/Magnific-Popup-master/jquery.magnific-popup.js',
-				'node_modules/slick-carousel/slick/slick.min.js',
+				'node_modules/slick-carousel/slick/slick.js',
 				base.newstreetpunk_kmu + '/src/libs/animate/animate-css.js',
 				base.newstreetpunk_kmu + '/src/libs/lazyload.min.js',
 				base.newstreetpunk_kmu + '/src/libs/waypoint.js',
