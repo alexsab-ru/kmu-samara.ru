@@ -43,7 +43,7 @@ layout: default
 
 						{% capture amount %}{{ amount | plus:1 }}{% endcapture %}
 				
-				<a href="{{ car.url }}" class="f-table__row table-link">
+				<a href="{{ car.url | relative_url }}" class="f-table__row table-link">
 					<div class="f-table__col">{{ amount }}</div>
 					<div class="f-table__col f-table__col--name">{{ car.car_name }}</div>
 					<div class="f-table__col">{%- if car.price -%}{{ car.price }} ₽{%- endif -%}</div>
@@ -74,7 +74,7 @@ layout: default
 
 						{%- assign img_path = "/img/model-nav/,.png" | split: "," -%}
 						{%- assign img_url = img_path | join: car.uid -%}
-				<li><a href="{{ car.url }}" title="model"><span class="number">{{ amount }}</span><img src="{{ img_url | relative_url }}" alt="{{ car.car_name }}"></a></li>
+				<li><a href="{{ car.url | relative_url }}" title="model"><span class="number">{{ amount }}</span><img src="{{ img_url | relative_url }}" alt="{{ car.car_name }}"></a></li>
 			
 
 						{%- endif -%}
