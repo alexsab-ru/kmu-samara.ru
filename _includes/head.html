@@ -10,7 +10,7 @@
 <meta property="og:title" content="{{ page.title }}" />
 <meta property="og:description" content="{{ page.description }}" />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="img/slide-bg-1.jpg" />
+<meta property="og:image" content="{{ '/img/slide-bg-1.jpg' | relative_url }}" />
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,4 +22,4 @@
 <!-- Favicon -->
 <link rel="shortcut icon" href="{{ '/img/favicon.png' | relative_url }}" type="image/x-icon">
 <!-- Style -->
-<link rel="stylesheet" href="{{ "/css/styles.css" | relative_url }}">
+<link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
