@@ -304,7 +304,7 @@ jQuery(function($) {
 		var replUrl = url.replace('?', '&');
 		$.ajax({
 			type: "POST",
-			url: "https://diywebdev.ru/mail.php", //Change
+			url: "//alexsab.ru/kmu/",
 			data: th.serialize() +'&referer=' + replUrl
 		}).done(function( data ) {
 			var res = JSON.parse(data);

@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# repo_name "newstreetpunk/kmu"
+# repo_name "alexsab/kmu"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
