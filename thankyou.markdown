@@ -7,7 +7,7 @@ menu: Спасибо
 title: Спасибо!
 exclude: true
 permalink: /thankyou/
-
+sitemap: false
 ---
 
 # Спасибо!
