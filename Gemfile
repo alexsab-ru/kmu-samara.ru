@@ -25,8 +25,7 @@ gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # gem "jekyll-feed", "~> 0.12"
-  # gem "jekyll-seo-tag", "~> 2.6"
-  gem 'jekyll-sitemap'
+  gem "jekyll-seo-tag", "~> 2.6"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -40,3 +39,5 @@ end
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 gem 'jekyll-browsersync', group: [:jekyll_plugins]
+
+gem 'jekyll-sitemap', group: [:jekyll_plugins]

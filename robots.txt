@@ -1,0 +1,24 @@
+User-Agent: *
+Disallow: /index.php
+Disallow: *?model=
+Disallow: */?
+Disallow: *pdf
+
+User-Agent: Googlebot
+Disallow: /index.php
+Disallow: *?model=
+Disallow: */?
+Disallow: *pdf
+Allow: /*.jpg
+Allow: /*.js
+Allow: /*.png
+Allow: /*.css
+Allow: /*.fonts
+
+User-Agent: Yandex
+Disallow: /index.php
+Disallow: *?model=
+Disallow: */?
+Disallow: *pdf
+
+Sitemap: https://www.kmu-samara.ru/sitemap.xml

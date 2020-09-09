@@ -35,7 +35,7 @@ gtm: GTM-55H4MRG
 plugins:
   - jekyll-sitemap
   # - jekyll-feed
-  # - jekyll-seo-tag
+  - jekyll-seo-tag
   
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -45,7 +45,8 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude: [ 'src/', 'dist/inc/phpmailer/' ]
+  # - src/
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
