@@ -24,7 +24,7 @@ email: bat.smr63@yandex.ru
 description: >- # this means to ignore newlines until "baseurl:"
   В нашей компании вы можете недорого заказать манипулятор, воровайку, кран-борт в Самаре и Самарской области. Каталог техники, цены на аренду манипуляторов.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.kmu-samara.ru" # the base hostname & protocol for your site, e.g. http://example.com
 vk_username: bat.smr63
 instagram_username:  bat.smr63
 
@@ -33,8 +33,9 @@ gtm: GTM-55H4MRG
 # Build settings
 # theme: minima
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+  - jekyll-sitemap
+  # - jekyll-feed
+  # - jekyll-seo-tag
   
 # Exclude from processing.
 # The following items will not be processed, by default.

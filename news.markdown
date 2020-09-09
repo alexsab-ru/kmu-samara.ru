@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: articles
+menu: Статьи
 title: Статьи
 permalink: /articles/
 exclude: true

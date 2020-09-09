@@ -3,6 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: service
-title: Услуги
+menu: Услуги
+title: Наша техника - Бумеранг-АвтоТранс
+description: Каталог техники компании Бумеранг-АвтоТранс. У нас вы найдете надежную технику для погрузки, разгрузки и перевозки грузов.
 permalink: /service/
 ---

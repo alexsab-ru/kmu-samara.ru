@@ -3,7 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
-title: Спасибо
+menu: Спасибо
+title: Спасибо!
 exclude: true
 permalink: /thankyou/
 

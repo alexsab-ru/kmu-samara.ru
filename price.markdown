@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: price
-title: Цены
+menu: Цены
+title: Цены на аренду спецтехники, прайс-лист аренды спецтехники и манипуляторов - Бумеранг-АвтоТранс
 permalink: /price/
 ---

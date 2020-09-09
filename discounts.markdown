@@ -3,6 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: discounts
-title: Акции
+menu: Акции
+title: Акции, скидки и спецпредложения от Бумеранг-АвтоТранс
+description: Специальный предложения на аренду техники компании «Бумеранг-АвтоТранс».
 permalink: /discounts/
 ---

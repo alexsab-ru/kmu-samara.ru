@@ -3,7 +3,9 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: about
-title: О нас
+menu: О нас
+title: О компании Бумеранг-АвтоТранс
+description: Компания «Бумеранг-АвтоТранс» предоставляет услуги компаниям и жителям Самары и области по аренде манипуляторов и перевозки грузов.
 permalink: /about/
 ---
 
