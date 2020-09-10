@@ -5,5 +5,6 @@
 layout: feedback
 menu: Отзывы
 title: Отзывы
+description: Отзывы о компании Бумеранг-АвтоТранс
 permalink: /feedback/
 ---

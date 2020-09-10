@@ -3,14 +3,17 @@
 <!-- <meta name="robots" content="noindex"> -->
 
 <title>{{ page.title }}</title>
-<meta name="description" content="{{ page.description }}" />	
-<!-- <link rel="canonical" href="https://kmu-samara.ru/"> -->
+<meta name="description" content="{{ page.description }}" />
 
-<!-- <meta property="og:url" content="https://kmu-samara.ru/" /> -->
+{%- if page.canonical -%}
+<link rel="canonical" href="{{ page.canonical | relative_url }}">
+{%- endif -%}
+
+<meta property="og:url" content="{{ page.url | relative_url }}" />
 <meta property="og:title" content="{{ page.title }}" />
 <meta property="og:description" content="{{ page.description }}" />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="{{ '/img/slide-bg-1.jpg' | relative_url }}" />
+<meta property="og:image" content="{{ page.metaimg | relative_url }}" />
 
 <meta name="yandex-verification" content="911fb7ea4a857152" />
 

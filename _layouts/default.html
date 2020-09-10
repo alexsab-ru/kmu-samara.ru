@@ -18,7 +18,17 @@
     
     {%- include top_menu.html -%}
 
+    {%- if page.layout == 'home' -%}
+      {%- include banner.html -%}
+    {%- endif -%}
+
+    <h1 class="visually-hidden">{{ page.h1 }}</h1>
+
+    <main>
+
     {{ content }}
+
+    </main>
 
     {%- include footer.html -%}
     

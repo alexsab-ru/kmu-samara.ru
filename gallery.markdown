@@ -5,5 +5,6 @@
 layout: gallery
 menu: Фотографии
 title: Фотографии
+description: Фотографии конпании Бумеранг-АвтоТранс
 permalink: /gallery/
 ---

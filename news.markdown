@@ -5,6 +5,7 @@
 layout: articles
 menu: Статьи
 title: Статьи
+description: Новости компании Бумеранг-АвтоТранс
 permalink: /articles/
 exclude: true
 ---
