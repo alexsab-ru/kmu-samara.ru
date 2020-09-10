@@ -152,14 +152,14 @@ function newstreetpunk_kmu_scripts_new() {
 };
 
 function newstreetpunk_kmu_watch_new() {
-	watch(projects.newstreetpunk_kmu.styles_new.watch, newstreetpunk_kmu_styles_new);
+	// watch(projects.newstreetpunk_kmu.styles_new.watch, newstreetpunk_kmu_styles_new);
 	watch(projects.newstreetpunk_kmu.scripts_new.src, newstreetpunk_kmu_scripts_new);
 
 	// watch(projects.newstreetpunk_kmu.code.src).on('change', browserSync.reload);
 };
 
 exports.newstreetpunk_kmu_browsersync = newstreetpunk_kmu_browsersync;
-exports.newstreetpunk_kmu_new = parallel(newstreetpunk_kmu_styles_new, newstreetpunk_kmu_scripts_new, newstreetpunk_kmu_browsersync, newstreetpunk_kmu_watch_new);
+exports.newstreetpunk_kmu_new = parallel(newstreetpunk_kmu_scripts_new, newstreetpunk_kmu_browsersync, newstreetpunk_kmu_watch_new);
 exports.newstreetpunk_kmu = parallel(newstreetpunk_kmu_styles, newstreetpunk_kmu_scripts, newstreetpunk_kmu_browsersync, newstreetpunk_kmu_watch);
 
 

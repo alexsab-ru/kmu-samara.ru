@@ -47,7 +47,6 @@ plugins:
 #
 exclude: 
 - src/
-- dist/inc/phpmailer/
 - yandex_*
 # [ 'src/', 'dist/inc/phpmailer/' ]
 #   - .sass-cache/
@@ -69,3 +68,7 @@ defaults:
     values:
       metaimg: "/img/slide-bg-1.jpg"
       h1: "Аренда крана-манипулятора, воровайки, кран-борта, КМУ в Самаре"
+      order: 100
+
+sass:
+  sass_dir: src/sass

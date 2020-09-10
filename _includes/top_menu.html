@@ -1,4 +1,4 @@
-{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign default_paths = site.pages | sort: 'order' | map: "path" -%}
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 <div class="top-menu" id="top-menu">
 	<div class="container">
