@@ -2,6 +2,8 @@ let projects = {
 
 
 
+
+
 	newstreetpunk_kmu: {
 
 		port: ++port,
@@ -20,7 +22,8 @@ let projects = {
 			src: [
 				base.newstreetpunk_kmu + '/libs/jquery/dist/jquery.min.js',
 				base.newstreetpunk_kmu + '/libs/Magnific-Popup-master/jquery.magnific-popup.js',
-				'node_modules/slick-carousel/slick/slick.js',
+				base.newstreetpunk_kmu + '/libs/slick/slick.js',
+				// 'node_modules/slick-carousel/slick/slick.js',
 				base.newstreetpunk_kmu + '/libs/animate/animate-css.js',
 				base.newstreetpunk_kmu + '/libs/lazyload.min.js',
 				base.newstreetpunk_kmu + '/libs/waypoint.js',
@@ -42,7 +45,8 @@ let projects = {
 			src: [
 				base.newstreetpunk_kmu + '/src/libs/jquery/dist/jquery.min.js',
 				base.newstreetpunk_kmu + '/src/libs/Magnific-Popup-master/jquery.magnific-popup.js',
-				'node_modules/slick-carousel/slick/slick.js',
+				base.newstreetpunk_kmu + '/src/libs/slick/slick.js',
+				// 'node_modules/slick-carousel/slick/slick.js',
 				base.newstreetpunk_kmu + '/src/libs/animate/animate-css.js',
 				base.newstreetpunk_kmu + '/src/libs/lazyload.min.js',
 				base.newstreetpunk_kmu + '/src/libs/waypoint.js',
@@ -66,7 +70,6 @@ let projects = {
 			' */',
 			''].join('\n'),
 	},
-
 
 
 
@@ -103,7 +106,7 @@ function newstreetpunk_kmu_styles() {
 	.pipe(eval(preprocessor)({ outputStyle: 'expanded' }).on("error", notify.onError()))
 	.pipe(concat(projects.newstreetpunk_kmu.styles.output))
 	.pipe(autoprefixer({ grid: true, overrideBrowserslist: ['last 10 versions'] }))
-	// .pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Optional. Comment out when debugging
+	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Optional. Comment out when debugging
 	.pipe(dest(projects.newstreetpunk_kmu.styles.dest))
 	.pipe(browserSync.stream())
 
@@ -132,7 +135,7 @@ function newstreetpunk_kmu_styles_new() {
 	.pipe(eval(preprocessor)({ outputStyle: 'expanded' }).on("error", notify.onError()))
 	.pipe(concat(projects.newstreetpunk_kmu.styles_new.output))
 	.pipe(autoprefixer({ grid: true, overrideBrowserslist: ['last 10 versions'] }))
-	// .pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Optional. Comment out when debugging
+	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Optional. Comment out when debugging
 	.pipe(dest(projects.newstreetpunk_kmu.styles_new.dest))
 	.pipe(browserSync.stream())
 
@@ -152,7 +155,7 @@ function newstreetpunk_kmu_watch_new() {
 	watch(projects.newstreetpunk_kmu.styles_new.watch, newstreetpunk_kmu_styles_new);
 	watch(projects.newstreetpunk_kmu.scripts_new.src, newstreetpunk_kmu_scripts_new);
 
-	watch(projects.newstreetpunk_kmu.code.src).on('change', browserSync.reload);
+	// watch(projects.newstreetpunk_kmu.code.src).on('change', browserSync.reload);
 };
 
 exports.newstreetpunk_kmu_browsersync = newstreetpunk_kmu_browsersync;
@@ -161,6 +164,5 @@ exports.newstreetpunk_kmu = parallel(newstreetpunk_kmu_styles, newstreetpunk_kmu
 
 
 /* newstreetpunk_kmu END */
-
 
 
