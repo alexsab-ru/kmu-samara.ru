@@ -72,7 +72,7 @@ layout: default
 			</div>
 			<!-- /.reviews-text-slider -->
 
-			<div class="reviews__slider reviews-video-slider" style="display: none;">
+			<div class="reviews__slider reviews-video-slider hidden">
 
 				<div class="item">
 					<a href="https://www.youtube.com/watch?v=OkNcXWbSmVY" class="embed-responsive embed-responsive-16by9 reviews-video-link lazyload" style="background-image: url({{ '/img/loading.gif' | relative_url }});" data-src-before="https://img.youtube.com/vi/OkNcXWbSmVY/maxresdefault.jpg">
@@ -117,7 +117,8 @@ layout: default
 		<!-- /.reviews__block -->
 	</div>
 	<!-- /.container -->
-	<div class="reviews__letter__block" style="display: none;">
+
+	<div class="reviews__letter__block hidden">
 		<div class="reviews__letter">
 			<div class="reviews__letter--slide d-flex">
 				<div class="reviews__letter--img">
@@ -169,3 +170,9 @@ layout: default
 	<!-- /.reviews__letter__block -->
 </section>
 <!-- /.reviews -->
+
+<script>
+	if(location.search.includes('showhidden')) {
+		document.querySelectorAll('.hidden').forEach(function(el){ el.classList.remove('hidden') })
+	}
+</script>
