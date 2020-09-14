@@ -3,18 +3,18 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: Аренда самосвала ГАЗ 3307
-desc: Аренда самосвала ГАЗ 3307
-car_name: Аренда самосвала ГАЗ 3307
-uid: GAZ
-index: 13
+title: "Аренда самосвала ГАЗ 3307"
+desc: "Аренда самосвала ГАЗ 3307"
+car_name: "Аренда самосвала ГАЗ 3307"
+uid: "GAZ"
+index: "13"
 permalink: /service/gaz/
-kuzov_l: 3,5
-kuzov_w: 
-tonnage: 4,5
-tonnage_s: 
-price: 1000
-images: /img/avto/GAZ/DSC_4596.jpg|/img/avto/GAZ/DSC_4597.jpg|/img/avto/GAZ/DSC_4598.jpg
+kuzov_l: "3,5"
+kuzov_w: ""
+tonnage: "4,5"
+tonnage_s: ""
+price: "1000"
+images: "/img/avto/GAZ/DSC_4596.jpg|/img/avto/GAZ/DSC_4597.jpg|/img/avto/GAZ/DSC_4598.jpg"
 ---
 
 Бортовой самосвал ГАЗ 3307, валит на 3 стороны. 

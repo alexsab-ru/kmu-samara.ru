@@ -21,11 +21,11 @@
 			</a>
 			<div class="service__item--info df jcsb">
 				<h3>{{ car.car_name }}</h3>
-				<span class="excerpt">{% if car.kuzov_l %}кузов {{ car.kuzov_l }}{% if car.kuzov_w %}x{{ car.kuzov_w }}{% endif %} м.<br>{% endif %}
-				{% if car.tonnage %}грузоподъёмность {{ car.tonnage }} т.{% endif %}</span>
+				<span class="excerpt">{% if car.kuzov_l != "" %}кузов {{ car.kuzov_l }}{% if car.kuzov_w != "" %}x{{ car.kuzov_w }}{% endif %} м.<br>{% endif %}
+				{% if car.tonnage != "" %}грузоподъёмность {{ car.tonnage }} т.{% endif %}</span>
 				<a href="{{ car.url | relative_url }}" class="btn info-popup">Подробнее</a>
 			</div>
-			<div class="price hidden">{%- if car.price -%}{{ car.price }} ₽{%- endif -%}</div>
+			<div class="price hidden">{%- if car.price != "" -%}{{ car.price }} ₽{%- endif -%}</div>
 			<div class="descr hidden">{{ car.content }}</div>
 		</div>
 		<!-- /.service__item -->

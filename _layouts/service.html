@@ -35,7 +35,7 @@ layout: default
 						<p>{{ car.desc }}</p>
 						
 						<div class="parameters">
-							<div class="parameter {% if car.kuzov_l %} d-flex {% else %} d-none {% endif %}">
+							<div class="parameter {% if car.kuzov_l != "" %} d-flex {% else %} d-none {% endif %}">
 								<div class="parameter__icon">
 									<img src="{{ '/img/icons/arrows.svg' | relative_url }}" alt="ALT">
 									<span>Кузов, м.</span>
@@ -43,7 +43,7 @@ layout: default
 								<div class="parameter__text">{{ car.kuzov_l }}</div>
 							</div>
 							<!-- /.parametr -->
-							<div class="parameter {% if car.tonnage %} d-flex {% else %} d-none {% endif %}">
+							<div class="parameter {% if car.tonnage != "" %} d-flex {% else %} d-none {% endif %}">
 								<div class="parameter__icon">
 									<img src="{{ '/img/icons/kg.svg' | relative_url }}" alt="ALT">
 									<span>Грузоподъёмность, т.</span>
@@ -57,7 +57,7 @@ layout: default
 					<!-- /.carfleet__item--info_row d-flex -->
 					
 					<div class="carfleet__item--bottom d-flex">
-						<div class="carfleet__item--price">{%- if car.price -%}{{ car.price }} ₽{%- else -%}{%- endif -%}</div>
+						<div class="carfleet__item--price">{%- if car.price != "" -%}{{ car.price }} ₽{%- else -%}{%- endif -%}</div>
 						<!-- /.carfleet__item--price -->
 						<a href="#orderForm" class="btn carfleet__item--link modal-link" data-title="{{ car.car_name }}">Заказать</a>
 					</div>

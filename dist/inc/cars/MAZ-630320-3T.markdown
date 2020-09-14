@@ -3,18 +3,18 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: Грузовой автомобиль МАЗ 6303 с манипулятором в аренду
-desc: Грузовой автомобиль МАЗ 6303 с манипулятором в аренду
-car_name: Грузовой автомобиль МАЗ 6303 с манипулятором в аренду
-uid: MAZ-630320-3T
-index: 4
+title: "Грузовой автомобиль МАЗ 6303 с манипулятором в аренду"
+desc: "Грузовой автомобиль МАЗ 6303 с манипулятором в аренду"
+car_name: "Грузовой автомобиль МАЗ 6303 с манипулятором в аренду"
+uid: "MAZ-630320-3T"
+index: "4"
 permalink: /service/maz-630320-3t/
-kuzov_l: 7,5
-kuzov_w: 2,4
-tonnage: 10
-tonnage_s: 3
-price: 1500
-images: /img/avto/MAZ-630320-3T/DSC_4770.jpg|/img/avto/MAZ-630320-3T/DSC_4772.jpg|/img/avto/MAZ-630320-3T/DSC_4780.jpg
+kuzov_l: "7,5"
+kuzov_w: "2,4"
+tonnage: "10"
+tonnage_s: "3"
+price: "1500"
+images: "/img/avto/MAZ-630320-3T/DSC_4770.jpg|/img/avto/MAZ-630320-3T/DSC_4772.jpg|/img/avto/MAZ-630320-3T/DSC_4780.jpg"
 ---
 
 Перевозки грузов до 10 тонн. Стрела - 3т. Кузов 7,5х2,4 м. 

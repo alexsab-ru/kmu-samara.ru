@@ -35,7 +35,7 @@ layout: default
 				<a href="{{ car.url | relative_url }}" class="f-table__row table-link">
 					<div class="f-table__col">{{ amount }}</div>
 					<div class="f-table__col f-table__col--name">{{ car.car_name }}</div>
-					<div class="f-table__col">{%- if car.price -%}{{ car.price }} ₽{%- endif -%}</div>
+					<div class="f-table__col">{%- if car.price != "" -%}{{ car.price }} ₽{%- endif -%}</div>
 					<!-- <div class="f-table__col"></div> -->
 				</a>
 				<!-- /.f-table__row -->

@@ -3,18 +3,18 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: Манипулятор Mitsubishi Fuso
-desc: Манипулятор Mitsubishi Fuso
-car_name: Манипулятор Mitsubishi Fuso
-uid: Fuso-Fighter
-index: 7
+title: "Манипулятор Mitsubishi Fuso"
+desc: "Манипулятор Mitsubishi Fuso"
+car_name: "Манипулятор Mitsubishi Fuso"
+uid: "Fuso-Fighter"
+index: "7"
 permalink: /service/fuso-fighter/
-kuzov_l: 6,2
-kuzov_w: 2,32
-tonnage: 5
-tonnage_s: 3
-price: 1200
-images: 
+kuzov_l: "6,2"
+kuzov_w: "2,32"
+tonnage: "5"
+tonnage_s: "3"
+price: "1200"
+images: ""
 ---
 
 Аренда Митсубиси Фусо с манипулятором
