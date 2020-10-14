@@ -8,3 +8,4 @@ sftp-config.json
 /.git/
 /**/Thumbs.db
 /**/*.DS_Store
+/.jekyll-cache/
