@@ -39,7 +39,7 @@ if(typeof port == 'undefined')
 	global.port = 8100;
 
 
-projects.newstreetpunk_kmu = {
+projects.kmu_samara = {
 
 	port: ++port,
 
@@ -108,17 +108,17 @@ projects.newstreetpunk_kmu = {
 
 
 
-/* newstreetpunk_kmu BEGIN */
+/* kmu_samara BEGIN */
 
 // Local Server
-function newstreetpunk_kmu_browsersync() {
+function kmu_samara_browsersync() {
 	connect.server({
-		port: projects.newstreetpunk_kmu.port,
-		base: projects.newstreetpunk_kmu.base,
+		port: projects.kmu_samara.port,
+		base: projects.kmu_samara.base,
 	}, function (){
 		browserSync.init({
-			// server: { baseDir: projects.newstreetpunk_kmu.base + '/' },
-			proxy: '127.0.0.1:' + projects.newstreetpunk_kmu.port,
+			// server: { baseDir: projects.kmu_samara.base + '/' },
+			proxy: '127.0.0.1:' + projects.kmu_samara.port,
 			notify: false,
 			online: online
 		});
@@ -126,67 +126,67 @@ function newstreetpunk_kmu_browsersync() {
 };
 
 // Custom Styles
-function newstreetpunk_kmu_styles() {
-	return src(projects.newstreetpunk_kmu.styles.src)
+function kmu_samara_styles() {
+	return src(projects.kmu_samara.styles.src)
 	.pipe(eval(preprocessor)({ outputStyle: 'expanded' }).on("error", notify.onError()))
-	.pipe(concat(projects.newstreetpunk_kmu.styles.output))
+	.pipe(concat(projects.kmu_samara.styles.output))
 	.pipe(autoprefixer({ grid: true, overrideBrowserslist: ['last 10 versions'] }))
 	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Optional. Comment out when debugging
-	.pipe(dest(projects.newstreetpunk_kmu.styles.dest))
+	.pipe(dest(projects.kmu_samara.styles.dest))
 	.pipe(browserSync.stream())
 
 };
 
 // Scripts & JS Libraries
-function newstreetpunk_kmu_scripts() {
-	return src(projects.newstreetpunk_kmu.scripts.src)
-	.pipe(concat(projects.newstreetpunk_kmu.scripts.output))
+function kmu_samara_scripts() {
+	return src(projects.kmu_samara.scripts.src)
+	.pipe(concat(projects.kmu_samara.scripts.output))
 	.pipe(uglify()) // Minify js (opt.)
-	.pipe(header(projects.newstreetpunk_kmu.forProd))
-	.pipe(dest(projects.newstreetpunk_kmu.scripts.dest))
+	.pipe(header(projects.kmu_samara.forProd))
+	.pipe(dest(projects.kmu_samara.scripts.dest))
 	.pipe(browserSync.stream())
 };
 
-function newstreetpunk_kmu_watch() {
-	watch(projects.newstreetpunk_kmu.styles.watch, newstreetpunk_kmu_styles);
-	watch(projects.newstreetpunk_kmu.scripts.src, newstreetpunk_kmu_scripts);
+function kmu_samara_watch() {
+	watch(projects.kmu_samara.styles.watch, kmu_samara_styles);
+	watch(projects.kmu_samara.scripts.src, kmu_samara_scripts);
 
-	watch(projects.newstreetpunk_kmu.code.src).on('change', browserSync.reload);
+	watch(projects.kmu_samara.code.src).on('change', browserSync.reload);
 };
 
 // Custom Styles
-function newstreetpunk_kmu_styles_new() {
-	return src(projects.newstreetpunk_kmu.styles_new.src)
+function kmu_samara_styles_new() {
+	return src(projects.kmu_samara.styles_new.src)
 	.pipe(eval(preprocessor)({ outputStyle: 'expanded' }).on("error", notify.onError()))
-	.pipe(concat(projects.newstreetpunk_kmu.styles_new.output))
+	.pipe(concat(projects.kmu_samara.styles_new.output))
 	.pipe(autoprefixer({ grid: true, overrideBrowserslist: ['last 10 versions'] }))
 	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Optional. Comment out when debugging
-	.pipe(dest(projects.newstreetpunk_kmu.styles_new.dest))
+	.pipe(dest(projects.kmu_samara.styles_new.dest))
 	.pipe(browserSync.stream())
 
 };
 
 // Scripts & JS Libraries
-function newstreetpunk_kmu_scripts_new() {
-	return src(projects.newstreetpunk_kmu.scripts_new.src)
-	.pipe(concat(projects.newstreetpunk_kmu.scripts.output))
+function kmu_samara_scripts_new() {
+	return src(projects.kmu_samara.scripts_new.src)
+	.pipe(concat(projects.kmu_samara.scripts.output))
 	.pipe(uglify()) // Minify js (opt.)
-	.pipe(header(projects.newstreetpunk_kmu.forProd))
-	.pipe(dest(projects.newstreetpunk_kmu.scripts_new.dest))
+	.pipe(header(projects.kmu_samara.forProd))
+	.pipe(dest(projects.kmu_samara.scripts_new.dest))
 	.pipe(browserSync.stream())
 };
 
-function newstreetpunk_kmu_watch_new() {
-	watch(projects.newstreetpunk_kmu.styles_new.watch, newstreetpunk_kmu_styles_new);
-	watch(projects.newstreetpunk_kmu.scripts_new.src, newstreetpunk_kmu_scripts_new);
+function kmu_samara_watch_new() {
+	watch(projects.kmu_samara.styles_new.watch, kmu_samara_styles_new);
+	watch(projects.kmu_samara.scripts_new.src, kmu_samara_scripts_new);
 
-	// watch(projects.newstreetpunk_kmu.code.src).on('change', browserSync.reload);
+	// watch(projects.kmu_samara.code.src).on('change', browserSync.reload);
 };
 
-// module.exports = newstreetpunk_kmu_browsersync;
-module.exports = parallel(newstreetpunk_kmu_styles_new, newstreetpunk_kmu_scripts_new, newstreetpunk_kmu_browsersync, newstreetpunk_kmu_watch_new);
-// module.exports = parallel(newstreetpunk_kmu_styles, newstreetpunk_kmu_scripts, newstreetpunk_kmu_browsersync, newstreetpunk_kmu_watch);
+exports.kmu_samara_browsersync = kmu_samara_browsersync;
+exports.kmu_samara_new = parallel(kmu_samara_styles_new, kmu_samara_scripts_new, kmu_samara_browsersync, kmu_samara_watch_new);
+exports.kmu_samara = parallel(kmu_samara_styles, kmu_samara_scripts, kmu_samara_browsersync, kmu_samara_watch);
 
 
-/* newstreetpunk_kmu END */
+/* kmu_samara END */
 
