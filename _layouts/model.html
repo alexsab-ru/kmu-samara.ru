@@ -55,7 +55,7 @@ layout: default
 			<div class="model__slider">
 				<div class="model__slider--wrap">
 
-					{%- if page.images -%}
+					{%- if page.images and page.images != "" -%}
 						
 						{%- assign imgs = page.images | split: "|" -%}
 
