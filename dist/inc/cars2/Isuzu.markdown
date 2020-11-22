@@ -15,7 +15,7 @@ tonnage: "3,5"
 tonnage_s: "3"
 price: "1200"
 images: "/img/avto/Isuzu/DSC_4638.jpg|/img/avto/Isuzu/DSC_4642.jpg|/img/avto/Isuzu/DSC_4653.jpg"
-metaimg: /img/avto/Isuzu.png
+metaimg: /img/avto/Isuzu.jpg
 ---
 
 Характеристики КМУ:  

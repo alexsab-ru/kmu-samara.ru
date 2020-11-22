@@ -15,7 +15,7 @@ tonnage: "5"
 tonnage_s: ""
 price: "1000"
 images: "/img/avto/KIA-Rhino/DSC_4661.jpg|/img/avto/KIA-Rhino/DSC_4662.jpg|/img/avto/KIA-Rhino/DSC_4665.jpg"
-metaimg: /img/avto/KIA-Rhino.png
+metaimg: /img/avto/KIA-Rhino.jpg
 ---
 
 Габаритные размеры:  

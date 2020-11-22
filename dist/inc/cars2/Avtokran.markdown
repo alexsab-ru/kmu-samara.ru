@@ -14,7 +14,7 @@ tonnage: "42"
 tonnage_s: "42"
 price: "1200"
 images: ""
-metaimg: /img/avto/Avtokran.png
+metaimg: /img/avto/Avtokran.jpg
 ---
 
 Аренда автокрана от 14 до 42 т, стрела от 14 до 31 метра.  

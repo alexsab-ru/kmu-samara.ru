@@ -15,7 +15,7 @@ tonnage: "1,5"
 tonnage_s: ""
 price: "500"
 images: "/img/avto/Gazel/gazel-2.jpg|/img/avto/Gazel/gazel-3.jpg|/img/avto/Gazel/gazel-4.jpg"
-metaimg: /img/avto/Gazel.png
+metaimg: /img/avto/Gazel.jpg
 ---
 
 Бортовая газель для ваших грузоперевозок со специальным крепелнием для негабаритного груза (до 6 метров длиной).  

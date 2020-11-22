@@ -7,7 +7,7 @@ title: "Аренда автокрана в Самаре"
 desc: "Услуги автомобильных кранов"
 car_name: "Услуги автомобильных кранов"
 uid: "Avtokran"
-index: "1"
+index: "01"
 permalink: /service/avtokran/
 kuzov_l: ""
 kuzov_w: ""
@@ -15,7 +15,7 @@ tonnage: "42"
 tonnage_s: "42"
 price: "1200"
 images: ""
-metaimg: /img/avto/Avtokran.png
+metaimg: /img/avto/Avtokran.jpg
 ---
 
 Аренда автокрана от 14 до 42 т, стрела от 14 до 31 метра.  

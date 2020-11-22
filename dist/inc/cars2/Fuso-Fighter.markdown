@@ -14,7 +14,7 @@ tonnage: "5"
 tonnage_s: "3"
 price: "1200"
 images: ""
-metaimg: /img/avto/Fuso-Fighter.png
+metaimg: /img/avto/Fuso-Fighter.jpg
 ---
 
 Аренда Митсубиси Фусо с манипулятором  

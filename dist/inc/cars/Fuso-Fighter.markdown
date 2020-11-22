@@ -7,7 +7,7 @@ title: "Манипулятор Mitsubishi Fuso"
 desc: "Манипулятор Mitsubishi Fuso"
 car_name: "Манипулятор Mitsubishi Fuso"
 uid: "Fuso-Fighter"
-index: "7"
+index: "07"
 permalink: /service/fuso-fighter/
 kuzov_l: "6,2"
 kuzov_w: "2,32"
@@ -15,7 +15,7 @@ tonnage: "5"
 tonnage_s: "3"
 price: "1200"
 images: ""
-metaimg: /img/avto/Fuso-Fighter.png
+metaimg: /img/avto/Fuso-Fighter.jpg
 ---
 
 Аренда Митсубиси Фусо с манипулятором  

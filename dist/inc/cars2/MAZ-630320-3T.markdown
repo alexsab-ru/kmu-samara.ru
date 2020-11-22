@@ -15,7 +15,7 @@ tonnage: "10"
 tonnage_s: "3"
 price: "1500"
 images: "/img/avto/MAZ-630320-3T/DSC_4770.jpg|/img/avto/MAZ-630320-3T/DSC_4772.jpg|/img/avto/MAZ-630320-3T/DSC_4780.jpg"
-metaimg: /img/avto/MAZ-630320-3T.png
+metaimg: /img/avto/MAZ-630320-3T.jpg
 ---
 
 Характеристики КМУ:  

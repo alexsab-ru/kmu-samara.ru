@@ -14,7 +14,7 @@ tonnage: "4,5"
 tonnage_s: ""
 price: "1000"
 images: "/img/avto/GAZ/DSC_4596.jpg|/img/avto/GAZ/DSC_4597.jpg|/img/avto/GAZ/DSC_4598.jpg"
-metaimg: /img/avto/GAZ.png
+metaimg: /img/avto/GAZ.jpg
 ---
 
 Бортовой самосвал ГАЗ 3307, валит на 3 стороны.  

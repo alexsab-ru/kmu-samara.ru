@@ -6,7 +6,7 @@ layout: model
 title: ""
 desc: ""
 car_name: "Самосвала КамАЗ 5511"
-uid: "Samosval-KamAZ"
+uid: "Samosval"
 index: "11"
 permalink: /service/samosval-kamaz/
 kuzov_l: ""
@@ -15,7 +15,7 @@ tonnage: ""
 tonnage_s: ""
 price: ""
 images: ""
-metaimg: /img/avto/Samosval-KamAZ.png
+metaimg: /img/avto/Samosval.jpg
 ---
 
 Объем кузова самосвала составляет 7,2 куб. м.  

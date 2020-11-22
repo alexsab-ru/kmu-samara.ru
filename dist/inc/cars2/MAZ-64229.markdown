@@ -15,7 +15,7 @@ tonnage: "20"
 tonnage_s: ""
 price: "1300"
 images: "/img/avto/MAZ-64229/IMG_1225.png|/img/avto/MAZ-64229/IMG_1226.png"
-metaimg: /img/avto/MAZ-64229.png
+metaimg: /img/avto/MAZ-64229.jpg
 ---
 
 Габаритные размеры:  

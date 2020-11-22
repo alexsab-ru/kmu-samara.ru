@@ -15,7 +15,7 @@ tonnage: "13"
 tonnage_s: ""
 price: ""
 images: ""
-metaimg: /img/avto/Samosval.png
+metaimg: /img/avto/Samosval.jpg
 ---
 
 Объем платформы: 6,6 куб.м.  
