@@ -15,6 +15,7 @@ tonnage: "10"
 tonnage_s: ""
 price: "1300"
 images: "/img/avto/Kamaz-53202/DSC_4679.jpg|/img/avto/Kamaz-53202/DSC_4699.jpg|/img/avto/Kamaz-53202/DSC_4709.jpg"
+metaimg: /img/avto/Kamaz-53202.png
 ---
 
-Аренда Камаз 53202 со стрелой
+Аренда Камаз 53202 со стрелой  

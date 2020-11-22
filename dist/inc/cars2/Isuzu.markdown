@@ -15,6 +15,7 @@ tonnage: "3,5"
 tonnage_s: "3"
 price: "1200"
 images: "/img/avto/Isuzu/DSC_4638.jpg|/img/avto/Isuzu/DSC_4642.jpg|/img/avto/Isuzu/DSC_4653.jpg"
+metaimg: /img/avto/Isuzu.png
 ---
 
 Характеристики КМУ:  
@@ -23,4 +24,4 @@ images: "/img/avto/Isuzu/DSC_4638.jpg|/img/avto/Isuzu/DSC_4642.jpg|/img/avto/Isu
 Масса перевозимого груза 3.5 т.  
 Габаритные размеры:  
 Длина: 4.5м.  
-Ширина: 2.2м.
+Ширина: 2.2м.  

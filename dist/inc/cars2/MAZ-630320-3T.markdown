@@ -15,6 +15,7 @@ tonnage: "10"
 tonnage_s: "3"
 price: "1500"
 images: "/img/avto/MAZ-630320-3T/DSC_4770.jpg|/img/avto/MAZ-630320-3T/DSC_4772.jpg|/img/avto/MAZ-630320-3T/DSC_4780.jpg"
+metaimg: /img/avto/MAZ-630320-3T.png
 ---
 
 Характеристики КМУ:  
@@ -23,4 +24,4 @@ images: "/img/avto/MAZ-630320-3T/DSC_4770.jpg|/img/avto/MAZ-630320-3T/DSC_4772.j
 Масса перевозимого груза 10т.  
 Габаритные размеры:  
 Длина: 7.5м.  
-Ширина: 2.4м.
+Ширина: 2.4м.  

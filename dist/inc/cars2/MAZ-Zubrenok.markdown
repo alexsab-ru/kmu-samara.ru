@@ -15,10 +15,11 @@ tonnage: "5"
 tonnage_s: ""
 price: "1000"
 images: "/img/avto/MAZ-Zubrenok/DSC_4765.jpg|/img/avto/MAZ-Zubrenok/DSC_4767.jpg"
+metaimg: /img/avto/MAZ-Zubrenok.png
 ---
 
 Габаритные размеры:  
 Длина: 5, 30м.  
 Ширина: 2,48м.  
 Грузоподъёмность: 5т.  
-Направление разгрузки: 3 стороны
+Направление разгрузки: 3 стороны  
