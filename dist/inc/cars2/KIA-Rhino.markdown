@@ -7,7 +7,7 @@ title: "Аренда грузовика Kia Rhino"
 desc: "Аренда грузовика Kia Rhino"
 car_name: "KIA Rhino  – среднетоннажный грузовик"
 uid: "KIA-Rhino"
-index: 10
+index: "10"
 permalink: /service/kia-rhino/
 kuzov_l: "4,6"
 kuzov_w: "2,4"

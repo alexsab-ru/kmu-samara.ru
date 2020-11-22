@@ -7,7 +7,7 @@ title: ""
 desc: ""
 car_name: "Самосвал КамАЗ 55111"
 uid: "Samosval"
-index: 2
+index: "02"
 permalink: /service/samosval/
 kuzov_l: ""
 kuzov_w: ""

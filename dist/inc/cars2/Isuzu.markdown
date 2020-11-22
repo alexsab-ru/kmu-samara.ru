@@ -7,7 +7,7 @@ title: "Исузу Форвард с манипулятором"
 desc: "Исузу Форвард с манипулятором"
 car_name: "КРАН-МАНИПУЛЯТОР (КМУ) НА БАЗЕ Isuzu Forward (МАНИПУЛЯТОР)"
 uid: "Isuzu"
-index: 4
+index: "04"
 permalink: /service/isuzu/
 kuzov_l: "4,5"
 kuzov_w: "2,2"
