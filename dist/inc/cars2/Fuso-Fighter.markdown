@@ -7,7 +7,6 @@ title: "Манипулятор Mitsubishi Fuso"
 desc: "Манипулятор Mitsubishi Fuso"
 car_name: "Манипулятор Mitsubishi Fuso"
 uid: "Fuso-Fighter"
-index: ""
 permalink: /service/fuso-fighter/
 kuzov_l: "6,2"
 kuzov_w: "2,32"

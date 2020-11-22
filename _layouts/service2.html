@@ -14,7 +14,7 @@ layout: default
 		{%- for path in page_paths -%}
 			{%- assign car = site.pages | where: "path", path | first -%}
 			{%- if car.path contains '/cars2/' -%}
-				{%- if car.title and car.index != "" -%}
+				{%- if car.title and car.index -%}
 
 			
 		<div class="service__item">

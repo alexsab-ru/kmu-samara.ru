@@ -7,7 +7,7 @@ title: "Аренда Газели с креплением “Катюша”"
 desc: "Аренда Газели с креплением “Катюша”"
 car_name: "ГАЗ ГАЗель 3302"
 uid: "Gazel"
-index: "7"
+index: 7
 permalink: /service/gazel/
 kuzov_l: "4,2"
 kuzov_w: "2"

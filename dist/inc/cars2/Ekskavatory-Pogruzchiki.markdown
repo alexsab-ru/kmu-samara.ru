@@ -7,7 +7,7 @@ title: ""
 desc: ""
 car_name: "Экскаватор-погрузчик"
 uid: "Ekskavatory-Pogruzchiki"
-index: "13"
+index: 13
 permalink: /service/ekskavatory-pogruzchiki/
 kuzov_l: ""
 kuzov_w: ""

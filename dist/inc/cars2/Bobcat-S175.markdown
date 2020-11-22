@@ -7,7 +7,7 @@ title: ""
 desc: ""
 car_name: "Мини-погрузчик Bobcat S175"
 uid: "Bobcat-S175"
-index: "12"
+index: 12
 permalink: /service/bobcat-s175/
 kuzov_l: ""
 kuzov_w: ""
