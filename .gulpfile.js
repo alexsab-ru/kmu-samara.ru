@@ -124,7 +124,7 @@ projects.kmu_samara = {
 function kmu_samara_browsersync() {
 	connect.server({
 		port: projects.kmu_samara.port,
-		base: projects.kmu_samara.base,
+		base: projects.kmu_samara.base + '/dist/',
 	}, function (){
 		browserSync.init({
 			// server: { baseDir: projects.kmu_samara.base + '/' },
@@ -231,9 +231,10 @@ function kmu_samara_run_jekyll(callback) {
 	return build;
 }
 
-exports.kmu_samara_jekyll = parallel(kmu_samara_styles_jekyll, kmu_samara_scripts_jekyll, kmu_samara_browsersync, kmu_samara_watch_jekyll);
+// exports.kmu_samara_jekyll = parallel(kmu_samara_styles_jekyll, kmu_samara_scripts_jekyll, kmu_samara_browsersync, kmu_samara_watch_jekyll);
 exports.kmu_samara_run_jekyll = parallel(kmu_samara_cd_jekyll, kmu_samara_styles_jekyll, kmu_samara_scripts_jekyll, kmu_samara_run_jekyll, kmu_samara_browsersync_jekyll, kmu_samara_watch_jekyll);
-exports.kmu_samara = parallel(kmu_samara_styles, kmu_samara_scripts, kmu_samara_browsersync, kmu_samara_watch);
+// exports.kmu_samara = parallel(kmu_samara_styles, kmu_samara_scripts, kmu_samara_browsersync, kmu_samara_watch);
+exports.kmu_samara = parallel(kmu_samara_browsersync, kmu_samara_watch);
 
 
 /* kmu_samara END */

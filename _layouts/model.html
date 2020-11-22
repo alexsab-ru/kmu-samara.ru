@@ -14,17 +14,17 @@ layout: default
 				{{ content }}
 				
 				<div class="parameters">
-					{% if page.kuzov_l %}
+					{% if page.kuzov_l != "" %}
 					<div class="parameter d-flex">
 						<div class="parameter__icon">
 							<img src="{{ '/img/icons/arrows.svg' | relative_url }}" alt="ALT">
 							<span>Кузов, м</span>
 						</div>
-						<div class="parameter__text">{{ page.kuzov_l }}{% if page.kuzov_w %}x{{ page.kuzov_w }}{% endif %}</div>
+						<div class="parameter__text">{{ page.kuzov_l }}{% if page.kuzov_w != "" %}x{{ page.kuzov_w }}{% endif %}</div>
 					</div>
 					<!-- /.parameter -->
 					{% endif %}
-					{% if page.tonnage %}
+					{% if page.tonnage != "" %}
 					<div class="parameter d-flex">
 						<div class="parameter__icon">
 							<img src="{{ '/img/icons/kg.svg' | relative_url }}" alt="ALT">
@@ -79,7 +79,7 @@ layout: default
 				<div class="model__slider--nav">
 
 
-					{%- if page.images -%}
+					{%- if page.images != "" -%}
 						
 						{%- assign imgs = page.images | split: "|" -%}
 

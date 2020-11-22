@@ -1,0 +1,26 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: model
+title: "Грузовой автомобиль МАЗ 6303 с манипулятором в аренду"
+desc: "Грузовой автомобиль МАЗ 6303 с манипулятором в аренду"
+car_name: "КРАН-МАНИПУЛЯТОР (КМУ) НА БАЗЕ МАЗ 6303 (МАНИПУЛЯТОР)"
+uid: "MAZ-630320-3T"
+index: "5"
+permalink: /service/maz-630320-3t/
+kuzov_l: "7,5"
+kuzov_w: "2,4"
+tonnage: "10"
+tonnage_s: "3"
+price: "1500"
+images: "/img/avto/MAZ-630320-3T/DSC_4770.jpg|/img/avto/MAZ-630320-3T/DSC_4772.jpg|/img/avto/MAZ-630320-3T/DSC_4780.jpg"
+---
+
+Характеристики КМУ:  
+Грузоподъемность: 3т.  
+Длина стрелы: 9м.  
+Масса перевозимого груза 10т.  
+Габаритные размеры:  
+Длина: 7.5м.  
+Ширина: 2.4м.

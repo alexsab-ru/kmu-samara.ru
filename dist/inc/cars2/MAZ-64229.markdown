@@ -1,0 +1,24 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: model
+title: "Аренда полуприцепа МАЗ 64229 "
+desc: "Аренда полуприцепа МАЗ 64229 "
+car_name: "МАЗ 4229 Полуприцеп"
+uid: "MAZ-64229"
+index: "3"
+permalink: /service/maz-64229/
+kuzov_l: "13,6"
+kuzov_w: "2,4"
+tonnage: "20"
+tonnage_s: ""
+price: "1300"
+images: "/img/avto/MAZ-64229/IMG_1225.png|/img/avto/MAZ-64229/IMG_1226.png"
+---
+
+Габаритные размеры:  
+Ширина: 2.40м.  
+Длина: 13,6м.  
+Грузоподъёмность: 20т.  
+Направление разгрузки: 3 стороны
