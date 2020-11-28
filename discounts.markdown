@@ -9,4 +9,5 @@ description: Специальный предложения на аренду т�
 permalink: /discounts/
 metaimg: /img/discounts/hot.jpg
 exclude: true
+sitemap: false
 ---
