@@ -16,6 +16,8 @@ tonnage_s: ""
 price: "500"
 images: "/img/avto/Gazel/gazel-2.jpg|/img/avto/Gazel/gazel-3.jpg|/img/avto/Gazel/gazel-4.jpg"
 metaimg: /img/avto/Gazel.jpg
+exclude: true
+sitemap: false
 ---
 
 Бортовая Газель с так называемой «Катюшей» грузоподъемностью до 1&nbsp;тонны предназначена для перевозки грузов длиной до 6 метров.  

@@ -16,6 +16,8 @@ tonnage_s: ""
 price: ""
 images: ""
 metaimg: /img/avto/Samosval.jpg
+exclude: true
+sitemap: false
 ---
 
 Объем кузова самосвала составляет 7,2 куб. м.  

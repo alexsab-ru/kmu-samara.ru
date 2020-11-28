@@ -1,0 +1,25 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: model
+title: ""
+desc: ""
+car_name: "CAT 422F2"
+uid: "CAT-422F2"
+thumb: "Ekskavatory-Pogruzchiki"
+index: "62"
+permalink: /service/cat-422f2/
+kuzov_l: ""
+kuzov_w: ""
+tonnage: ""
+tonnage_s: ""
+price: ""
+images: ""
+metaimg: /img/avto/Ekskavatory-Pogruzchiki.jpg
+exclude: true
+sitemap: false
+---
+
+Мощн. двигателя: 72 л.с  
+Емкость ковша погрузчика: 1,03 куб.м  

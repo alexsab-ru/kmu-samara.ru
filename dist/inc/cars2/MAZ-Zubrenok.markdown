@@ -16,6 +16,8 @@ tonnage_s: ""
 price: "1000"
 images: "/img/avto/MAZ-Zubrenok/DSC_4765.jpg|/img/avto/MAZ-Zubrenok/DSC_4767.jpg"
 metaimg: /img/avto/MAZ-Zubrenok.jpg
+exclude: true
+sitemap: false
 ---
 
 Габаритные размеры:  

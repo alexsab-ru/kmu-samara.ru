@@ -16,6 +16,8 @@ tonnage_s: ""
 price: ""
 images: ""
 metaimg: /img/avto/Bobcat-S175.jpg
+exclude: true
+sitemap: false
 ---
 
 Грузоподъемность 895 кг  

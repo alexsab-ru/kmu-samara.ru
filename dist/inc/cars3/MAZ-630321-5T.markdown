@@ -1,0 +1,28 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: model
+title: "Услуги МАЗ 6303-021 с манипулятором "
+desc: "Услуги МАЗ 6303-021 с манипулятором "
+car_name: "Кран-манипулятор (КМУ) на базе МАЗ 6303"
+uid: "MAZ-630321-5T"
+thumb: "MAZ-630321-5T"
+index: "72"
+permalink: /service/maz-630321-5t/
+kuzov_l: "7,5"
+kuzov_w: "2,4"
+tonnage: "10"
+tonnage_s: "5"
+price: "1500"
+images: "/img/avto/MAZ-630321-5T/DSC_4752.jpg|/img/avto/MAZ-630321-5T/DSC_4753.jpg"
+metaimg: /img/avto/MAZ-630321-5T.jpg
+exclude: true
+sitemap: false
+---
+
+Грузоподъемность: 5 т  
+Длина стрелы: 9 м  
+Масса перевозимого груза 10 т  
+Длина борта: 7,5 м  
+Ширина борта: 2,4 м  

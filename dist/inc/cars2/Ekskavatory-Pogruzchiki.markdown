@@ -16,6 +16,8 @@ tonnage_s: ""
 price: ""
 images: ""
 metaimg: /img/avto/Ekskavatory-Pogruzchiki.jpg
+exclude: true
+sitemap: false
 ---
 
 услуги экскаватора погрузчика JCB&nbsp;3сх super  

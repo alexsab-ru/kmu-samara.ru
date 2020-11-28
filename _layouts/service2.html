@@ -2,35 +2,33 @@
 layout: default
 ---
 
-<section class="service-v2" id="service">
-	
+<section class="service2" id="service">
+
 	<h2>Наш <span>автопарк</span></h2>
 
-	<div class="service__list df jcc fww">
-		
+	<div class="service2__list df jcc fww">
+
 		{%- assign default_paths = site.pages | sort: "index" | map: "path" -%}
 		{%- assign page_paths = default_paths -%}
 
 		{%- for path in page_paths -%}
 			{%- assign car = site.pages | where: "path", path | first -%}
-			{%- if car.path contains '/cars2/' -%}
+			{%- if car.path contains '/cars3/' -%}
 				{%- if car.title and car.index != nil -%}
-
-			
-		<div class="service__item">
-			<a href="{{ car.url | relative_url }}" class="service__item--img">
-				<h3>{{ car.car_name }}</h3>
 				<!-- {%- assign img_path = "/img/avto/,.jpg" | split: "," -%} -->
-				{%- assign img_path = "/img/model-nav/,.png" | split: "," -%}
-				{%- assign img_url = img_path | join: car.uid -%}
-				<img src="{{ '/img/loading.gif' | relative_url }}" data-src="{{ img_url | relative_url }}" alt="{{ car.car_name }}" class="lazyload">
+				{%- assign img_path = "/img/model-nav/400w/,_400w.png" | split: "," -%}
+				{%- assign img_url = img_path | join: car.thumb -%}
+
+		<div class="service2__item">
+			<a href="{{ car.url | relative_url }}" class="service2__item--img lazyload" style="background-image: url({{ '/img/loading-0.gif' | relative_url }});" data-src-background="{{ img_url | relative_url }}">
+				<h3>{{ car.car_name }}</h3>
 			</a>
-			<div class="service__item--info df jcsb">
+			<div class="service2__item--info df jcsb">
 				<span class="excerpt">{{ car.content }}</span>
 			</div>
 			<a href="{{ car.url | relative_url }}" class="btn info-popup">Подробнее</a>
 		</div>
-		<!-- /.service__item -->
+		<!-- /.service2__item -->
 
 
 				{%- endif -%}
@@ -38,9 +36,9 @@ layout: default
 		{%- endfor -%}
 
 	</div>
-	<!-- /.service__list -->
+	<!-- /.service2__list -->
 </section>
-<!-- /#service.service -->
+<!-- /#service.service2 -->
 
 
 {%- include main/order.html -%}

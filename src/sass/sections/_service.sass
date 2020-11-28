@@ -71,33 +71,77 @@
 			text-align: center
 
 
-.service-v2
-	.service__item
+.service2
+	&__item
+		width: 22%
+		position: relative
+		margin: 1%
+		animation-duration: .5s
+		transition: all .3s linear
+		box-shadow: 0 0 50px rgba($text, .4)
+		&:hover
+			box-shadow: 0 0 30px rgba($text, .2)
+		+media-breakpoint-down(md)
+			width: 40vmax
+		+media-breakpoint-down(sm)
+			max-width: 400px
+			width: 100%
+			margin-bottom: 15px
+		+media-breakpoint-down(xs)
+			max-width: 300px
 		h3
+			font-size: 1.4vmax
+			text-align: center
+			line-height: 1
 			margin: 5%
+			+media-breakpoint-down(md)
+				font-size: 14px
+				min-height: 0
+			+media-breakpoint-down(sm)
+				font-size: 16px
+			+media-breakpoint-down(xs)
+				font-size: 14px
 		&--img
-			height: 14.6vmax
+			height: 22vmax
 			display: block
 			overflow: initial
 			position: relative
+			background-repeat: no-repeat
+			background-position: center
+			width: 95%
+			margin: 0 auto
+			&:not(.lazyload)
+				background-size: contain
 			+media-breakpoint-down(md)
 				height: 26.6vmax
 			+media-breakpoint-down(sm)
 				height: 266px
-			+media-breakpoint-down(xs)
-				height: 200px
+			// +media-breakpoint-downt-down(xs)
+				// height: 200px
 			// img:not(.lazyload)
 				// width: 70%
-			img
-				margin-top: 10%
-				padding: 50px
 		&--info
-				margin: 10% 0 50px
+			margin: 0 0 50px
+			padding: 15px
+			flex-direction: column
+			min-height: 200px
+			+media-breakpoint-down(md)
+				min-height: 180px
+			.excerpt
+				font-size: 1.1vmax
+				display: block
+				+media-breakpoint-down(md)
+					font-size: 14px
 		.btn
 			position: absolute
 			bottom: 0
 			padding: 20px
 			width: 100%
+			font-family: $default-font
+			text-transform: uppercase
+			font-size: 12px
+			box-shadow: none
+			text-align: center
 
 
 #orderForm

@@ -16,6 +16,8 @@ tonnage_s: "7"
 price: "1700"
 images: "/img/avto/KIA-Granto/DSC_4602.jpg|/img/avto/KIA-Granto/DSC_4605.jpg|/img/avto/KIA-Granto/DSC_4612.jpg"
 metaimg: /img/avto/KIA-Granto.jpg
+exclude: true
+sitemap: false
 ---
 
 Характеристики КМУ:  

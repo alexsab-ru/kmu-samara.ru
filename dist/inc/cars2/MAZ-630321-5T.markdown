@@ -16,6 +16,8 @@ tonnage_s: "5"
 price: "1500"
 images: "/img/avto/MAZ-630321-5T/DSC_4752.jpg|/img/avto/MAZ-630321-5T/DSC_4753.jpg"
 metaimg: /img/avto/MAZ-630321-5T.jpg
+exclude: true
+sitemap: false
 ---
 
 Характеристики КМУ:  
