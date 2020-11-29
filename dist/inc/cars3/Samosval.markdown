@@ -5,21 +5,20 @@
 layout: model
 title: ""
 desc: ""
-car_name: "Фронтальный погрузчик Амкодор"
-uid: "Amkodor"
-thumb: "Frontalnyiy-Pogruzchiki"
-index: "61"
-permalink: /service/amkodor/
+car_name: "Самосвала КамАЗ 5511"
+uid: "Samosval"
+thumb: "Samosval"
+index: "41"
+permalink: /service/samosval/
 kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
 price: ""
 images: ""
-metaimg: /img/avto/Frontalnyiy-Pogruzchiki.jpg
+metaimg: /img/avto/Samosval.jpg
 exclude: true
 sitemap: false
 ---
 
-Объем ковша: 1,9-2,3 куб.м  
-Грузоподъёмность: 3-4 т  
+Объем кузова самосвала: 7,2 куб.м  
