@@ -7,7 +7,7 @@ title: ""
 desc: ""
 car_name: "Hyundai H940S"
 uid: "Hyundai-H940S"
-thumb: "Ekskavatory-Pogruzchiki"
+thumb: "Hyundai-h940s"
 index: "62"
 permalink: /service/hyundai-h940s/
 kuzov_l: ""
@@ -16,11 +16,13 @@ tonnage: ""
 tonnage_s: ""
 price: ""
 images: ""
-metaimg: /img/avto/Ekskavatory-Pogruzchiki.jpg
+metaimg: /img/avto/Hyundai-h940s.jpg
 exclude: true
 sitemap: false
 ---
 
-Мощн. двигателя: 74,5 л.с.  
-Емкость ковша погрузчика: 1,1 куб.м  
-Грузоподъемность: 2,8 т  
+<span>Мощн. двигателя:</span><span>74,5 л.с.</span>
+
+<span>Емкость ковша погрузчика:</span><span>1,1 куб.м</span>
+
+<span>Грузоподъемность:</span><span>2,8 т</span>

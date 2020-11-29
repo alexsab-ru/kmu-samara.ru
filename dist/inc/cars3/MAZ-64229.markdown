@@ -21,6 +21,8 @@ exclude: true
 sitemap: false
 ---
 
-Ширина борта: 2,40 м  
-Длина борта: 13,6 м  
-Грузоподъёмность: 20 т  
+<span>Ширина борта:</span><span>2,40 м</span>
+
+<span>Длина борта:</span><span>13,6 м</span>
+
+<span>Грузоподъёмность:</span><span>20 т</span>

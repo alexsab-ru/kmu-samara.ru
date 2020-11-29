@@ -7,7 +7,7 @@ title: ""
 desc: ""
 car_name: "JCB 3CX SUPER"
 uid: "JCB-3CX-SUPER"
-thumb: "Ekskavatory-Pogruzchiki"
+thumb: "JCB-3CX-Super"
 index: "62"
 permalink: /service/jcb-3cx-super/
 kuzov_l: ""
@@ -16,13 +16,17 @@ tonnage: ""
 tonnage_s: ""
 price: ""
 images: ""
-metaimg: /img/avto/Ekskavatory-Pogruzchiki.jpg
+metaimg: /img/avto/JCB-3CX-Super.jpg
 exclude: true
 sitemap: false
 ---
 
-Мощн. двигателя: 68,6 кВт (92 л.с.)  
-Емкость ковша погрузчика: 1,1 куб.м  
-Глубина копания: 0,18 м  
-Ширина ковша: 2,23 м  
-Высота выгрузки: 2,64 м  
+<span>Мощн. двигателя:</span><span>68,6 кВт (92 л.с.)</span>
+
+<span>Емкость ковша погрузчика:</span><span>1,1 куб.м</span>
+
+<span>Глубина копания:</span><span>0,18 м</span>
+
+<span>Ширина ковша:</span><span>2,23 м</span>
+
+<span>Высота выгрузки:</span><span>2,64 м</span>

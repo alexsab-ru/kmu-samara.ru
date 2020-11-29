@@ -21,5 +21,6 @@ exclude: true
 sitemap: false
 ---
 
-КАМАЗ  
-Вылет стрелы: 21,7 м  
+КАМАЗ
+
+<span>Вылет стрелы:</span><span>21,7 м</span>

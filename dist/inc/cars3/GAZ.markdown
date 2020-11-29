@@ -20,4 +20,4 @@ exclude: true
 sitemap: false
 ---
 
-Грузоподъемность: 4,5 т  
+<span>Грузоподъемность:</span><span>4,5 т</span>

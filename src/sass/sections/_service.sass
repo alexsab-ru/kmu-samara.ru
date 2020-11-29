@@ -130,6 +130,19 @@
 			.excerpt
 				font-size: 1.1vmax
 				display: block
+				p
+					margin-bottom: 0
+					&:after
+						content: '....................................................................................'
+						display: block
+						white-space: nowrap
+						overflow: hidden
+					span:first-of-type
+						float: left
+						margin-right: 10px
+					span:last-of-type
+						float: right
+						margin-left: 10px
 				+media-breakpoint-down(md)
 					font-size: 14px
 		.btn

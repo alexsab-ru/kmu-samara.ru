@@ -21,6 +21,8 @@ exclude: true
 sitemap: false
 ---
 
-Ширина борта: 2,40 м  
-Длина борта: 4,6 м  
-Грузоподъёмность: 5 т  
+<span>Ширина борта:</span><span>2,40 м</span>
+
+<span>Длина борта:</span><span>4,6 м</span>
+
+<span>Грузоподъёмность:</span><span>5 т</span>

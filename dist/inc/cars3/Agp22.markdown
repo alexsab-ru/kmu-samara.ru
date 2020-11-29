@@ -21,4 +21,4 @@ exclude: true
 sitemap: false
 ---
 
-КАМАЗ  
+КАМАЗ

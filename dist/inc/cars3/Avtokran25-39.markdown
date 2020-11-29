@@ -21,5 +21,6 @@ exclude: true
 sitemap: false
 ---
 
-XCMG  
-Вылет стрелы: 39 м  
+XCMG
+
+<span>Вылет стрелы:</span><span>39 м</span>

@@ -21,4 +21,4 @@ exclude: true
 sitemap: false
 ---
 
-Объем кузова самосвала: 7,2 куб.м  
+<span>Объем кузова самосвала:</span><span>7,2 куб.м</span>
