@@ -7,6 +7,7 @@ title: "Камаз 53202"
 desc: "Камаз 53202"
 car_name: "Камаз 53202"
 uid: "Kamaz-53202"
+thumb: "kamaz-53202"
 index: "06"
 permalink: /service/kamaz-53202/
 kuzov_l: "4"

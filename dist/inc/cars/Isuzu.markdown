@@ -7,6 +7,7 @@ title: "Исузу Форвард с манипулятором"
 desc: "Исузу Форвард с манипулятором"
 car_name: "Исузу Форвард с манипулятором"
 uid: "Isuzu"
+thumb: "isuzu"
 index: "08"
 permalink: /service/isuzu/
 kuzov_l: "4,5"

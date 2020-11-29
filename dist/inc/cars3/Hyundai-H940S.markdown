@@ -7,7 +7,7 @@ title: ""
 desc: ""
 car_name: "Hyundai H940S"
 uid: "Hyundai-H940S"
-thumb: "Hyundai-h940s"
+thumb: "hyundai-h940s"
 index: "62"
 permalink: /service/hyundai-h940s/
 kuzov_l: ""
@@ -16,7 +16,7 @@ tonnage: ""
 tonnage_s: ""
 price: ""
 images: ""
-metaimg: /img/avto/Hyundai-h940s.jpg
+metaimg: /img/avto/Hyundai-H940S.jpg
 exclude: true
 sitemap: false
 ---

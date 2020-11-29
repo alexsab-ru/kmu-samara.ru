@@ -5,9 +5,9 @@
 layout: model
 title: "Аренда автокрана в Самаре"
 desc: "Услуги автомобильных кранов"
-car_name: "Автокран г/п 25 т."
+car_name: "Автокран г/п 25&nbsp;т."
 uid: "Avtokran25-30"
-thumb: "Avtokran"
+thumb: "avtokran"
 index: "13"
 permalink: /service/avtokran25-30/
 kuzov_l: ""
@@ -16,7 +16,7 @@ tonnage: "42"
 tonnage_s: "42"
 price: "1200"
 images: ""
-metaimg: /img/avto/Avtokran.jpg
+metaimg: /img/avto/Avtokran25-30.jpg
 exclude: true
 sitemap: false
 ---

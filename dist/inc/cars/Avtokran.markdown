@@ -7,6 +7,7 @@ title: "Аренда автокрана в Самаре"
 desc: "Услуги автомобильных кранов"
 car_name: "Услуги автомобильных кранов"
 uid: "Avtokran"
+thumb: "avtokran"
 index: "01"
 permalink: /service/avtokran/
 kuzov_l: ""

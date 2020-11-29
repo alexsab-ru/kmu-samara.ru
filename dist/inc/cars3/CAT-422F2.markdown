@@ -7,7 +7,7 @@ title: ""
 desc: ""
 car_name: "CAT 422F2"
 uid: "CAT-422F2"
-thumb: "Cat-422F2"
+thumb: "cat-422f2"
 index: "62"
 permalink: /service/cat-422f2/
 kuzov_l: ""
@@ -16,7 +16,7 @@ tonnage: ""
 tonnage_s: ""
 price: ""
 images: ""
-metaimg: /img/avto/Cat-422F2.jpg
+metaimg: /img/avto/CAT-422F2.jpg
 exclude: true
 sitemap: false
 ---

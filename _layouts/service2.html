@@ -16,7 +16,7 @@ layout: default
 			{%- if car.path contains '/cars3/' -%}
 				{%- if car.title and car.index != nil -%}
 				<!-- {%- assign img_path = "/img/avto/,.jpg" | split: "," -%} -->
-				{%- assign img_path = "/img/model-nav/400w/,_400w.png" | split: "," -%}
+				{%- assign img_path = "/img/model-nav/400w/,.png" | split: "," -%}
 				{%- assign img_url = img_path | join: car.thumb -%}
 
 		<div class="service2__item">
@@ -26,7 +26,7 @@ layout: default
 			<div class="service2__item--info df jcsb">
 				<div class="excerpt">{{ car.content }}</div>
 			</div>
-			<a href="{{ car.url | relative_url }}" class="btn info-popup">Подробнее</a>
+			<a href="{{ car.url | relative_url }}" class="btn info-popup">Заказать</a>
 		</div>
 		<!-- /.service2__item -->
 

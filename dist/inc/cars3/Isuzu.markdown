@@ -5,9 +5,9 @@
 layout: model
 title: "Исузу Форвард с манипулятором"
 desc: "Исузу Форвард с манипулятором"
-car_name: "Кран-манипулятор (КМУ) на базе Isuzu Forward"
+car_name: "Кран-манипулятор (КМУ) на&nbsp;базе Isuzu&nbsp;Forward"
 uid: "Isuzu"
-thumb: "Isuzu"
+thumb: "isuzu"
 index: "71"
 permalink: /service/isuzu/
 kuzov_l: "4,5"

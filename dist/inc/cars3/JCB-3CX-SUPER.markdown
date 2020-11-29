@@ -5,9 +5,9 @@
 layout: model
 title: ""
 desc: ""
-car_name: "JCB 3CX SUPER"
+car_name: "JCB 3CX&nbsp;SUPER"
 uid: "JCB-3CX-SUPER"
-thumb: "JCB-3CX-Super"
+thumb: "jcb-3cx-super"
 index: "62"
 permalink: /service/jcb-3cx-super/
 kuzov_l: ""
@@ -16,7 +16,7 @@ tonnage: ""
 tonnage_s: ""
 price: ""
 images: ""
-metaimg: /img/avto/JCB-3CX-Super.jpg
+metaimg: /img/avto/JCB-3CX-SUPER.jpg
 exclude: true
 sitemap: false
 ---

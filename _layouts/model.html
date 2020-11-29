@@ -116,8 +116,8 @@ layout: default
 
 						{% capture amount %}{{ amount | plus:1 }}{% endcapture %}
 
-						{%- assign img_path = "/img/model-nav/,.png" | split: "," -%}
-						{%- assign img_url = img_path | join: car.uid -%}
+						{%- assign img_path = "/img/model-nav/400w/,.png" | split: "," -%}
+						{%- assign img_url = img_path | join: car.thumb -%}
 							
 				<li {% if page.url == car.url %} class="active"{% endif %}><a href="{{ car.url | relative_url }}" title="{{ car.car_name }}"><img src="{{ img_url | relative_url }}" alt="{{ car.car_name }}"></a></li>
 

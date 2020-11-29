@@ -5,9 +5,9 @@
 layout: model
 title: ""
 desc: ""
-car_name: "Самосвала КамАЗ 5511"
+car_name: "Самосвала КамАЗ&nbsp;5511"
 uid: "Samosval"
-thumb: "Samosval"
+thumb: "samosval-2"
 index: "41"
 permalink: /service/samosval/
 kuzov_l: ""

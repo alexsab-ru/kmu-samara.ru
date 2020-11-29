@@ -5,9 +5,9 @@
 layout: model
 title: "МАЗ 437041-261 Зубренок в аренду для грузоперевозок"
 desc: "МАЗ 437041-261 Зубренок в аренду для грузоперевозок"
-car_name: "Бортовой автомобиль МАЗ 4370 Зубренок"
+car_name: "Бортовой автомобиль МАЗ&nbsp;4370 Зубренок"
 uid: "MAZ-Zubrenok"
-thumb: "MAZ-Zubrenok"
+thumb: "maz-zubrenok"
 index: "21"
 permalink: /service/maz-zubrenok/
 kuzov_l: "5,3"

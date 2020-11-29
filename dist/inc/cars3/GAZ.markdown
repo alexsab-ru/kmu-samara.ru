@@ -5,9 +5,9 @@
 layout: model
 title: "Аренда самосвала ГАЗ 3307"
 desc: "Аренда самосвала ГАЗ 3307"
-car_name: "Аренда самосвала ГАЗ 3307"
+car_name: "Аренда самосвала ГАЗ&nbsp;3307"
 uid: "GAZ"
-thumb: "GAZ"
+thumb: "gaz"
 permalink: /service/gaz/
 kuzov_l: "3,5"
 kuzov_w: ""

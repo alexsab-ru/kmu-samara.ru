@@ -5,9 +5,9 @@
 layout: model
 title: ""
 desc: ""
-car_name: "Автокран г/п 25 т."
+car_name: "Автокран г/п 25&nbsp;т."
 uid: "Avtokran25-39"
-thumb: "Avtokran"
+thumb: "xcmg25"
 index: "14"
 permalink: /service/avtokran25-39/
 kuzov_l: ""
@@ -16,7 +16,7 @@ tonnage: ""
 tonnage_s: ""
 price: ""
 images: ""
-metaimg: /img/avto/Avtokran.jpg
+metaimg: /img/avto/Avtokran25-39.jpg
 exclude: true
 sitemap: false
 ---

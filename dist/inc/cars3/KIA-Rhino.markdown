@@ -5,9 +5,9 @@
 layout: model
 title: "Аренда грузовика Kia Rhino"
 desc: "Аренда грузовика Kia Rhino"
-car_name: "Бортовой автомобиль KIA Rhino"
+car_name: "Бортовой автомобиль KIA&nbsp;Rhino"
 uid: "KIA-Rhino"
-thumb: "KIA-Rhino"
+thumb: "kia-rhino"
 index: "24"
 permalink: /service/kia-rhino/
 kuzov_l: "4,6"

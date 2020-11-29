@@ -7,7 +7,7 @@ title: ""
 desc: ""
 car_name: "АГП 18"
 uid: "Agp18"
-thumb: "Agp"
+thumb: "agp"
 index: "32"
 permalink: /service/agp18/
 kuzov_l: ""
@@ -16,7 +16,7 @@ tonnage: ""
 tonnage_s: ""
 price: ""
 images: ""
-metaimg: /img/avto/Agp.jpg
+metaimg: /img/avto/Agp18.jpg
 exclude: true
 sitemap: false
 ---

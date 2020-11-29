@@ -5,9 +5,9 @@
 layout: model
 title: "Манипулятор KIA Granto в аренду"
 desc: "Манипулятор KIA Granto в аренду"
-car_name: "Кран-манипулятор (КМУ) на базе KIA Granto"
+car_name: "Кран-манипулятор (КМУ) на&nbsp;базе KIA&nbsp;Granto"
 uid: "KIA-Granto"
-thumb: "KIA-Granto"
+thumb: "kia-granto"
 index: "73"
 permalink: /service/kia-granto/
 kuzov_l: "9"

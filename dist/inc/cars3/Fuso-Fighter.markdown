@@ -7,7 +7,7 @@ title: "Манипулятор Mitsubishi Fuso"
 desc: "Манипулятор Mitsubishi Fuso"
 car_name: "Манипулятор Mitsubishi Fuso"
 uid: "Fuso-Fighter"
-thumb: "Fuso-Fighter"
+thumb: "mitsubishi-fuso-fighter"
 index: "75"
 permalink: /service/fuso-fighter/
 kuzov_l: "6,2"

@@ -5,9 +5,9 @@
 layout: model
 title: "Кран-манипулятор Камаз 65117 в аренду"
 desc: "Кран-манипулятор Камаз 65117 в аренду"
-car_name: "Кран-манипулятор (КМУ) на базе КАМАЗ 65117"
+car_name: "Кран-манипулятор (КМУ) на&nbsp;базе КАМАЗ&nbsp;65117"
 uid: "Kamaz-65117"
-thumb: "Kamaz-65117"
+thumb: "kamaz-65117"
 index: "74"
 permalink: /service/kamaz-65117/
 kuzov_l: "6,2"

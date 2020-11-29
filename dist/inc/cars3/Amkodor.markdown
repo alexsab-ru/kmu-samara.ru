@@ -7,7 +7,7 @@ title: ""
 desc: ""
 car_name: "Фронтальный погрузчик Амкодор"
 uid: "Amkodor"
-thumb: "Frontalnyiy-Pogruzchiki"
+thumb: "front-pogruz"
 index: "61"
 permalink: /service/amkodor/
 kuzov_l: ""
@@ -16,7 +16,7 @@ tonnage: ""
 tonnage_s: ""
 price: ""
 images: ""
-metaimg: /img/avto/Frontalnyiy-Pogruzchiki.jpg
+metaimg: /img/avto/Amkodor.jpg
 exclude: true
 sitemap: false
 ---

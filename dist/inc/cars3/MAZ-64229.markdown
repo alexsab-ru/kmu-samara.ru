@@ -5,9 +5,9 @@
 layout: model
 title: "Аренда полуприцепа МАЗ 64229 "
 desc: "Аренда полуприцепа МАЗ 64229 "
-car_name: "МАЗ 4229 Полуприцеп"
+car_name: "МАЗ&nbsp;4229 Полуприцеп"
 uid: "MAZ-64229"
-thumb: "MAZ-64229"
+thumb: "maz-64229"
 index: "22"
 permalink: /service/maz-64229/
 kuzov_l: "13,6"

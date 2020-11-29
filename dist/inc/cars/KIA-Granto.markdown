@@ -7,6 +7,7 @@ title: "Манипулятор KIA Granto в аренду"
 desc: "Манипулятор KIA Granto в аренду"
 car_name: "Манипулятор KIA Granto в аренду"
 uid: "KIA-Granto"
+thumb: "kia-granto"
 index: "02"
 permalink: /service/kia-granto/
 kuzov_l: "9"

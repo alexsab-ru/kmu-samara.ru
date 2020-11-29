@@ -5,9 +5,9 @@
 layout: model
 title: ""
 desc: ""
-car_name: "Мини-погрузчик Bobcat S175"
+car_name: "Мини-погрузчик Bobcat&nbsp;S175"
 uid: "Bobcat-S175"
-thumb: "Bobcat-S175"
+thumb: "mini-pogruz"
 index: "63"
 permalink: /service/bobcat-s175/
 kuzov_l: ""

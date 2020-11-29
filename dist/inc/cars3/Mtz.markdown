@@ -7,7 +7,7 @@ title: ""
 desc: ""
 car_name: "Трактор МТЗ (щётка, ковш, отвал)"
 uid: "Mtz"
-thumb: "Mtz"
+thumb: "mtz"
 index: "51"
 permalink: /service/mtz/
 kuzov_l: ""
@@ -25,6 +25,6 @@ sitemap: false
 
 <span>Диаметр щетки (по ворсу):</span><span>550 мм</span>
 
-<span>Максимальная ширина захвата щетки:</span><span>1700 мм</span>
+<span>Макc. ширина захвата щетки:</span><span>1700 мм</span>
 
-<span>Частота вращения ВОМ трактора:</span><span>540 об/мин</span>
+<span>Частота вращения ВОМ:</span><span>540 об/мин</span>

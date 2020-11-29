@@ -7,6 +7,7 @@ title: "Аренда самосвала ГАЗ 3307"
 desc: "Аренда самосвала ГАЗ 3307"
 car_name: "Аренда самосвала ГАЗ 3307"
 uid: "GAZ"
+thumb: "gaz"
 index: "13"
 permalink: /service/gaz/
 kuzov_l: "3,5"
