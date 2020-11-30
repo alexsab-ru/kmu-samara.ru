@@ -15,7 +15,7 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
-price: ""
+price: "1200"
 images: ""
 metaimg: /img/avto/Agp16.jpg
 exclude: true

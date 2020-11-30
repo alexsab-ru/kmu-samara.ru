@@ -15,7 +15,7 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: "4"
 tonnage_s: ""
-price: ""
+price: "1600"
 images: ""
 metaimg: /img/avto/Amkodor.jpg
 exclude: true

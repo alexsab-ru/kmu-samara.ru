@@ -15,7 +15,7 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
-price: ""
+price: "1500"
 images: ""
 metaimg: /img/avto/Mtz.jpg
 exclude: true

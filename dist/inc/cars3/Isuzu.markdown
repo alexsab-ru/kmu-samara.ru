@@ -15,7 +15,7 @@ kuzov_l: "4,5"
 kuzov_w: "2,2"
 tonnage: "3,5"
 tonnage_s: "3"
-price: "1200"
+price: "1300"
 images: "/img/avto/Isuzu/DSC_4638.jpg|/img/avto/Isuzu/DSC_4642.jpg|/img/avto/Isuzu/DSC_4653.jpg"
 metaimg: /img/avto/Isuzu.jpg
 exclude: true

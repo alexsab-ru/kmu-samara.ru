@@ -15,7 +15,7 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: "0,895"
 tonnage_s: ""
-price: ""
+price: "1300"
 images: ""
 metaimg: /img/avto/Bobcat-S175.jpg
 exclude: true

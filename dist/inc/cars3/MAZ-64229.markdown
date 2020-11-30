@@ -15,7 +15,7 @@ kuzov_l: "13,6"
 kuzov_w: "2,4"
 tonnage: "20"
 tonnage_s: ""
-price: "1300"
+price: "1500"
 images: "/img/avto/MAZ-64229/IMG_1225.png|/img/avto/MAZ-64229/IMG_1226.png"
 metaimg: /img/avto/MAZ-64229.jpg
 exclude: true

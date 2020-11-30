@@ -15,7 +15,7 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
-price: ""
+price: "1800"
 images: ""
 metaimg: /img/avto/CAT-422F2.jpg
 exclude: true

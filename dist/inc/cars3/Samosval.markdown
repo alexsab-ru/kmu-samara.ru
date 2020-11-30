@@ -15,7 +15,7 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
-price: ""
+price: "1300"
 images: ""
 metaimg: /img/avto/Samosval.jpg
 exclude: true

@@ -19,14 +19,25 @@ layout: default
 				{%- assign img_path = "/img/model-nav/400w/,.png" | split: "," -%}
 				{%- assign img_url = img_path | join: car.thumb -%}
 
-		<div class="service2__item">
-			<a href="{{ car.url | relative_url }}" class="service2__item--img lazyload" style="background-image: url({{ '/img/loading-0.gif' | relative_url }});" data-src-background="{{ img_url | relative_url }}">
-				<h3>{{ car.car_name }}</h3>
+		<div class="service2__item" itemscope="" itemtype="http://schema.org/Product">
+			<a href="{{ car.url | relative_url }}" class="service2__item--img lazyload" style="background-image: url({{ '/img/loading-0.gif' | relative_url }});" data-src-background="{{ img_url | relative_url }}" itemprop="image">
+				<h3 itemprop="name">{{ car.car_name }}</h3>
 			</a>
 			<div class="service2__item--info df jcsb">
-				<div class="excerpt">{{ car.content }}</div>
+				<div class="excerpt" itemprop="description">{{ car.content }}</div>
 			</div>
-			<a href="{{ car.url | relative_url }}" class="btn info-popup">Заказать</a>
+			<div class="service2__item--action">
+				<div class="service2__item--price"  itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+					<div class="price">{% include numf.html number=car.price ts=' ' decimals=0 %} ₽</div>
+					<meta itemprop="price" content="{{ car.price }}">
+					<meta itemprop="priceCurrency" content="RUB">
+					<link itemprop="availability" href="http://schema.org/InStock">
+					<div class="time">Цена за час</div>
+				</div>
+				<!-- /.service2__item--price -->
+				<a href="{{ car.url | relative_url }}" class="btn info-popup">Заказать</a>
+			</div>
+			<!-- /.service2__item--action -->
 		</div>
 		<!-- /.service2__item -->
 

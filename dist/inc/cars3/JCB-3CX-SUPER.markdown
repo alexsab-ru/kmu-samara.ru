@@ -15,7 +15,7 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
-price: ""
+price: "1600"
 images: ""
 metaimg: /img/avto/JCB-3CX-SUPER.jpg
 exclude: true

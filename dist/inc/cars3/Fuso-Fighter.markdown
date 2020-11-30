@@ -15,7 +15,7 @@ kuzov_l: "6,2"
 kuzov_w: "2,32"
 tonnage: "5"
 tonnage_s: "3"
-price: "1200"
+price: "1300"
 images: ""
 metaimg: /img/avto/Fuso-Fighter.jpg
 exclude: true

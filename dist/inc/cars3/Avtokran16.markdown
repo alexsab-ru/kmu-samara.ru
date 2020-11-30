@@ -15,7 +15,7 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: "16"
-price: ""
+price: "1500"
 images: ""
 metaimg: /img/avto/Avtokran16.jpg
 exclude: true

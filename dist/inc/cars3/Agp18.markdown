@@ -15,7 +15,7 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
-price: ""
+price: "1400"
 images: ""
 metaimg: /img/avto/Agp18.jpg
 exclude: true

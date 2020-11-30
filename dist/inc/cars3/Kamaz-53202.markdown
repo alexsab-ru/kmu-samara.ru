@@ -5,7 +5,7 @@
 layout: model
 title: "Камаз 53202"
 desc: "Камаз 53202"
-car_name: "Камаз 53202"
+car_name: "Кран-манипулятотр (КМУ) на базе КАМАЗ 53202"
 category: "Краны-манипуляторы"
 uid: "Kamaz-53202"
 thumb: "kamaz-53202"
