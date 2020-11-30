@@ -6,6 +6,7 @@ layout: model
 title: "Аренда грузовика Kia Rhino"
 desc: "Аренда грузовика Kia Rhino"
 car_name: "Аренда грузовика Kia Rhino"
+category: "Бортовой автотранспорт"
 uid: "KIA-Rhino"
 thumb: "kia-rhino"
 index: "10"
@@ -14,7 +15,7 @@ kuzov_l: "4,5"
 kuzov_w: "2,2"
 tonnage: "6,5"
 tonnage_s: ""
-price: "1000"
+price: "1200"
 images: "/img/avto/KIA-Rhino/DSC_4661.jpg|/img/avto/KIA-Rhino/DSC_4662.jpg|/img/avto/KIA-Rhino/DSC_4665.jpg"
 metaimg: /img/avto/KIA-Rhino.jpg
 ---

@@ -6,6 +6,7 @@ layout: model
 title: ""
 desc: ""
 car_name: "АГП 22"
+category: "АГП"
 uid: "Agp22"
 thumb: "agp"
 index: "33"

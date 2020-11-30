@@ -6,6 +6,7 @@ layout: model
 title: ""
 desc: ""
 car_name: "CAT 422F2"
+category: "Погрузчики"
 uid: "CAT-422F2"
 thumb: "cat-422f2"
 index: "62"

@@ -6,6 +6,7 @@ layout: model
 title: "Аренда Газели с креплением “Катюша”"
 desc: "Аренда Газели с креплением “Катюша”"
 car_name: "ГАЗель 3302"
+category: "Бортовой автотранспорт"
 uid: "Gazel"
 thumb: "gazel_katyusha"
 index: "23"

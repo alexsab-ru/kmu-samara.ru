@@ -6,6 +6,7 @@ layout: model
 title: ""
 desc: ""
 car_name: "Трактор МТЗ (щётка, ковш, отвал)"
+category: "КДМ"
 uid: "Mtz"
 thumb: "mtz"
 index: "51"

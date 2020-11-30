@@ -5,7 +5,8 @@
 layout: model
 title: ""
 desc: ""
-car_name: "JCB 3CX&nbsp;SUPER"
+car_name: "JCB 3CX SUPER"
+category: "Погрузчики"
 uid: "JCB-3CX-SUPER"
 thumb: "jcb-3cx-super"
 index: "62"

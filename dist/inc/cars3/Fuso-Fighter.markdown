@@ -6,6 +6,7 @@ layout: model
 title: "Манипулятор Mitsubishi Fuso"
 desc: "Манипулятор Mitsubishi Fuso"
 car_name: "Манипулятор Mitsubishi Fuso"
+category: "Краны-манипуляторы"
 uid: "Fuso-Fighter"
 thumb: "mitsubishi-fuso-fighter"
 index: "75"
