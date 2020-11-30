@@ -10,7 +10,26 @@
 				{%- unless my_page.exclude -%}
 					{%- if my_page.menu -%}
 
-						<li {% if page.url == my_page.url %} class="active"{% endif %}><a href="{{ my_page.url | relative_url }}">{{ my_page.menu | escape }}</a></li>
+						<li {% if page.url == my_page.url %} class="active"{% endif %}>
+							<a href="{{ my_page.url | relative_url }}">{{ my_page.menu | escape }}</a>
+
+							{% if my_page.url == '/service/' %}
+							<ul class="submenu">
+								{%- assign default_paths = site.pages | sort: "index" | map: "path" -%}
+								{%- assign page_paths = default_paths -%}
+
+								{%- for path in page_paths -%}
+								{%- assign car = site.pages | where: "path", path | first -%}
+								{%- if car.path contains '/cars/' -%}
+								{%- if car.title and car.index -%}
+									<li><a href="{{ car.url | relative_url }}">{{ car.car_name }}</a></li>
+								{%- endif -%}
+								{%- endif -%}
+								{%- endfor -%}
+							</ul>
+							{% endif %}
+
+						</li>
 
 					{%- endif -%}
 				{%- endunless -%}
