@@ -9,7 +9,7 @@ car_name: "Автокран г/п 16 т"
 category: "Автокраны"
 uid: "Avtokran16"
 thumb: "avtokran16"
-index: "200"
+index: "70"
 permalink: /service/avtokran16/
 kuzov_l: ""
 kuzov_w: ""

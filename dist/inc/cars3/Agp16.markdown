@@ -9,7 +9,7 @@ car_name: "АГП 16 метров"
 category: "АГП"
 uid: "Agp16"
 thumb: "agp16"
-index: "240"
+index: "80"
 permalink: /service/agp16/
 kuzov_l: ""
 kuzov_w: ""

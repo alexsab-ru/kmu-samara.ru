@@ -9,7 +9,7 @@ car_name: "Бортовой автомобиль МАЗ 4370 Зубренок"
 category: "Бортовой автотранспорт"
 uid: "MAZ-Zubrenok"
 thumb: "maz-zubrenok"
-index: "90"
+index: "30"
 permalink: /service/maz-zubrenok/
 kuzov_l: "5,3"
 kuzov_w: "2,48"

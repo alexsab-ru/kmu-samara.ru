@@ -9,7 +9,7 @@ car_name: "АГП 22 метров"
 category: "АГП"
 uid: "Agp22"
 thumb: "agp22"
-index: "260"
+index: "82"
 permalink: /service/agp22/
 kuzov_l: ""
 kuzov_w: ""

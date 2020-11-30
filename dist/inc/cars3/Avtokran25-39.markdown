@@ -9,7 +9,7 @@ car_name: "Автокран г/п 25 т."
 category: "Автокраны"
 uid: "Avtokran25-39"
 thumb: "xcmg25"
-index: "220"
+index: "72"
 permalink: /service/avtokran25-39/
 kuzov_l: ""
 kuzov_w: ""

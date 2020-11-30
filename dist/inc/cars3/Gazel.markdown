@@ -9,7 +9,7 @@ car_name: "ГАЗель 3302"
 category: "Бортовой автотранспорт"
 uid: "Gazel"
 thumb: "gazel_katyusha"
-index: "120"
+index: "33"
 permalink: /service/gazel/
 kuzov_l: "4,2"
 kuzov_w: "2"

@@ -9,7 +9,7 @@ car_name: "Фронтальный погрузчик Амкодор"
 category: "Погрузчики"
 uid: "Amkodor"
 thumb: "front-pogruz"
-index: "160"
+index: "60"
 permalink: /service/amkodor/
 kuzov_l: ""
 kuzov_w: ""

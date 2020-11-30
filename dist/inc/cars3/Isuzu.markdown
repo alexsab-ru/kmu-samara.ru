@@ -9,7 +9,7 @@ car_name: "Кран-манипулятор (КМУ) на базе Isuzu Forwar
 category: "Краны-манипуляторы"
 uid: "Isuzu"
 thumb: "isuzu"
-index: "30"
+index: "21"
 permalink: /service/isuzu/
 kuzov_l: "4,5"
 kuzov_w: "2,2"

@@ -9,7 +9,7 @@ car_name: "JCB 3CX SUPER"
 category: "Погрузчики"
 uid: "JCB-3CX-SUPER"
 thumb: "jcb-3cx-super"
-index: "170"
+index: "61"
 permalink: /service/jcb-3cx-super/
 kuzov_l: ""
 kuzov_w: ""

@@ -9,7 +9,7 @@ car_name: "МАЗ 4229 Полуприцеп"
 category: "Бортовой автотранспорт"
 uid: "MAZ-64229"
 thumb: "maz-64229"
-index: "110"
+index: "32"
 permalink: /service/maz-64229/
 kuzov_l: "13,6"
 kuzov_w: "2,4"

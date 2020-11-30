@@ -9,7 +9,7 @@ car_name: "Кран-манипулятотр (КМУ) на базе КАМАЗ�
 category: "Краны-манипуляторы"
 uid: "Kamaz-53202"
 thumb: "kamaz-53202"
-index: "40"
+index: "22"
 permalink: /service/kamaz-53202/
 kuzov_l: "5,5"
 kuzov_w: "2,4"

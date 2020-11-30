@@ -9,7 +9,7 @@ car_name: "Кран-манипулятор (КМУ) на базе КАМАЗ 6
 category: "Краны-манипуляторы"
 uid: "Kamaz-65117"
 thumb: "kamaz-65117"
-index: "60"
+index: "24"
 permalink: /service/kamaz-65117/
 kuzov_l: "6,2"
 kuzov_w: "2,4"
