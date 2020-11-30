@@ -8,8 +8,8 @@ desc: ""
 car_name: "Автокран г/п 25 т."
 category: "Автокраны"
 uid: "Avtokran25-21"
-thumb: "avtokran"
-index: "12"
+thumb: "avtokran25"
+index: "210"
 permalink: /service/avtokran25-21/
 kuzov_l: ""
 kuzov_w: ""
@@ -22,6 +22,6 @@ exclude: true
 sitemap: false
 ---
 
-КАМАЗ
+<span>Грузоподъемность:</span><span>25 т</span>
 
 <span>Вылет стрелы:</span><span>21,7 м</span>

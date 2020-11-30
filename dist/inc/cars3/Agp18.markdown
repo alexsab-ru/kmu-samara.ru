@@ -5,11 +5,11 @@
 layout: model
 title: ""
 desc: ""
-car_name: "АГП 18"
+car_name: "АГП 18 метров"
 category: "АГП"
 uid: "Agp18"
-thumb: "agp"
-index: "32"
+thumb: "agp18"
+index: "250"
 permalink: /service/agp18/
 kuzov_l: ""
 kuzov_w: ""
@@ -22,4 +22,6 @@ exclude: true
 sitemap: false
 ---
 
-КАМАЗ
+<span>Рабочая высота подъемника:</span><span>18 м</span>
+
+<span>Масса подъемника:</span><span>250 кг</span>

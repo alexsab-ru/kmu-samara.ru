@@ -9,7 +9,7 @@ car_name: "Манипулятор Mitsubishi Fuso"
 category: "Краны-манипуляторы"
 uid: "Fuso-Fighter"
 thumb: "mitsubishi-fuso-fighter"
-index: "75"
+index: "20"
 permalink: /service/fuso-fighter/
 kuzov_l: "6,2"
 kuzov_w: "2,32"

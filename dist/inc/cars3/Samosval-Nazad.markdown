@@ -9,7 +9,7 @@ car_name: "Самосвал КамАЗ 55111"
 category: "Самосвалы"
 uid: "Samosval-Nazad"
 thumb: "samosval"
-index: "42"
+index: "140"
 permalink: /service/samosval-nazad/
 kuzov_l: ""
 kuzov_w: ""

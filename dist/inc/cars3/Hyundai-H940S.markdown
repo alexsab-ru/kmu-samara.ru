@@ -9,7 +9,7 @@ car_name: "Hyundai H940S"
 category: "Погрузчики"
 uid: "Hyundai-H940S"
 thumb: "hyundai-h940s"
-index: "62"
+index: "190"
 permalink: /service/hyundai-h940s/
 kuzov_l: ""
 kuzov_w: ""

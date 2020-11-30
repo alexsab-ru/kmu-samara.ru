@@ -9,7 +9,7 @@ car_name: "Кран-манипулятор (КМУ) на базе KIA Granto"
 category: "Краны-манипуляторы"
 uid: "KIA-Granto"
 thumb: "kia-granto"
-index: "73"
+index: "80"
 permalink: /service/kia-granto/
 kuzov_l: "9"
 kuzov_w: "2,3"

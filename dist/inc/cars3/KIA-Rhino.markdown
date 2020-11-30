@@ -9,7 +9,7 @@ car_name: "Бортовой автомобиль KIA Rhino"
 category: "Бортовой автотранспорт"
 uid: "KIA-Rhino"
 thumb: "kia-rhino"
-index: "24"
+index: "100"
 permalink: /service/kia-rhino/
 kuzov_l: "4,6"
 kuzov_w: "2,4"

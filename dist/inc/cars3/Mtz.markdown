@@ -9,7 +9,7 @@ car_name: "Трактор МТЗ (щётка, ковш, отвал)"
 category: "КДМ"
 uid: "Mtz"
 thumb: "mtz"
-index: "51"
+index: "150"
 permalink: /service/mtz/
 kuzov_l: ""
 kuzov_w: ""

@@ -8,8 +8,8 @@ desc: ""
 car_name: "Автокран г/п 16 т"
 category: "Автокраны"
 uid: "Avtokran16"
-thumb: "avtokran"
-index: "11"
+thumb: "avtokran16"
+index: "200"
 permalink: /service/avtokran16/
 kuzov_l: ""
 kuzov_w: ""
@@ -22,6 +22,6 @@ exclude: true
 sitemap: false
 ---
 
-КАМАЗ
+<span>Грузоподъемность:</span><span>16 т</span>
 
 <span>Вылет стрелы:</span><span>18 м</span>

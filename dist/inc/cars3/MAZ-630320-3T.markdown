@@ -9,7 +9,7 @@ car_name: "Кран-манипулятор (КМУ) на базе МАЗ 6303"
 category: "Краны-манипуляторы"
 uid: "MAZ-630320-3T"
 thumb: "maz-630320-3t"
-index: "72"
+index: "50"
 permalink: /service/maz-630320-3t/
 kuzov_l: "7,5"
 kuzov_w: "2,4"

@@ -9,7 +9,7 @@ car_name: "Кран-манипулятор (КМУ) на базе КАМАЗ 6
 category: "Краны-манипуляторы"
 uid: "Kamaz-65117"
 thumb: "kamaz-65117"
-index: "74"
+index: "60"
 permalink: /service/kamaz-65117/
 kuzov_l: "6,2"
 kuzov_w: "2,4"
@@ -22,9 +22,9 @@ exclude: true
 sitemap: false
 ---
 
-<span>Грузоподъемность стрелы:</span><span>5 т</span>
+<span>Грузоподъемность стрелы:</span><span>3 т</span>
 
-<span>Вылет стрелы:</span><span>3 м</span>
+<span>Вылет стрелы:</span><span>9 м</span>
 
 <span>Масса перевозимого груза:</span><span>15 т</span>
 

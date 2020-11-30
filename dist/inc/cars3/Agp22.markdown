@@ -5,11 +5,11 @@
 layout: model
 title: ""
 desc: ""
-car_name: "АГП 22"
+car_name: "АГП 22 метров"
 category: "АГП"
 uid: "Agp22"
-thumb: "agp"
-index: "33"
+thumb: "agp22"
+index: "260"
 permalink: /service/agp22/
 kuzov_l: ""
 kuzov_w: ""
@@ -22,4 +22,6 @@ exclude: true
 sitemap: false
 ---
 
-КАМАЗ
+<span>Рабочая высота подъемника:</span><span>22 м  </span>
+
+<span>Масса подъемника:</span><span>200 кг</span>

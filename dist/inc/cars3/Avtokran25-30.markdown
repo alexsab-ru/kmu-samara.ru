@@ -9,7 +9,7 @@ car_name: "Автокран г/п 25 т."
 category: "Автокраны"
 uid: "Avtokran25-30"
 thumb: "avtokran"
-index: "13"
+index: "230"
 permalink: /service/avtokran25-30/
 kuzov_l: ""
 kuzov_w: ""
@@ -22,6 +22,6 @@ exclude: true
 sitemap: false
 ---
 
-КАМАЗ вездеход
+<span>Грузоподъемность:</span><span>25 т</span>
 
 <span>Вылет стрелы:</span><span>28-30 м</span>

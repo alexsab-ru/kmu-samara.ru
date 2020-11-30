@@ -5,11 +5,11 @@
 layout: model
 title: ""
 desc: ""
-car_name: "АГП 28"
+car_name: "АГП 28 метров"
 category: "АГП"
 uid: "Agp28"
 thumb: "agp"
-index: "34"
+index: "270"
 permalink: /service/agp28/
 kuzov_l: ""
 kuzov_w: ""
@@ -22,6 +22,6 @@ exclude: true
 sitemap: false
 ---
 
-КАМАЗ, вездеход
+<span>Рабочая высота подъемника:</span><span>28 м</span>
 
-<span>Колено-телескоп:</span><span>28 м</span>
+<span>Масса подъемника:</span><span>300 кг</span>

@@ -16,11 +16,12 @@ layout: default
 			{%- if car.path contains '/cars3/' -%}
 				{%- if car.title and car.index != nil -%}
 				<!-- {%- assign img_path = "/img/avto/,.jpg" | split: "," -%} -->
-				{%- assign img_path = "/img/model-nav/400w/,.png" | split: "," -%}
+				{%- assign img_path = "/img/model-nav/400jpg/,.jpg" | split: "," -%}
 				{%- assign img_url = img_path | join: car.thumb -%}
 
 		<div class="service2__item" itemscope="" itemtype="http://schema.org/Product">
-			<a href="{{ car.url | relative_url }}" class="service2__item--img lazyload" style="background-image: url({{ '/img/loading-0.gif' | relative_url }});" data-src-background="{{ img_url | relative_url }}" itemprop="image">
+			<!-- <a href="{{ car.url | relative_url }}" class="service2__item--img lazyload" style="background-image: url({{ '/img/loading-0.gif' | relative_url }});" data-src-background="{{ img_url | relative_url }}" itemprop="image"> -->
+			<a href="{{ car.url | relative_url }}" class="service2__item--img" style="background-image: url({{ img_url | relative_url }});" title="Аренда {{ car.car_name }}" itemprop="image">
 				<h3 itemprop="name">{{ car.car_name }}</h3>
 			</a>
 			<div class="service2__item--info df jcsb">
@@ -35,7 +36,7 @@ layout: default
 					<div class="time">Цена за час</div>
 				</div>
 				<!-- /.service2__item--price -->
-				<a href="{{ car.url | relative_url }}" class="btn info-popup">Заказать</a>
+				<a href="#orderForm" class="btn info-popup modal-link" data-title="{{ car.car_name }}">Заказать</a>
 			</div>
 			<!-- /.service2__item--action -->
 		</div>

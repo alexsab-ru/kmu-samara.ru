@@ -9,7 +9,7 @@ car_name: "Автокран г/п 25 т."
 category: "Автокраны"
 uid: "Avtokran25-39"
 thumb: "xcmg25"
-index: "14"
+index: "220"
 permalink: /service/avtokran25-39/
 kuzov_l: ""
 kuzov_w: ""
@@ -23,5 +23,7 @@ sitemap: false
 ---
 
 XCMG
+
+<span>Грузоподъемность:</span><span>25 т</span>
 
 <span>Вылет стрелы:</span><span>39 м</span>

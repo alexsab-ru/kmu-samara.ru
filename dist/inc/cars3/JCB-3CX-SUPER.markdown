@@ -9,13 +9,13 @@ car_name: "JCB 3CX SUPER"
 category: "Погрузчики"
 uid: "JCB-3CX-SUPER"
 thumb: "jcb-3cx-super"
-index: "62"
+index: "170"
 permalink: /service/jcb-3cx-super/
 kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
-price: "1600"
+price: "1800"
 images: ""
 metaimg: /img/avto/JCB-3CX-SUPER.jpg
 exclude: true

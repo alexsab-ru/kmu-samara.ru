@@ -5,11 +5,11 @@
 layout: model
 title: ""
 desc: ""
-car_name: "АГП 16"
+car_name: "АГП 16 метров"
 category: "АГП"
 uid: "Agp16"
-thumb: "agp"
-index: "31"
+thumb: "agp16"
+index: "240"
 permalink: /service/agp16/
 kuzov_l: ""
 kuzov_w: ""
@@ -22,4 +22,6 @@ exclude: true
 sitemap: false
 ---
 
-ГАЗ, ЗИЛ
+<span>Рабочая высота подъемника:</span><span>16 м</span>
+
+<span>Масса подъемника:</span><span>200 кг</span>

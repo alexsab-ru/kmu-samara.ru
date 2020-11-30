@@ -9,7 +9,7 @@ car_name: "CAT 422F2"
 category: "Погрузчики"
 uid: "CAT-422F2"
 thumb: "cat-422f2"
-index: "62"
+index: "180"
 permalink: /service/cat-422f2/
 kuzov_l: ""
 kuzov_w: ""
