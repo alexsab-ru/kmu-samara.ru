@@ -6,6 +6,7 @@ layout: model
 title: "Аренда самосвала ГАЗ 3307"
 desc: "Аренда самосвала ГАЗ 3307"
 car_name: "Аренда самосвала ГАЗ 3307"
+category: "Самосвалы"
 uid: "GAZ"
 thumb: "gaz"
 index: "13"

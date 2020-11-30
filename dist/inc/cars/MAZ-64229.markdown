@@ -6,6 +6,7 @@ layout: model
 title: "Аренда полуприцепа МАЗ 64229 "
 desc: "Аренда полуприцепа МАЗ 64229 "
 car_name: "Аренда полуприцепа МАЗ 64229 "
+category: "Бортовой автотранспорт"
 uid: "MAZ-64229"
 thumb: "maz-64229"
 index: "09"
@@ -14,7 +15,7 @@ kuzov_l: "10,8"
 kuzov_w: "2,35"
 tonnage: "20"
 tonnage_s: ""
-price: "1300"
+price: "1500"
 images: "/img/avto/MAZ-64229/IMG_1225.png|/img/avto/MAZ-64229/IMG_1226.png"
 metaimg: /img/avto/MAZ-64229.jpg
 ---

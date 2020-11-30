@@ -6,6 +6,7 @@ layout: model
 title: "МАЗ 437041-261 Зубренок в аренду для грузоперевозок"
 desc: "МАЗ 437041-261 Зубренок в аренду для грузоперевозок"
 car_name: "МАЗ 437041-261 Зубренок в аренду для грузоперевозок"
+category: "Бортовой автотранспорт"
 uid: "MAZ-Zubrenok"
 thumb: "maz-zubrenok"
 index: "11"
@@ -14,7 +15,7 @@ kuzov_l: "5"
 kuzov_w: ""
 tonnage: "5"
 tonnage_s: ""
-price: "1000"
+price: "1200"
 images: "/img/avto/MAZ-Zubrenok/DSC_4765.jpg|/img/avto/MAZ-Zubrenok/DSC_4767.jpg"
 metaimg: /img/avto/MAZ-Zubrenok.jpg
 ---

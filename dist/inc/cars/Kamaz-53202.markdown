@@ -6,6 +6,7 @@ layout: model
 title: "Камаз 53202"
 desc: "Камаз 53202"
 car_name: "Камаз 53202"
+category: "Краны-манипуляторы"
 uid: "Kamaz-53202"
 thumb: "kamaz-53202"
 index: "06"
@@ -14,7 +15,7 @@ kuzov_l: "4"
 kuzov_w: ""
 tonnage: "10"
 tonnage_s: ""
-price: "1300"
+price: "1400"
 images: "/img/avto/Kamaz-53202/DSC_4679.jpg|/img/avto/Kamaz-53202/DSC_4699.jpg|/img/avto/Kamaz-53202/DSC_4709.jpg"
 metaimg: /img/avto/Kamaz-53202.jpg
 ---

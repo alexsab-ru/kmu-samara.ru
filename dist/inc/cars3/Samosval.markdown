@@ -5,7 +5,8 @@
 layout: model
 title: ""
 desc: ""
-car_name: "Самосвала КамАЗ&nbsp;5511"
+car_name: "Самосвала КамАЗ 5511"
+category: "Самосвалы"
 uid: "Samosval"
 thumb: "samosval-2"
 index: "41"

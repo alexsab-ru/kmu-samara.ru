@@ -6,6 +6,7 @@ layout: model
 title: "Аренда автокрана в Самаре"
 desc: "Услуги автомобильных кранов"
 car_name: "Услуги автомобильных кранов"
+category: "Автокраны"
 uid: "Avtokran"
 thumb: "avtokran"
 index: "01"

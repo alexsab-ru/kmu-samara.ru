@@ -5,7 +5,8 @@
 layout: model
 title: ""
 desc: ""
-car_name: "Автокран г/п 16&nbsp;т"
+car_name: "Автокран г/п 16 т"
+category: "Автокраны"
 uid: "Avtokran16"
 thumb: "avtokran"
 index: "11"
@@ -13,7 +14,7 @@ permalink: /service/avtokran16/
 kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
-tonnage_s: ""
+tonnage_s: "16"
 price: ""
 images: ""
 metaimg: /img/avto/Avtokran16.jpg
