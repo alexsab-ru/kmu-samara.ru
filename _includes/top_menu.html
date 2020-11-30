@@ -21,8 +21,10 @@
 								{%- for path in page_paths -%}
 								{%- assign car = site.pages | where: "path", path | first -%}
 								{%- if car.path contains '/cars/' -%}
-								{%- if car.title and car.index -%}
-									<li><a href="{{ car.url | relative_url }}">{{ car.car_name }}</a></li>
+								{%- if car.category -%}
+									
+									<li><a href="#">{{ car.category }}</a></li>
+									
 								{%- endif -%}
 								{%- endif -%}
 								{%- endfor -%}
