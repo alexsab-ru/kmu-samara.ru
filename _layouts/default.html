@@ -15,14 +15,12 @@
 
 
     {%- include header.html -%}
-    
+
     {%- include top_menu.html -%}
 
     {%- if page.layout == 'home' -%}
       {%- include banner.html -%}
     {%- endif -%}
-
-    <h1 class="visually-hidden">{{ page.h1 }}</h1>
 
     <main>
 
@@ -31,21 +29,21 @@
     </main>
 
     {%- include footer.html -%}
-    
+
     {%- include top_btn.html -%}
 
     <!-- MODALS -->
 
     {%- include modals/privacy.html -%}
-    
+
     {%- include modals/orderForm.html -%}
-    
+
     {%- include modals/callbackForm.html -%}
-    
+
     {%- include modals/cheaper.html -%}
-    
+
     {%- include modals/nothing.html -%}
-    
+
     {%- include modals/thanks_error.html -%}
 
     <script src="{{ "/js/scripts.min.js" | relative_url }}"></script>

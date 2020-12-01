@@ -1,22 +1,21 @@
 <section class="service" id="service">
-	
+
 	<h2>Наш <span>автопарк</span></h2>
 
 	<div class="service__list df jcc fww">
-		
+
 		{%- assign default_paths = site.pages | sort: "index" | map: "path" -%}
 		{%- assign page_paths = default_paths -%}
 
 		{%- for path in page_paths -%}
 			{%- assign car = site.pages | where: "path", path | first -%}
-			{%- if car.path contains '/cars/' -%}
+			{%- if car.path contains '/cars3/' -%}
 				{%- if car.title and car.index -%}
+				{%- assign img_path = "/img/model-nav/400jpg/,.jpg" | split: "," -%}
+				{%- assign img_url = img_path | join: car.thumb -%}
 
-			
 		<div class="service__item">
 			<a href="{{ car.url | relative_url }}" class="service__item--img">
-				{%- assign img_path = "/img/avto/,.jpg" | split: "," -%}
-				{%- assign img_url = img_path | join: car.uid -%}
 				<img src="{{ '/img/loading.gif' | relative_url }}" data-src="{{ img_url | relative_url }}" alt="{{ car.car_name }}" class="lazyload">
 			</a>
 			<div class="service__item--info df jcsb">

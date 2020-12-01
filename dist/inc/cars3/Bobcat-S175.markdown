@@ -3,23 +3,21 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: ""
-desc: ""
+h123: "Мини-погрузчик Bobcat S175"
+title: "Аренда мини-погрузчика Bobcat в Самаре в Бумеранг-АвтоТранс"
+desc: "Возять в аренду мини погрузчик Bobcat в Самаре в Бумеранг-АвтоТранс"
 car_name: "Мини-погрузчик Bobcat S175"
 category: "Погрузчики"
 uid: "Bobcat-S175"
 thumb: "mini-pogruz"
-index: "10"
+index: "010"
 permalink: /service/bobcat-s175/
 kuzov_l: ""
 kuzov_w: ""
 tonnage: "0,895"
 tonnage_s: ""
 price: "1300"
-images: ""
-metaimg: /img/avto/Bobcat-S175.jpg
-exclude: true
-sitemap: false
+images: "/img/avto/Bobcat-S175.jpg"
 ---
 
 <span>Грузоподъемность:</span><span>895 кг</span>

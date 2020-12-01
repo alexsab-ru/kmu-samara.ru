@@ -6,7 +6,7 @@ layout: default
 
 <section class="price" id="price">
 	<div class="container">
-		<h2>Прайс <span>лист</span></h2>
+		<h1>Прайс <span>лист</span></h1>
 
 		<div class="f-table__wrap">
 			<div class="price__table f-table">
@@ -27,11 +27,11 @@ layout: default
 
 				{%- for path in page_paths -%}
 					{%- assign car = site.pages | where: "path", path | first -%}
-					{%- if car.path contains '/cars/' -%}
+					{%- if car.path contains '/cars3/' -%}
 						{%- if car.title and car.index -%}
 
 						{% capture amount %}{{ amount | plus:1 }}{% endcapture %}
-				
+
 				<a href="{{ car.url | relative_url }}" class="f-table__row table-link">
 					<div class="f-table__col">{{ amount }}</div>
 					<div class="f-table__col f-table__col--name">{{ car.car_name }}</div>
@@ -39,7 +39,7 @@ layout: default
 					<!-- <div class="f-table__col"></div> -->
 				</a>
 				<!-- /.f-table__row -->
-			
+
 
 						{%- endif -%}
 					{%- endif -%}
@@ -56,7 +56,7 @@ layout: default
 
 				{%- for path in page_paths -%}
 					{%- assign car = site.pages | where: "path", path | first -%}
-					{%- if car.path contains '/cars/' -%}
+					{%- if car.path contains '/cars3/' -%}
 						{%- if car.title and car.index -%}
 
 						{% capture amount %}{{ amount | plus:1 }}{% endcapture %}
@@ -64,7 +64,7 @@ layout: default
 						{%- assign img_path = "/img/model-nav/400w/,.png" | split: "," -%}
 						{%- assign img_url = img_path | join: car.thumb -%}
 				<li><a href="{{ car.url | relative_url }}" title="model"><span class="number">{{ amount }}</span><img src="{{ img_url | relative_url }}" alt="{{ car.car_name }}"></a></li>
-			
+
 
 						{%- endif -%}
 					{%- endif -%}

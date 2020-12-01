@@ -4,12 +4,12 @@ layout: default
 
 <section class="carfleet" id="carfleet">
 	<div class="container">
-		<h2>Наш <span>автопарк</span></h2>
+		<h1>Наш <span>автопарк</span></h1>
 
 		{{ content }}
 
 		<div class="carfleet__block">
-			
+
 
 			{%- assign default_paths = site.pages | sort: "index" | map: "path" -%}
 			{%- assign page_paths = default_paths -%}
@@ -23,17 +23,17 @@ layout: default
 				<div class="carfleet__item--img">
 					{%- assign img_path = "/img/avto/,.jpg" | split: "," -%}
 					{%- assign img_url = img_path | join: car.uid -%}
-					<a href="{{ car.url | relative_url }}" class="" data-title="{{ car.car_name }}"><img src="{{ '/img/loading.gif' | relative_url }}" data-src="{{ img_url | relative_url }}" class="lazyload" alt="{{ car.car_name }}"></a>				
+					<a href="{{ car.url | relative_url }}" class="" data-title="{{ car.car_name }}"><img src="{{ '/img/loading.gif' | relative_url }}" data-src="{{ img_url | relative_url }}" class="lazyload" alt="{{ car.car_name }}"></a>
 				</div>
 				<!-- /.carfleet__item--img -->
 
 				<div class="carfleet__item--info">
-					
+
 					<h3><a href="{{ car.url | relative_url }}" class="" data-title="{{ car.car_name }}">{{ car.car_name }}</a></h3>
-					
+
 					<div class="carfleet__item--row d-flex">
 						<p>{{ car.desc }}</p>
-						
+
 						<div class="parameters">
 							<div class="parameter {% if car.kuzov_l != "" %} d-flex {% else %} d-none {% endif %}">
 								<div class="parameter__icon">
@@ -50,12 +50,12 @@ layout: default
 								</div>
 								<div class="parameter__text">{{ car.tonnage }}</div>
 							</div>
-							<!-- /.parametr -->	
+							<!-- /.parametr -->
 						</div>
 
 					</div>
 					<!-- /.carfleet__item--info_row d-flex -->
-					
+
 					<div class="carfleet__item--bottom d-flex">
 						<div class="carfleet__item--price">{%- if car.price != "" -%}{{ car.price }} ₽{%- else -%}{%- endif -%}</div>
 						<!-- /.carfleet__item--price -->

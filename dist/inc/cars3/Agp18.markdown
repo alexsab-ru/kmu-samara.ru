@@ -3,13 +3,14 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: ""
-desc: ""
+h123: "АГП 18 метров"
+title: "Аренда АГП 18 метров в Самаре в Бумеранг-АвтоТранс"
+desc: "Взять в аренду АГП 18 метров в Самаре в Бумеранг-АвтоТранс"
 car_name: "АГП 18 метров"
 category: "АГП"
 uid: "Agp18"
 thumb: "agp18"
-index: "81"
+index: "081"
 permalink: /service/agp18/
 kuzov_l: ""
 kuzov_w: ""
@@ -17,9 +18,6 @@ tonnage: ""
 tonnage_s: ""
 price: "1400"
 images: ""
-metaimg: /img/avto/Agp18.jpg
-exclude: true
-sitemap: false
 ---
 
 <span>Рабочая высота подъемника:</span><span>18 м</span>

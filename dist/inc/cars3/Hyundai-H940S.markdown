@@ -3,13 +3,14 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: ""
-desc: ""
+h123: "Hyundai H940S"
+title: "Аренда Hyundai H940S в Самаре в Бумеранг-АвтоТранс"
+desc: "Взять в аренду Hyundai H940S в Самаре в Бумеранг-АвтоТранс"
 car_name: "Hyundai H940S"
 category: "Погрузчики"
 uid: "Hyundai-H940S"
 thumb: "hyundai-h940s"
-index: "63"
+index: "063"
 permalink: /service/hyundai-h940s/
 kuzov_l: ""
 kuzov_w: ""
@@ -17,9 +18,6 @@ tonnage: "2,8"
 tonnage_s: ""
 price: "1800"
 images: ""
-metaimg: /img/avto/Hyundai-H940S.jpg
-exclude: true
-sitemap: false
 ---
 
 <span>Мощн. двигателя:</span><span>74,5 л.с.</span>

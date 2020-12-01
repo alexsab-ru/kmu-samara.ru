@@ -3,13 +3,14 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: "Аренда Газели с креплением “Катюша”"
-desc: "Аренда Газели с креплением “Катюша”"
+h123: "ГАЗель 3302"
+title: "Аренда ГАЗель 3302 с «Катюшей» в Самаре в Бумеранг-АвтоТранс"
+desc: "Взять в аренду ГАЗель 3302 с «Катюшей»  в Самаре в Бумеранг-АвтоТранс"
 car_name: "ГАЗель 3302"
 category: "Бортовой автотранспорт"
 uid: "Gazel"
 thumb: "gazel_katyusha"
-index: "33"
+index: "033"
 permalink: /service/gazel/
 kuzov_l: "4,2"
 kuzov_w: "2"
@@ -17,9 +18,6 @@ tonnage: "1,5"
 tonnage_s: ""
 price: "600"
 images: "/img/avto/Gazel/gazel-2.jpg|/img/avto/Gazel/gazel-3.jpg|/img/avto/Gazel/gazel-4.jpg"
-metaimg: /img/avto/Gazel.jpg
-exclude: true
-sitemap: false
 ---
 
 <span>Масса перевозимого груза:</span><span>1,5 т</span>

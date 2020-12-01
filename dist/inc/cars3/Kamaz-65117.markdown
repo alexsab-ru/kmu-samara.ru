@@ -3,13 +3,14 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: "Кран-манипулятор Камаз 65117 в аренду"
-desc: "Кран-манипулятор Камаз 65117 в аренду"
+h123: "Кран-манипулятор (КМУ) на базе КАМАЗ 65117"
+title: "Аренда крана-манипулятора на базе КАМАЗ 65117 в Самаре в Бумеранг-АвтоТранс"
+desc: "Взять в аренду кран-манипулятор на базе КАМАЗ 65117 в Самаре в Бумеранг-АвтоТранс"
 car_name: "Кран-манипулятор (КМУ) на базе КАМАЗ 65117"
 category: "Краны-манипуляторы"
 uid: "Kamaz-65117"
 thumb: "kamaz-65117"
-index: "24"
+index: "024"
 permalink: /service/kamaz-65117/
 kuzov_l: "6,2"
 kuzov_w: "2,4"
@@ -17,9 +18,6 @@ tonnage: "15"
 tonnage_s: "5"
 price: "1450"
 images: "/img/avto/Kamaz-65117/DSC_4719.jpg|/img/avto/Kamaz-65117/DSC_4731.jpg|/img/avto/Kamaz-65117/DSC_4738.jpg"
-metaimg: /img/avto/Kamaz-65117.jpg
-exclude: true
-sitemap: false
 ---
 
 <span>Грузоподъемность стрелы:</span><span>3 т</span>

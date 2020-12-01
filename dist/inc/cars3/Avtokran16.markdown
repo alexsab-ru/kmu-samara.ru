@@ -3,13 +3,14 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: ""
-desc: ""
+h123: "Автокран г/п 16 т"
+title: "Аренда автокрана г/п 16 т в Самаре в Бумеранг-АвтоТранс"
+desc: "Взять в аренду автокран г/п 16 т в Самаре в Бумеранг-АвтоТранс"
 car_name: "Автокран г/п 16 т"
 category: "Автокраны"
 uid: "Avtokran16"
 thumb: "avtokran16"
-index: "70"
+index: "070"
 permalink: /service/avtokran16/
 kuzov_l: ""
 kuzov_w: ""
@@ -17,9 +18,6 @@ tonnage: ""
 tonnage_s: "16"
 price: "1500"
 images: ""
-metaimg: /img/avto/Avtokran16.jpg
-exclude: true
-sitemap: false
 ---
 
 <span>Грузоподъемность:</span><span>16 т</span>

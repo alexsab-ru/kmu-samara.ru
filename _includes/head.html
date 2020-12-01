@@ -3,15 +3,19 @@
 <!-- <meta name="robots" content="noindex"> -->
 
 <title>{{ page.title }}</title>
-<meta name="description" content="{{ page.description }}" />
+<meta name="description" content="{{ page.desc }}" />
 
 {%- if page.canonical -%}
 <link rel="canonical" href="{{ page.canonical | relative_url }}">
 {%- endif -%}
 
+<meta itemprop="name" content="{{ page.h1 }}">
+<meta itemprop="description" content="{{ page.desc }}">
+<meta itemprop="image" content="{{ page.metaimg | relative_url }}">
+
 <meta property="og:url" content="{{ page.url | relative_url }}" />
 <meta property="og:title" content="{{ page.title }}" />
-<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:description" content="{{ page.desc }}" />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="{{ page.metaimg | relative_url }}" />
 

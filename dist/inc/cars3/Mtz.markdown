@@ -3,13 +3,14 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: ""
-desc: ""
+h123: "Трактор МТЗ (щётка, ковш, отвал)"
+title: "Аренда Трактора МТЗ (щётка, ковш, отвал) в Самаре в Бумеранг-АвтоТранс"
+desc: "Взять в аренду Трактор МТЗ (щётка, ковш, отвал) в Самаре в Бумеранг-АвтоТранс"
 car_name: "Трактор МТЗ (щётка, ковш, отвал)"
 category: "КДМ"
 uid: "Mtz"
 thumb: "mtz"
-index: "50"
+index: "050"
 permalink: /service/mtz/
 kuzov_l: ""
 kuzov_w: ""
@@ -17,9 +18,6 @@ tonnage: ""
 tonnage_s: ""
 price: "1500"
 images: ""
-metaimg: /img/avto/Mtz.jpg
-exclude: true
-sitemap: false
 ---
 
 <span>Скорость движения рабочая:</span><span>10 км/ч</span>

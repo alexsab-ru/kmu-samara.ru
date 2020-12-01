@@ -3,13 +3,14 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: "Аренда полуприцепа МАЗ 64229 "
-desc: "Аренда полуприцепа МАЗ 64229 "
+h123: "МАЗ 4229 Полуприцеп"
+title: "Аренда МАЗ 4229, Полуприцеп в Самаре в Бумеранг-АвтоТранс"
+desc: "Взять в аренду МАЗ 4229, Полуприцеп в Самаре в Бумеранг-АвтоТранс"
 car_name: "МАЗ 4229 Полуприцеп"
 category: "Бортовой автотранспорт"
 uid: "MAZ-64229"
 thumb: "maz-64229"
-index: "32"
+index: "032"
 permalink: /service/maz-64229/
 kuzov_l: "13,6"
 kuzov_w: "2,4"
@@ -17,9 +18,6 @@ tonnage: "20"
 tonnage_s: ""
 price: "1500"
 images: "/img/avto/MAZ-64229/IMG_1225.png|/img/avto/MAZ-64229/IMG_1226.png"
-metaimg: /img/avto/MAZ-64229.jpg
-exclude: true
-sitemap: false
 ---
 
 <span>Ширина борта:</span><span>2,40 м</span>

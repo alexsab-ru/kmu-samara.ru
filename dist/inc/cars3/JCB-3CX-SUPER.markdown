@@ -3,23 +3,21 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: ""
-desc: ""
+h123: "JCB 3CX SUPER"
+title: "Аренда JCB 3CX SUPER в Самаре в Бумеранг-АвтоТранс"
+desc: "Взять в аренду JCB 3CX SUPER в Самаре в Бумеранг-АвтоТранс"
 car_name: "JCB 3CX SUPER"
 category: "Погрузчики"
 uid: "JCB-3CX-SUPER"
 thumb: "jcb-3cx-super"
-index: "61"
+index: "061"
 permalink: /service/jcb-3cx-super/
 kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
 price: "1800"
-images: ""
-metaimg: /img/avto/JCB-3CX-SUPER.jpg
-exclude: true
-sitemap: false
+images: "/img/avto/Ekskavatory-Pogruzchiki.jpg"
 ---
 
 <span>Мощн. двигателя:</span><span>68,6 кВт (92 л.с.)</span>

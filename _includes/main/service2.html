@@ -1,0 +1,55 @@
+<section class="service2" id="service">
+
+	{% assign h12 = include.h12 | default:'h2' %}
+
+	{% if h12 == 'h1' %}
+	<h1>Наш <span>автопарк</span></h1>
+	{% else %}
+	<h2>Наш <span>автопарк</span></h2>
+	{% endif %}
+
+	<div class="service2__list df jcc fww">
+
+		{%- assign default_paths = site.pages | sort: "index" | map: "path" -%}
+		{%- assign page_paths = default_paths -%}
+
+		{%- for path in page_paths -%}
+			{%- assign car = site.pages | where: "path", path | first -%}
+			{%- if car.path contains '/cars3/' -%}
+				{%- if car.title and car.index != nil -%}
+				<!-- {%- assign img_path = "/img/avto/,.jpg" | split: "," -%} -->
+				{%- assign img_path = "/img/model-nav/400jpg/,.jpg" | split: "," -%}
+				{%- assign img_url = img_path | join: car.thumb -%}
+
+		<div class="service2__item" itemscope="" itemtype="http://schema.org/Product">
+			<!-- <a href="{{ car.url | relative_url }}" class="service2__item--img lazyload" style="background-image: url({{ '/img/loading-0.gif' | relative_url }});" data-src-background="{{ img_url | relative_url }}" itemprop="image"> -->
+			<a href="{{ car.url | relative_url }}" class="service2__item--img" style="background-image: url({{ img_url | relative_url }});" title="Аренда {{ car.car_name }}" itemprop="image">
+				<h3 itemprop="name">{{ car.car_name }}</h3>
+			</a>
+			<div class="service2__item--info df jcsb">
+				<div class="excerpt" itemprop="description">{{ car.content }}</div>
+			</div>
+			<div class="service2__item--action">
+				<div class="service2__item--price"  itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+					<div class="price">{% include numf.html number=car.price ts=' ' decimals=0 %} ₽</div>
+					<meta itemprop="price" content="{{ car.price }}">
+					<meta itemprop="priceCurrency" content="RUB">
+					<link itemprop="availability" href="http://schema.org/InStock">
+					<div class="time">Цена за час</div>
+				</div>
+				<!-- /.service2__item--price -->
+				<a href="#orderForm" class="btn info-popup modal-link" data-title="{{ car.car_name }}">Заказать</a>
+			</div>
+			<!-- /.service2__item--action -->
+		</div>
+		<!-- /.service2__item -->
+
+
+				{%- endif -%}
+			{%- endif -%}
+		{%- endfor -%}
+
+	</div>
+	<!-- /.service2__list -->
+</section>
+<!-- /#service.service2 -->

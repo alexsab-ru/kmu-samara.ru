@@ -4,20 +4,20 @@ layout: default
 
 <section class="model" id="model">
 	<div class="container">
-		<h2>Наш <span>автопарк</span></h2>
+		<h1>{{ page.h123 }}</h1>
 
-		<div class="model__block d-flex">
+		<div class="model__block d-flex" itemscope itemtype="http://schema.org/Product">
 
 			<div class="model__info">
-				<h3>{{ page.title }}</h3>
-				
+				<div style="display: none;" itemprop="name">{{ page.h123 }}</div>
+
 				{{ content }}
-				
-				<div class="parameters">
+
+				<div class="parameters" itemprop="description">
 					{% if page.kuzov_l != "" %}
 					<div class="parameter d-flex">
 						<div class="parameter__icon">
-							<img src="{{ '/img/icons/arrows.svg' | relative_url }}" alt="ALT">
+							<img src="{{ '/img/icons/arrows.svg' | relative_url }}" alt="Кузов">
 							<span>Кузов, м</span>
 						</div>
 						<div class="parameter__text">{{ page.kuzov_l }}{% if page.kuzov_w != "" %}x{{ page.kuzov_w }}{% endif %}</div>
@@ -27,7 +27,7 @@ layout: default
 					{% if page.tonnage != "" %}
 					<div class="parameter d-flex">
 						<div class="parameter__icon">
-							<img src="{{ '/img/icons/kg.svg' | relative_url }}" alt="ALT">
+							<img src="{{ '/img/icons/kg.svg' | relative_url }}" alt="Грузоподъёмность">
 							<span>Грузоподъёмность, т</span>
 						</div>
 						<div class="parameter__text">{{ page.tonnage }}</div>
@@ -35,18 +35,21 @@ layout: default
 					<!-- /.parameter -->
 					{% endif %}
 					{%- if page.price != "" -%}
-					<div class="parameter d-flex">
+					<div class="parameter d-flex" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 						<div class="parameter__icon">
-							<img src="{{ '/img/icons/price.svg' | relative_url }}" alt="ALT">
+							<img src="{{ '/img/icons/price.svg' | relative_url }}" alt="Цена">
 							<span>Цена, ₽/час</span>
 						</div>
-						<div class="parameter__text">{{ page.price }}</div>
+						<div class="parameter__text">{% include numf.html number=page.price ts=' ' decimals=0 %}</div>
+						<meta itemprop="price" content="{{ page.price }}">
+						<meta itemprop="priceCurrency" content="RUB">
+						<link itemprop="availability" href="http://schema.org/InStock">
 					</div>
 					<!-- /.parameter -->
 					{%- endif -%}
 				</div>
 				<!-- /.parameters -->
-				
+
 				<a href="#orderForm" class="btn modal-link" data-title="{{ page.title }}">Заказать</a>
 
 			</div>
@@ -56,21 +59,21 @@ layout: default
 				<div class="model__slider--wrap">
 
 					{%- if page.images and page.images != "" -%}
-						
+
 						{%- assign imgs = page.images | split: "|" -%}
 
 						{%- for img in imgs -%}
-			
-					<img src="{{ img | relative_url }}" alt="{{ car.car_name }}">
-			
+
+					<img src="{{ img | relative_url }}" alt="{{ page.car_name }}" itemprop="image">
+
 						{%- endfor -%}
 
 					{%- else -%}
 
-					{%- assign img_path = "/img/avto/,.jpg" | split: "," -%}
-					{%- assign img_url = img_path | join: page.uid -%}
+					{%- assign img_path = "/img/model-nav/400jpg/,.jpg" | split: "," -%}
+					{%- assign img_url = img_path | join: page.thumb -%}
 
-					<img src="{{ img_url | relative_url }}" alt="{{ page.car_name }}">
+					<img src="{{ img_url | relative_url }}" alt="{{ page.car_name }}" itemprop="image">
 
 					{%- endif -%}
 
@@ -80,18 +83,16 @@ layout: default
 
 
 					{%- if page.images != "" -%}
-						
+
 						{%- assign imgs = page.images | split: "|" -%}
 
 						{%- for img in imgs -%}
-			
-					<span><img src="{{ img | relative_url }}" alt="{{ car.car_name }}"></span>
-			
+
+					<span><img src="{{ img | relative_url }}" alt="{{ page.car_name }}" itemprop="image"></span>
+
 						{%- endfor -%}
 					{%- else -%}
 
-					<!-- <span><img src="{{ img_url | relative_url }}" alt="{{ page.car_name }}"></span> -->
-					
 					{%- endif -%}
 
 				</div>
@@ -108,17 +109,17 @@ layout: default
 				{%- assign page_paths = default_paths -%}
 
 				{% assign amount = 0 %}
-				
+
 				{%- for path in page_paths -%}
 					{%- assign car = site.pages | where: "path", path | first -%}
-					{%- if car.path contains '/cars/' -%}
+					{%- if car.path contains '/cars3/' -%}
 						{%- if car.title and car.index -%}
 
 						{% capture amount %}{{ amount | plus:1 }}{% endcapture %}
 
-						{%- assign img_path = "/img/model-nav/400w/,.png" | split: "," -%}
+						{%- assign img_path = "/img/model-nav/400jpg/,.jpg" | split: "," -%}
 						{%- assign img_url = img_path | join: car.thumb -%}
-							
+
 				<li {% if page.url == car.url %} class="active"{% endif %}><a href="{{ car.url | relative_url }}" title="{{ car.car_name }}"><img src="{{ img_url | relative_url }}" alt="{{ car.car_name }}"></a></li>
 
 						{%- endif -%}

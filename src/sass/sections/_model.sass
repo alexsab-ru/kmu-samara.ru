@@ -80,10 +80,24 @@
 				font-size: 22px
 		p
 			font-size: 20px
-			margin-bottom: 30px
+			margin-bottom: 0
+			display: flex
+			justify-content: space-between
+			align-items: flex-end
+			span:first-of-type
+				margin-right: 5px
+				white-space: nowrap
+				overflow: hidden
+				&:after
+					content: '....................................................................................'
+					margin-left: 5px
+			span:last-of-type
+				flex: 0 0 auto
+				order: 1
 			@media (max-width: 1440px)
 				font-size: 16px
 		.parameters
+			margin-top: 30px
 			width: 100%
 			+media-breakpoint-down(md)
 				display: block

@@ -3,23 +3,21 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: "Манипулятор Mitsubishi Fuso"
-desc: "Манипулятор Mitsubishi Fuso"
+h123: "Манипулятор Mitsubishi Fuso"
+title: "Аренда манипулятора Mitsubishi Fuso в Самаре в Бумеранг-АвтоТранс"
+desc: "Взять в аренду манипулятор Mitsubishi Fuso в Самаре в Бумеранг-АвтоТранс"
 car_name: "Манипулятор Mitsubishi Fuso"
 category: "Краны-манипуляторы"
 uid: "Fuso-Fighter"
 thumb: "mitsubishi-fuso-fighter"
-index: "20"
+index: "020"
 permalink: /service/fuso-fighter/
 kuzov_l: "6,2"
 kuzov_w: "2,32"
 tonnage: "5"
 tonnage_s: "3"
 price: "1300"
-images: ""
-metaimg: /img/avto/Fuso-Fighter.jpg
-exclude: true
-sitemap: false
+images: "/img/avto/Fuso-Fighter.jpg"
 ---
 
 <span>Грузоподъемность стрелы:</span><span>3 т</span>

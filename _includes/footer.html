@@ -1,7 +1,15 @@
 <footer class="footer">
-	<p>Транспортная компания ООО "Бумеранг-АвтоТранс" в&nbsp;Самаре</p>
-	<img class="logo" src="{{ '/img/logo-512x188.svg' | relative_url }}" alt="Бумеранг-АвтоТранс">
-	<div class="container">
-		<p class="oferta">Обращаем Ваше внимание на&nbsp;то, что данный интернет сайт носит исключительно информационный характер и&nbsp;ни&nbsp;при каких условиях не&nbsp;является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации. Для получения подробной иформации о&nbsp;наличии и&nbsp;стоимости указанных товаров&nbsp;и (или) услуг, пожалуйста обращайтесь к&nbsp;менеджерам отдела клиентского обслуживания с&nbsp;помощью специальной формы связи или по&nbsp;телефону: <a href="tel:88469722555" class="nowrap">8 (846) 972-25-55</a></p>
-	</div>
+    <div class="contact-info" itemscope="" itemtype="http://schema.org/Organization">
+        <ul class="contact-details">
+            <li itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span><strong>Адрес:</strong> <span itemprop="addressLocality">г. Самара</span>, <span itemprop="streetAddress">Заводское шоссе, 11Б</span>, БЦ «ЗаВоД»</span></li>
+            <li><span><strong>Телефон:</strong> <span><a itemprop="telephone" href="tel:{{ site.phone| escape }}">{{ site.phone | escape }}</a></span></span></li>
+            <li><span><strong>email:</strong> <span><a itemprop="email" href="mailto:{{ site.email | escape }}">{{ site.email | escape }}</a></span></span></li>
+            <li><span><strong>Время работы:</strong> <span>Круглосуточно</span></span></li>
+        </ul>
+        <span itemprop="name" style="display: none;">Altarent</span>
+    </div>
+    <img class="logo" src="{{ '/img/logo-512x188.svg' | relative_url }}" alt="Бумеранг-АвтоТранс">
+    <div class="container">
+        <p class="oferta">Обращаем Ваше внимание на&nbsp;то, что данный интернет сайт носит исключительно информационный характер и&nbsp;ни&nbsp;при каких условиях не&nbsp;является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации. Для получения подробной иформации о&nbsp;наличии и&nbsp;стоимости указанных товаров&nbsp;и (или) услуг, пожалуйста обращайтесь к&nbsp;менеджерам отдела клиентского обслуживания с&nbsp;помощью специальной формы связи или по&nbsp;телефону: <a href="tel:88469722555" class="nowrap">8 (846) 972-25-55</a></p>
+    </div>
 </footer>

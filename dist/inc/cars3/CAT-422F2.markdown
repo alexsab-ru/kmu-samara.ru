@@ -3,13 +3,14 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: ""
-desc: ""
+h123: "CAT 422F2"
+title: "Аренда CAT 422F2 в Самаре в Бумеранг-АвтоТранс"
+desc: "Взять в аренду CAT 422F2 в Самаре в Бумеранг-АвтоТранс"
 car_name: "CAT 422F2"
 category: "Погрузчики"
 uid: "CAT-422F2"
 thumb: "cat-422f2"
-index: "62"
+index: "062"
 permalink: /service/cat-422f2/
 kuzov_l: ""
 kuzov_w: ""
@@ -17,9 +18,6 @@ tonnage: ""
 tonnage_s: ""
 price: "1800"
 images: ""
-metaimg: /img/avto/CAT-422F2.jpg
-exclude: true
-sitemap: false
 ---
 
 <span>Мощн. двигателя:</span><span>72 л.с</span>
