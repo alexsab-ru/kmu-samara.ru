@@ -18,6 +18,7 @@ tonnage: ""
 tonnage_s: "25"
 price: "2000"
 images: "/img/avto/Avtokran.jpg"
+metaimg: "/img/avto/Avtokran.jpg"
 ---
 
 <span>Грузоподъемность:</span><span>25 т</span>

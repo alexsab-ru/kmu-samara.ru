@@ -18,6 +18,7 @@ tonnage: "12"
 tonnage_s: "7"
 price: "1800"
 images: "/img/avto/KIA-Granto/DSC_4602.jpg|/img/avto/KIA-Granto/DSC_4605.jpg|/img/avto/KIA-Granto/DSC_4612.jpg"
+metaimg: "/img/avto/KIA-Granto/DSC_4602.jpg"
 ---
 
 <span>Грузоподъемность стрелы:</span><span>7 т</span>

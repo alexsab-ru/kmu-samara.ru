@@ -18,6 +18,7 @@ tonnage: ""
 tonnage_s: "16"
 price: "1500"
 images: ""
+metaimg: "/img/model-nav/400jpg/avtokran16.jpg"
 ---
 
 <span>Грузоподъемность:</span><span>16 т</span>

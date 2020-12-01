@@ -18,6 +18,7 @@ tonnage: "0,895"
 tonnage_s: ""
 price: "1300"
 images: "/img/avto/Bobcat-S175.jpg"
+metaimg: "/img/avto/Bobcat-S175.jpg"
 ---
 
 <span>Грузоподъемность:</span><span>895 кг</span>

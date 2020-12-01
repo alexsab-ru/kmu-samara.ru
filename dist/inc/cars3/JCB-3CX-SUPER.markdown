@@ -18,6 +18,7 @@ tonnage: ""
 tonnage_s: ""
 price: "1800"
 images: "/img/avto/Ekskavatory-Pogruzchiki.jpg"
+metaimg: "/img/avto/Ekskavatory-Pogruzchiki.jpg"
 ---
 
 <span>Мощн. двигателя:</span><span>68,6 кВт (92 л.с.)</span>

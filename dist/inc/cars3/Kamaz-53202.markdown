@@ -18,6 +18,7 @@ tonnage: "10"
 tonnage_s: "3"
 price: "1300"
 images: "/img/avto/Kamaz-53202/DSC_4679.jpg|/img/avto/Kamaz-53202/DSC_4699.jpg|/img/avto/Kamaz-53202/DSC_4709.jpg"
+metaimg: "/img/avto/Kamaz-53202/DSC_4679.jpg"
 ---
 
 <span>Грузоподъёмность стрелы:</span><span>3 т</span>

@@ -18,6 +18,7 @@ tonnage: "2,8"
 tonnage_s: ""
 price: "1800"
 images: ""
+metaimg: "/img/model-nav/400jpg/hyundai-h940s.jpg"
 ---
 
 <span>Мощн. двигателя:</span><span>74,5 л.с.</span>

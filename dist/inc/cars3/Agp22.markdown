@@ -18,6 +18,7 @@ tonnage: ""
 tonnage_s: ""
 price: "1500"
 images: ""
+metaimg: "/img/model-nav/400jpg/agp22.jpg"
 ---
 
 <span>Рабочая высота подъемника:</span><span>22 м  </span>

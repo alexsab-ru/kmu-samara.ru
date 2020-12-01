@@ -18,6 +18,7 @@ tonnage: "15"
 tonnage_s: "5"
 price: "1450"
 images: "/img/avto/Kamaz-65117/DSC_4719.jpg|/img/avto/Kamaz-65117/DSC_4731.jpg|/img/avto/Kamaz-65117/DSC_4738.jpg"
+metaimg: "/img/avto/Kamaz-65117/DSC_4719.jpg"
 ---
 
 <span>Грузоподъемность стрелы:</span><span>3 т</span>

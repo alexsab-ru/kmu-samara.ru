@@ -18,6 +18,7 @@ tonnage: "5"
 tonnage_s: "3"
 price: "1300"
 images: "/img/avto/Fuso-Fighter.jpg"
+metaimg: "/img/avto/Fuso-Fighter.jpg"
 ---
 
 <span>Грузоподъемность стрелы:</span><span>3 т</span>

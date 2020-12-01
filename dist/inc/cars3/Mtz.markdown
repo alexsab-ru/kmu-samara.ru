@@ -18,6 +18,7 @@ tonnage: ""
 tonnage_s: ""
 price: "1500"
 images: ""
+metaimg: "/img/model-nav/400jpg/mtz.jpg"
 ---
 
 <span>Скорость движения рабочая:</span><span>10 км/ч</span>

@@ -18,6 +18,7 @@ tonnage: ""
 tonnage_s: "25"
 price: "2300"
 images: ""
+metaimg: "/img/model-nav/400jpg/xcmg25.jpg"
 ---
 
 XCMG

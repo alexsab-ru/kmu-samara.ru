@@ -18,6 +18,7 @@ tonnage: "4"
 tonnage_s: ""
 price: "1600"
 images: "/img/avto/Frontalnyiy-Pogruzchiki.jpg"
+metaimg: "/img/avto/Frontalnyiy-Pogruzchiki.jpg"
 ---
 
 <span>Объем ковша:</span><span>1,9-2,3 куб.м</span>

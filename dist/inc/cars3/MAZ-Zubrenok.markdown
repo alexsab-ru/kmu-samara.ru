@@ -18,6 +18,7 @@ tonnage: "5"
 tonnage_s: ""
 price: "1200"
 images: "/img/avto/MAZ-Zubrenok/DSC_4765.jpg|/img/avto/MAZ-Zubrenok/DSC_4767.jpg"
+metaimg: "/img/avto/MAZ-Zubrenok/DSC_4765.jpg"
 ---
 
 <span>Длина борта:</span><span>5,30 м</span>

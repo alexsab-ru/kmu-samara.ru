@@ -18,6 +18,7 @@ tonnage: "1,5"
 tonnage_s: ""
 price: "600"
 images: "/img/avto/Gazel/gazel-2.jpg|/img/avto/Gazel/gazel-3.jpg|/img/avto/Gazel/gazel-4.jpg"
+metaimg: "/img/avto/Gazel/gazel-2.jpg"
 ---
 
 <span>Масса перевозимого груза:</span><span>1,5 т</span>

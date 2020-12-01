@@ -18,6 +18,7 @@ tonnage: "10"
 tonnage_s: "3"
 price: "1500"
 images: "/img/avto/MAZ-630320-3T/DSC_4770.jpg|/img/avto/MAZ-630320-3T/DSC_4772.jpg|/img/avto/MAZ-630320-3T/DSC_4780.jpg"
+metaimg: "/img/avto/MAZ-630320-3T/DSC_4770.jpg"
 ---
 
 <span>Грузоподъемность стрелы:</span><span>3 т</span>

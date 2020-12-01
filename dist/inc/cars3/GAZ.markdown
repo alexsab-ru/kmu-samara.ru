@@ -19,6 +19,7 @@ tonnage: "4,5"
 tonnage_s: ""
 price: "1000"
 images: "/img/avto/GAZ/DSC_4596.jpg|/img/avto/GAZ/DSC_4597.jpg|/img/avto/GAZ/DSC_4598.jpg"
+metaimg: "/img/avto/GAZ/DSC_4596.jpg"
 ---
 
 <span>Грузоподъемность:</span><span>4,5 т</span>
