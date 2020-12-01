@@ -61,7 +61,7 @@ layout: default
 
 						{% capture amount %}{{ amount | plus:1 }}{% endcapture %}
 
-						{%- assign img_path = "/img/model-nav/400w/,.png" | split: "," -%}
+						{%- assign img_path = "/img/model-nav/400jpg/,.jpg" | split: "," -%}
 						{%- assign img_url = img_path | join: car.thumb -%}
 				<li><a href="{{ car.url | relative_url }}" title="model"><span class="number">{{ amount }}</span><img src="{{ img_url | relative_url }}" alt="{{ car.car_name }}"></a></li>
 
