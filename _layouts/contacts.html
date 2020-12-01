@@ -30,7 +30,7 @@ layout: default
 				</div>
 				<!-- /.contact__item--icon -->
 				<div class="contact__item--info">
-					<a href="tel:+78469722555">8 (846) 972-25-55</a>
+					<a href="tel:{% include phonef.html phone=site.phone %}">{{ site.phone | escape }}</a>
 				</div>
 				<!-- /.contact__item--info -->
 			</div>

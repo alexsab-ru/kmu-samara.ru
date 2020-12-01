@@ -1,7 +1,7 @@
 <!-- Раздел в разработке -->
 <div class="modal mfp-hide white-popup-block" id="nothing">
 	<h2>Раздел в разработке</h2>
-	<h3>Но вы можете позвонить нам<br><a href="tel:88469722555">8 (846) 972-25-55</a></h3>
+	<h3>Но вы можете позвонить нам<br><a href="tel:{% include phonef.html phone=site.phone %}">{{ site.phone | escape }}</a></h3>
 	<p>или заполнить форму ниже</p>
 	<form method="POST">
 		<!-- Hidden Required Fields -->

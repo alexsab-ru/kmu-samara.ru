@@ -19,7 +19,7 @@
 				<div class="phone phone-two">
 					<img src="{{ '/img/icons/phone.svg' | relative_url }}" alt="Телефон">
 					<span class="phone-info">
-						<a href="tel:{{ site.phone | escape }}">{{ site.phone| escape }}</a>
+						<a href="tel:{% include phonef.html phone=site.phone %}">{{ site.phone | escape }}</a>
 						<small><a href="#callbackForm" class="modal-link nowrap" data-title="Перезвоните мне">Заказать&nbsp;звонок</a></small>
 					</span>
 				</div>

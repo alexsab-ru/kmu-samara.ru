@@ -1,17 +1,17 @@
 <div class="thanks modal mfp-hide white-popup-block">
-	<h2>Спасибо!</h2>
-	<p>Ваше сообщение успешно отправлено!<br>В скором времени мы свяжемся с Вами!</p>
+    <h2>Спасибо!</h2>
+    <p>Ваше сообщение успешно отправлено!<br>В скором времени мы свяжемся с Вами!</p>
 </div>
 <div class="error modal mfp-hide white-popup-block">
-	<h2>Ошибка!</h2>
-	<p>
-	Мы не уверены что сообщение доставлено!<br>Попробуйте обновить страницу!<br>
-	<span class="error-message"></span>
-	<br><br>Или позвоните нам, чтобы подтвердить заявку<br>
-	<div class="rand">
-		<div>
-			<a href="tel:88469722555">8 (846) 972-25-55</a>
-		</div>
-	</div>
-</p>
+    <h2>Ошибка!</h2>
+    <div>
+        Мы не уверены что сообщение доставлено!<br>Попробуйте обновить страницу!<br>
+        <span class="error-message"></span><br>
+        Или позвоните нам, чтобы подтвердить заявку<br>
+        <div class="rand">
+            <div>
+                <a href="tel:{% include phonef.html phone=site.phone %}">{{ site.phone | escape }}</a>
+            </div>
+        </div>
+    </div>
 </div>
