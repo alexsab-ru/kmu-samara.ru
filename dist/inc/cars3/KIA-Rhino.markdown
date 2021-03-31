@@ -3,23 +3,22 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: "Аренда грузовика Kia Rhino"
-desc: "Аренда грузовика Kia Rhino"
+h123: "Бортовой автомобиль KIA Rhino"
+title: "Аренда бортового автомобиля KIA Rhino в Самаре в Бумеранг-АвтоТранс"
+desc: "Взять в аренду бортовой автомобиль KIA Rhino в Самаре в Бумеранг-АвтоТранс"
 car_name: "Бортовой автомобиль KIA Rhino"
 category: "Бортовой автотранспорт"
 uid: "KIA-Rhino"
 thumb: "kia-rhino"
-index: "24"
+index: "031"
 permalink: /service/kia-rhino/
 kuzov_l: "4,6"
 kuzov_w: "2,4"
 tonnage: "5"
 tonnage_s: ""
-price: "1000"
+price: "1200"
 images: "/img/avto/KIA-Rhino/DSC_4661.jpg|/img/avto/KIA-Rhino/DSC_4662.jpg|/img/avto/KIA-Rhino/DSC_4665.jpg"
-metaimg: /img/avto/KIA-Rhino.jpg
-exclude: true
-sitemap: false
+metaimg: "/img/avto/KIA-Rhino/DSC_4661.jpg"
 ---
 
 <span>Ширина борта:</span><span>2,40 м</span>

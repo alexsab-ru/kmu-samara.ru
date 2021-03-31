@@ -2,29 +2,30 @@ jQuery(function($) {
 
 	// Animations
 	// Снизу вверх
-	$("section h2, h2+.descr, \
+	$("section h1, section h2, h2+.descr, \
 		.offer-form, \
 		.benefit, \
 		.replacement-form, \
+		section h1 span, \
 		section h2 span, \
 		.f-table, \
 		.model-nav, \
 		.reviews__link, \
+		.service__item:nth-child(odd), \
+		.service__item:nth-child(even), \
+		.service2__item, \
 		.article ")
 		.animated("fadeInUp", "fadeInUp");
 
 	// Слева направо
-	$("h1, \
-		.subtitle, \
-		.maps .dealer:nth-child(odd) .dealer-info, \
-		.service__item:nth-child(odd)")
+	$(".subtitle, \
+		.maps .dealer:nth-child(odd) .dealer-info")
 		.animated("fadeInLeft", "fadeInLeft");
 
 	// Справа налево
 	$(".banner-form, \
 		.maps .dealer:nth-child(even) .dealer-info, \
 		.advantages__item, \
-		.service__item:nth-child(even), \
 		.order__item, \
 		.order__list .dot, \
 		aside")
@@ -304,7 +305,7 @@ jQuery(function($) {
 		var replUrl = url.replace('?', '&');
 		$.ajax({
 			type: "POST",
-			url: "//alexsab.ru/kmu/",
+			url: "//alexsab.ru/lead/kmu/",
 			data: th.serialize() +'&referer=' + replUrl
 		}).done(function( data ) {
 			var res = JSON.parse(data);

@@ -3,13 +3,14 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: "Камаз 53202"
-desc: "Камаз 53202"
-car_name: "Камаз 53202"
+h123: "Кран-манипулятотр (КМУ) на базе КАМАЗ 53202"
+title: "Аренда крана-манипулятотра на базе КАМАЗ 53202 в Самаре в Бумеранг-АвтоТранс"
+desc: "Взять в аренду кран-манипулятор на базе КАМАЗ 53202 в Самаре в Бумеранг-АвтоТранс"
+car_name: "Кран-манипулятор (КМУ) на базе КАМАЗ 53202"
 category: "Краны-манипуляторы"
 uid: "Kamaz-53202"
 thumb: "kamaz-53202"
-index: "76"
+index: "022"
 permalink: /service/kamaz-53202/
 kuzov_l: "5,5"
 kuzov_w: "2,4"
@@ -17,9 +18,7 @@ tonnage: "10"
 tonnage_s: "3"
 price: "1300"
 images: "/img/avto/Kamaz-53202/DSC_4679.jpg|/img/avto/Kamaz-53202/DSC_4699.jpg|/img/avto/Kamaz-53202/DSC_4709.jpg"
-metaimg: /img/avto/Kamaz-53202.jpg
-exclude: true
-sitemap: false
+metaimg: "/img/avto/Kamaz-53202/DSC_4679.jpg"
 ---
 
 <span>Грузоподъёмность стрелы:</span><span>3 т</span>

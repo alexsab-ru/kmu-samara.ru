@@ -3,23 +3,24 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: ""
-desc: ""
-car_name: "АГП 18"
+h123: "АГП 18 метров"
+title: "Аренда АГП 18 метров в Самаре в Бумеранг-АвтоТранс"
+desc: "Взять в аренду АГП 18 метров в Самаре в Бумеранг-АвтоТранс"
+car_name: "АГП 18 метров"
 category: "АГП"
 uid: "Agp18"
-thumb: "agp"
-index: "32"
+thumb: "agp18"
+index: "081"
 permalink: /service/agp18/
 kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
-price: ""
+price: "1400"
 images: ""
-metaimg: /img/avto/Agp18.jpg
-exclude: true
-sitemap: false
+metaimg: "/img/model-nav/400jpg/agp18.jpg"
 ---
 
-КАМАЗ
+<span>Рабочая высота подъемника:</span><span>18 м</span>
+
+<span>Масса подъемника:</span><span>250 кг</span>

@@ -7,20 +7,20 @@ layout: default
 
 <section class="gallery">
 	<div class="container">
-		<h2>Фотогалерея</h2>
+		<h1>Фотогалерея</h1>
 
 		<div class="gallery__slider">
 
 				{%- for path in page_paths -%}
 					{%- assign car = site.pages | where: "path", path | first -%}
-					{%- if car.path contains '/cars/' -%}
+					{%- if car.path contains '/cars3/' -%}
 						{%- if car.title and car.index and car.images -%}
 
 						{%- assign imgs = car.images | split: "|" -%}
 						{%- for img in imgs -%}
-			
+
 			<img src="{{ img | relative_url }}" alt="{{ car.car_name }}">
-			
+
 						{%- endfor -%}
 						{%- endif -%}
 					{%- endif -%}
@@ -33,14 +33,14 @@ layout: default
 
 				{%- for path in page_paths -%}
 					{%- assign car = site.pages | where: "path", path | first -%}
-					{%- if car.path contains '/cars/' -%}
+					{%- if car.path contains '/cars3/' -%}
 						{%- if car.title and car.index and car.images -%}
 
 						{%- assign imgs = car.images | split: "|" -%}
 						{%- for img in imgs -%}
-			
+
 			<div class="gallery__nav--item"><img src="{{ img | relative_url }}" alt="{{ car.car_name }}"></div>
-			
+
 						{%- endfor -%}
 						{%- endif -%}
 					{%- endif -%}

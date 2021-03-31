@@ -1,6 +1,6 @@
 // VARIABLES & PATHS
 let preprocessor = 'sass', // Preprocessor (sass, scss, less, styl)
-    fileswatch   = 'html,htm,txt,json,md,woff2,php', // List of files extensions for watching & hard reload (comma separated)
+    fileswatch   = 'html,htm,txt,json,md,woff2,php,markdown', // List of files extensions for watching & hard reload (comma separated)
     pageversion  = 'html,htm,php', // List of files extensions for watching change version files (comma separated)
     imageswatch  = 'jpg,jpeg,png,webp,svg', // List of images extensions for watching & compression (comma separated)
     online       = true, // If «false» - Browsersync will work offline without internet connection
@@ -51,23 +51,23 @@ projects.kmu_samara = {
 	dest: basename,
 
 	styles: {
-		src:	basename + '/' + preprocessor + '/styles.'+preprocessor,
-		watch:    basename + '/' + preprocessor + '/**/*.'+preprocessor,
+		src:	basename + '/src/' + preprocessor + '/styles.'+preprocessor,
+		watch:    basename + '/src/' + preprocessor + '/**/*.'+preprocessor,
 		dest:   basename + '/css',
 		output: 'styles.css',
 	},
 
 	scripts: {
 		src: [
-			basename + '/libs/jquery/dist/jquery.min.js',
-			basename + '/libs/Magnific-Popup-master/jquery.magnific-popup.js',
-			basename + '/libs/slick/slick.js',
+			basename + '/src/libs/jquery/dist/jquery.min.js',
+			basename + '/src/libs/Magnific-Popup-master/jquery.magnific-popup.js',
+			basename + '/src/libs/slick/slick.js',
 			// 'node_modules/slick-carousel/slick/slick.js',
-			basename + '/libs/animate/animate-css.js',
-			basename + '/libs/lazyload.min.js',
-			basename + '/libs/waypoint.js',
-			basename + '/js/map.js',
-			basename + '/js/common.js', // Custom scripts. Always at the end
+			basename + '/src/libs/animate/animate-css.js',
+			basename + '/src/libs/lazyload.min.js',
+			basename + '/src/libs/waypoint.js',
+			basename + '/src/js/map.js',
+			basename + '/src/js/common.js', // Custom scripts. Always at the end
 		],
 		dest:       basename + '/js',
 		output:     'scripts.min.js',
@@ -232,7 +232,8 @@ function kmu_samara_run_jekyll(callback) {
 }
 
 // exports.kmu_samara_jekyll = parallel(kmu_samara_styles_jekyll, kmu_samara_scripts_jekyll, kmu_samara_browsersync, kmu_samara_watch_jekyll);
-exports.kmu_samara_run_jekyll = parallel(kmu_samara_cd_jekyll, kmu_samara_styles_jekyll, kmu_samara_scripts_jekyll, kmu_samara_run_jekyll, kmu_samara_browsersync_jekyll, kmu_samara_watch_jekyll);
+exports.kmu_samara_jekyll_with_build = parallel(kmu_samara_cd_jekyll, kmu_samara_styles_jekyll, kmu_samara_scripts_jekyll, kmu_samara_run_jekyll, kmu_samara_browsersync_jekyll, kmu_samara_watch_jekyll);
+exports.kmu_samara_just_jekyll = parallel(kmu_samara_cd_jekyll, kmu_samara_run_jekyll);
 exports.kmu = parallel(kmu_samara_styles, kmu_samara_scripts, kmu_samara_browsersync, kmu_samara_watch);
 exports.kmu_samara = parallel(kmu_samara_browsersync, kmu_samara_watch);
 

@@ -3,23 +3,22 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: "МАЗ 437041-261 Зубренок в аренду для грузоперевозок"
-desc: "МАЗ 437041-261 Зубренок в аренду для грузоперевозок"
+h123: "Бортовой автомобиль МАЗ 4370 Зубренок"
+title: "Аренда бортового автомобиля МАЗ 4370 «Зубренок» в Самаре в Бумеранг-АвтоТранс"
+desc: "Взять в аренду бортовой автомобиль МАЗ 4370 Зубренок в Самаре в Бумеранг-АвтоТранс"
 car_name: "Бортовой автомобиль МАЗ 4370 Зубренок"
 category: "Бортовой автотранспорт"
 uid: "MAZ-Zubrenok"
 thumb: "maz-zubrenok"
-index: "21"
+index: "030"
 permalink: /service/maz-zubrenok/
 kuzov_l: "5,3"
 kuzov_w: "2,48"
 tonnage: "5"
 tonnage_s: ""
-price: "1000"
+price: "1200"
 images: "/img/avto/MAZ-Zubrenok/DSC_4765.jpg|/img/avto/MAZ-Zubrenok/DSC_4767.jpg"
-metaimg: /img/avto/MAZ-Zubrenok.jpg
-exclude: true
-sitemap: false
+metaimg: "/img/avto/MAZ-Zubrenok/DSC_4765.jpg"
 ---
 
 <span>Длина борта:</span><span>5,30 м</span>

@@ -3,23 +3,22 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: ""
-desc: ""
-car_name: "Самосвала КамАЗ 5511"
+h123: "Самосвал КамАЗ 5511"
+title: "Аренда самосвала КамАЗ 5511 в Самаре в Бумеранг-АвтоТранс"
+desc: "Взять в аренду самосвал КамАЗ 5511 в Самаре в Бумеранг-АвтоТранс"
+car_name: "Самосвал КамАЗ 5511"
 category: "Самосвалы"
 uid: "Samosval"
 thumb: "samosval-2"
-index: "41"
+index: "040"
 permalink: /service/samosval/
 kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
-price: ""
-images: ""
-metaimg: /img/avto/Samosval.jpg
-exclude: true
-sitemap: false
+price: "1300"
+images: "/img/avto/Samosval.jpg"
+metaimg: "/img/avto/Samosval.jpg"
 ---
 
 <span>Объем кузова самосвала:</span><span>7,2 куб.м</span>

@@ -4,13 +4,13 @@ layout: default
 
 <section class="contact-page" id="contact-page">
 	<div class="container">
-		<h2>Контакты</h2>
+		<h1>Контакты</h1>
 
 		<!-- { { content } } -->
 
 		<div class="contact__block d-flex">
 
-			
+
 			<div class="contact__item">
 				<div class="contact__item--icon">
 					<img src="{{ '/img/icons/location.svg' | relative_url }}" alt="ALT">
@@ -30,7 +30,7 @@ layout: default
 				</div>
 				<!-- /.contact__item--icon -->
 				<div class="contact__item--info">
-					<a href="tel:+78469722555">8 (846) 972-25-55</a>
+					<a href="tel:{% include phonef.html phone=site.phone %}">{{ site.phone | escape }}</a>
 				</div>
 				<!-- /.contact__item--info -->
 			</div>

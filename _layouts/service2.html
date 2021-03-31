@@ -2,44 +2,7 @@
 layout: default
 ---
 
-<section class="service2" id="service">
-
-	<h2>Наш <span>автопарк</span></h2>
-
-	<div class="service2__list df jcc fww">
-
-		{%- assign default_paths = site.pages | sort: "index" | map: "path" -%}
-		{%- assign page_paths = default_paths -%}
-
-		{%- for path in page_paths -%}
-			{%- assign car = site.pages | where: "path", path | first -%}
-			{%- if car.path contains '/cars3/' -%}
-				{%- if car.title and car.index != nil -%}
-				<!-- {%- assign img_path = "/img/avto/,.jpg" | split: "," -%} -->
-				{%- assign img_path = "/img/model-nav/400w/,.png" | split: "," -%}
-				{%- assign img_url = img_path | join: car.thumb -%}
-
-		<div class="service2__item">
-			<a href="{{ car.url | relative_url }}" class="service2__item--img lazyload" style="background-image: url({{ '/img/loading-0.gif' | relative_url }});" data-src-background="{{ img_url | relative_url }}">
-				<h3>{{ car.car_name }}</h3>
-			</a>
-			<div class="service2__item--info df jcsb">
-				<div class="excerpt">{{ car.content }}</div>
-			</div>
-			<a href="{{ car.url | relative_url }}" class="btn info-popup">Заказать</a>
-		</div>
-		<!-- /.service2__item -->
-
-
-				{%- endif -%}
-			{%- endif -%}
-		{%- endfor -%}
-
-	</div>
-	<!-- /.service2__list -->
-</section>
-<!-- /#service.service2 -->
-
+{%- include main/service2.html h12='h1' -%}
 
 {%- include main/order.html -%}
 

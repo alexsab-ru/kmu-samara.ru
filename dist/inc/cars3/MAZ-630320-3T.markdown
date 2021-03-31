@@ -3,13 +3,14 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: model
-title: "Грузовой автомобиль МАЗ 6303 с манипулятором в аренду"
-desc: "Грузовой автомобиль МАЗ 6303 с манипулятором в аренду"
+h123: "Кран-манипулятор (КМУ) на базе МАЗ 6303"
+title: "Аренда крана-манипулятора на базе МАЗ 6303 в Самаре в Бумеранг-АвтоТранс"
+desc: "Взять в аренду кран-манипулятор на базе МАЗ 6303 в Самаре в Бумеранг-АвтоТранс"
 car_name: "Кран-манипулятор (КМУ) на базе МАЗ 6303"
 category: "Краны-манипуляторы"
 uid: "MAZ-630320-3T"
 thumb: "maz-630320-3t"
-index: "72"
+index: "023"
 permalink: /service/maz-630320-3t/
 kuzov_l: "7,5"
 kuzov_w: "2,4"
@@ -17,9 +18,7 @@ tonnage: "10"
 tonnage_s: "3"
 price: "1500"
 images: "/img/avto/MAZ-630320-3T/DSC_4770.jpg|/img/avto/MAZ-630320-3T/DSC_4772.jpg|/img/avto/MAZ-630320-3T/DSC_4780.jpg"
-metaimg: /img/avto/MAZ-630320-3T.jpg
-exclude: true
-sitemap: false
+metaimg: "/img/avto/MAZ-630320-3T/DSC_4770.jpg"
 ---
 
 <span>Грузоподъемность стрелы:</span><span>3 т</span>

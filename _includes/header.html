@@ -4,7 +4,7 @@
 			<span class="header-logo">
 				<a href="{{ '/'' | relative_url }}">
 					<img src="{{ '/img/logo-512x188.svg' | relative_url }}" alt="{{ site.title | escape }}">
-				</a>					
+				</a>
 			</span>
 			<!-- /.header-logo -->
 			<div class="header-phones rand1">
@@ -13,23 +13,23 @@
 					<span class="phone-info">
 						<a href="#maps" class="scroll">Как проехать</a>
 						<small>Заводское шоссе, 11Б</small>
-					</span>							
+					</span>
 				</div>
 				{%- if site.phone -%}
 				<div class="phone phone-two">
 					<img src="{{ '/img/icons/phone.svg' | relative_url }}" alt="Телефон">
 					<span class="phone-info">
-						<a href="tel:{{ site.phone | escape }}">{{ site.phone| escape }}</a>
+						<a href="tel:{% include phonef.html phone=site.phone %}">{{ site.phone | escape }}</a>
 						<small><a href="#callbackForm" class="modal-link nowrap" data-title="Перезвоните мне">Заказать&nbsp;звонок</a></small>
-					</span>							
+					</span>
 				</div>
 				{%- endif -%}
 				<div class="phone phone-three">
 					<img src="{{ '/img/icons/time.svg' | relative_url }}" alt="Время работы">
 					<span class="phone-info">
-						<a href="#callbackForm" class="modal-link" data-title="Хотите в другое время?">8:00-20:00</a>
+						<a href="#callbackForm" class="modal-link" data-title="Когда вам перезвонить?">8:00 – 20:00</a>
 						<small>Ежедневно</small>
-					</span>							
+					</span>
 				</div>
 			</div>
 			<!-- /.header-phones -->

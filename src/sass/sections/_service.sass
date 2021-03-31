@@ -121,11 +121,9 @@
 			// img:not(.lazyload)
 				// width: 70%
 		&--info
-			margin: 0 0 72px
+			margin: 0 0 75px
 			padding: 15px
 			flex-direction: column
-			+media-breakpoint-down(md)
-				min-height: 180px
 			.excerpt
 				font-size: 1vmax
 				display: block
@@ -146,16 +144,33 @@
 						order: 1
 				+media-breakpoint-down(md)
 					font-size: 14px
-		.btn
+		&--action
 			position: absolute
 			bottom: 0
-			padding: 20px
-			width: 100%
-			font-family: $default-font
-			text-transform: uppercase
-			font-size: 16px
-			box-shadow: none
+			height: 70px
 			text-align: center
+			display: flex
+			width: 100%
+			.btn
+				padding: 20px
+				flex: 1 0 50%
+				font-family: $default-font
+				text-transform: uppercase
+				font-size: 16px
+				box-shadow: none
+		&--price
+			width: 50%
+			flex: 1 0 50%
+			color: $accent
+			display: flex
+			flex-direction: column
+			justify-content: center
+			.price
+				font-weight: 500
+				font-size: 20px
+			.time
+				font-size: 14px
+
 
 
 #orderForm

@@ -4,7 +4,7 @@
 		<span class="dealer-info">
 			<h2>Бумеранг-АвтоТранс</h2>
 			<span class="dealer-contacts">
-				<a href="tel:88469722555" class="dealer-phone">8 (846) 972-25-55</a>
+				<a class="dealer-phone" href="tel:{% include phonef.html phone=site.phone %}">{{ site.phone | escape }}</a>
 				<a href="mailto:bat.smr63@yandex.ru" class="dealer-email">bat.smr63@yandex.ru</a>	
 			</span>
 			<span class="dealer-address">г. Самара, Заводское шоссе, 11Б, оф. 218а
