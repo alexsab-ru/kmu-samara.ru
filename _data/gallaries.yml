@@ -1,0 +1,21 @@
+clients:
+  - url: /img/clients/benchmark_logo.png
+    alt: Бенчмаркс Лоджистикс
+  - url: /img/clients/electroshield-logo.svg
+    alt: Электрощит
+  - url: /img/clients/logo-volgaremservice.png
+    alt: ВолгаРемСервис
+  - url: /img/clients/logo-burtrans.png
+    alt: Буртранс
+  - url: /img/clients/Frigate_logo-hover.svg
+    alt: ЖК Фрегат
+  - url: /img/clients/logo-lg.jpg
+    alt: ТЦ LG Electronics
+  - url: /img/clients/logo-belrosagro.png
+    alt: БелРосАгро
+  - url: /img/clients/logo-drevo.svg
+    alt: ЖК Древо
+  - url: /img/clients/logo-st-bis.png
+    alt: Строй Бизнес
+  - url: /img/clients/logo-vtrochermet.png
+    alt: ПО ВторЦветЧерМет
