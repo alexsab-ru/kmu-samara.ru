@@ -1,0 +1,37 @@
+.clients
+	background-size: cover
+	background-position: center
+	padding: 80px 0 50px
+	margin-top: 80px
+	+media-breakpoint-down(xs)
+		padding: 40px 0
+		margin-top: 40px
+	&__block
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: center
+	&__item
+		flex: 1 0 20%
+		padding: 0 2% 30px
+		text-align: center
+		+media-breakpoint-down(sm)
+			flex: 1 0 25%
+			padding-bottom: 20px
+		+media-breakpoint-down(xs)
+			padding-bottom: 0
+		&:hover
+			img
+				filter: grayscale(0)
+				opacity: 1
+				transform: scale(1.2)
+		img
+			max-width: 100%
+			height: auto
+			display: inline-block
+			filter: grayscale(1)
+			opacity: 0.7
+			transform: scale(1)
+			transition: all .6s cubic-bezier(.58,-0.55,.23,1.2)
+			+media-breakpoint-down(xs)
+				max-width: 80px

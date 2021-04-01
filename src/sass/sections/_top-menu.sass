@@ -51,9 +51,9 @@
 			flex-direction: column
 			display: none
 			height: calc(100vh - 50px)
-			overflow-y: scroll
+			overflow-y: auto
 			li.active
-				a
+				> a
 					background-color: $accent
 					color: $white
 			a
@@ -63,13 +63,47 @@
 				width: 100%
 				a
 					width: 100%
-					text-align: center
+					padding: 10px 0 10px 20px
 					&:hover
 						background-color: $accent
 						color: $white
-		li.active
-			a:after
-				width: 100%
+		li
+			position: relative
+			> ul
+				position: absolute
+				background-color: $white
+				width: fit-content
+				padding: 0
+				list-style-type: none
+				display: none
+				transform: translate3d(0, -5px, 0)
+				transition: all .2s ease-out
+				top: 0
+				+media-breakpoint-down(sm)
+					display: block
+					position: relative
+					transform: translate3d(0, 0, 0)
+					width: 100%
+				a
+					font-size: 16px
+					padding: 7px 15px
+					white-space: nowrap
+					+media-breakpoint-down(sm)
+						padding: 5px 5px 5px 40px
+					&:after
+						display: none
+					&:hover
+						background-color: $accent
+						color: $white
+			&.active,
+			&:hover
+				> a:after
+					width: 100%
+			&:hover
+				> ul
+					display: block
+					top: 100%
+					transform: translate3d(0, 0, 0)
 		a
 			color: $text
 			font-weight: 300
@@ -87,9 +121,9 @@
 				top: 0
 				background-color: $accent
 				transition: all .25s ease-in-out
-			&:hover
-				&:after
-					width: 100%
+			// &:hover
+			// 	&:after
+			// 		width: 100%
 
 .mobile-btn, .sidebar-btn
 	width: 50px

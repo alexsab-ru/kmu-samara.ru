@@ -1,0 +1,20 @@
+{% if site.data.gallaries.clients %}
+
+<section class="clients" id="clients" style="background-image: url({{ '/img/clients/partner-bg.jpg' | relative_url }});">
+	<div class="container">
+		<h2>Нам <span>доверяют</span></h2>
+
+		<div class="clients__block">
+			
+		{% for img in site.data.gallaries.clients %}
+		<div class="clients__item">
+			<img src="{{ img.url | relative_url }}" alt="{{ img.alt }}" title="{{ img.alt }}">
+		</div>
+		{% endfor %}
+
+		</div>
+
+	</div>
+</section>
+
+{% endif %}
