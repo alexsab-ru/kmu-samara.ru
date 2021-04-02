@@ -27,7 +27,15 @@
 				<h3 itemprop="name">{{ car.car_name }}</h3>
 			</a>
 			<div class="service2__item--info df jcsb">
-				<div class="excerpt" itemprop="description">{{ car.content }}</div>
+				<div class="excerpt" itemprop="description">
+
+				{% if car.excerpt && car.excerpt != '' %}
+					{{car.excerpt}}
+				{% else %}
+					{{ car.content }}
+				{% endif %}
+				
+				</div>
 			</div>
 			<div class="service2__item--action">
 				<div class="service2__item--price"  itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">

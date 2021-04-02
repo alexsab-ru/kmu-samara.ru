@@ -5,12 +5,12 @@
 layout: model
 h123: "Мини-погрузчик Bobcat S175"
 title: "Аренда мини-погрузчика Bobcat в Самаре в Бумеранг-АвтоТранс"
-desc: "Возять в аренду мини погрузчик Bobcat в Самаре в Бумеранг-АвтоТранс"
+desc: "Взять в аренду мини погрузчик Bobcat в Самаре в Бумеранг-АвтоТранс"
 car_name: "Мини-погрузчик Bobcat S175"
 category: "Погрузчики"
 uid: "Bobcat-S175"
 thumb: "mini-pogruz"
-index: "010"
+index: "011"
 permalink: /service/bobcat-s175/
 kuzov_l: ""
 kuzov_w: ""
