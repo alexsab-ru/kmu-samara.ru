@@ -2,7 +2,7 @@
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 <div class="top-menu" id="top-menu">
 	<div class="container">
-	    {%- if page_paths -%}
+		{%- if page_paths -%}
 		<ul class="top-menu__list">
 			{%- for path in page_paths -%}
 				{%- assign my_page = site.pages | where: "path", path | first -%}
@@ -22,9 +22,9 @@
 								{%- assign car = site.pages | where: "path", path | first -%}
 								{%- if car.path contains '/cars/' -%}
 								{%- if car.category -%}
-									
+
 									<li><a href="#">{{ car.category }}</a></li>
-									
+
 								{%- endif -%}
 								{%- endif -%}
 								{%- endfor -%}
@@ -46,7 +46,7 @@
 		</a>
 		<div class="top-menu__right">
 			<a href="#maps" class="scroll"><img src="{{ '/img/icons/map.svg' | relative_url }}" alt="Как проехать"></a>
-			{%- if site.phone -%}<a href="tel:{% include phonef.html phone=site.phone %}" style="margin-right: 5px"><img src="{{ '/img/icons/phone.svg' | relative_url }}" alt="Телефон"></a>{%- endif -%}			
+			{%- if site.phone -%}<a href="tel:{% include phonef.html phone=site.phone %}" style="margin-right: 5px"><img src="{{ '/img/icons/phone.svg' | relative_url }}" alt="Телефон"></a>{%- endif -%}
 
 			<button class="mobile-btn"><span></span><span></span><span></span></button>
 		</div>
