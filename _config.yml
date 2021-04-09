@@ -28,6 +28,12 @@ url: "https://www.kmu-samara.ru" # the base hostname & protocol for your site, e
 vk_username: bat.smr63
 instagram_username:  bat.smr63
 
+phones:
+  - url: 88469226886
+    text: 8 (846) 922-68-86
+  - url: 89277939112
+    text: 8 (927) 793-91-12
+
 gtm: GTM-55H4MRG
 
 # Build settings
