@@ -1,38 +1,80 @@
 <header class="header">
 	<div class="container">
 		<div class="header-wrap">
+
 			<span class="header-logo">
 				<a href="{{ '/'' | relative_url }}">
 					<img src="{{ '/img/logo-512x188.svg' | relative_url }}" alt="{{ site.title | escape }}">
 				</a>
 			</span>
 			<!-- /.header-logo -->
-			<div class="header-phones rand1">
-				<div class="phone phone-one">
-					<img src="{{ '/img/icons/map.svg' | relative_url }}" alt="Как проехать">
-					<span class="phone-info">
-						<a href="#maps" class="scroll">Как проехать</a>
-						<small>Заводское шоссе, 11Б</small>
-					</span>
+
+			<div class="header-right">
+				
+				<div class="header-right__item header-item">
+					<div class="header-item__row">
+						<img src="{{ '/img/icons/time-blue.svg' | relative_url }}" class="header-item__icon" alt="Часы">
+						Ежедневно:
+						<a href="#callbackForm" class="header-item__link modal-link" data-title="Когда вам перезвонить?">&nbsp;08:00-20:00</a>
+					</div>
+					<!-- /.header-item__row -->
+					<div class="header-item__row">
+						<img src="{{ '/img/icons/location-marker-blue.svg' | relative_url }}" class="header-item__icon" alt="Адрес">
+						<a href="#maps" class="header-item__link scroll">Заводское шоссе, 11Б</a>
+					</div>
+					<!-- /.header-item__row -->					
 				</div>
-				{%- if site.phone -%}
-				<div class="phone phone-two">
-					<img src="{{ '/img/icons/phone.svg' | relative_url }}" alt="Телефон">
-					<span class="phone-info">
-						<a href="tel:{% include phonef.html phone=site.phone %}">{{ site.phone | escape }}</a>
-						<small><a href="#callbackForm" class="modal-link nowrap" data-title="Перезвоните мне">Заказать&nbsp;звонок</a></small>
-					</span>
+				<!-- /.header-right__item header-item -->
+
+				{%- if site.phone || site.email -%}
+				<div class="header-right__item header-item">
+					{%- if site.phone -%}
+					<div class="header-item__row">
+						<img src="{{ '/img/icons/telephone-blue.svg' | relative_url }}" class="header-item__icon" alt="Телефон"> 
+						<a href="tel:{% include phonef.html phone=site.phone %}" class="header-item__link">{{ site.phone | escape }}</a>
+					</div>
+					<!-- /.header-item__row -->
+					{%- endif -%}
+					{%- if site.email -%}
+					<div class="header-item__row">
+						<img src="{{ '/img/icons/mail-blue.svg' | relative_url }}" class="header-item__icon" alt="Mail"> 
+						<a href="mailto:{{ site.email | escape }}" class="header-item__link">{{ site.email | escape }}</a>
+					</div>
+					<!-- /.header-item__row -->
+					{%- endif -%}	
+				</div>
+				{%- endif -%}	
+
+				{%- if site.phones -%}
+				<div class="header-right__item header-item">
+					{% for phone in site.phones %}
+					<div class="header-item__row">
+						<img src="{{ '/img/icons/telephone-blue.svg' | relative_url }}" class="header-item__icon" alt="Телефон"> 
+						<a href="tel:{{ phone.url }}" class="header-item__link">{{ phone.text }}</a>
+					</div>
+					{% endfor %}
 				</div>
 				{%- endif -%}
-				<div class="phone phone-three">
-					<img src="{{ '/img/icons/time.svg' | relative_url }}" alt="Время работы">
-					<span class="phone-info">
-						<a href="#callbackForm" class="modal-link" data-title="Когда вам перезвонить?">8:00 – 20:00</a>
-						<small>Ежедневно</small>
-					</span>
+
+				<div class="header-right__item header-item mesenger-item">
+					<div class="header-item__row"> 
+						<a href="https://wa.me/+79277142745" target="_blank" class="header-item__link mesenger-link">
+							<img src="{{ '/img/icons/whatsapp.svg' | relative_url }}" alt="whatsapp">
+						</a>
+						<a href="viber://chat?number=89277142745" target="_blank" title="Должен быть установлен Viber для ПК" class="header-item__link mesenger-link mesenger-pc">
+							<img src="{{ '/img/icons/viber.svg' | relative_url }}" alt="viber">
+						</a>
+						<a href="viber://add?number=79277142745" target="_blank" title="Должен быть установлен Viber для ПК" class="header-item__link mesenger-link mesenger-mob">
+							<img src="{{ '/img/icons/viber.svg' | relative_url }}" alt="viber">
+						</a>
+					</div>
+					<!-- /.header-item__row -->	
 				</div>
+				<!-- /.header-right__item header-item -->
+
 			</div>
-			<!-- /.header-phones -->
+			<!-- /.header-right -->
+			
 		</div>
 		<!-- /.header-wrap -->
 	</div>

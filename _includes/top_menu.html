@@ -46,8 +46,8 @@
 		</a>
 		<div class="top-menu__right">
 			<a href="#maps" class="scroll"><img src="{{ '/img/icons/map.svg' | relative_url }}" alt="Как проехать"></a>
-			{%- if site.phone -%}<a href="tel:{% include phonef.html phone=site.phone %}" style="margin-right: 5px"><img src="{{ '/img/icons/phone.svg' | relative_url }}" alt="Телефон"></a>{%- endif -%}
-
+			<span class="mob-btn-header" style="margin-right: 5px"><img src="{{ '/img/icons/phone.svg' | relative_url }}" alt="Телефон"></span>
+			
 			<button class="mobile-btn"><span></span><span></span><span></span></button>
 		</div>
 	</div>

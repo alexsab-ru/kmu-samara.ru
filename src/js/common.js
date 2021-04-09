@@ -245,11 +245,18 @@ jQuery(function($) {
 	$('.mobile-btn').on('click', function() {
 		$(this).toggleClass('active');
 		$('.top-menu__list').slideToggle();
+		$('.header-right').removeClass('active');
 	});
 
 	$('.sidebar-btn').on('click', function() {
 		$(this).toggleClass('active');
 		$('.widgets').slideToggle();
+	});
+
+	$('.mob-btn-header').on('click', function() {
+		$('.mobile-btn').removeClass('active');
+		$('.top-menu__list').slideUp();
+		$('.header-right').toggleClass('active');
 	});
 	
 	// $("section h2").each(function(){
