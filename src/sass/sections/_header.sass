@@ -25,7 +25,7 @@
 			color: $text
 			font-weight: normal
 		+media-breakpoint-down(md)
-			position: absolute
+			position: fixed
 			top: 50px
 			right: 7%
 			width: auto
@@ -84,10 +84,11 @@
 	img
 		width: 30px
 		height: auto
-	&.mesenger-mob
+		
+.mesenger-mob
+	display: none
+	+media-breakpoint-down(md)
+		display: inline-block
+.mesenger-pc
+	+media-breakpoint-down(md)
 		display: none
-		+media-breakpoint-down(md)
-			display: inline-block
-	&.mesenger-pc
-		+media-breakpoint-down(md)
-			display: none
