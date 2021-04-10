@@ -1,5 +1,7 @@
 .banner
 	position: relative
+	+media-breakpoint-down(md)
+		margin-top: 50px
 	&-wrap
 	&-text
 		max-width: 50%
@@ -52,9 +54,11 @@
 		background-position: center
 		padding-top: 50px
 		+media-breakpoint-down(md)
-			padding-top: 20px
+			padding-top: 40px
+			min-height: 550px
 		+media-breakpoint-down(sm)
 			min-height: 530px
+			padding-top: 0
 		&:before
 			content: ''
 			display: block
@@ -82,7 +86,7 @@
 		@media (max-width: 1084px)
 			top: 10%
 		+media-breakpoint-down(md)
-			top: 20px	
+			top: 40px	
 		+media-breakpoint-down(sm)
 			position: relative
 			margin: 0 auto 30px

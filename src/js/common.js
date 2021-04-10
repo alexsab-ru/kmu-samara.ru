@@ -245,18 +245,19 @@ jQuery(function($) {
 	$('.mobile-btn').on('click', function() {
 		$(this).toggleClass('active');
 		$('.top-menu__list').slideToggle();
-		$('.header-right').removeClass('active');
+		$('.header').removeClass('active');
 	});
 
 	$('.sidebar-btn').on('click', function() {
 		$(this).toggleClass('active');
 		$('.widgets').slideToggle();
+		$('.header').removeClass('active');
 	});
 
 	$('.mob-btn-header').on('click', function() {
 		$('.mobile-btn').removeClass('active');
 		$('.top-menu__list').slideUp();
-		$('.header-right').toggleClass('active');
+		$('.header').toggleClass('active');
 	});
 	
 	// $("section h2").each(function(){
@@ -281,10 +282,10 @@ jQuery(function($) {
 		var headerH = $('.header').height();
 		var TopMenuH = $('#top-menu').height();
 		var winH = $(window).height();
-		var bannerSlideH = winH - (headerH+TopMenuH);
+		var bannerSlideH = winH - 94;
 		// ШИИРИНА
 		var winW = $(window).width();
-		var contW = $('.container').width();
+		var contW = $('.advantages .container').width();
 		var padding = (winW - contW) / 2;
 		
 		if ($(window).width() > 768) {

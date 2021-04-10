@@ -10,7 +10,9 @@
 	+media-breakpoint-down(md)
 		position: fixed
 		top: 0
-		padding-top: 50px
+		left: 0
+		width: 100%
+		// padding-top: 50px
 		.container
 			max-width: 100%
 			padding: 0
@@ -50,9 +52,12 @@
 		+media-breakpoint-down(md)
 			flex-direction: column
 			display: none
-			height: calc(100vh - 50px)
+			height: 100vh
 			overflow-y: auto
 			text-align: center
+			position: relative
+			top: 50px
+			border-top: 1px solid #f1f1f1
 			li.active
 				> a
 					background-color: $accent
