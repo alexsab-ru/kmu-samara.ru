@@ -1,14 +1,34 @@
 <footer class="footer">
-    <div class="contact-info" itemscope="" itemtype="http://schema.org/Organization">
-        <ul class="contact-details">
-            <li itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span><strong>Адрес:</strong> <span itemprop="addressLocality">г. Самара</span>, <span itemprop="streetAddress">Заводское шоссе, 11Б</span>, БЦ «ЗаВоД»</span></li>
-            <li><span><strong>Телефон:</strong> <span><a itemprop="telephone" href="tel:{% include phonef.html phone=site.phone %}">{{ site.phone | escape }}</a></span></span></li>
-            <li><span><strong>email:</strong> <span><a itemprop="email" href="mailto:{{ site.email | escape }}">{{ site.email | escape }}</a></span></span></li>
-            <li><span><strong>Время работы:</strong> <span>Круглосуточно</span></span></li>
-        </ul>
-        <span itemprop="name" style="display: none;">Altarent</span>
+    <div class="container">
+        <div class="footer-wrap d-flex justify-content-between align-items-center flex-column flex-md-row-reverse align-items-md-start">
+            <div class="contact-info" itemscope="" itemtype="http://schema.org/Organization">
+                <ul class="contact-details">
+                    <li itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span><strong>Адрес:</strong> <span itemprop="addressLocality">г. Самара</span>, <span itemprop="streetAddress">Заводское шоссе, 11Б</span>, БЦ «ЗаВоД»</span></li>
+                    <li>
+                        <span class="d-flex justify-content-md-end align-items-center justify-content-center">
+                            <strong style="margin-right: 6px;">Телефон:</strong>
+                            <span>
+                                <a itemprop="telephone" href="tel:{% include phonef.html phone=site.phone %}" class="footer-phone">{{ site.phone | escape }}</a>
+
+                        {% if site.phones %}
+                            {% for phone in site.phones %}
+                                <a itemprop="telephone" href="tel:{{ phone.url }}" class="footer-phone">{{ phone.text }}</a>
+                            {% endfor %}
+                        {% endif %}
+
+                            </span>
+                        </span>
+                    </li>
+                    <li><span><strong>email:</strong> <span><a itemprop="email" href="mailto:{{ site.email | escape }}">{{ site.email | escape }}</a></span></span></li>
+                    <li><span><strong>Время работы:</strong> <span>Круглосуточно</span></span></li>
+                </ul>
+                <span itemprop="name" style="display: none;">Altarent</span>
+            </div>
+            <img class="logo" src="{{ '/img/logo-512x188.svg' | relative_url }}" alt="Бумеранг-АвтоТранс">
+        </div>
+        <!-- /.footer-wrap -->
     </div>
-    <img class="logo" src="{{ '/img/logo-512x188.svg' | relative_url }}" alt="Бумеранг-АвтоТранс">
+    <!-- /.container -->
     <div class="container">
         <p class="oferta">Обращаем Ваше внимание на&nbsp;то, что данный интернет сайт носит исключительно информационный характер и&nbsp;ни&nbsp;при каких условиях не&nbsp;является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации. Для получения подробной иформации о&nbsp;наличии и&nbsp;стоимости указанных товаров&nbsp;и (или) услуг, пожалуйста обращайтесь к&nbsp;менеджерам отдела клиентского обслуживания с&nbsp;помощью специальной формы связи или по&nbsp;телефону: <a class="nowrap" href="tel:{% include phonef.html phone=site.phone %}">{{ site.phone | escape }}</a></p>
     </div>

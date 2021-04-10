@@ -1,20 +1,26 @@
 .footer
-	padding: 50px 15px
+	padding: 50px 0
 	background-color: #0d0d0d
-	text-align: center
 	p
 		font-size: 14px
 		color: #9d9d9d
-	img
-		margin: 0 auto
-		&.logo
-			max-width: 240px
-			filter: brightness(10) opacity(0.7)
+	.logo
+		max-width: 240px
+		filter: brightness(10) opacity(0.7)
 	.contact-info
 		color: $white
 		ul
 			list-style: none
 			padding: 0
+			text-align: right
+			+media-breakpoint-down(sm)
+				text-align: center
+	&-phone
+		display: block
+	a:hover
+		color: $white
+		text-decoration: underline
+
 .top
 	position: fixed
 	bottom: 15px
