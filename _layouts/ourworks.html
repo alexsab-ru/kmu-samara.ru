@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<section class="gallery">
+	<div class="container">
+		<h1>Наши работы</h1>
+
+		<div class="gallery__slider">
+
+			{%- for img in site.data.gallaries.ourworks -%}
+
+			<img src="/img/ourwork/{{img.url}}.jpg" alt="{{ img.alt }}">
+
+
+			{%- endfor -%}
+
+		</div>
+		<!-- /.gallery__slider -->
+
+		<div class="gallery__nav mb-5">
+
+			{%- for img in site.data.gallaries.ourworks -%}
+
+			<div class="gallery__nav--item"><img src="/img/ourwork/slider-nav/{{img.url}}.jpg" alt="{{ img.alt }}"></div>
+
+			{%- endfor -%}
+
+		</div>
+		<!-- /.gallery__nav -->
+
+	</div>
+	<!-- /.container -->
+</section>
+<!-- /.gallery -->
