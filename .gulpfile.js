@@ -57,7 +57,7 @@ projects.kmu_samara = {
 		src: [
 			basename + '/libs/jquery/dist/jquery.min.js',
 			basename + '/libs/Magnific-Popup-master/jquery.magnific-popup.js',
-			basename + '/libs/slick/slick.js',
+			'node_modules/slick-carousel/slick/slick.js',
 			// 'node_modules/slick-carousel/slick/slick.js',
 			basename + '/libs/animate/animate-css.js',
 			basename + '/libs/lazyload.min.js',
