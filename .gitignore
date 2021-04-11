@@ -5,6 +5,8 @@ sftp-config.json
 /_site/
 /img/avto/**/*
 /node_modules/
+.jekyll-cashe
+vendor
 /.git/
 /**/Thumbs.db
 /**/*.DS_Store
