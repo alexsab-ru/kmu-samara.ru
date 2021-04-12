@@ -2,7 +2,7 @@ jQuery(function($) {
 
 	if ($('.stages-block').is('visible')) {
 		$('.stages-border').addClass('active');
-		$('.stages-item').addClass('fadeInRight').css('opcity', 1);
+		$('.stages-item').addClass('fadeInRight').addClass('active').css('opcity', 1);
 	}
 
 	$(window).on('scroll', () => {
@@ -11,7 +11,7 @@ jQuery(function($) {
 
 		if( blockPosition - $(window).height() < windowScrollPosition ) {
 			$('.stages-border').addClass('active');
-			$('.stages-item').addClass('fadeInRight').css('opcity', 1);
+			$('.stages-item').addClass('fadeInRight').addClass('active').css('opcity', 1);
 		}
 	});
 
