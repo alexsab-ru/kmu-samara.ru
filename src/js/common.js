@@ -1,19 +1,21 @@
 jQuery(function($) {
 
-	if ($('.stages-block').is('visible')) {
-		$('.stages-border').addClass('active');
-		$('.stages-item').addClass('fadeInRight').css('opcity', 1);
-	}
-
-	$(window).on('scroll', () => {
-		let blockPosition = $('.stages-block').offset().top, 
-			windowScrollPosition = $(window).scrollTop();
-
-		if( blockPosition - $(window).height() < windowScrollPosition ) {
+	if ( $('div').is('.stages-block') ) {
+		if ($('.stages-block').is('visible')) {
 			$('.stages-border').addClass('active');
 			$('.stages-item').addClass('fadeInRight').css('opcity', 1);
 		}
-	});
+
+		$(window).on('scroll', () => {
+			let blockPosition = $('.stages-block').offset().top, 
+			windowScrollPosition = $(window).scrollTop();
+
+			if( blockPosition - $(window).height() < windowScrollPosition ) {
+				$('.stages-border').addClass('active');
+				$('.stages-item').addClass('fadeInRight').css('opcity', 1);
+			}
+		});
+	}
 
 	// Animations
 	// Снизу вверх
