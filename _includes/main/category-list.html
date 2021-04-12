@@ -1,6 +1,6 @@
 <section class="service2" id="service">
 
-	<h1>{{ page.title }}</span></h1>
+	<h1>{{ page.h123 }}</h1>
 
 	<div class="service2__list df jcc fww">
 
@@ -13,7 +13,7 @@
 		{%- if car.title and car.index != nil -%}
 		{%- assign img_path = "/img/model-nav/400jpg/,.jpg" | split: "," -%}
 		{%- assign img_url = img_path | join: car.thumb -%}
-		{%- if page.title == car.category -%}
+		{%- if page.catid == car.category -%}
 		<div class="service2__item" itemscope="" itemtype="http://schema.org/Product">
 			<a href="{{ car.url | relative_url }}" class="service2__item--img" style="background-image: url({{ img_url | relative_url }});" title="Аренда {{ car.car_name }}" itemprop="image">
 				<h3 itemprop="name">{{ car.car_name }}</h3>

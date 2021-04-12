@@ -18,7 +18,7 @@
 								{%- assign categories = site.categories | sort: "index" -%}
 								{%- for category in categories -%}
 
-									<li><a href="{{ category.url }}">{{ category.title }}</a></li>
+									<li><a href="{{ category.url }}">{{ category.catid }}</a></li>
 
 								{%- endfor -%}
 							</ul>

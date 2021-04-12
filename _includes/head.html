@@ -3,13 +3,13 @@
 <!-- <meta name="robots" content="noindex"> -->
 
 <title>{{ page.title }}</title>
-<meta name="description" content="{{ page.desc }}" />
+<meta name="description" content="{{ page.desc }}{% if page.desc contains 'Подробнее по тел' %} {{ site.phone | escape }}{% endif %}" />
 
 {%- if page.canonical -%}
 <link rel="canonical" href="{{ page.canonical | relative_url }}">
 {%- endif -%}
 
-<meta itemprop="name" content="{{ page.h1 }}">
+<meta itemprop="name" content="{{ page.h123 }}">
 <meta itemprop="description" content="{{ page.desc }}">
 <meta itemprop="image" content="{{ page.metaimg | relative_url }}">
 
