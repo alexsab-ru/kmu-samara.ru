@@ -21,8 +21,8 @@ images: "/img/avto/KIA-Rhino/DSC_4661.jpg|/img/avto/KIA-Rhino/DSC_4662.jpg|/img/
 metaimg: "/img/avto/KIA-Rhino/DSC_4661.jpg"
 ---
 
-<span>Ширина борта:</span><span>2,40 м</span>
+<p><span>Ширина борта:</span><span>2,40 м</span></p>
 
-<span>Длина борта:</span><span>4,6 м</span>
+<p><span>Длина борта:</span><span>4,6 м</span></p>
 
-<span>Грузоподъёмность:</span><span>5 т</span>
+<p><span>Грузоподъёмность:</span><span>5 т</span></p>

@@ -21,6 +21,6 @@ images: "/img/avto/Frontalnyiy-Pogruzchiki.jpg"
 metaimg: "/img/avto/Frontalnyiy-Pogruzchiki.jpg"
 ---
 
-<span>Объем ковша:</span><span>1,9-2,3 куб.м</span>
+<p><span>Объем ковша:</span><span>1,9-2,3 куб.м</span></p>
 
-<span>Грузоподъёмность:</span><span>3-4 т</span>
+<p><span>Грузоподъёмность:</span><span>3-4 т</span></p>

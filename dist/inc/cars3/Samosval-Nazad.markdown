@@ -17,12 +17,12 @@ kuzov_w: ""
 tonnage: "13"
 tonnage_s: ""
 price: "1300"
-images: ""
+images: "/img/avto/Samosval-Nazad.jpg"
 metaimg: "/img/avto/Samosval-Nazad.jpg"
 ---
 
-<span>Объем платформы:</span><span>6,6 куб.м</span>
+<p><span>Объем платформы:</span><span>6,6 куб.м</span></p>
 
-<span>Грузоподъёмность:</span><span>13 т</span>
+<p><span>Грузоподъёмность:</span><span>13 т</span></p>
 
-<span>Направление разгрузки:</span><span>назад</span>
+<p><span>Направление разгрузки:</span><span>назад</span></p>

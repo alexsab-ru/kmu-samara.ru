@@ -21,6 +21,6 @@ images: ""
 metaimg: "/img/model-nav/400jpg/avtokran16.jpg"
 ---
 
-<span>Грузоподъемность:</span><span>16 т</span>
+<p><span>Грузоподъемность:</span><span>16 т</span></p>
 
-<span>Вылет стрелы:</span><span>18 м</span>
+<p><span>Вылет стрелы:</span><span>18 м</span></p>

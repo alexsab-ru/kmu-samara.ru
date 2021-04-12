@@ -21,8 +21,8 @@ images: ""
 metaimg: "/img/model-nav/400jpg/hyundai-h940s.jpg"
 ---
 
-<span>Мощн. двигателя:</span><span>74,5 л.с.</span>
+<p><span>Мощн. двигателя:</span><span>74,5 л.с.</span></p>
 
-<span>Емкость ковша погрузчика:</span><span>1,1 куб.м</span>
+<p><span>Емкость ковша погрузчика:</span><span>1,1 куб.м</span></p>
 
-<span>Грузоподъемность:</span><span>2,8 т</span>
+<p><span>Грузоподъемность:</span><span>2,8 т</span></p>

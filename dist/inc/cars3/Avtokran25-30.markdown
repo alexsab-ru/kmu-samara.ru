@@ -21,6 +21,6 @@ images: "/img/avto/Avtokran.jpg"
 metaimg: "/img/avto/Avtokran.jpg"
 ---
 
-<span>Грузоподъемность:</span><span>25 т</span>
+<p><span>Грузоподъемность:</span><span>25 т</span></p>
 
-<span>Вылет стрелы:</span><span>28-30 м</span>
+<p><span>Вылет стрелы:</span><span>28-30 м</span></p>

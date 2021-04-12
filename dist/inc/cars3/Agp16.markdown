@@ -21,6 +21,6 @@ images: ""
 metaimg: "/img/model-nav/400jpg/agp16.jpg"
 ---
 
-<span>Рабочая высота подъемника:</span><span>16 м</span>
+<p><span>Рабочая высота подъемника:</span><span>16 м</span></p>
 
-<span>Масса подъемника:</span><span>200 кг</span>
+<p><span>Масса подъемника:</span><span>200 кг</span></p>

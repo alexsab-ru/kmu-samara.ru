@@ -21,8 +21,8 @@ images: "/img/avto/MAZ-64229/IMG_1225.png|/img/avto/MAZ-64229/IMG_1226.png"
 metaimg: "/img/avto/MAZ-64229/IMG_1225.png"
 ---
 
-<span>Ширина борта:</span><span>2,40 м</span>
+<p><span>Ширина борта:</span><span>2,40 м</span></p>
 
-<span>Длина борта:</span><span>13,6 м</span>
+<p><span>Длина борта:</span><span>13,6 м</span></p>
 
-<span>Грузоподъёмность:</span><span>20 т</span>
+<p><span>Грузоподъёмность:</span><span>20 т</span></p>

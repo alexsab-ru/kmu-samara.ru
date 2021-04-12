@@ -21,12 +21,12 @@ images: "/img/avto/Kamaz-65117/DSC_4719.jpg|/img/avto/Kamaz-65117/DSC_4731.jpg|/
 metaimg: "/img/avto/Kamaz-65117/DSC_4719.jpg"
 ---
 
-<span>Грузоподъемность стрелы:</span><span>3 т</span>
+<p><span>Грузоподъемность стрелы:</span><span>3 т</span></p>
 
-<span>Вылет стрелы:</span><span>9 м</span>
+<p><span>Вылет стрелы:</span><span>9 м</span></p>
 
-<span>Масса перевозимого груза:</span><span>15 т</span>
+<p><span>Масса перевозимого груза:</span><span>15 т</span></p>
 
-<span>Длина борта:</span><span>6,2 м</span>
+<p><span>Длина борта:</span><span>6,2 м</span></p>
 
-<span>Ширина борта:</span><span>2,4 м</span>
+<p><span>Ширина борта:</span><span>2,4 м</span></p>

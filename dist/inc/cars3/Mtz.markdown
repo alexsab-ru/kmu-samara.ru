@@ -21,10 +21,10 @@ images: ""
 metaimg: "/img/model-nav/400jpg/mtz.jpg"
 ---
 
-<span>Скорость движения рабочая:</span><span>10 км/ч</span>
+<p><span>Скорость движения рабочая:</span><span>10 км/ч</span></p>
 
-<span>Диаметр щетки (по ворсу):</span><span>550 мм</span>
+<p><span>Диаметр щетки (по ворсу):</span><span>550 мм</span></p>
 
-<span>Макc. ширина захвата щетки:</span><span>1700 мм</span>
+<p><span>Макc. ширина захвата щетки:</span><span>1700 мм</span></p>
 
-<span>Частота вращения ВОМ:</span><span>540 об/мин</span>
+<p><span>Частота вращения ВОМ:</span><span>540 об/мин</span></p>

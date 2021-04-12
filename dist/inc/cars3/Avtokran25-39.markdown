@@ -23,6 +23,6 @@ metaimg: "/img/model-nav/400jpg/xcmg25.jpg"
 
 XCMG
 
-<span>Грузоподъемность:</span><span>25 т</span>
+<p><span>Грузоподъемность:</span><span>25 т</span></p>
 
-<span>Вылет стрелы:</span><span>39 м</span>
+<p><span>Вылет стрелы:</span><span>39 м</span></p>

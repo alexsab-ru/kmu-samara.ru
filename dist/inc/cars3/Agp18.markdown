@@ -21,6 +21,6 @@ images: ""
 metaimg: "/img/model-nav/400jpg/agp18.jpg"
 ---
 
-<span>Рабочая высота подъемника:</span><span>18 м</span>
+<p><span>Рабочая высота подъемника:</span><span>18 м</span></p>
 
-<span>Масса подъемника:</span><span>250 кг</span>
+<p><span>Масса подъемника:</span><span>250 кг</span></p>

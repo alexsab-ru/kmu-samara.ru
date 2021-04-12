@@ -21,12 +21,12 @@ images: "/img/avto/MAZ-630321-5T/DSC_4752.jpg|/img/avto/MAZ-630321-5T/DSC_4753.j
 metaimg: "/img/avto/MAZ-630321-5T/DSC_4752.jpg"
 ---
 
-<span>Грузоподъемность:</span><span>5 т</span>
+<p><span>Грузоподъемность:</span><span>5 т</span></p>
 
-<span>Длина стрелы:</span><span>9 м</span>
+<p><span>Длина стрелы:</span><span>9 м</span></p>
 
-<span>Масса перевозимого груза:</span><span>10 т</span>
+<p><span>Масса перевозимого груза:</span><span>10 т</span></p>
 
-<span>Длина борта:</span><span>7,5 м</span>
+<p><span>Длина борта:</span><span>7,5 м</span></p>
 
-<span>Ширина борта:</span><span>2,4 м</span>
+<p><span>Ширина борта:</span><span>2,4 м</span></p>

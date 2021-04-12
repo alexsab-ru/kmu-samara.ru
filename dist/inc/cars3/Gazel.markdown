@@ -21,10 +21,10 @@ images: "/img/avto/Gazel/gazel-2.jpg|/img/avto/Gazel/gazel-3.jpg|/img/avto/Gazel
 metaimg: "/img/avto/Gazel/gazel-2.jpg"
 ---
 
-<span>Масса перевозимого груза:</span><span>1,5 т</span>
+<p><span>Масса перевозимого груза:</span><span>1,5 т</span></p>
 
-<span>Длина борта:</span><span>4,2 м</span>
+<p><span>Длина борта:</span><span>4,2 м</span></p>
 
-<span>Ширина борта:</span><span>2 м</span>
+<p><span>Ширина борта:</span><span>2 м</span></p>
 
-<span>Доп. оборудование:</span><span>«Катюша»</span>
+<p><span>Доп. оборудование:</span><span>«Катюша»</span></p>

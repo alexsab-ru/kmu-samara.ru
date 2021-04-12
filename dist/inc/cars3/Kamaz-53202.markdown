@@ -21,12 +21,12 @@ images: "/img/avto/Kamaz-53202/DSC_4679.jpg|/img/avto/Kamaz-53202/DSC_4699.jpg|/
 metaimg: "/img/avto/Kamaz-53202/DSC_4679.jpg"
 ---
 
-<span>Грузоподъёмность стрелы:</span><span>3 т</span>
+<p><span>Грузоподъёмность стрелы:</span><span>3 т</span></p>
 
-<span>Вылет стрелы:</span><span>8 м</span>
+<p><span>Вылет стрелы:</span><span>8 м</span></p>
 
-<span>Грузоподъёмность борта:</span><span>8 т</span>
+<p><span>Грузоподъёмность борта:</span><span>8 т</span></p>
 
-<span>Длина борта:</span><span>5,5 м</span>
+<p><span>Длина борта:</span><span>5,5 м</span></p>
 
-<span>Ширина борта:</span><span>2,40 м</span>
+<p><span>Ширина борта:</span><span>2,40 м</span></p>

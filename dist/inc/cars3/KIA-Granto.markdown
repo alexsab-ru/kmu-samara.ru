@@ -21,12 +21,12 @@ images: "/img/avto/KIA-Granto/DSC_4602.jpg|/img/avto/KIA-Granto/DSC_4605.jpg|/im
 metaimg: "/img/avto/KIA-Granto/DSC_4602.jpg"
 ---
 
-<span>Грузоподъемность стрелы:</span><span>7 т</span>
+<p><span>Грузоподъемность стрелы:</span><span>7 т</span></p>
 
-<span>Вылет стрелы:</span><span>21 м</span>
+<p><span>Вылет стрелы:</span><span>21 м</span></p>
 
-<span>Масса перевозимого груза:</span><span>12 т</span>
+<p><span>Масса перевозимого груза:</span><span>12 т</span></p>
 
-<span>Длина борта:</span><span>9 м</span>
+<p><span>Длина борта:</span><span>9 м</span></p>
 
-<span>Ширина борта:</span><span>2,3 м</span>
+<p><span>Ширина борта:</span><span>2,3 м</span></p>

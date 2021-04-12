@@ -21,12 +21,12 @@ images: "/img/avto/Ekskavatory-Pogruzchiki.jpg"
 metaimg: "/img/avto/Ekskavatory-Pogruzchiki.jpg"
 ---
 
-<span>Мощн. двигателя:</span><span>68,6 кВт (92 л.с.)</span>
+<p><span>Мощн. двигателя:</span><span>68,6 кВт (92 л.с.)</span></p>
 
-<span>Емкость ковша погрузчика:</span><span>1,1 куб.м</span>
+<p><span>Емкость ковша погрузчика:</span><span>1,1 куб.м</span></p>
 
-<span>Глубина копания:</span><span>0,18 м</span>
+<p><span>Глубина копания:</span><span>0,18 м</span></p>
 
-<span>Ширина ковша:</span><span>2,23 м</span>
+<p><span>Ширина ковша:</span><span>2,23 м</span></p>
 
-<span>Высота выгрузки:</span><span>2,64 м</span>
+<p><span>Высота выгрузки:</span><span>2,64 м</span></p>

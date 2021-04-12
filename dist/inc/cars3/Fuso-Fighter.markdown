@@ -21,12 +21,12 @@ images: "/img/avto/Fuso-Fighter.jpg"
 metaimg: "/img/avto/Fuso-Fighter.jpg"
 ---
 
-<span>Грузоподъемность стрелы:</span><span>3 т</span>
+<p><span>Грузоподъемность стрелы:</span><span>3 т</span></p>
 
-<span>Вылет стрелы:</span><span>5 м</span>
+<p><span>Вылет стрелы:</span><span>5 м</span></p>
 
-<span>Масса перевозимого груза:</span><span>12 т</span>
+<p><span>Масса перевозимого груза:</span><span>12 т</span></p>
 
-<span>Длина борта:</span><span>5,5 м</span>
+<p><span>Длина борта:</span><span>5,5 м</span></p>
 
-<span>Ширина борта:</span><span>2,2 м</span>
+<p><span>Ширина борта:</span><span>2,2 м</span></p>

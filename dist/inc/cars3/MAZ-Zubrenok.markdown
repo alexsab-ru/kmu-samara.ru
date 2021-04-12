@@ -21,8 +21,8 @@ images: "/img/avto/MAZ-Zubrenok/DSC_4765.jpg|/img/avto/MAZ-Zubrenok/DSC_4767.jpg
 metaimg: "/img/avto/MAZ-Zubrenok/DSC_4765.jpg"
 ---
 
-<span>Длина борта:</span><span>5,30 м</span>
+<p><span>Длина борта:</span><span>5,30 м</span></p>
 
-<span>Ширина борта:</span><span>2,48 м</span>
+<p><span>Ширина борта:</span><span>2,48 м</span></p>
 
-<span>Грузоподъёмность:</span><span>5 т</span>
+<p><span>Грузоподъёмность:</span><span>5 т</span></p>

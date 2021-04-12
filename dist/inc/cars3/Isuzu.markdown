@@ -21,12 +21,12 @@ images: "/img/avto/Isuzu/DSC_4638.jpg|/img/avto/Isuzu/DSC_4642.jpg|/img/avto/Isu
 metaimg: "/img/avto/Isuzu/DSC_4638.jpg"
 ---
 
-<span>Грузоподъемность стрелы:</span><span>3 т</span>
+<p><span>Грузоподъемность стрелы:</span><span>3 т</span></p>
 
-<span>Вылет стрелы:</span><span>7 м</span>
+<p><span>Вылет стрелы:</span><span>7 м</span></p>
 
-<span>Масса перевозимого груза:</span><span>3,5 т</span>
+<p><span>Масса перевозимого груза:</span><span>3,5 т</span></p>
 
-<span>Длина борта:</span><span>4,5 м</span>
+<p><span>Длина борта:</span><span>4,5 м</span></p>
 
-<span>Ширина борта:</span><span>2,2 м</span>
+<p><span>Ширина борта:</span><span>2,2 м</span></p>

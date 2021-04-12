@@ -21,4 +21,4 @@ images: "/img/avto/Samosval.jpg"
 metaimg: "/img/avto/Samosval.jpg"
 ---
 
-<span>Объем кузова самосвала:</span><span>7,2 куб.м</span>
+<p><span>Объем кузова самосвала:</span><span>7,2 куб.м</span></p>

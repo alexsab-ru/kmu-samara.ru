@@ -21,12 +21,12 @@ images: "/img/avto/MAZ-630320-3T/DSC_4770.jpg|/img/avto/MAZ-630320-3T/DSC_4772.j
 metaimg: "/img/avto/MAZ-630320-3T/DSC_4770.jpg"
 ---
 
-<span>Грузоподъемность стрелы:</span><span>3 т</span>
+<p><span>Грузоподъемность стрелы:</span><span>3 т</span></p>
 
-<span>Вылет стрелы:</span><span>9 м</span>
+<p><span>Вылет стрелы:</span><span>9 м</span></p>
 
-<span>Масса перевозимого груза:</span><span>10 т</span>
+<p><span>Масса перевозимого груза:</span><span>10 т</span></p>
 
-<span>Длина борта:</span><span>7,5 м</span>
+<p><span>Длина борта:</span><span>7,5 м</span></p>
 
-<span>Ширина борта:</span><span>2,4 м</span>
+<p><span>Ширина борта:</span><span>2,4 м</span></p>

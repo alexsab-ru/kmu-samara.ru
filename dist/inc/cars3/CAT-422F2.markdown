@@ -21,6 +21,6 @@ images: ""
 metaimg: "/img/model-nav/400jpg/cat-422f2.jpg"
 ---
 
-<span>Мощн. двигателя:</span><span>72 л.с</span>
+<p><span>Мощн. двигателя:</span><span>72 л.с</span></p>
 
-<span>Емкость ковша погрузчика:</span><span>1,03 куб.м</span>
+<p><span>Емкость ковша погрузчика:</span><span>1,03 куб.м</span></p>
