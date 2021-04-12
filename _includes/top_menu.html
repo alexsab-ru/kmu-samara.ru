@@ -15,18 +15,11 @@
 
 							{% if my_page.url == '/service/' %}
 							<ul class="submenu">
-								{%- assign default_paths = site.pages | sort: "index" | map: "path" -%}
-								{%- assign page_paths = default_paths -%}
+								{%- assign categories = site.categories | sort: "index" -%}
+								{%- for category in categories -%}
 
-								{%- for path in page_paths -%}
-								{%- assign car = site.pages | where: "path", path | first -%}
-								{%- if car.path contains '/cars/' -%}
-								{%- if car.category -%}
+									<li><a href="{{ category.url }}">{{ category.title }}</a></li>
 
-									<li><a href="#">{{ car.category }}</a></li>
-
-								{%- endif -%}
-								{%- endif -%}
 								{%- endfor -%}
 							</ul>
 							{% endif %}

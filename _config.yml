@@ -66,6 +66,11 @@ exclude:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+collections:
+  categories:
+    output: true
+    permalink: /service/:path/
+
 defaults:
   -
     scope:

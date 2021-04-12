@@ -54,7 +54,6 @@
 			display: none
 			height: 100vh
 			overflow-y: auto
-			text-align: center
 			position: relative
 			top: 50px
 			border-top: 1px solid #f1f1f1
@@ -63,6 +62,7 @@
 					background-color: $accent
 					color: $white
 			a
+				font-weight: 600
 				&:after
 					display: none
 			li
@@ -81,21 +81,28 @@
 				width: fit-content
 				padding: 0
 				list-style-type: none
-				display: none
-				transform: translate3d(0, -5px, 0)
+				opacity: 0
+				visibility: hidden
+				border-top: 1px solid rgba($accent, .2)
+				transform: translate3d(0, -10px, 0)
 				transition: all .2s ease-out
-				top: 0
+				top: 100%
+				box-shadow: 0 15px 30px rgba($accent, .3)
 				+media-breakpoint-down(md)
-					display: block
+					opacity: 1
+					visibility: visible
 					position: relative
+					border: none
 					transform: translate3d(0, 0, 0)
 					width: 100%
+					box-shadow: none
 				a
 					font-size: 16px
-					padding: 7px 15px
+					padding: 7px 30px
 					white-space: nowrap
 					+media-breakpoint-down(md)
 						padding: 5px 5px 5px 40px
+						font-weight: 300
 					&:after
 						display: none
 					&:hover
@@ -107,8 +114,8 @@
 					width: 100%
 			&:hover
 				> ul
-					display: block
-					top: 100%
+					opacity: 1
+					visibility: visible
 					transform: translate3d(0, 0, 0)
 		a
 			color: $text
@@ -127,6 +134,8 @@
 				top: 0
 				background-color: $accent
 				transition: all .25s ease-in-out
+			+media-breakpoint-down(md)
+				font-weight: 600
 			// &:hover
 			// 	&:after
 			// 		width: 100%
