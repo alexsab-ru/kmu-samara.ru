@@ -14,6 +14,7 @@
 							<a href="{{ my_page.url | relative_url }}">{{ my_page.menu | escape }}</a>
 
 							{% if my_page.url == '/service/' %}
+							<!-- 
 							<ul class="submenu">
 								{%- assign categories = site.categories | sort: "index" -%}
 								{%- for category in categories -%}
@@ -22,6 +23,7 @@
 
 								{%- endfor -%}
 							</ul>
+							 -->
 							{% endif %}
 
 						</li>
@@ -31,7 +33,7 @@
 				{%- endunless -%}
 			{%- endfor -%}
 		</ul>
-	    {%- endif -%}
+		{%- endif -%}
 	</div>
 	<div class="top-menu__wrap">
 		<a href="{{ '/'' | relative_url }}" class="top-menu__logo">
@@ -40,7 +42,7 @@
 		<div class="top-menu__right">
 			<a href="#maps" class="scroll"><img src="{{ '/img/icons/map.svg' | relative_url }}" alt="Как проехать"></a>
 			<span class="mob-btn-header" style="margin-right: 5px"><img src="{{ '/img/icons/phone.svg' | relative_url }}" alt="Телефон"></span>
-			
+
 			<button class="mobile-btn"><span></span><span></span><span></span></button>
 		</div>
 	</div>

@@ -28,13 +28,6 @@
 
 				{%- if site.phone || site.email -%}
 				<div class="header-right__item header-item">
-					{%- if site.phone -%}
-					<div class="header-item__row">
-						<img src="{{ '/img/icons/telephone-blue.svg' | relative_url }}" class="header-item__icon" alt="Телефон"> 
-						<a href="tel:{% include phonef.html phone=site.phone %}" class="header-item__link">{{ site.phone | escape }}</a>
-					</div>
-					<!-- /.header-item__row -->
-					{%- endif -%}
 					{%- if site.email -%}
 					<div class="header-item__row">
 						<img src="{{ '/img/icons/mail-blue.svg' | relative_url }}" class="header-item__icon" alt="Mail"> 
@@ -42,6 +35,13 @@
 					</div>
 					<!-- /.header-item__row -->
 					{%- endif -%}	
+					{%- if site.phone -%}
+					<div class="header-item__row">
+						<img src="{{ '/img/icons/telephone-blue.svg' | relative_url }}" class="header-item__icon" alt="Телефон"> 
+						<a href="tel:{% include phonef.html phone=site.phone %}" class="header-item__link">{{ site.phone | escape }}</a>
+					</div>
+					<!-- /.header-item__row -->
+					{%- endif -%}
 				</div>
 				{%- endif -%}	
 
