@@ -5,7 +5,7 @@
 layout: model
 h123: "Hyundai H940S"
 title: "Аренда Hyundai H940S в Самаре в Бумеранг-АвтоТранс"
-desc: "Взять в аренду Hyundai H940S в Самаре в Бумеранг-АвтоТранс"
+description: "Взять в аренду Hyundai H940S в Самаре в Бумеранг-АвтоТранс"
 car_name: "Hyundai H940S"
 category: "Погрузчики"
 uid: "Hyundai-H940S"

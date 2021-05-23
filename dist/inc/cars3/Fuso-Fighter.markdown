@@ -5,7 +5,7 @@
 layout: model
 h123: "Манипулятор Mitsubishi Fuso"
 title: "Аренда манипулятора Mitsubishi Fuso в Самаре в Бумеранг-АвтоТранс"
-desc: "Взять в аренду манипулятор Mitsubishi Fuso в Самаре в Бумеранг-АвтоТранс"
+description: "Взять в аренду манипулятор Mitsubishi Fuso в Самаре в Бумеранг-АвтоТранс"
 car_name: "Манипулятор Mitsubishi Fuso"
 category: "Краны-манипуляторы"
 uid: "Fuso-Fighter"

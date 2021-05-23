@@ -5,7 +5,7 @@
 layout: model
 h123: "JCB 3CX SUPER"
 title: "Аренда JCB 3CX SUPER в Самаре в Бумеранг-АвтоТранс"
-desc: "Взять в аренду JCB 3CX SUPER в Самаре в Бумеранг-АвтоТранс"
+description: "Взять в аренду JCB 3CX SUPER в Самаре в Бумеранг-АвтоТранс"
 car_name: "JCB 3CX SUPER"
 category: "Погрузчики"
 uid: "JCB-3CX-SUPER"
