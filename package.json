@@ -17,6 +17,14 @@
   },
   "homepage": "https://github.com/newstreetpunk/kmu#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.12"
+    "autoprefixer": "^10.4.4",
+    "bootstrap": "^4.6.0",
+    "browser-sync": "^2.27.9",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "jquery": "^2.1.4",
+    "laravel-mix": "^6.0.43",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.50.0",
+    "sass-loader": "^12.6.0"
   }
 }

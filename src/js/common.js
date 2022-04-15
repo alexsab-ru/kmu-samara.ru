@@ -1,4 +1,4 @@
-jQuery(function($) {
+$(function() {
 
 	if ( $('div').is('.stages-block') ) {
 		if ($('.stages-block').is('visible')) {
@@ -286,7 +286,7 @@ jQuery(function($) {
 	// 		th.html(th.html().replace(/\s([\S]+)$/, ' <span>$1</span>'));
 	// });
 
-	$('a[href*=#].scroll').bind("click", function(e){
+	$('a.scroll').bind("click", function(e){
 		var anchor = $(this);
 		$('html, body').stop().animate({
 			scrollTop: $(anchor.attr('href')).offset().top}, 700);
