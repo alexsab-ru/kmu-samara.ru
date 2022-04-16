@@ -1,3 +1,21 @@
+$('input[name="subscribe"]').each(function() {
+	$(this).change(function(){
+		let $form = $(this).closest('form');
+		let $btn = $form.find('button[type="submit"]');
+		if($(this).prop('checked')){
+			$btn.attr("disabled", true);
+		}
+	});
+})
+
+
+$('input').each(function(){
+	let id = $(this).attr('name');
+	$(this).change(function(){
+		$('#'+id).text('').hide();
+	})
+})
+
 //E-mail Ajax Send
 $("form").submit(function() { //Change
 	var th = $(this);
@@ -18,6 +36,11 @@ $("form").submit(function() { //Change
 			$('.error-message').html(res.error);
 		else
 			$('.error-message').html("");
+		if(res.answer == 'required'){
+			th.find(res.field).text(res.message).show()
+			btnSubmit.removeAttr("disabled");
+			return;
+		}
 		setTimeout(function() {
 			$.magnificPopup.close();
 			$.magnificPopup.open({
