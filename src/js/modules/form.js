@@ -12,7 +12,7 @@ $('input[name="subscribe"]').each(function() {
 $('input').each(function(){
 	let id = $(this).attr('name');
 	$(this).change(function(){
-		$('#'+id).text('').hide();
+		$(this).closest('form').find('#'+id).text('').hide();
 	})
 })
 

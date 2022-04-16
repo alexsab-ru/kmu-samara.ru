@@ -12650,6 +12650,20 @@ a.btn.ya-btn {
 .offer-form form small a {
   color: #000;
 }
+.offer-form form .checkbox {
+  justify-content: center;
+}
+.offer-form form .checkbox small {
+  text-align: left;
+  display: inline-block;
+  margin-top: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.offer-form form .field-error {
+  text-align: center;
+}
 
 .maps {
   padding: 50px 0 0;
