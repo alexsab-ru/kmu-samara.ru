@@ -11,8 +11,7 @@
 		<input type="text" tabindex="-1" placeholder="Ваше имя" name="name">
 		<input type="email" tabindex="-1" name="Email" placeholder="mail@example.com">
 		<input type="tel" placeholder="8 (999) 999-99-99" name="Телефон" required>
-
+		{% include agree-checkbox.html %}
 		<button type="submit" class="btn">Перезвоните мне</button>
-		<small>Нажимая на кнопку "Перезвоните мне", я даю согласие на <a href="#popup" class="popup">обработку персональных данных</a></small>
 	</form>
 </div>

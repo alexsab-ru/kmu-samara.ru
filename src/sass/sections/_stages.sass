@@ -80,7 +80,6 @@
 				animation: opacity .5s forwards linear 2s
 	&.two
 		width: 0.5px
-		// height: 142px
 		right: 0
 		top: 60px
 		border-right: 2px dashed $accent
@@ -99,7 +98,6 @@
 				animation: opacity .5s forwards linear 2s
 	&.three
 		height: .5px
-		// width: 100%
 		right: 0
 		top: 200px
 		border-bottom: 2px dashed $accent
@@ -119,7 +117,6 @@
 				animation: opacity .5s forwards linear 2s
 	&.four
 		width: 0.5px
-		// height: 142px
 		left: 0
 		top: 200px
 		border-right: 2px dashed $accent
@@ -140,7 +137,6 @@
 				animation: opacity .5s forwards linear 2s
 	&.five
 		height: .5px
-		// width: 90%
 		left: 0
 		top: 342px
 		border-bottom: 2px dashed $accent
@@ -168,15 +164,15 @@
 		&:nth-child(5),
 		&:nth-child(6),
 		&:nth-child(7),
-		&:nth-child(8),
-			&:before
+		&:nth-child(8)
+			&::before
 				content: ''
 				position: absolute
 				border-bottom: 2px dashed $accent
 				height: 0.5px
 				top: 40px
 				opacity: 0
-			&:after
+			&::after
 				content: ''
 				position: absolute
 				border-right: 2px dashed $accent
