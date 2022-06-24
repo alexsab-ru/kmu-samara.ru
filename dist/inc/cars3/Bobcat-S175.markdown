@@ -10,7 +10,7 @@ car_name: "Мини-погрузчик Bobcat S175"
 category: "Погрузчики"
 uid: "Bobcat-S175"
 thumb: "mini-pogruz"
-index: "010"
+index: "110"
 permalink: /service/bobcat-s175/
 kuzov_l: ""
 kuzov_w: ""
