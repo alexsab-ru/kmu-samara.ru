@@ -16,7 +16,7 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: "25"
-price: "1700"
+price: "2500"
 images: ""
 metaimg: "/img/model-nav/400jpg/avtokran25.jpg"
 ---
