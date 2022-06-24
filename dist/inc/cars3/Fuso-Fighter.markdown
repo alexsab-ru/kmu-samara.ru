@@ -16,7 +16,7 @@ kuzov_l: "6,2"
 kuzov_w: "2,32"
 tonnage: "5"
 tonnage_s: "3"
-price: "1300"
+price: "1700"
 images: "/img/avto/Fuso-Fighter.jpg"
 metaimg: "/img/avto/Fuso-Fighter.jpg"
 ---
@@ -25,7 +25,7 @@ metaimg: "/img/avto/Fuso-Fighter.jpg"
 
 <p><span>Вылет стрелы:</span><span>5 м</span></p>
 
-<p><span>Масса перевозимого груза:</span><span>12 т</span></p>
+<p><span>Масса перевозимого груза:</span><span>5 т</span></p>
 
 <p><span>Длина борта:</span><span>5,5 м</span></p>
 
