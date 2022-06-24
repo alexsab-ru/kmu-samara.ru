@@ -16,7 +16,7 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: "2,8"
 tonnage_s: ""
-price: "1800"
+price: "2500"
 images: ""
 metaimg: "/img/model-nav/400jpg/hyundai-h940s.jpg"
 ---
