@@ -16,7 +16,7 @@ kuzov_l: "9"
 kuzov_w: "2,3"
 tonnage: "12"
 tonnage_s: "7"
-price: "1800"
+price: "2600"
 images: "/img/avto/KIA-Granto/DSC_4602.jpg|/img/avto/KIA-Granto/DSC_4605.jpg|/img/avto/KIA-Granto/DSC_4612.jpg"
 metaimg: "/img/avto/KIA-Granto/DSC_4602.jpg"
 ---
