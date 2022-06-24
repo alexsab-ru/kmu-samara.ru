@@ -27,6 +27,6 @@ metaimg: "/img/avto/KIA-Granto/DSC_4602.jpg"
 
 <p><span>Масса перевозимого груза:</span><span>12 т</span></p>
 
-<p><span>Длина борта:</span><span>9 м</span></p>
+<p><span>Длина борта:</span><span>8 м</span></p>
 
 <p><span>Ширина борта:</span><span>2,3 м</span></p>
