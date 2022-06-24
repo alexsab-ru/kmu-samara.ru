@@ -16,7 +16,7 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: "4"
 tonnage_s: ""
-price: "1600"
+price: "2000"
 images: "/img/avto/Frontalnyiy-Pogruzchiki.jpg"
 metaimg: "/img/avto/Frontalnyiy-Pogruzchiki.jpg"
 ---
