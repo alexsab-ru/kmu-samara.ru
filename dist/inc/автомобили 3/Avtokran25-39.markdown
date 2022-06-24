@@ -16,7 +16,7 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: "25"
-price: "2300"
+price: "3500"
 images: ""
 metaimg: "/img/model-nav/400jpg/xcmg25.jpg"
 ---
