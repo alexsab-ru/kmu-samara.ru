@@ -16,7 +16,7 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
-price: "1600"
+price: "2300"
 images: ""
 metaimg: "/img/model-nav/400jpg/agp.jpg"
 ---
