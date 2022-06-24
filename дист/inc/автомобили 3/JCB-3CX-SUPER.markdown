@@ -16,7 +16,7 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
-price: "1800"
+price: "2000"
 images: "/img/avto/Ekskavatory-Pogruzchiki.jpg"
 metaimg: "/img/avto/Ekskavatory-Pogruzchiki.jpg"
 ---
