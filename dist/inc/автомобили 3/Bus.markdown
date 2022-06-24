@@ -11,7 +11,7 @@ car_name: "Автобусы"
 category: "Автобусы"
 uid: "Bus"
 thumb: "bus-next"
-index: "010"
+index: "110"
 permalink: /service/bus/
 kuzov_l: ""
 kuzov_w: ""
