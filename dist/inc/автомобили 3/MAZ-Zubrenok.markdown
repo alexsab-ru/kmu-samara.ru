@@ -16,7 +16,7 @@ kuzov_l: "5,3"
 kuzov_w: "2,48"
 tonnage: "5"
 tonnage_s: ""
-price: "1200"
+price: "1500"
 images: "/img/avto/MAZ-Zubrenok/DSC_4765.jpg|/img/avto/MAZ-Zubrenok/DSC_4767.jpg"
 metaimg: "/img/avto/MAZ-Zubrenok/DSC_4765.jpg"
 ---
