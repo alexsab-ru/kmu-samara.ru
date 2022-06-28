@@ -16,7 +16,7 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: "13"
 tonnage_s: ""
-price: "1300"
+price: "1700"
 images: "/img/avto/Samosval-Nazad.jpg"
 metaimg: "/img/avto/Samosval-Nazad.jpg"
 ---
