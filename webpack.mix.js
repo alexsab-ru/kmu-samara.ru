@@ -8,6 +8,7 @@ mix.autoload({
 mix
   .js('src/js/app.js', 'js/scripts.min.js')
   .sass('src/sass/styles.sass', 'css')
+  .setPublicPath('/')
 
 if (mix.inProduction()) {
   mix.version();
