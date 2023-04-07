@@ -1,13 +1,3 @@
-$('input[name="subscribe"]').each(function() {
-	$(this).change(function(){
-		let $form = $(this).closest('form');
-		let $btn = $form.find('button[type="submit"]');
-		if($(this).prop('checked')){
-			$btn.attr("disabled", true);
-		}
-	});
-})
-
 
 $('input').each(function(){
 	let id = $(this).attr('name');
