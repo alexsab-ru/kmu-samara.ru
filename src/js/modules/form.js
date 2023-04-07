@@ -16,19 +16,30 @@ $('input').each(function(){
 	})
 })
 
+function getCookie(name) {
+	var matches = document.cookie.match(new RegExp(
+	"(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+	))
+	return matches ? decodeURIComponent(matches[1]) : undefined
+}
+
+
 //E-mail Ajax Send
 $("form").submit(function() { //Change
 	var th = $(this);
 	var btnSubmit = th.find('button[type="submit"]');
 	btnSubmit.attr("disabled", true);
 	var url = window.location.href;
-	var replUrl = url.replace('?', '&');
+	var addParam = '&referer=' + url.replace('?', '&');
+	if(getCookie('fta')) {
+		addParam += "&fta";
+	}
 	$.ajax({
 		type: "POST",
 		url: "https://alexsab.ru/lead/kmu/",
 		// url: "https://alexsab.ru/lead/dev/",
 		// url: "https://diywebdev.ru/send/",
-		data: th.serialize() +'&referer=' + replUrl,
+		data: th.serialize() + addParam,
 	}).done(function( data ) {
 		var res = JSON.parse(data);
 		// console.log( ["success data:", data, res, res.error] );
