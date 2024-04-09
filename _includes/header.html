@@ -10,7 +10,7 @@
 			<!-- /.header-logo -->
 
 			<div class="header-right">
-				
+
 				<div class="header-right__item header-item">
 					<div class="header-item__row">
 						<img src="{{ '/img/icons/time-blue.svg' | relative_url }}" class="header-item__icon" alt="Часы">
@@ -20,9 +20,9 @@
 					<!-- /.header-item__row -->
 					<div class="header-item__row">
 						<img src="{{ '/img/icons/location-marker-blue.svg' | relative_url }}" class="header-item__icon" alt="Адрес">
-						<a href="#maps" class="header-item__link scroll">Заводское шоссе, 11Б</a>
+						<a href="#maps" class="header-item__link scroll">Заводское шоссе, 11</a>
 					</div>
-					<!-- /.header-item__row -->					
+					<!-- /.header-item__row -->
 				</div>
 				<!-- /.header-right__item header-item -->
 
@@ -30,26 +30,26 @@
 				<div class="header-right__item header-item">
 					{%- if site.email -%}
 					<div class="header-item__row">
-						<img src="{{ '/img/icons/mail-blue.svg' | relative_url }}" class="header-item__icon" alt="Mail"> 
+						<img src="{{ '/img/icons/mail-blue.svg' | relative_url }}" class="header-item__icon" alt="Mail">
 						<a href="mailto:{{ site.email | escape }}" class="header-item__link">{{ site.email | escape }}</a>
 					</div>
 					<!-- /.header-item__row -->
-					{%- endif -%}	
+					{%- endif -%}
 					{%- if site.phone -%}
 					<div class="header-item__row">
-						<img src="{{ '/img/icons/telephone-blue.svg' | relative_url }}" class="header-item__icon" alt="Телефон"> 
+						<img src="{{ '/img/icons/telephone-blue.svg' | relative_url }}" class="header-item__icon" alt="Телефон">
 						<a href="tel:{% include phonef.html phone=site.phone %}" class="header-item__link">{{ site.phone | escape }}</a>
 					</div>
 					<!-- /.header-item__row -->
 					{%- endif -%}
 				</div>
-				{%- endif -%}	
+				{%- endif -%}
 
 				{%- if site.phones -%}
 				<div class="header-right__item header-item">
 					{% for phone in site.phones %}
 					<div class="header-item__row">
-						<img src="{{ '/img/icons/telephone-blue.svg' | relative_url }}" class="header-item__icon" alt="Телефон"> 
+						<img src="{{ '/img/icons/telephone-blue.svg' | relative_url }}" class="header-item__icon" alt="Телефон">
 						<a href="tel:{{ phone.url }}" class="header-item__link">{{ phone.text }}</a>
 					</div>
 					{% endfor %}
@@ -57,7 +57,7 @@
 				{%- endif -%}
 
 				<div class="header-right__item header-item mesenger-item">
-					<div class="header-item__row"> 
+					<div class="header-item__row">
 						<a href="https://wa.me/+79277142745" target="_blank" class="header-item__link mesenger-link">
 							<img src="{{ '/img/icons/whatsapp.svg' | relative_url }}" alt="whatsapp">
 						</a>
@@ -68,13 +68,13 @@
 							<img src="{{ '/img/icons/viber.svg' | relative_url }}" alt="viber">
 						</a>
 					</div>
-					<!-- /.header-item__row -->	
+					<!-- /.header-item__row -->
 				</div>
 				<!-- /.header-right__item header-item -->
 
 			</div>
 			<!-- /.header-right -->
-			
+
 		</div>
 		<!-- /.header-wrap -->
 	</div>
