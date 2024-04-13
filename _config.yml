@@ -29,10 +29,10 @@ vk_username: bat.smr63
 instagram_username:  bat.smr63
 
 phones:
-  - url: 88469226886
-    text: 8 (846) 922-68-86
-  - url: 89277939112
-    text: 8 (927) 793-91-12
+  - url: 89277142745
+    text: 8 (927) 714-27-45
+  - url: 89372077830
+    text: 8 (937) 207-78-30
 
 gtm: GTM-55H4MRG
 
@@ -42,6 +42,8 @@ plugins:
   - jekyll-sitemap
   # - jekyll-feed
   - jekyll-seo-tag
+
+layouts_dir: _layouts
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -61,10 +63,10 @@ exclude:
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
 
 collections:
   categories:
