@@ -2,12 +2,14 @@
 layout: default
 ---
 
+{%- assign reviews = site.data.reviews -%}
+
 <section class="reviews">
 	<div class="container">
 		<h1>Отзывы</h1>
 
 		<div class="d-flex reviews__links">
-			<div class="reviews__link ">
+			<div class="reviews__link">
 				<img src="{{ '/img/reviews/yandex.svg' | relative_url }}" alt="Яндекс">
 				<a href="https://yandex.ru/profile/70724167277?intent=reviews" target="_blank">Оставить отзыв на Яндекс.Картах</a>
 			</div>
@@ -26,51 +28,34 @@ layout: default
 		<!-- /.reviews__links -->
 
 		<div class="reviews__block">
-
+			{%- if reviews.size > 0 -%}
 			<div class="reviews__slider reviews-text-slider">
-
+				{% for review in reviews reversed -%}
+				{%- if review.show -%}
 				<div class="item">
 					<div class="reviews__text">
-						<h4>Евгений Семибратов</h4>
-						<p>Была необходимость перевезти гараж. Обратился в компанию "Бумеранг-Автотранс". Заявку приняли сразу, очень приветливый менеджер, в течении 30 минут спец техника была уже у меня. При необходимости буду обращаться только в данную компанию!!! Все сделали быстро и качественно!!! Всем советую!!!</p>
-						<div class="reviews-date"><i>2020-01-28</i></div>
-						<!-- /.reviews-date -->
-						<span class="rating" data-star="5">
-							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
-						</span>
-						<!-- /.rating -->
-					</div>
-					<!-- /.reviews__text -->
-				</div>
-				<!-- /.item -->
-
-				<div class="item">
-					<div class="reviews__text">
-						<img src="https://avatars.mds.yandex.net/get-yapic/29310/J57Ln7ZotbRXob0TPlEiW0AK39w-1/islands-200" alt="Светлана Князева" class="reviews__user">
-						<h4>Светлана Князева</h4>
+						{%- if review.photo.size > 0 -%}
+						<img src="{{review.photo}}" alt="{{ review.author }}" class="reviews__user">
+						{%- endif -%}
+						<h4>{{ review.author }}</h4>
 						<!-- <h5>«Техника в полном порядке»</h5> -->
-						<p>Давно работаем по перевозкам с этой компанией, логистика на высшем уровне, сроки соблюдаются, доки вовремя и в порядке, приемлемые цены, всегда на связи!</p>
-						<div class="reviews-date"><i>2020-08-19</i></div>
-						<!-- /.reviews-date -->
-						<span class="rating" data-star="5">
+						<p>{{ review.text }}</p>
+						<div class="reviews-date"><i>{{ review.date }}</i></div>
+						<span class="rating" data-star="{{review.rating}}">
 							<span class="star"></span>
 							<span class="star"></span>
 							<span class="star"></span>
 							<span class="star"></span>
 							<span class="star"></span>
 						</span>
-						<!-- /.rating -->
 					</div>
-					<!-- /.reviews__text -->
 				</div>
-				<!-- /.item -->
-
+				{%- endif -%}
+				{% endfor %}
 			</div>
-			<!-- /.reviews-text-slider -->
+			{%- else -%}
+			<p class="mb-5">Скоро здесь появятся отзывы...</p>
+			{%- endif -%}
 
 			<div class="reviews__slider reviews-video-slider hidden">
 
