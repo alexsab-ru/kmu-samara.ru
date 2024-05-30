@@ -12,3 +12,7 @@ vendor
 /.git/
 /**/Thumbs.db
 /**/*.DS_Store
+desktop.ini
+
+public/assets/*
+public/_data/manifest.json
