@@ -17,13 +17,13 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}.git" }
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-# For local development uncomment "gem "jekyll"" below and 
+# For local development uncomment "gem "jekyll"" below and
 # comment "gem "github-pages"" then run `bundle update`
-# gem "jekyll", "~> 4.1.1"
+gem "jekyll", "~> 4.3.3"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
-gem "github-pages", group: :jekyll_plugins
+# gem "github-pages", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
