@@ -1,6 +1,22 @@
-{%- if site.gtm -%}	
+{%- if site.gtm -%}
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.gtm }}"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->	
+<!-- End Google Tag Manager (noscript) -->
 {%- endif -%}
+
+<script>
+    function generateToken() {
+        // Простая функция для генерации случайного токена
+        return btoa(new Date().getTime() + Math.random().toString(36).substring(2));
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const csrfToken = generateToken();
+        document.querySelectorAll('[name="csrf_token"]').forEach((el)=>{
+            el.value = csrfToken;
+        });
+        // Сохраните токен в localStorage
+        localStorage.setItem('csrf_token', csrfToken);
+    });
+</script>
