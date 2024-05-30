@@ -4,11 +4,26 @@
   "description": "kmu-samara.ru",
   "main": "index.html",
   "scripts": {
-    "start": "npx mix watch",
-    "watch": "mix watch",
-    "watch-poll": "mix watch -- --watch-options-poll=8000",
-    "build": "npx mix --production && bundle exec jekyll build",
-    "prod": "npx mix --production"
+    "start": "cd public && bundle install",
+    "vite_dev": "cd vite && APP_ENV=development vite dev --open --host --port 5133",
+    "vite_build": "cd vite && APP_ENV=production vite build",
+    "jekyll": "cd public && JEKYLL_ENV=development bundle exec jekyll serve --host $(ipconfig getifaddr en0) --port 5134 -l -o",
+    "jekyll_build": "cd public && JEKYLL_ENV=production bundle exec jekyll build",
+    "preview": "cd public && JEKYLL_ENV=production bundle exec jekyll serve --host $(ipconfig getifaddr en0) --port 5134 -l -o",
+    "dev": "concurrently \"cd vite && APP_ENV=development vite dev --host --port 5133\" \"cd public && JEKYLL_ENV=development bundle exec jekyll serve --host $(ipconfig getifaddr en0) --port 5134 -l -o\"",
+    "dev_wsl": "concurrently \"cd vite && APP_ENV=development vite dev --host --port 5133\" \"cd public && JEKYLL_ENV=development bundle exec jekyll serve --host $(hostname -I) --port 5134 -l -o\"",
+    "deploy": "cd vite && APP_ENV=production vite build && cd ../public && [ -d _data ] || mkdir _data && mv dist/manifest.json _data/manifest.json && rm -rf assets && mv dist/assets assets",
+    "build": "cd vite && APP_ENV=production vite build && cd ../public && [ -d _data ] || mkdir _data && mv dist/manifest.json _data/manifest.json && rm -rf assets && mv dist/assets assets && JEKYLL_ENV=production bundle exec jekyll build",
+    "\n# WINDOWS SCRIPTS:": "",
+    "vite_dev_win": "cd vite && cross-env APP_ENV=development vite dev --host --port 5133",
+    "vite_build_win": "cd vite && cross-env APP_ENV=production vite build",
+    "jekyll_win": "for /f \"tokens=2 delims=:\" %i in ('ipconfig ^| findstr \"IPv4 Address\"') do @set IP=%i && cd public && cross-env JEKYLL_ENV=development bundle exec jekyll serve --host %IP% --port 5134 -l -o",
+    "jekyll_build_win": "cd public && cross-env JEKYLL_ENV=production bundle exec jekyll build -l -o",
+    "preview_win": "for /f \"tokens=2 delims=:\" %i in ('ipconfig ^| findstr \"IPv4 Address\"') do @set IP=%i && cd public && cross-env JEKYLL_ENV=production bundle exec jekyll serve --host %IP% --port 5134 -l -o",
+    "dev_win": "for /f \"tokens=2 delims=:\" %i in ('ipconfig ^| findstr \"IPv4 Address\"') do @set IP=%i && concurrently \"cd vite && cross-env APP_ENV=development vite dev --host %IP% --port 5133\" \"cd public && cross-env JEKYLL_ENV=development bundle exec jekyll serve --host %IP% --port 5134 -l -o --incremental --trace\"",
+    "deploy_win": "cd vite && cross-env APP_ENV=production vite build && cd ../public && [ -d _data ] || mkdir _data && mv dist/manifest.json _data/manifest.json && rm -rf assets && mv dist/assets assets",
+    "build_win": "cd vite && cross-env APP_ENV=production vite build && cd ../public && [ -d _data ] || mkdir _data && mv dist/manifest.json _data/manifest.json &&  rm -rf assets && mv dist/assets assets && cross-env JEKYLL_ENV=production bundle exec jekyll build",
+    "\n# https://alexsab.t.me": ""
   },
   "repository": {
     "type": "git",
@@ -21,14 +36,22 @@
   },
   "homepage": "https://github.com/newstreetpunk/kmu#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.4",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/compiler-sfc": "^3.2.45",
+    "autoprefixer": "^10.4.14",
     "bootstrap": "^4.6.0",
-    "browser-sync": "^3.0.2",
-    "browser-sync-webpack-plugin": "^2.3.0",
+    "concurrently": "^8.2.0",
+    "cross-env": "^7.0.3",
     "jquery": "^2.1.4",
-    "laravel-mix": "^6.0.43",
-    "resolve-url-loader": "^5.0.0",
-    "sass": "^1.50.0",
-    "sass-loader": "^12.6.0"
+    "postcss": "^8.4.25",
+    "sass": "^1.63.6",
+    "swiper": "^10.1.0",
+    "vite": "^4.0.4",
+    "vite-plugin-live-reload": "^3.0.1"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.2.96",
+    "alpinejs": "^3.13.0",
+    "glightbox": "^3.2.0"
   }
 }
