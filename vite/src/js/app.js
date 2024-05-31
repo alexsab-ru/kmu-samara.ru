@@ -1,15 +1,17 @@
+import './common';
 // LIBS
-require('../libs/Magnific-Popup-master/jquery.magnific-popup');
-require('../libs/slick/slick');
-require('../libs/animate/animate-css');
-require('../libs/lazyload.min');
-require('../libs/waypoint');
+import '~libs/Magnific-Popup-master/jquery.magnific-popup';
+import '~libs/slick/slick';
+import '~libs/animate/animate-css';
+import '~libs/lazyload.min';
+import '~libs/waypoint';
+
 // MODULES
-require('./modules/animations');
-require('./modules/sliders');
-require('./modules/form');
-require('./modules/modals');
-require('./map');
+import './modules/animations';
+import './modules/sliders';
+import './modules/form';
+import './modules/modals';
+import './map';
 
 if ( $('div').is('.stages-block') ) {
 	if ($('.stages-block').is('visible')) {
@@ -18,7 +20,7 @@ if ( $('div').is('.stages-block') ) {
 	}
 
 	$(window).on('scroll', () => {
-		let blockPosition = $('.stages-block').offset().top, 
+		let blockPosition = $('.stages-block').offset().top,
 			windowScrollPosition = $(window).scrollTop();
 
 		if( blockPosition - $(window).height() < windowScrollPosition ) {
@@ -63,7 +65,7 @@ function myResize(){
 	var winW = $(window).width();
 	var contW = $('.advantages .container').width();
 	var padding = (winW - contW) / 2;
-	
+
 	if ($(window).width() > 768) {
 		$('.banner-slide').css({
 			'height': bannerSlideH,
