@@ -4,12 +4,12 @@
 	<p>Можем предложить специальные условия именно для вас!</p>
 	<form method="POST">
 		<!-- Hidden Required Fields -->
-		<input type="hidden" name="Форма" value="Заказ обратного звонка">
+		<input type="hidden" name="form" value="Заказ обратного звонка">
 		<!-- END Hidden Required Fields -->
 
 		<input type="text" tabindex="-1" placeholder="Ваше имя" name="name">
-		<input type="email" tabindex="-1" name="Email" placeholder="mail@example.com">
-		<input type="tel" placeholder="8 (999) 999-99-99" name="Телефон" required>
+		<input type="email" tabindex="-1" name="email" placeholder="mail@example.com">
+		<input type="tel" placeholder="8 (999) 999-99-99" name="phone" required>
 		{% include agree-checkbox.html %}
 		<button type="submit" class="btn">Перезвоните</button>
 	</form>
