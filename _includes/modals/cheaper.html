@@ -5,12 +5,12 @@
 	<p>Оставьте свой номер телефона и наш менеджер свяжется с Вами</p>
 	<form method="POST">
 		<!-- Hidden Required Fields -->
-		<input type="hidden" name="Форма" value="Хочу дешевле">
+		<input type="hidden" name="form" value="Хочу дешевле">
 		<!-- END Hidden Required Fields -->
 
 		<input type="text" tabindex="-1" placeholder="Ваше имя" name="name">
-		<input type="email" tabindex="-1" name="Email" placeholder="mail@example.com">
-		<input type="tel" placeholder="8 (999) 999-99-99" name="Телефон" required>
+		<input type="email" tabindex="-1" name="email" placeholder="mail@example.com">
+		<input type="tel" placeholder="8 (999) 999-99-99" name="phone" required>
 		{% include agree-checkbox.html %}
 		<button type="submit" class="btn">Узнать цену</button>
 	</form>

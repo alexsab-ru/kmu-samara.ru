@@ -8,13 +8,13 @@
 		<div class="offer-form">
 			<form method="POST">
 				<!-- Hidden Required Fields -->
-				<input type="hidden" name="Форма" value="Хочу дешевле">
+				<input type="hidden" name="form" value="Хочу дешевле">
 				<!-- END Hidden Required Fields -->
 
 				<input type="text" tabindex="-1" placeholder="Ваше имя" name="name">
-				<input type="email" tabindex="-1" name="Email" placeholder="mail@example.com">
-				<input type="tel" placeholder="8 (999) 999-99-99" name="Телефон" required>
-				<textarea name="Комментарий" placeholder="Комментарии"></textarea>
+				<input type="email" tabindex="-1" name="email" placeholder="mail@example.com">
+				<input type="tel" placeholder="8 (999) 999-99-99" name="phone" required>
+				<textarea name="comment" placeholder="Комментарии"></textarea>
 				{% include agree-checkbox.html %}
 				<button type="submit" class="btn bounce">Отправить</button>
 				<small>Вам перезвонит менеджер и&nbsp;уточнит детали и&nbsp;удобное для Вас время, чтобы подготовить документы</small>
