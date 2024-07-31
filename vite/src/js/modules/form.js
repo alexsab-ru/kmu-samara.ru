@@ -21,6 +21,7 @@ $("form").submit(function() { //Change
 	btnSubmit.attr("disabled", true);
 	var url = window.location.href;
 	var addParam = '&referer=' + url.replace('?', '&');
+	addParam += '&page_url=' + window.location.origin + window.location.pathname;
 	if(getCookie('fta')) {
 		addParam += "&fta";
 	}
