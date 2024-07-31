@@ -37,6 +37,5 @@
 	{% if site.data.manifest and site.data.manifest['src/sass/app.sass'] and site.data.manifest['src/sass/app.sass'].file %}
 	<link rel="stylesheet" href="{{ site.data.manifest['src/sass/app.sass'].file | relative_url }}">
 	{% endif %}
-	{%- include head-scripts.html -%}
 {% endif %}
 
