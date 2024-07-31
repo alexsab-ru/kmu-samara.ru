@@ -1,18 +1,7 @@
 /*! Magnific Popup - v1.1.0 - 2016-02-20
 * http://dimsemenov.com/plugins/magnific-popup/
 * Copyright (c) 2016 Dmitry Semenov; */
-;(function (factory) { 
-if (typeof define === 'function' && define.amd) { 
- // AMD. Register as an anonymous module. 
- define(['jquery'], factory); 
- } else if (typeof exports === 'object') { 
- // Node/CommonJS 
- factory(require('jquery')); 
- } else { 
- // Browser globals 
- factory(window.jQuery || window.Zepto); 
- } 
- }(function($) { 
+;(function($) {
 
 /*>>core*/
 /**
@@ -1857,4 +1846,6 @@ $.magnificPopup.registerModule(RETINA_NS, {
 });
 
 /*>>retina*/
- _checkInstance(); }));
+ _checkInstance(); 
+
+})(jQuery);
