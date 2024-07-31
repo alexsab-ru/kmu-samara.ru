@@ -13,7 +13,7 @@ layout: default
 
 				{%- for path in page_paths -%}
 					{%- assign car = site.pages | where: "path", path | first -%}
-					{%- if car.path contains '/cars/' -%}
+					{%- if car.path contains 'cars/' -%}
 						{%- if car.title and car.index and car.images -%}
 
 						{%- assign imgs = car.images | split: "|" -%}
@@ -33,7 +33,7 @@ layout: default
 
 				{%- for path in page_paths -%}
 					{%- assign car = site.pages | where: "path", path | first -%}
-					{%- if car.path contains '/cars/' -%}
+					{%- if car.path contains 'cars/' -%}
 						{%- if car.title and car.index and car.images -%}
 
 						{%- assign imgs = car.images | split: "|" -%}

@@ -27,7 +27,7 @@ layout: default
 
 				{%- for path in page_paths -%}
 					{%- assign car = site.pages | where: "path", path | first -%}
-					{%- if car.path contains '/cars/' -%}
+					{%- if car.path contains 'cars/' -%}
 						{%- if car.title and car.index -%}
 
 						{% capture amount %}{{ amount | plus:1 }}{% endcapture %}
@@ -56,7 +56,7 @@ layout: default
 
 				{%- for path in page_paths -%}
 					{%- assign car = site.pages | where: "path", path | first -%}
-					{%- if car.path contains '/cars/' -%}
+					{%- if car.path contains 'cars/' -%}
 						{%- if car.title and car.index -%}
 
 						{% capture amount %}{{ amount | plus:1 }}{% endcapture %}
