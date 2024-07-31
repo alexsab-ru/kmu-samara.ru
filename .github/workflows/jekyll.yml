@@ -13,7 +13,7 @@ on:
       - completed
   # Runs on pushes targeting the default branch
   push:
-    branches: ["master", "main"]
+    branches: ["master", "main", "vite"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -74,6 +74,7 @@ jobs:
           pnpm run deploy
           cd public
           bundle exec jekyll build # --baseurl "${{ steps.pages.outputs.base_path }}"
+          mv _site ../public/_site
         env:
           JEKYLL_ENV: production
 
