@@ -27,8 +27,6 @@ $("form").submit(function() { //Change
 	$.ajax({
 		type: "POST",
 		url: "https://alexsab.ru/lead/kmu/",
-		// url: "https://alexsab.ru/lead/dev/",
-		// url: "https://diywebdev.ru/send/",
 		data: th.serialize() + addParam,
 	}).done(function( data ) {
 		var res = JSON.parse(data);
