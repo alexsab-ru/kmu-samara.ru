@@ -74,7 +74,7 @@ jobs:
           pnpm run deploy
           cd public
           bundle exec jekyll build # --baseurl "${{ steps.pages.outputs.base_path }}"
-          mv _site ../public/_site
+          mv _site ../_site
         env:
           JEKYLL_ENV: production
 
