@@ -15,7 +15,7 @@
 
 		{%- for path in page_paths -%}
 			{%- assign car = site.pages | where: "path", path | first -%}
-			{%- if car.path contains '/cars3/' -%}
+			{%- if car.path contains '/cars/' -%}
 				{%- if car.title and car.index != nil -%}
 				<!-- {%- assign img_path = "/img/avto/,.jpg" | split: "," -%} -->
 				{%- assign img_path = "/img/model-nav/400jpg/,.jpg" | split: "," -%}
@@ -34,7 +34,7 @@
 				{% else %}
 					{{ car.content }}
 				{% endif %}
-				
+
 				</div>
 			</div>
 			<div class="service2__item--action">

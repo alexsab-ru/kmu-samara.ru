@@ -9,7 +9,7 @@
 
 		{%- for path in page_paths -%}
 			{%- assign car = site.pages | where: "path", path | first -%}
-			{%- if car.path contains '/cars3/' -%}
+			{%- if car.path contains '/cars/' -%}
 				{%- if car.title and car.index -%}
 				{%- assign img_path = "/img/model-nav/400jpg/,.jpg" | split: "," -%}
 				{%- assign img_url = img_path | join: car.thumb -%}
