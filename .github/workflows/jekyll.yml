@@ -68,7 +68,7 @@ jobs:
         # Outputs to the './_site' directory by default
         if: env.changes == 'true'
         run: |
-          npm install -g pnpm
+          npm install -g pnpm@8.15.9
           pnpm install --no-frozen-lockfile
           pnpm run start
           pnpm run deploy
