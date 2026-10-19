@@ -42,7 +42,14 @@ jobs:
       - name: Check for new commits
         id: check_changes
         run: |
-          # Получите количество коммитов за последние 10 минут
+          # Ручной запуск из Actions — собираем и деплоим без проверки «свежих» коммитов
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Manual workflow_dispatch — building regardless of recent commits."
+            echo "changes=true" >> $GITHUB_ENV
+            echo "changes=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          # Для автоматических триггеров: только если были коммиты за последние 10 минут
           COUNT=$(git log --since="10 minutes ago" --pretty=oneline | wc -l)
           if [ "$COUNT" -eq "0" ]; then
             echo "No new commits. Exiting workflow." && echo "changes=false" >> $GITHUB_ENV && echo "changes=false" >> $GITHUB_OUTPUT
