@@ -1,20 +1,20 @@
 import assert from 'node:assert/strict';
 import { readdir, readFile } from 'node:fs/promises';
 
-const oldEndpoint = 'https://alexsab.ru/lead/kmu/';
-const yandexEndpoint = 'https://l.alexsab.ru/lead/kmu/';
+const legacyEndpoint = 'https://l.alexsab.ru/lead/kmu/';
+const endpoint = 'https://alexsab.ru/lead/kmu/';
 const sourcePath = new URL('../vite/src/js/modules/form.js', import.meta.url);
 const source = await readFile(sourcePath, 'utf8');
 
 assert.equal(
-	source.split(yandexEndpoint).length - 1,
+	source.split(endpoint).length - 1,
 	1,
-	'form source must contain exactly one Yandex endpoint',
+	'form source must contain exactly one alexsab.ru endpoint',
 );
 assert.equal(
-	source.includes(oldEndpoint),
+	source.includes(legacyEndpoint),
 	false,
-	'form source must not retain the BeGet endpoint',
+	'form source must not retain the legacy l.alexsab.ru endpoint',
 );
 assert.match(source, /type:\s*["']POST["']/);
 assert.match(source, /th\.serialize\(\)\s*\+\s*addParam/);
@@ -27,14 +27,14 @@ if (process.env.CHECK_BUILT === '1') {
 	assert.equal(assetNames.length, 1, 'build must emit one script asset');
 	const bundle = await readFile(new URL(assetNames[0], assetsUrl), 'utf8');
 	assert.equal(
-		bundle.split(yandexEndpoint).length - 1,
+		bundle.split(endpoint).length - 1,
 		1,
-		'built bundle must contain exactly one Yandex endpoint',
+		'built bundle must contain exactly one alexsab.ru endpoint',
 	);
 	assert.equal(
-		bundle.includes(oldEndpoint),
+		bundle.includes(legacyEndpoint),
 		false,
-		'built bundle must not retain the BeGet endpoint',
+		'built bundle must not retain the legacy l.alexsab.ru endpoint',
 	);
 }
 
