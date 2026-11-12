@@ -16,7 +16,8 @@ kuzov_l: "4,5"
 kuzov_w: "2,2"
 tonnage: "3,5"
 tonnage_s: "3"
-price: "1700"
+# Уточнение от 2026-11-12: КМУ Isuzu Forward — 2500 ₽/час.
+price: "2500"
 images: "/img/avto/Isuzu/DSC_4638.jpg|/img/avto/Isuzu/DSC_4642.jpg|/img/avto/Isuzu/DSC_4653.jpg"
 metaimg: "/img/avto/Isuzu/DSC_4638.jpg"
 ---

@@ -16,7 +16,8 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: "2,8"
 tonnage_s: ""
-price: "2500"
+# Уточнение от 2026-11-12: Hyundai H940S, 2,8 т — 4000 ₽/час.
+price: "4000"
 images: ""
 metaimg: "/img/model-nav/400jpg/hyundai-h940s.jpg"
 ---

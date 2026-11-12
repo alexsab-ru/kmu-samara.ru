@@ -16,7 +16,8 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
-price: "2300"
+# Уточнение от 2026-11-12: АГП 28 м — 4200 ₽/час.
+price: "4200"
 images: ""
 metaimg: "/img/model-nav/400jpg/agp.jpg"
 ---

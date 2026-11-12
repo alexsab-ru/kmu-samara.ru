@@ -18,7 +18,8 @@ kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
 new: true
-price: "1200"
+# Уточнение от 2026-11-12: цена автобуса не фиксированная.
+price: "по согласованию"
 images: "/img/avto/Bus/Bus.jpg|/img/avto/Bus/Bus-2.jpg|/img/avto/Bus/bus-thumb.jpg"
 metaimg: "/img/avto/Bus.jpg"
 ---

@@ -57,7 +57,7 @@ layout: default
 					<!-- /.carfleet__item--info_row d-flex -->
 
 					<div class="carfleet__item--bottom d-flex">
-						<div class="carfleet__item--price">{%- if car.price != "" -%}{{ car.price }} ₽{%- else -%}{%- endif -%}</div>
+						<div class="carfleet__item--price">{%- assign price_num = car.price | plus: 0 -%}{%- if price_num > 0 -%}{{ car.price }} ₽{%- elsif car.price != "" -%}{{ car.price }}{%- endif -%}</div>
 						<!-- /.carfleet__item--price -->
 						<a href="#orderForm" class="btn carfleet__item--link modal-link" data-title="{{ car.car_name }}">Заказать</a>
 					</div>

@@ -16,7 +16,8 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: "4"
 tonnage_s: ""
-price: "2000"
+# Уточнение от 2026-11-12: фронтальный погрузчик — 3500 ₽/час.
+price: "3500"
 images: "/img/avto/Frontalnyiy-Pogruzchiki.jpg"
 metaimg: "/img/avto/Frontalnyiy-Pogruzchiki.jpg"
 ---

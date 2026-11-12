@@ -16,7 +16,8 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: "0,895"
 tonnage_s: ""
-price: "2000"
+# Уточнение от 2026-11-12: мини-погрузчик Bobcat S175 — 3000 ₽/час.
+price: "3000"
 images: "/img/avto/Bobcat-S175.jpg"
 metaimg: "/img/avto/Bobcat-S175.jpg"
 ---

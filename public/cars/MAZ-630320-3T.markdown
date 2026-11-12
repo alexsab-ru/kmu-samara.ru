@@ -16,7 +16,8 @@ kuzov_l: "7,5"
 kuzov_w: "2,4"
 tonnage: "10"
 tonnage_s: "3"
-price: "2300"
+# Уточнение от 2026-11-12: КМУ МАЗ 6303, стрела 3 т — 3200 ₽/час.
+price: "3200"
 images: "/img/avto/MAZ-630320-3T/DSC_4770.jpg|/img/avto/MAZ-630320-3T/DSC_4772.jpg|/img/avto/MAZ-630320-3T/DSC_4780.jpg"
 metaimg: "/img/avto/MAZ-630320-3T/DSC_4770.jpg"
 ---

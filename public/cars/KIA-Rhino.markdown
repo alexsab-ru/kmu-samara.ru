@@ -16,7 +16,8 @@ kuzov_l: "4,6"
 kuzov_w: "2,4"
 tonnage: "5"
 tonnage_s: ""
-price: "1500"
+# Уточнение от 2026-11-12: бортовой KIA Rhino, 5 т — 2300 ₽/час.
+price: "2300"
 images: "/img/avto/KIA-Rhino/DSC_4661.jpg|/img/avto/KIA-Rhino/DSC_4662.jpg|/img/avto/KIA-Rhino/DSC_4665.jpg"
 metaimg: "/img/avto/KIA-Rhino/DSC_4661.jpg"
 ---

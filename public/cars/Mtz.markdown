@@ -16,7 +16,8 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
-price: "1900"
+# Уточнение от 2026-11-12: трактор МТЗ — 3500 ₽/час.
+price: "3500"
 images: ""
 metaimg: "/img/model-nav/400jpg/mtz.jpg"
 ---

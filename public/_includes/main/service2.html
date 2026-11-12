@@ -38,12 +38,16 @@
 				</div>
 			</div>
 			<div class="service2__item--action">
-				<div class="service2__item--price"  itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
-					<div class="price">{% include numf.html number=car.price ts=' ' decimals=0 %} ₽</div>
+				{%- comment -%}Текст вместо числа не оборачиваем в рубли и не отдаём как цену в разметке.{%- endcomment -%}
+				{%- assign price_num = car.price | plus: 0 -%}
+				<div class="service2__item--price"{% if price_num > 0 %} itemprop="offers" itemscope="" itemtype="http://schema.org/Offer"{% endif %}>
+					<div class="price">{% if price_num > 0 %}{% include numf.html number=car.price ts=' ' decimals=0 %} ₽{% else %}{{ car.price }}{% endif %}</div>
+					{%- if price_num > 0 -%}
 					<meta itemprop="price" content="{{ car.price }}">
 					<meta itemprop="priceCurrency" content="RUB">
 					<link itemprop="availability" href="http://schema.org/InStock">
 					<div class="time">Цена за час</div>
+					{%- endif -%}
 				</div>
 				<!-- /.service2__item--price -->
 				<a href="#orderForm" class="btn info-popup modal-link" data-title="{{ car.car_name }}">Заказать</a>

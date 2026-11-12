@@ -16,7 +16,8 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: "25"
-price: "3000"
+# Уточнение от 2026-11-12: автокран 25 т, стрела 28 м — 4000 ₽/час.
+price: "4000"
 images: "/img/avto/Avtokran.jpg"
 metaimg: "/img/avto/Avtokran.jpg"
 ---

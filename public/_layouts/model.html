@@ -35,15 +35,22 @@ layout: default
 					<!-- /.parameter -->
 					{% endif %}
 					{%- if page.price != "" -%}
-					<div class="parameter d-flex" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					{%- comment -%}
+					Число — это цена в рублях за час.
+					Текст вроде «по согласованию» показываем как есть, без знака ₽.
+					{%- endcomment -%}
+					{%- assign price_num = page.price | plus: 0 -%}
+					<div class="parameter d-flex"{% if price_num > 0 %} itemprop="offers" itemscope itemtype="http://schema.org/Offer"{% endif %}>
 						<div class="parameter__icon">
 							<img src="{{ '/img/icons/price.svg' | relative_url }}" alt="Цена">
-							<span>Цена, ₽/час</span>
+							<span>{% if price_num > 0 %}Цена, ₽/час{% else %}Цена{% endif %}</span>
 						</div>
-						<div class="parameter__text">{% include numf.html number=page.price ts=' ' decimals=0 %}</div>
+						<div class="parameter__text">{% if price_num > 0 %}{% include numf.html number=page.price ts=' ' decimals=0 %}{% else %}{{ page.price }}{% endif %}</div>
+						{%- if price_num > 0 -%}
 						<meta itemprop="price" content="{{ page.price }}">
 						<meta itemprop="priceCurrency" content="RUB">
 						<link itemprop="availability" href="http://schema.org/InStock">
+						{%- endif -%}
 					</div>
 					<!-- /.parameter -->
 					{%- endif -%}

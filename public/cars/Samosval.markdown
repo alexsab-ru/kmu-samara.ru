@@ -14,11 +14,15 @@ index: "040"
 permalink: /service/samosval/
 kuzov_l: ""
 kuzov_w: ""
-tonnage: ""
+# Это самосвал 15 т из прайса. Поле нужно, чтобы в следующий раз не сопоставлять вручную.
+tonnage: "15"
 tonnage_s: ""
-price: "1700"
+# Уточнение от 2026-11-12: самосвал КамАЗ 15 т — 2500 ₽/час.
+price: "2500"
 images: "/img/avto/Samosval.jpg"
 metaimg: "/img/avto/Samosval.jpg"
 ---
 
 <p><span>Объем кузова самосвала:</span><span>7,2 куб.м</span></p>
+
+<p><span>Грузоподъёмность:</span><span>15 т</span></p>

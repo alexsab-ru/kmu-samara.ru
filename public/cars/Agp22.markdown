@@ -16,7 +16,8 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
-price: "1800"
+# Уточнение от 2026-11-12: АГП 22 м — 3500 ₽/час.
+price: "3500"
 images: ""
 metaimg: "/img/model-nav/400jpg/agp22.jpg"
 ---
