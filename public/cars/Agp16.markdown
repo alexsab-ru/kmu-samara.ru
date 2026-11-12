@@ -16,7 +16,8 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
-price: "1600"
+# Прайс 2026-11-12: «Аренда АГП 16м» — 2500 ₽/час.
+price: "2500"
 images: ""
 metaimg: "/img/model-nav/400jpg/agp16.jpg"
 ---

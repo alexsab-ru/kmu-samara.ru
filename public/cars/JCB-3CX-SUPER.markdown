@@ -16,7 +16,8 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: ""
-price: "2000"
+# Прайс 2026-11-12: «Аренда Экскаватор погрузчик» — 3500 ₽/час.
+price: "3500"
 images: "/img/avto/Ekskavatory-Pogruzchiki.jpg"
 metaimg: "/img/avto/Ekskavatory-Pogruzchiki.jpg"
 ---

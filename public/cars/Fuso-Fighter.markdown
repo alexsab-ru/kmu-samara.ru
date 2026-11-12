@@ -16,7 +16,8 @@ kuzov_l: "6,2"
 kuzov_w: "2,32"
 tonnage: "5"
 tonnage_s: "3"
-price: "1700"
+# Прайс 2026-11-12: Mitsubishi Fuso, борт 5 т, стрела 3 т — 2500 ₽/час.
+price: "2500"
 images: "/img/avto/Fuso-Fighter.jpg"
 metaimg: "/img/avto/Fuso-Fighter.jpg"
 ---

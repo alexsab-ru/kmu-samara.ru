@@ -16,7 +16,8 @@ kuzov_l: ""
 kuzov_w: ""
 tonnage: ""
 tonnage_s: "25"
-price: "2500"
+# Прайс 2026-11-12: автокраны 14–42 т, стрела 14–31 м — 3000 ₽/час.
+price: "3000"
 images: ""
 metaimg: "/img/model-nav/400jpg/avtokran25.jpg"
 ---

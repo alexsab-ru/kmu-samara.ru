@@ -16,7 +16,8 @@ kuzov_l: "13,6"
 kuzov_w: "2,4"
 tonnage: "20"
 tonnage_s: ""
-price: "2000"
+# Прайс 2026-11-12: полуприцеп МАЗ 64229 / 20 т — 3000 ₽/час.
+price: "3000"
 images: "/img/avto/MAZ-64229/IMG_1225.png|/img/avto/MAZ-64229/IMG_1226.png"
 metaimg: "/img/avto/MAZ-64229/IMG_1225.png"
 ---

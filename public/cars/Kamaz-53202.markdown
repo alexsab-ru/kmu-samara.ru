@@ -16,7 +16,9 @@ kuzov_l: "5,5"
 kuzov_w: "2,4"
 tonnage: "10"
 tonnage_s: "3"
-price: "1900"
+# Прайс 2026-11-12: в файле это «Камаз 5511», борт 8 т, 5,5×2,3 м, стрела 3 т — 2700 ₽/час.
+# На сайте та же спецификация у КАМАЗ 53202.
+price: "2700"
 images: "/img/avto/Kamaz-53202/DSC_4679.jpg|/img/avto/Kamaz-53202/DSC_4699.jpg|/img/avto/Kamaz-53202/DSC_4709.jpg"
 metaimg: "/img/avto/Kamaz-53202/DSC_4679.jpg"
 ---

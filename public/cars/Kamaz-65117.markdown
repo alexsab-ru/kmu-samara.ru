@@ -16,7 +16,8 @@ kuzov_l: "6,2"
 kuzov_w: "2,4"
 tonnage: "15"
 tonnage_s: "5"
-price: "2200"
+# Прайс 2026-11-12: КАМАЗ 65117, стрела 3 т — 3000 ₽/час.
+price: "3000"
 images: "/img/avto/Kamaz-65117/DSC_4719.jpg|/img/avto/Kamaz-65117/DSC_4731.jpg|/img/avto/Kamaz-65117/DSC_4738.jpg"
 metaimg: "/img/avto/Kamaz-65117/DSC_4719.jpg"
 ---
